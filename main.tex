@@ -1,0 +1,79 @@
+\documentclass[a4paper,10pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+\usepackage{breqn}
+\usepackage{dsfont}
+\usepackage{amssymb}
+\usepackage{calligra}
+
+%Beschreibaren Seitenbereich definieren
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
+
+%Kopf- und Fußzeile einfügen
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%Kopfzeile Linie oben
+\renewcommand{\headrulewidth}{0.5pt}
+
+%Fußzeile mittig
+\fancyfoot[C]{\thepage}
+
+%Linie unten
+\renewcommand{\footrulewidth}{0.5pt}
+
+
+% Unicode Character definition
+\DeclareUnicodeCharacter{221E}{\text{$\infty$}}
+\DeclareUnicodeCharacter{00B7}{\text{$\cdot$}}
+\DeclareUnicodeCharacter{2192}{\text{$\to$}}
+\DeclareUnicodeCharacter{2026}{\text{\ldots}}
+
+
+\newcommand{\mcmd}[2]{\newcommand{ #1 }{\text{$#2$}}} %kürzerer command um neue mathemathische commands (ohne parameter) zu erstellen
+\newcommand{\tcmd}[2]{\newcommand{ #1 }{\text{#2}}} %kürzerer command um neue text commands (ohne parameter) zu erstellen
+\newcommand{\cmd}{\newcommand} %kürzerer command um neue commands (ohne parameter, ohne environment) zu erstellen
+
+% Mengen
+\mcmd{\N}{\mathds{N}}
+\mcmd{\Z}{\mathds{Z}}
+\mcmd{\Q}{\mathds{Q}}
+\mcmd{\R}{\mathds{R}}
+\mcmd{\C}{\mathds{C}}
+
+% griechische Buchstaben
+\mcmd{\z}{\zeta}
+\mcmd{\e}{\epsilon}
+
+% Pfeile
+\mcmd{\equ}{\Leftrightarrow}
+\mcmd{\Rarr}{\Rightarrow}
+\mcmd{\Larr}{\Leftarrow}
+
+% Überschriften
+\cmd{\sS}[1]{\subsection{#1}}
+\cmd{\bsp}{\vspace{-4mm}\subsubsection*{\underline{Beispiel:}}}
+\cmd{\bem}{\vspace{-4mm}\subsubsection*{\underline{Bemerkung:}}}
+\cmd{\bew}{\vspace{-4mm}\subsubsection*{\underline{Beweis:}}}
+\cmd{\anm}{\vspace{-4mm}\subsubsection*{\underline{Anmerkung:}}}
+\cmd{\sss}[1]{\vspace{-4mm}\subsubsection*{\underline{#1}}}
+\cmd{\ssss}[1]{\vspace{4mm}{\bf\underline{#1}}\\}
+
+% Environments
+\cmd{\ds}{\displaystyle}
+
+
+% Author, title…
+\title{Ana Vorlesung}
+\author{Stefan Heid, Christopher Jordan}
+\date{\today}
+
+\begin{document}
+%\input{vorlesung1}\newpage
+
+%\input{vorlesung8}\newpage
+
+\end{document}
+

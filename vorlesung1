@@ -1,0 +1,233 @@
+\section{Mengen}
+\subsection{Definition}
+\begin{enumerate}
+\item Eine Menge ist eine Ansammlung verschiedener Objekte
+\item Die Objekte in einer Menge heißen \underline{Elemente}
+
+{\em\begin{tabbing}
+Notat\=ion: \\
+\> a $\in$ M heißt a ist Element der Menge M\\
+\> a ${\not\in}$ M heißt a ist kein Element der Menge M\end{tabbing}}
+
+\item Sei M eine Menge. Eine Menge U heißt Teilmenge von M, von der jedes Element von U auch Element von M ist
+
+{\em\begin{tabbing}
+Notat\=ion: \\
+\> U $\subseteq$ M heißt U ist Teilmenge von M\\
+\> U ${\not\subseteq}$ M heißt U ist keine Teilmenge von M\end{tabbing}}
+
+\end{enumerate}
+
+\newcommand{\cmd}{\newcommand}
+\cmd{\bem}{\underline{Bemerkung:}}
+
+\subsection{Beispiele}
+\begin{enumerate}
+\item \begin{tabbing}
+Sei \=M die Menge aller Studierenden in L1\\
+\> W  die Menge aller weiblichen Studierenden in L1\\
+\> F die Menge aller Frauen \end{tabbing}
+Dann gilt: W $\subseteq$ M, W $\subseteq$ F, M ${\not\subseteq}$ F, F ${\not\subseteq}$ M
+
+\item Die Menge der natürlichen Zahlen
+$\mathds{N} = \{1,2,3,4...\}$
+G sei die Menge der geraden natürlichen Zahlen
+$G := \{n \in \mathds{N} | $n ist gerade$\} = \{2m | m \in \mathds{N}\} = \{2,4,6,8...\}$
+Es gilt G $\subseteq \mathds{N}, \mathds{N} \subseteq$ G
+
+\item Die Menge der ganzen Zahlen
+$\mathds{Z} = \{0,1,-1,2,-2,3,-3,...\}$
+
+\item Die Menge der rationalen Zahlen
+$\mathds{Q} = \{a/b | a, b \in \mathds{Z}, b \neq 0\}$
+
+\item Die Menge ohne Element hei{\ss}t die leere Menge
+Symbol: $\emptyset = \{\}$
+\end{enumerate}
+{\em \bem \begin{enumerate}
+\item Für jede Menge M gilt $\setminus \subseteq M$
+\item $\mathds{N} \subseteq \mathds{Z} \subseteq \mathds{Q}$
+\end{enumerate}}
+
+\subsection{Definition: Sei M eine Menge und U,V $\subseteq$ M Teilmengen}
+\begin{enumerate}
+\item Die Vereinbarung von U und V ist $U \cup V := \{x \in M \mid x \in U oder x \in V\}$
+
+\item Der Durchschnitt von U und V ist $U \cap V := \{x \in M \mid x \in U oder x \in V\}$
+U und V hei{\ss}en disjunkt, wenn $U \cap V = \emptyset$
+
+\item Die Differenzmenge von U und V ist $U \setminus V := \{x \in U \mid x \in V\}$
+
+\item Das Komplement von U ist $U^C = M \setminus U = \{x \in M \mid x {\not\in} U\}$
+
+\begin{tabbing}
+Bsp: \= Sei M = N \\
+\> $\{1,3\} \cup \{3,5\} = \{1,3,5\}$\\
+\> $\{1,3\} \cap \{3,5\} = \{3\}$\\
+\> $\{1,3\} \cap \{2,4,7\} = \emptyset \leftarrow$ disjunkt\\
+\> $\{1,2,3\} \setminus \{3,4,5\} = \{1,2\}$\\
+\> $\{1,3,5\}^C = \{2,4,6,7,8,...\}$
+\end{tabbing}
+
+\end{enumerate}
+
+\subsection{Satz (de Morjensche Regeln)}
+Sei M eine Menge, U,V $\subseteq$ M Teilmengen\\
+Dann:
+\begin{enumerate}
+\item $(U \cap V)^C = U^C \cup V^C$
+\item $(U \cup V)^C = U^C \cap V^C$
+\end{enumerate}
+Beweis:
+\begin{enumerate}
+\item Sei x$ \in M\\$Es gilt: x $\in (U \cap V)^C \Leftrightarrow x {\not\in} U \cap V \Leftrightarrow x {\not\in} $U oder x$ {\not\in} $V$\Leftrightarrow x \in U^C$ oder x$\in V^C \Leftrightarrow x\in U^C \cup V^C$
+\item Sei x$ \in M\\$Es gilt: x $\in (U \cup V)^C \Leftrightarrow x {\not\in} U \cup V \Leftrightarrow x {\not\in} $U und x$ {\not\in} $V$\Leftrightarrow x \in U^C$ und x$\in V^C \Leftrightarrow x\in U^C \cap V^C$
+\end{enumerate}
+
+\subsection{Prinzip der Vollst\"andigen Induktion}
+Für jedes $n \in \mathds{N}$ sei eine Aussage A(n) gegeben\\
+Ziel: Beweisen, Dass A(n) für jedes $n \in \mathds{N}$ mehr ist dafür reicht es zu zeigen
+\begin{enumerate}
+\item Induktionsanfang (IA): A(1) ist wahr
+\item Induktionsschrit (IS): Wenn für ein $n \in \mathds{N}$ A(n) wahr ist, dann ist auch A(n+1) wahr
+\end{enumerate}
+
+\subsection{Satz}
+Für jede natürliche Zahl n gilt: 1+2+3+4+5+...+n=$\frac{n(n+1)}{2}$\\
+Probe:\\
+\begin{tabular}{r|c|c|c|c}
+n & 1 & 2 & 3 & 4\\ \hline\hline
+1+2+3...+n & 1 & 3 & 6 & 10\\ \hline
+$\frac{n(n+1)}{2}$ & 1 & 3 & 6 & 10\\
+\end{tabular}
+
+\underline{Beweis des Satzes} mit Induktion\\
+Abkürzung: S(n) := 1+2+3+...+n
+Aussage: A(n): S(n) = $\frac{n(n+1)}{2}$
+\begin{enumerate}
+\item Induktionsanfang (IA): n=1 $S(1) = 1 = \frac{1\cdot 2}{2}$\marginpar{ok!}
+\item Induktionsschrit (IS): $n\rightarrow n+1$\\
+Annahme: A(n) gilt: $S(n) = \frac{n(n+1)}{2}$\\
+Zu zeigen: A(n+1) gilt: $S(n+1)=\frac{(n+1)\cdot(n+2)}{2}$\\
+$S(n+1)=S(n)+n+1=\frac{n(n+1)}{2}+\frac{2(n+1)}{2}=\frac{(n+2)(n+1)}{2}$\\
+Das beendet den Beweis \hfill $\square$ \\
+\end{enumerate}
+Zur Vereinfachung der Notation:\\
+Seien $a_1,a_2,a_3,...,a_n$ Zahlen $n \in \mathds{N}$\\
+Setze: $\sum_{k=1}^n a_k := a_1+a_2+a_3+...+a_n$\\
+\begin{tabbing}
+Allgemeiner: \=Sei $l,m \in \mathds{N}$, $l \le m \le n$\\
+\>$\sum_{k=l}^m a_k = a_l+a_{l+1}+...+a_m$\\ \end{tabbing}
+
+Aussage des Satzes:
+\[
+\sum_{k=1}^n k = \frac{n(n+1)}{2}
+\] \marginpar{\underline{Kombinatorik} (mathemathisches Z\"ahlen)}
+
+\subsection{\underline{Definition}}
+Seien A, B Mengen. Das kartesische Produkt von A und B ist definiert als $A \times B := \{(a,b)|a\in A, b \in B\}$ Die Elemente von $A\times B$ hei{\ss}en geordnete Paare\\
+Bsp.: $\{1,7\}\times \{2,3\}=\{(1,2),(1,3),(7,2),(7,3)\}$\\
+Allgemeiner: Gegeben seien Mengen
+$A_1,...,A_k$ mit $k \in \mathds{N}$. Das kartesische Produkt von $A_1,...,A_k$ ist $A_1\times...\times A_k = \{(a_1,...,a_k)|a\in A, $für $i=1,...,k\}$\\
+Elemente von $A_1\times...\times A_k$ heißen k-Tupel\\
+Falls $A_1=A_2=...=A_k=A$, schreibe $\underbrace{A\times...\times A}_{k-mal}=A^k$
+
+\subsection{\underline{Definition}}
+Eine Menge A ist endlich, wenn A nur endlich viele Elemente hat. Dann bezeichnet
+$\#A = \{|A|\}$ die Anzahl der Elemente von A und somit dessen Kardinalit\"at
+oder M\"achtigkeit. Wenn A nicht endlich ist, so schreibe: $\# A= \infty$\\
+Bsp.: $\#\emptyset = 0, \#\mathds{N}=\infty, \# \{1,3,5\} = 3$
+
+\subsection{Bemerkung}
+\begin{enumerate}
+\item Sei A endliche Menge. $U,V\subseteq A$ disjunkte Teilmengen\\
+Dann $\#(U\cup V)=\# U + \# V$ 
+\item Seien $A_1,...,A_k$ endliche Mengen $k \in \mathds{N}$\\
+Dann: $\#(A_1\times ... \times A_k)=(\# A_1)(\# A_2)...(\# A_k)$
+\end{enumerate}
+
+\subsection{\underline{Definition}}
+\begin{enumerate}
+\item Für $n\in \mathds{N}$ setze $n!=1\cdot 2\cdot 3\cdot ... \cdot n=\prod_{k=i}^n k$
+Setze $0!=1$
+\item Für $k,n\in \mathds{Z}$ mit $0\le k \le n$ sei ${n \choose k} := \frac{n!}{k!\cdot(n-1)!}$ $\leftarrow$ Binomialkoeffizient\\
+\begin{tabular}{r|c|c|c|c|c|c|c}
+n & 0 & 1 & 2 & 3 & 4 & 5 & 6\\ \hline
+n! & 1 & 1 & 2 & 6 & 24 & 120 & 720
+\end{tabular}\\
+Bsp.: ${5 \choose 2} := \frac{5!}{2!\cdot 3!} = \frac{5\cdot 4 \cdot\cancel{3 \cdot 2 \cdot 1}}{2\cdot 1\cdot \cancel{3\cdot 2}\cdot 1 } = \frac{20}{2}=10$\\
+Bemerkung: ${ n \choose 0 }= 1 = {n \choose n}$
+\end{enumerate}
+
+\cmd{\N}{\mathds{N}}
+\cmd{\R}{\mathds{R}}
+
+\large{Wiederholung:}\\
+Sei M Menge.\\
+Wenn M endlich: $\#M=Anzahl$ $Elemente\in M$\\
+Wenn M unendlich: $\#M=\infty$\\
+Für $n\in \N:=\{1,2,3,\ldots\}$\\
+$n!=1\cdot 2\cdot 3\cdot 4\cdot \ldots \cdot n$ \hfill $0!=1$\\
+Binomialkoeffizient: Für $0\leq k\leq n$\\
+\cmd{\bino}[2]{\mbox{${#1\choose #2} =\frac{#1!}{#2!\cdot(#1-#2)!}$}}
+\bino{n}{k}\hfill $\bino{n}{0}=\bino{n}{n}=1$\\
+
+\subsection{Lemma}
+Für $0<k< n$ gilt:\\
+\[{n \choose k} = {n -1 \choose k-1} + {n-1 \choose k}\]\\
+Beweis: 
+\begin{align*}
+{n-1 \choose k-1}+ {n-1 \choose k}=\frac{(n-1)!}{(k-1)!\cdot (n-k)!} +\frac{(n-1)!}{(k-1)!\cdot (n-1-k)!} =\\ \frac{k(n-1)!+(n-k)\cdot(n-1)!}{k! (n-k)!}=\frac{n(n-1)!}{k!(n-k)!}
+\end{align*}
+\subsection{Geometrische Anordnung (Pascalsches Dreieck)}
+\parbox{0.5\textwidth}{\centering
+${0\choose0}$\\
+${1\choose0}$ ${1\choose1}$\\
+${2\choose0}$ ${2\choose1}$ ${2\choose2}$\\
+${3\choose0}$ ${3\choose1}$ ${3\choose2}$ ${3\choose3}$\\}
+\parbox{0.5\textwidth}{\centering
+1\\
+1 1\\
+1 2 1\\
+1 3 3 1\\}\\[5mm]
+Folge ${n\choose k}\in \N$ für alle $0\leq k\leq<n$
+\cmd{\Z}{\mathds{Z}}
+\subsection{Satz}
+Sei A endliche Menge.\\
+$\#A=n$\\
+Sei $k\in\Z$ mit $0\leq k\leq n$\\
+$P_k(A):=\{U\subseteq A| \#U=k\}$ (Menge aller k-elementigen Teilmengen von A)\\
+Dann gilt $\#P_k(A)={n\choose k}$\\
+\cmd{\bsp}{\subsubsection*{\underline{Beispiel:}}}
+\bsp
+$A=\{1,2,3,4\}$ $n=4$ $k=2$\\
+2-elementige Teilmengen von A:\\ $\{1,2\}, \{1,3\}, \{1,4\}, \{2,3\}, \{2,4\}, \{3,4\} \to 6$\\
+\cmd{\ok}{\marginpar{\checkmark}}
+${4\choose 2}=6$ \ok
+\cmd{\bew}{\subsubsection*{\underline{Beweis:}}}
+\bew
+Vorüberlegung: Sei $k=0 \vee k=n$\\
+$P_0(A)=1={n\choose 0}$ $\#P_n(A)=1={n\choose n}$\ok\\
+Jetzt: Induktionsbeweis nach n\\
+IA: $n=0$ Dann $k=0$\ok\\
+\cmd{\is}[1]{IS: $n\to n+1$
+\begin{addmargin}{.05\textwidth}
+#1
+\end{addmargin}
+}
+\is{Sei $\#A=n+1 \Rightarrow 0\leq k\leq (n+1)$\\
+Falls $k=0$ $\vee$ $k=n+1$\\
+Sei also: $o<k<n+1$\\
+Wähle $a\in A$\\
+\cmd{\ba}{\backslash}
+Sei $B=A\b\{a\}$\\
+Dann $A=B\cup\{a\}, \#B=n$\\
+Man kann die Wahl einer k-elementigen Teilmenge von A so strukturieren
+\begin{enumerate}
+ \item Entscheiden, ob $a\in U \vee a\notin U$
+ \item \begin{enumerate}
+        \item Wenn $a\notin U$: Wähle k Elemente aus B
+        \item Wenn $a\in U$: Wähle k-1 Elemente aus B
+       \end{enumerate}
+\end{enumerate}
+$\Rightarrow \#P_k(A)=\#P_k(B)+\#P_{k-1}(B)\stackrel{IV}{=}{n\choose k}+{n\choose k-1}\stackrel{1.11}{=}{n+1\choose k}\hfill \square$}
