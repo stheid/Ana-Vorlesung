@@ -1,0 +1,11 @@
+\chapters als Hauptüberschriften (einstellig) BSP 1. Mengen
+  \underline{\section*{}} für unterstrichene Überschriten
+    \section für zweistellige Überschriften BSP  1.1 Defintion
+    \section*{Widerholung} für Wiederholungen
+      %Diese bleiben unterstrichen.
+      \bsp für Beispiele
+      \bew für Beweise
+      \anm für Anmerkungen
+      \bem für Bemerkungen
+        \notat für Notationen (\em{})
+\cancel für Durchstreichungen und Kürzen
