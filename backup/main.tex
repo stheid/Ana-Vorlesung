@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{scrreprt}
+\documentclass[a4paper,10pt]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \usepackage{textcomp}
@@ -7,7 +7,6 @@
 \usepackage{dsfont}
 \usepackage{calligra}
 \usepackage{cancel}
-\usepackage{tipa}
 
 %Beschreibaren Seitenbereich definieren
 \usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
@@ -58,7 +57,7 @@
 
 % griechische Buchstaben
 \mcmd{\z}{\zeta}
-\mcmd{\e}{\varepsilon}
+\mcmd{\e}{\epsilon}
 
 % Pfeile
 \mcmd{\equ}{\Leftrightarrow}
@@ -66,59 +65,46 @@
 \mcmd{\Larr}{\Leftarrow}
 
 % Symbole
-\cmd{\qed}{\hfill\text{$\blacksquare$}}
-\mcmd{\bs}{\backslash}
+\cmd{\qed}{\hfill\text{$\square$}}
 \mcmd{\ba}{\backslash}
 
 % Formelkürzel
 \cmd{\bino}[2]{\text{$\ds \binom{#1}{#2} = \frac{#1!}{#2!\cdot(#1-#2)!}$}}
 
 % Überschriften
-\cmd{\sS}[1]{\section{#1}}
-\cmd{\uS}[1]{\section*{\underline{#1}}}
-\cmd{\wdh}{\section*{Wiederholung}}
-\cmd{\sss}[1]{\vspace{-4mm}\subsection*{\underline{#1}}}
-\cmd{\bsp}{\sss{Beispiel:}}
-\cmd{\Bsp}[1]{\vspace{-4mm}\subsection*{\underline{Beispiel:} #1}}
-\cmd{\bem}{\sss{Bemerkung:}}
-\cmd{\bew}{\sss{Beweis:}}
-\cmd{\Bew}[1]{\vspace{-4mm}\subsection*{\underline{Beweis} #1:}}
-\cmd{\anm}{\sss{Anmerkung:}}
+\cmd{\sS}[1]{\subsection{#1}}
+\cmd{\bsp}{\vspace{-4mm}\subsubsection*{\underline{Beispiel:}}}
+\cmd{\bem}{\vspace{-4mm}\subsubsection*{\underline{Bemerkung:}}}
+\cmd{\bew}{\vspace{-4mm}\subsubsection*{\underline{Beweis:}}}
+\cmd{\anm}{\vspace{-4mm}\subsubsection*{\underline{Anmerkung:}}}
+\cmd{\sss}[1]{\vspace{-4mm}\subsubsection*{\underline{#1}}}
 \cmd{\ssss}[1]{\vspace{4mm}{\bf\underline{#1}}\\}
 
 % Textkürzel
 \cmd{\ok}{\marginpar{\checkmark}}
 \cmd{\einruck}[2]{#1\begin{addmargin}{.05\textwidth}#2\end{addmargin}}
-\cmd{\is}[1]{\noindent\einruck{IS: \hspace{2.6mm}$n\to n+1$}{#1}}
-\cmd{\notat}[1]{\einruck{\em Notation:}{\em#1}}
+\cmd{\is}[1]{\noindent\einruck{IS: $n\to n+1$}{#1}}
 
 % Environments
 \cmd{\ds}{\displaystyle}
 
 
 % Author, title…
-\title{Analysis Vorlesung}
+\title{Ana Vorlesung}
 \author{Stefan Heid, Christopher Jordan}
 \date{\today}
 
-% Less detailed TOC
-\setcounter{tocdepth}{1}
-
-\renewcommand*{\contentsname}{Inhaltsverzeichnis}
-
 \begin{document}
-%\maketitle
-%\tableofcontents
-%\newpage
-%\input{v1}\newpage
-%\input{v2}\newpage
-%\chapter{Angeordneter Körper}
-%\chapter{Folgen}
-%\chapter{Konvergenzsätze}
-%\input{v6todo}\newpage
-%\input{v7}\newpage
-%\input{v8}\newpage
-\input{v9}\newpage
-%\input{v10}
+\maketitle
+\tableofcontents
+\newpage
+%\input{vorlesung1}\newpage
+\input{vorlesung2}
+\newpage
+
+
+\input{vorlesung8}
+\newpage
+
 \end{document}
 
