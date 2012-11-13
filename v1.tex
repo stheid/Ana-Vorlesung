@@ -3,9 +3,8 @@
 %Kopfzeile rechts bzw. außen
 \fancyhead[R]{\calligra \Large{8.10.2012}}
 % **************************************************
-
 \chapter{Mengen}
-\section{Definition}
+\Def
 \begin{enumerate}
 \item Eine Menge ist eine Ansammlung verschiedener Objekte
 \item Die Objekte in einer Menge heißen \underline{Elemente}
@@ -95,7 +94,7 @@ Ziel: Beweisen, Dass A(n) für jedes $n \in \N$ mehr ist dafür reicht es zu zei
 \item Induktionsschrit (IS): Wenn für ein $n \in \N$ A(n) wahr ist, dann ist auch A(n+1) wahr
 \end{enumerate}
 
-\section{Satz}
+\Satz
 Für jede natürliche Zahl n gilt: $\ds 1+2+3+4+5+…+n=\frac{n(n+1)}{2}$\\
 Probe:\\
 \begin{tabular}{r|c|c|c|c}
@@ -103,7 +102,6 @@ n & 1 & 2 & 3 & 4\\ \hline\hline
 1+2+3...+n & 1 & 3 & 6 & 10\\ \hline
 $\ds \frac{n(n+1)}{2}$ & 1 & 3 & 6 & 10\\
 \end{tabular}
-
 \sss{Beweis des Satzes mit Induktion}
 Abkürzung: $S(n) := 1+2+3+…+n$
 Aussage: A(n): $\ds S(n) = \frac{n(n+1)}{2}$
@@ -122,19 +120,15 @@ Setze: $\sum_{k=1}^n a_k := a_1+a_2+a_3+…+a_n$\\
 Allgemeiner: \=Sei $l,m \in \mathds{N}$, $l \le m \le n$\\
 \>$\sum_{k=l}^m a_k = a_l+a_{l+1}+…+a_m$\\
 \end{tabbing}
-
 Aussage des Satzes:
-$\ds \sum_{k=1}^n k = \frac{n(n+1)}{2}$
-\\
-%\marginpar{
-\underline{Kombinatorik} (mathemathisches Zählen)
-%}
+\[ \sum_{k=1}^n k = \frac{n(n+1)}{2}\]
+\hfill\underline{Kombinatorik} (mathematisches Zählen)
 
-\underline{\section{Definition}}
+\Def
 Seien A, B Mengen. Das kartesische Produkt von A und B ist definiert als $A × B := \{(a,b)|a\in A, b \in B\}$ Die Elemente von $A × B$ heißen geordnete Paare\\
 Bsp.: $\{1,7\}\times \{2,3\}=\{(1,2),(1,3),(7,2),(7,3)\}$\\
 Allgemeiner: Gegeben seien Mengen
-$A_1,…,A_k$ mit $k \in \N$. Das kartesische Produkt von $A_1,…,A_k$ ist $A_1\times…\times A_k = \{(a_1,…,a_k)|a\in A, $für $i=1,…,k\}$\\
+$A_1,…,A_k$ mit $k \in \N$. Das kartesische Produkt von $A_1,…,A_k$ ist $A_1\times …\times A_k = \{(a_1,…,a_k)|a\in A, $für $i=1,…,k\}$\\
 Elemente von $A_1 × … × A_k$ heißen k-Tupel\\
 Falls $A_1=A_2=…=A_k=A$, schreibe $\underbrace{A\times…\times A}_{k-mal}=A^k$
 

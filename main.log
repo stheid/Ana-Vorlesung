@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  13 NOV 2012 16:43
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  13 NOV 2012 22:38
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -724,33 +724,33 @@ Package ifvtex Info: VTeX not detected.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 111.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 109.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 109.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 111.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 111.
 
 (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    ... okay on input line 111.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -766,80 +766,82 @@ pt^^J\oddsidemargin  -1.1381pt^^J\evensidemargin -1.1381pt^^J\topmargin  -48.36
 arwidth 74.68849pt^^J\marginparsep   12.8401pt^^J\columnsep  10.0pt^^J\skip\foo
 tins  9.0pt plus 4.0pt minus 2.0pt^^J\hoffset 0.0pt^^J\voffset 0.0pt^^J\mag 100
 0^^J^^J(1in=72.27pt, 1cm=28.45pt)^^J-----------------------
-(./v9.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
- (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+(./v1.tex
+Chapter 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 3.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 33.
 
 (/usr/share/texmf-texlive/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+) [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 110--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
+(Font)              scaled to size 14.40002pt on input line 134.
+LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
+(Font)              scaled to size 20.73602pt on input line 134.
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 46--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-
- []
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
- []
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 153.
 
 )
-Overfull \hbox (1.48679pt too wide) in paragraph at lines 104--121
-\OML/cmm/m/it/10 c[] \OT1/cmr/m/n/10 = [][][] + [][][] + [] + [][][] = [][] [] 
-=
- []
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
 
 [3] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5313 strings out of 493848
- 68639 string characters out of 1152823
- 149111 words of memory out of 3000000
- 8492 multiletter control sequences out of 15000+50000
- 20606 words of font info for 64 fonts, out of 3000000 for 9000
+ 5317 strings out of 493848
+ 68703 string characters out of 1152823
+ 145137 words of memory out of 3000000
+ 8497 multiletter control sequences out of 15000+50000
+ 19950 words of font info for 64 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 39i,11n,43p,485b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfsx1440.pfb>
-Output written on main.pdf (3 pages, 204963 bytes).
+ 39i,13n,43p,261b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/gamer01/.texmf-var/fonts/pk/ljfour/public/calligra/ca
+llig15.829pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx
+1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfti1000.pfb>
+Output written on main.pdf (3 pages, 201428 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 92 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
