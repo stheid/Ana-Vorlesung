@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  13 NOV 2012 15:58
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  13 NOV 2012 16:43
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -766,421 +766,80 @@ pt^^J\oddsidemargin  -1.1381pt^^J\evensidemargin -1.1381pt^^J\topmargin  -48.36
 arwidth 74.68849pt^^J\marginparsep   12.8401pt^^J\columnsep  10.0pt^^J\skip\foo
 tins  9.0pt plus 4.0pt minus 2.0pt^^J\hoffset 0.0pt^^J\voffset 0.0pt^^J\mag 100
 0^^J^^J(1in=72.27pt, 1cm=28.45pt)^^J-----------------------
-LaTeX Font Info:    Try loading font information for U+msa on input line 111.
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+(./v9.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 111.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1
+)
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 3.
 
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-No file main.toc.
-\tf@toc=\write3
-\openout3 = `main.toc'.
-
-[2
-
-] (./v1.tex
-Chapter 1.
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 34.
 (/usr/share/texmf-texlive/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [3
+)
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
+
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 112--117
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.133 \underline{\section{Definition}}
-                                      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.133 \underline{\section{Definition}}
-                                      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.133 \underline{\section{Definition}}
-                                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.133 \underline{\section{Definition}}
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.133 \underline{\section{Definition}}
-                                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Too many }'s.
-\underline ... {#1}\else $\@@underline {\hbox {#1}
-                                                  }\m@th $\relax \fi 
-l.133 \underline{\section{Definition}}
-                                      
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Too many }'s.
-\underline ...{#1}\else $\@@underline {\hbox {#1}}
-                                                  \m@th $\relax \fi 
-l.133 \underline{\section{Definition}}
-                                      
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.134 ...ist definiert als $A × B := \{(a,b)|a\in
-                                                   A, b \in B\}$ Die Element...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
-(Font)              scaled to size 14.40002pt on input line 140.
-LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
-(Font)              scaled to size 20.73602pt on input line 140.
-
-Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
-st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
-is may cause the page layout to be inconsistent, however.
-
-[4]
-
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 159.
-
-)
-
-Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
-st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
-is may cause the page layout to be inconsistent, however.
-
-[5] (./v2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
-
- []
-
-
-Overfull \hbox (12.65158pt too wide) in paragraph at lines 23--24
-$[] \OT1/cmr/m/n/10 + [] = [] + [] = [] = []$ 
- []
-
-
-Overfull \hbox (2.22168pt too wide) in paragraph at lines 31--38
-$[]$ $[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
-st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
-is may cause the page layout to be inconsistent, however.
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--101
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 )
-
-Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
-st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
-is may cause the page layout to be inconsistent, however.
-
-[7]
-Chapter 2.
-[8
-
-]
-Chapter 3.
-[9
-
-]
-Chapter 4.
-(./v6todo.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--16
-
+Overfull \hbox (1.48679pt too wide) in paragraph at lines 104--121
+\OML/cmm/m/it/10 c[] \OT1/cmr/m/n/10 = [][][] + [][][] + [] + [][][] = [][] [] 
+=
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--58
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--64
-
- []
-
-[10
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--88
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--108
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
-st 18.7653pt.^^J We now make it that large for the rest of the document.^^J Thi
-s may cause the page layout to be inconsistent, however.
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--155
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
-st 18.7653pt.^^J We now make it that large for the rest of the document.^^J Thi
-s may cause the page layout to be inconsistent, however.
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--180
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--180
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--180
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
-st 18.7653pt.^^J We now make it that large for the rest of the document.^^J Thi
-s may cause the page layout to be inconsistent, however.
-
-[13] (./main.aux) ) ) 
+[3] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5339 strings out of 493848
- 69043 string characters out of 1152823
- 145111 words of memory out of 3000000
- 8511 multiletter control sequences out of 15000+50000
- 20718 words of font info for 65 fonts, out of 3000000 for 9000
+ 5313 strings out of 493848
+ 68639 string characters out of 1152823
+ 149111 words of memory out of 3000000
+ 8492 multiletter control sequences out of 15000+50000
+ 20606 words of font info for 64 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 39i,13n,43p,284b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/gamer01/.texmf-var/fonts/pk/ljfour/public/calligra
-/callig15.576pk> </home/gamer01/.texmf-var/fonts/pk/ljfour/public/calligra/call
-ig15.829pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1
-/public/doublestroke/dsrom10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/latxfont/line10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/symbols/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/m
-sbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1
-440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (13 pages, 298916 bytes).
+ 39i,11n,43p,485b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr
+7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfsx1440.pfb>
+Output written on main.pdf (3 pages, 204963 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
