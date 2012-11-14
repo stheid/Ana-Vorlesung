@@ -11,3 +11,7 @@
       \bem für Bemerkungen
         \notat für Notationen (\em{})
 \cancel für Durchstreichungen und Kürzen
+
+Formeln die über eine ganze zeile gehen werden mit $$ oder \[ begonnen und mit $$ oder \] abgeschlossen!!
+
+leere zeilen die nicht für neue Absätze stehen auskommentieren

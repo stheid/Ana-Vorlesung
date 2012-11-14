@@ -71,7 +71,7 @@
 \mcmd{\ba}{\backslash}
 
 % Formelkürzel
-\cmd{\bino}[2]{\text{$\ds \binom{#1}{#2} = \frac{#1!}{#2!\cdot(#1-#2)!}$}}
+\cmd{\bino}[2]{\text{$\ds\binom{#1}{#2} = \frac{#1!}{#2!\cdot(#1-#2)!}$}}
 
 % Überschriften
 \cmd{\sS}[1]{\section{#1}}
@@ -90,8 +90,8 @@
 
 % Textkürzel
 \cmd{\ok}{\marginpar{\checkmark}}
-\cmd{\einruck}[2]{#1\begin{addmargin}{.05\textwidth}#2\end{addmargin}}
-\cmd{\is}[1]{\noindent\einruck{IS: \hspace{2.6mm}$n\to n+1$}{#1}}
+\cmd{\einruck}[2]{#1\vspace{-12pt}\begin{addmargin}{.05\textwidth}#2\end{addmargin}}
+\cmd{\ind}[3]{\einruck{IA:}{#1\ok}\\\einruck{IV:}{#2}\\\einruck{IS: }{$n\to n+1$#3\qed}}
 \cmd{\notat}[1]{\einruck{\em Notation:}{\em#1}}
 
 % Environments
@@ -112,8 +112,8 @@
 %\maketitle
 %\tableofcontents
 %\newpage
-\input{v1}\newpage
-%\input{v2}\newpage
+%\input{v1}\newpage
+\input{v2}\newpage
 %\chapter{Angeordneter Körper}
 %\chapter{Folgen}
 %\chapter{Konvergenzsätze}
