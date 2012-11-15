@@ -47,10 +47,10 @@ Sei $D\subseteq \R,\ f:D→\R$ eine Funktion\\
 Für jedes $\e>0$ gibt es ein $\delta>0$ so dass für jedes $y\in D$ mit $|x-y|<\delta$ gilt $|f(x)-f(y)<\e$ %graph 6.2}
 \item{f heißt stetig wenn f in jedem $x\in D$ stetig ist}
 \end{enumerate}
-\bsp
+\sS{Beispiel}
 \begin{enumerate}
-\item{Die Funktion $id:\R→\R,\ x\mapsto x ist stetig$}
-\item{Die Funktion $f:\R→\Re,\ f(x)=x^2$ ist stetig. %graph klein
+\item{Die Funktion $id:\R→\R,\ x\mapsto x$ ist stetig}
+\item{Die Funktion $f:\R→\R,\ f(x)=x^2$ ist stetig. %graph klein
 \bew
 Sei $x,y\in\R\quad y=x+k$.\\
 $$f(y)-f(x)=(x+h)^2-x^2=x^2+2xh+h^2-x^2=2xh+h^2$$\\
@@ -71,4 +71,21 @@ aber $g(y)=\{x-\dfrac{\delta}{2}\}=x-1$ (weil $x\in\Z$)\\
 %
 % Christopher
 %
-
+\sS{Satz (Folgenstetigkeit)}
+Sei $D\subseteq\R,\ x\in D,\ f:D→\R$ Funktion $f$ ist genau dann stetig in $x$ wenn gilt:\\
+\begin{itemize}
+\item{Für jede Folge $(x_n)_{n\geq 0}$ mit $x_n\in D,\ x_n→x$ für $n→∞$ gilt auch $f(x_n)→f(x)$ für $n→∞$}
+\end{itemize}
+%
+\satz
+Sei $D\subseteq\R,\ f,g:D→\R$ in $x\in D$\\
+Dann gilt:\\
+\begin{itemize}
+\item{$f+g:D→\R$ stetig in $x$}
+\item{$f·g:D→\R$ stetig in $x$}
+\item{Wenn $g(x)\neq 0$ für alle $x'\in D$}
+\end{itemize}
+Dann ist $\dfrac{1}{f}:D→\R$ stetig in x.
+\bew
+mit Folgenstetigkeit
+%letzte seite
