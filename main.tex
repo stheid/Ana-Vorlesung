@@ -36,6 +36,8 @@
 \DeclareUnicodeCharacter{2026}{\text{\ldots}}
 \DeclareUnicodeCharacter{00D7}{\text{$\times$}}
 \DeclareUnicodeCharacter{2254}{\text{:=}}
+\DeclareUnicodeCharacter{2200}{\text{$\forall$}}
+\DeclareUnicodeCharacter{2203}{\text{$\exists$}}
 
 % ***********************
 % *** costum commands ***
@@ -92,8 +94,8 @@
 \cmd{\ok}{\marginpar{\checkmark}}
 \cmd{\einruck}[2]{#1\vspace{-12pt}\begin{addmargin}{.05\textwidth}#2\end{addmargin}}
 \cmd{\ind}[2]{\einruck{IA:}{#1\ok}\einruck{IS: }{$n\to n+1$#2\qed}}
-\cmd{\indIV}[3]{\einruck{IA:}{#1\ok}\einruck{IV:}{#2}\einruck{IS: }{$n\to n+1$#3\qed}}
-\cmd{\notat}[1]{\einruck{\em Notation:}{\em#1}}
+\cmd{\indIV}[3]{\einruck{IA:}{#1\ok}\einruck{IV:}{#2}\\\einruck{IS: }{$n\to n+1$#3\qed}}
+\cmd{\notat}[1]{{\em Notation:}\vspace{-16pt}\begin{addmargin}{.1\textwidth}{\em#1}\end{addmargin}}
 
 % Environments
 \cmd{\ds}{\displaystyle}

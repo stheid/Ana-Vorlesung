@@ -118,7 +118,55 @@ $\leadsto$ Teilmenge $U:=\{a_1,…,a_n\}$\\
 Dann $U\subseteq A,\ \#U=k\qquad U\in P_k(A)$\\
 Jedes $U\in P_k(A)$ entsteht so, aber mehrfach:\\
 \[\underset{\overset{\uparrow}{Anordnungen\ von\ U}}{k!}·\underset{\overset{\uparrow}{Anordnungen\ von\ A\backslash U}}{(n-k)!}-mal\]
+$\#$ Anordnungen von $A=n!=\#P_k(A)·k!(n-k)!\Rarr\#P_k(A)=\frac{n!}{k!·(n-k)!)}=\binom{n}{k}$\\
 %
+\chapter{Die reellen Zahlen}
+Was sind die reellen Zahlen?\\
+Präzise Konstruktion ist umfangreich, daher Axiomatischer Zugang\\
+Beschreibung der reellen Zahlen durch ihre Eigenschaften (Axiome):\\
+\begin{enumerate}
+\item{Grundrechenarten → Körper}
+\item{Ungleichungen → angeordneter Körper}
+\item{Lückenlosigkeit → Vollständigkeit}
+\end{enumerate}
 %
+\uS{Körper}
+%2.1
+\Def
+Ein Körper ist eine Menge $K$ mit 2 Rechenoperationen:\\
+Addition (+) und Multiplikation (·), so dass folgende 9 Eigenschaften erfüllt sind:\\[8pt]
+\underline{Addition}\\[-15pt]
+\begin{enumerate}
+\item{$(a+b)+c=a+(b+c)$ für alle $a,b,c\in K$ (Assotiativgesetz)}
+\item{$a+b=b+a$ für alle $a,b\in K$ (Kommutativgesetz)}
+\item{Es gibt ein $0\in K$ so dass $0+a=a$}
+\item{Für jedes $a\in K$ gibt es ein $b\in K$ mit $a+b=0$}
+\bem
+$0\in K$ ist eindeutig
+\bew
+Wenn $0'\in K$ mit $0'+a=a$, dann $0=0'+0=0+0'=0'$\qed
+\bem
+Das $b$ in 4. ist auch eindeutig.\\
+\notat{$b=-a$ (Negatives von $a$)}
+\bew
+Angenommen $b'+a=0$\\
+$b=b+0=b+(a+b')=(b+a)+b'=0+b'=b'$\qed
+\end{enumerate}
+\underline{Multiplikation}\\[-15pt]
+\begin{enumerate}
+\setcounter{enumi}{4}
+\item{$a(b·c)=(a·b)c\qquad ∀a,b,c\in K$}
+\item{$a·b=b·a\qquad ∀a,b\in K$}
+\item{Es gibt ein $1\in K$ mit $1\neq 0$, so dass $1·a=a\qquad ∀a\in K$}
+\item{Für alle $a\in K,\ a\neq 0$, gibt es ein $b\in K$ mit $a·b=1$}
+\bem
+$1\in K$ ist eindeutig, $b$ in 8. ist eindeutig\\
+Beziehung $b=a^{-1}$
+\bew
+Wie eben\qed
+\item{$a(a+c)=a·b+a·c\qquad ∀a,b,c\in K$ (Distributivgesetz)}
+\end{enumerate}
+Weitere Bezeichnungen:\\
+$a-b:=a+(-b),\ \frac{a}{b}=a·b^{-1}$, wenn $b\neq 0$
 
 
