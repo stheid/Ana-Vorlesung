@@ -1,4 +1,4 @@
-S:
+﻿S:
 
 Ich füg jetzt noch die 6. und 7. vorlesung hinzu und pflege sie ein
 ich kennzeichne sie mit nem "todo" solange sie noch nicht fertig eingepflegt sind

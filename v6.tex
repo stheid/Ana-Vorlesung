@@ -1,0 +1,179 @@
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra {\Large Vorlesung Nr. 6}}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra 25.10.2012}
+% *****************************************
+%
+\setcounter{chapter}{3}
+\setcounter{section}{9}
+%
+\wdh
+Eine Folge reeler Zahlen $(a_n)$ konvergiert uneigentlich gegen ∞ wenn gilt:\\
+Für jedes $C \in \R$ gilbt es ein $n \in\N$ mit $a_n > C$ für jedes $n \in\N$\\
+\\
+$(a_n)$ konvergiert uneigentlich gegen $- \infty$ wenn $(-a_n)$ gegen $\infty$ konvergiert.\\
+%
+\notat{
+$a_n \to \infty \qquad \text{ für } n \to \infty$\\
+$a_n \to - \infty \qquad \text{ für } n \to \infty$
+}
+%
+\bsp
+$a_n = n^2 \to \infty$\\
+$a_n = -n^2 \to -\infty$\\
+$a_n = (-1)^n \cdot n^2$\\
+$(0, -1, 4, -9)$ konvergiert weder gegen $\infty$ noch gegen $ - \infty$
+%
+\sss{Rechenregeln:}
+Angenommen $(a_n), (b_n)$ sind konvergente Folgen.\\
+\begin{enumerate}
+\item{$(a_n + b_n) \to a + b$}
+\item{$(a_n \cdot b_n) \to ab$}
+\item{$\ds\frac{1}{b_n} \to \frac{1}{b}$}
+\item{$c \cdot a_n \to c \cdot a$}
+\item{$a_n - b_n \to a - b$}
+\item{$\ds\frac{a_n}{b_n} \to \frac{a}{b}$}
+\end{enumerate}
+%
+\Bew{6}
+3) $\Rightarrow \displaystyle\frac{1}{b_n} \to \displaystyle\frac{1}{b}$\\
+$\displaystyle\frac{a_n}{b_n} = a_n \cdot \displaystyle\frac{1}{b}$\\
+2) $\Rightarrow a_n \cdot displaystyle\frac{1}{b_n} \to a \cdot \displaystyle\frac{1}{b} = \displaystyle\frac{a}{b} \phantom{XXX} q.e.d.$\\
+%
+\bsp
+\begin{tabular}{l|c|c|c|c|c|r}
+$n$   & 0 & 1 & 2 & 3 & 10 & 100\\\hline
+$a_n$ & 0 & 0 & $\frac{2}{9}$ & $\frac{6}{19}$ & $\frac{90}{201}$ & $\frac{9900}{20001}$ \\
+\end{tabular}
+\vspace{5mm}
+Vermutung: $a_n \to \displaystyle\frac{1}{2}$ für $n \to \infty$\\
+Rechenregel 6 anwenden:\\
+\begin{itemize}
+\item[1.]{Versuch:\\
+$a_n = \frac{b_n}{c_n}$\\ 
+\\
+$b_n = n^2 -n; c_n = 2n^2 + 1$\\
+$(b_n) und (c_n)$ sind divergend. Schlecht.}
+\item[2.]{Versuch:\\
+$\displaystyle\frac{n^2 - n}{2n^2 + 1} = \displaystyle\frac{n^2(1 - \displaystyle\frac{1}{n})}{n^2(2 + \displaystyle\frac{1}{n^2}}$ für $n \geq 1$ \\ \\
+$= \displaystyle\frac{1 - \frac{1}{n}}{2 + \frac{1}{n^2}} = \displaystyle\frac{b_n}{c_n}$ mit $b_n := 1 - \displaystyle\frac{1}{n}; c_n = 2 + \displaystyle\frac{1}{n^2}$\\
+\\
+$\displaystyle\frac{1}{n} \to 0$ für $n \to \infty $
+\\ \\ $\Rightarrow 1 - \displaystyle\frac{1}{n} \to 1 - 0 = 1$ für $n \to \infty$
+\\ \\ $\Rightarrow 2 + \displaystyle\frac{1}{n^2} \to 2 + 0 = 2$ für $n \to \infty$}
+\end{itemize}
+
+$\Rightarrow a_n \to \frac{1}{2}$ für $n \to \infty$\\
+
+\sS{Satz}
+Seien $a_n \to a$, $b_n \to b$ zwei konvergente Folgen reeler Zahlen.\\
+wenn $a_n \leq b_n$ für unendlich viele $n \in \mathbb{N}$ dann ist $a \leq b$. \\
+\bew
+Angenommen: $a > b$\\
+
+Wähle $\epsilon := \displaystyle\frac{a - b}{2} > 0$\\
+Es gibt $N \in \mathbb{N}$ so dass:
+$
+\left.
+\begin{array}{ll}
+\mid a_n - a \mid  < \epsilon \\
+\mid b_n - b \mid  < \epsilon
+\end{array} \right\rbrace$ für $n \geq N$\\
+$\Rightarrow a_n > a - \epsilon$\\ \\
+$= a - \frac{a - b}{2} = \displaystyle\frac{a + b}{2} = b + \displaystyle\frac{a - b}{2}\\
+\\
+= b + \epsilon > b_n \Rightarrow a_n > b_n$ für $n \geq \mathbb{N}$\\
+Widerspruch zur Annahme.\\
+$a_n \leq b_n$ für unendlich viele $n \in \mathbb{N} \hfill q.e.d.$
+
+\sS{Definition: Reihen}
+Sei $(a_n)_{n \geq 0}$ eine Folge reeler Zahlen.\\
+Bilde eine Folge:
+\begin{align*}
+s_0 &= a_0\\
+s_1 &= a_0 + a_1\\
+s_2 &= a_0 + a_1 + a_2\\
+\vdots
+s_n &= a_0 + a_1 + a_n = \sum\limits_{k = 0}^{n} a_k
+\end{align*}
+Die Folge $(s_n)_{n \geq 0}$ heißt Reihe mit den Gliedern $a_n$.\\
+$s_n$ heißen die \underline{Partialsummen} der Reihe.\\
+Bezeichnung:\\
+$\sum\limits_{k = 0}^{\infty} a_k$ oder $a_0 + a_1 + a_2 + a_3 + ...$\\ \\
+Wenn $s_n \to s \in \mathbb{R}$ für $n \to \infty$ dann schreiben wir:\\
+$\sum\limits_{k = 0}^{\infty} a_k = s$\\
+Summe der Reihe.\\
+\\
+\underline{Achtung:} Symbol $\sum\limits_{k = 0}^{\infty} a_k$ hat \underline{zwei} Bedeutungen:
+\begin{enumerate}
+\item{die Folge $(s_n)$} \\
+oder 
+\item{deren Grenzwert}
+\end{enumerate}
+\bsp
+\begin{enumerate}
+\item{$\sum\limits_{k = 1}^{\infty} 1 = 1+1+1+...$\\
+ist die Folge $(1, 2, 3, 4,...) = (n + 1)_{n \in \mathbb{N}_{0}}$}
+\item{$\sum\limits_{k = 1}^{\infty} k = 0 + 1 + 2 + 3+ ...$ \\
+ist die Folge $(1, 3, 6, 10,...) = (\displaystyle\frac{n(n - 1)}{2})_{n \in \mathbb{N}}$ }
+\item{$\sum\limits_{k = 1}^{\infty} \displaystyle\frac{1}{k(k+1)} = \displaystyle\frac{1}{2} + \displaystyle\frac{1}{6} + \displaystyle\frac{1}{12} + ...$\\
+ist die Folge $(\displaystyle\frac{1}{2}, \displaystyle\frac{2}{3}, \displaystyle\frac{3}{4})$}
+\end{enumerate}
+\vspace{5mm}
+Vorüberlegung:\\
+$\displaystyle\frac{1}{k(k+1)} = \displaystyle\frac{(k+1) - k}{k(k+1)} = \frac{1}{k} - \displaystyle\frac{1}{k + 1}$\\ \\
+$s_n := \sum\limits_{k = 1}^{\infty} \displaystyle\frac{1}{k(k+1)}
+= (\displaystyle\frac{1}{1} - \displaystyle\frac{1}{2}) + (\displaystyle\frac{1}{2} - \displaystyle\frac{1}{3}) + ... + (\displaystyle\frac{1}{n} - \displaystyle\frac{1}{n + 1})\\ \\
+= 1 - \displaystyle\frac{1}{n + 1}\\ $ Teleskopsumme \\ \\
+$\displaystyle\frac{1}{n + 1} \to 0$ für $n \to \infty$\\ \\
+Summe der Reihe:\\ \\
+$\sum\limits_{k = 1}^{\infty} \displaystyle\frac{1}{k(k+1)} = \lim_{n \to \infty}(1 - \displaystyle\frac{1}{n + 1}) = 1 \phantom{XXX} q.e.d.$\\ 
+\\
+\bem Jede Folge kann man auch als Reihe Schreiben. (Differenzen bilden)\\
+z.B.: die Folge der Primzahlen:\\
+$(2, 3, 5, 7, 11, 13, 17, 19)$\\
+ist die Reihe:\\
+$(2 + 1 + 2+ 4+2+4+2+...)$\\
+Goldbachsche Vermutung: in dieser Reihe kommt die Zahl 2 unendlich oft vor.\\
+\sS{Satz, Die geometrische Reihe}
+Sei $x \in \mathbb{R}$\\
+a) $ \sum\limits_{k = 0}^{\infty} x^k = 1 + x^1 + x^2 + x^3 + ... = \frac{1}{1-x} \text{ wenn } \mid x \mid < 1$\\
+b) $ \sum\limits_{k = 0}^{\infty} x^k \text{ divergiert wenn } \mid x \mid \geq 1$\\
+\begin{itemize}
+\item[a] {wenn $|x| < 1$\\
+dann folgt $\sum{k=0}{\infty} a_k = \displaystyle\lim_{n \to \infty}(\frac{1}{1 - x} - \frac{x}{1-x} \cdot x^n) = \frac{1}{1 - x}$}
+\item[b]{wenn $|x| > 1$\\
+dann $(x^n)$ divergent $\Rightarrow (\frac{x}{1-x} \cdot x^n)$ divergent\\
+denn $\frac{x}{1-x} \neq 0$\\
+$\Rightarrow (\frac{?}{?})$}
+\end{itemize}
+\bew
+$x = 1 \phantom{xxx} \sum_{k = 0}^{\infty} x^k = (1 + 1 + 1 +...)\text{ divergiert, ok}\\
+\text{Sei nun }x \neq\\
+\text{Bekannt aus der Übung: } \displaystyle\sum_{k = 0}^{\infty} x^k = 1 + x + x^2 +x^3 ... +x^n = \displaystyle\frac{1 -x^{n+1}}{1 - x} = \displaystyle\frac{1}{1 - x} - \displaystyle\frac{x}{1 - x} \cdot x^n \\ $
+Potenzenwachstum\\
+$x^n \to 0$ für $ n \to \infty$ \underline{wenn} $|x| < 1$\\
+$(x^n)$ divergiert, wenn $(|x| \geq 1 \text{ und } x \neq 1)$\\
+%
+\sS{Satz}
+Wenn die Reihe $\displaystyle\sum\limits_{k=0}^{\infty} a_k $ kovergiert, dann ist $(a_n)_{n \in \mathbb{N}}$ eine Nullfolge.\\
+\\
+\bew Gegeben sei $\epsilon > 0$\\
+Sei $a = \displaystyle\sum\limits_{k = 0}^{\infty} a_k = $ $\displaystyle\lim_{n \to \infty}(s_n)$ mit $s_n = a_0 + ... + a_n$\\
+Es gibt $ N \ in \mathbb{N}$ mit $|s_n - a| < \displaystyle\frac{\epsilon}{2}$ für $n \geq N$\\
+$|a_n| = |s_n - s_{n-1}|$\\
+\phantom{$|a_n| $} = $|s_n - a + a - s_{n-1}|$\\
+\phantom{$|a_n| $} $\leq |s_n - a| + |a - s_{n-1}| < \displaystyle\frac{\epsilon}{2} + \displaystyle\frac{\epsilon}{2} = \epsilon$\\
+für $n \geq N + 1$\\
+$\Rightarrow a_n \to 0$ für $n \to \infty$\\
+%
+\sS{Satz, die harmonische Reihe}
+$\displaystyle\sum\limits_{k = 1}^{\infty} \frac{1}{k}= 1 + \frac{1}{2} + \frac{1}{3} + ...$ divergiert\\
+\\
+\underline{Beweisidee:}\\
+\\
+$\phantom{= }1 + \displaystyle\frac{1}{2} + \displaystyle\frac{1}{3} + \displaystyle\frac{1}{4} + \displaystyle\frac{1}{5} + \displaystyle\frac{1}{6} + \displaystyle\frac{1}{7} + \displaystyle\frac{1}{8} + \displaystyle\frac{1}{9} + ...$\\
+$\phantom{\geq }1 + \displaystyle\frac{1}{2} + \displaystyle\frac{1}{4} + \displaystyle\frac{1}{4} + \displaystyle\frac{1}{8} + \displaystyle\frac{1}{8} + \displaystyle\frac{1}{8} + \displaystyle\frac{1}{8} + \displaystyle\frac{1}{16} + ...$\\
+$\phantom{= }1 + \displaystyle\frac{1}{2} + \displaystyle\frac{2}{4} + \displaystyle\frac{4}{8} + \displaystyle\frac{8}{16} + ...$\\
+$\phantom{= }1 + \displaystyle\frac{1}{2} + \displaystyle\frac{1}{2} + \displaystyle\frac{1}{2} + \displaystyle\frac{1}{2} + ... = \infty$\\
+\end{document}
