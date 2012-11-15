@@ -1,39 +1,40 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  15 NOV 2012 08:04
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.10.19)  15 NOV 2012 13:42
 entering extended mode
- %&-line parsing enabled.
 **main.tex
-(./main.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
-ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
-9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
-skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
-orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
-, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
-rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
-(/usr/share/texmf-texlive/tex/latex/koma-script/scrreprt.cls
-Document Class: scrreprt 2009/07/24 v3.04a KOMA-Script document class (report)
-(/usr/share/texmf-texlive/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2009/07/24 v3.04a KOMA-Script package (KOMA-Script-dependent 
+(C:\Users\Christopher\Studium\Analysis\Ana-Vorlesung\main.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrreprt.cls"
+Document Class: scrreprt 2012/07/29 v3.11b KOMA-Script document class (report)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
+Package: scrkbase 2012/07/29 v3.11b KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-(/usr/share/texmf-texlive/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2009/07/24 v3.04a KOMA-Script package (KOMA-Script-independent
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty"
+Package: scrbase 2012/07/29 v3.11b KOMA-Script package (KOMA-Script-independent
  basics and keyval usage)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texmf-texlive/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2009/03/25 v3.03 KOMA-Script package (loading files)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
+Package: scrlfile 2012/06/15 v3.12 KOMA-Script package (loading files)
 
-Package scrlfile, 2009/03/25 v3.03 KOMA-Script package (loading files)
+Package scrlfile, 2012/06/15 v3.12 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (/usr/share/texmf-texlive/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2009/06/08 v3.03b KOMA-Script package (handling toc-files)
+))) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\tocbasic.sty"
+Package: tocbasic 2012/04/04 v3.10b KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
@@ -50,16 +51,16 @@ Package scrreprt Info: You've used obsolete option `10pt'.
 (scrreprt)             You may simply replace `10pt'
 (scrreprt)             by `fontsize=10pt'.
 Class scrreprt Info: File `scrsize10pt.clo' used to setup font sizes on input l
-ine 1271.
+ine 1367.
 
-(/usr/share/texmf-texlive/tex/latex/koma-script/scrsize10pt.clo
-File: scrsize10pt.clo 2009/07/24 v3.04a KOMA-Script font size class option (10p
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrsize10pt.clo"
+File: scrsize10pt.clo 2012/07/29 v3.11b KOMA-Script font size class option (10p
 t)
 )
-(/usr/share/texmf-texlive/tex/latex/koma-script/typearea.sty
-Package: typearea 2009/07/24 v3.04a KOMA-Script package (type area)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\typearea.sty"
+Package: typearea 2012/07/29 v3.11b KOMA-Script package (type area)
 
-Package typearea, 2009/07/24 v3.04a KOMA-Script package (type area)
+Package typearea, 2012/07/29 v3.11b KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -67,7 +68,7 @@ Package typearea, 2009/07/24 v3.04a KOMA-Script package (type area)
 \ta@div=\count79
 Package typearea Info: You've used standard option `a4paper'.
 (typearea)             This is correct!
-(typearea)             Internaly I'm using `paper=a4'.
+(typearea)             Internally I'm using `paper=a4'.
 (typearea)             If you'd like to set the option with \KOMAoptions,
 (typearea)             you'd have to use `paper=a4' there
 (typearea)             instead of `a4paper', too.
@@ -90,7 +91,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 1115.
+(typearea)              on input line 1213.
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -105,19 +106,19 @@ Package typearea Info: These are the values describing the layout:
 \c@figure=\count87
 \c@table=\count88
 \bibindent=\dimen102
-) (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-(/usr/share/texmf-texlive/tex/latex/base/utf8.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -267,7 +268,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -298,7 +299,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -322,24 +323,24 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen103
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count89
@@ -380,17 +381,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/share/texmf-texlive/tex/latex/base/textcomp.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -405,12 +406,12 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-(/usr/share/texmf-texlive/tex/latex/base/ts1enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(/usr/share/texmf-texlive/tex/latex/base/ts1enc.dfu
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
 File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -514,343 +515,621 @@ Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
 Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
 Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
 Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
-(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/share/texmf-texlive/tex/latex/mh/breqn.sty
-Package: breqn 2008/08/13 v0.98a
-
-(/usr/share/texmf-texlive/tex/latex/mh/flexisym.sty
-Package: flexisym 2008/07/23 v0.97
-LaTeX Info: Redefining \textprime on input line 178.
-LaTeX Info: Redefining \not on input line 235.
-
-(/usr/share/texmf-texlive/tex/latex/mh/cmbase.sym
-File: cmbase.sym 2007/12/19 v0.92
-LaTeX Info: Redefining \hbar on input line 321.
-LaTeX Info: Redefining \surd on input line 323.
-LaTeX Info: Redefining \angle on input line 331.
-LaTeX Info: Redefining \neq on input line 332.
-LaTeX Info: Redefining \mapsto on input line 333.
-LaTeX Info: Redefining \cong on input line 334.
-LaTeX Info: Redefining \notin on input line 337.
-LaTeX Info: Redefining \rightleftharpoons on input line 338.
-LaTeX Info: Redefining \doteq on input line 339.
-LaTeX Info: Redefining \hookrightarrow on input line 340.
-LaTeX Info: Redefining \hookleftarrow on input line 341.
-LaTeX Info: Redefining \bowtie on input line 342.
-LaTeX Info: Redefining \models on input line 343.
-LaTeX Info: Redefining \Longrightarrow on input line 344.
-LaTeX Info: Redefining \longrightarrow on input line 345.
-LaTeX Info: Redefining \Longleftarrow on input line 346.
-LaTeX Info: Redefining \longleftarrow on input line 347.
-LaTeX Info: Redefining \longmapsto on input line 348.
-LaTeX Info: Redefining \longleftrightarrow on input line 349.
-LaTeX Info: Redefining \Longleftrightarrow on input line 350.
-LaTeX Info: Redefining \cdots on input line 354.
-LaTeX Info: Redefining \vdots on input line 357.
-LaTeX Info: Redefining \ddots on input line 362.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mh\breqn.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3names.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3bootstrap.sty"
+Package: l3bootstrap 2012/07/16 v3991 L3 Experimental bootstrap code
 )
-(/usr/share/texmf-texlive/tex/latex/mh/mathstyle.sty
-Package: mathstyle 2008/07/23 v0.85
-LaTeX Info: Redefining \displaystyle on input line 76.
-LaTeX Info: Redefining \textstyle on input line 78.
-LaTeX Info: Redefining \scriptstyle on input line 80.
-LaTeX Info: Redefining \scriptscriptstyle on input line 82.
-LaTeX Info: Redefining \genfrac on input line 116.
+Package: l3names 2012/09/24 v4230 L3 Namespace for primitives
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count101
+)
+Package: expl3 2012/09/29 v4249 L3 Experimental code bundle wrapper
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3basics.sty"
+Package: l3basics 2012/09/09 v4212 L3 Basic definitions
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3expan.sty"
+Package: l3expan 2012/08/28 v4149 L3 Argument expansion
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3tl.sty"
+Package: l3tl 2012/09/28 v4244 L3 Token lists
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3seq.sty"
+Package: l3seq 2012/09/09 v4212 L3 Sequences and stacks
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3int.sty"
+Package: l3int 2012/09/26 v4237 L3 Integers
+\c_max_int=\count102
+\l_tmpa_int=\count103
+\l_tmpb_int=\count104
+\g_tmpa_int=\count105
+\g_tmpb_int=\count106
+\l_tmpc_int=\count107
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3quark.sty"
+Package: l3quark 2012/08/08 v4065 L3 Quarks
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3prg.sty"
+Package: l3prg 2012/09/09 v4212 L3 Control structures
+\g__prg_map_int=\count108
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3clist.sty"
+Package: l3clist 2012/09/09 v4212 L3 Comma separated lists
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3token.sty"
+Package: l3token 2012/08/08 v4069 L3 Experimental token manipulation
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3prop.sty"
+Package: l3prop 2012/09/09 v4212 L3 Property lists
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3msg.sty"
+Package: l3msg 2012/09/09 v4212 L3 Messages
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3file.sty"
+Package: l3file 2012/09/09 v4212 L3 File and I/O operations
+\l__ior_stream_int=\count109
+\l_iow_line_count_int=\count110
+\l__iow_target_count_int=\count111
+\l__iow_current_line_int=\count112
+\l__iow_current_word_int=\count113
+\l__iow_current_indentation_int=\count114
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3skip.sty"
+Package: l3skip 2012/09/26 v4235 L3 Dimensions and skips
+\l_tmpa_dim=\dimen112
+\l_tmpb_dim=\dimen113
+\g_tmpa_dim=\dimen114
+\g_tmpb_dim=\dimen115
+\l_tmpa_skip=\skip50
+\l_tmpb_skip=\skip51
+\g_tmpa_skip=\skip52
+\g_tmpb_skip=\skip53
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3keys.sty"
+Package: l3keys 2012/09/29 v4248 L3 Experimental key-value interfaces
+\g__keyval_level_int=\count115
+\l_keys_choice_int=\count116
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3fp.sty"
+Package: l3fp 2012/09/26 v4234 L3 Floating points
+\c__fp_leading_shift_int=\count117
+\c__fp_middle_shift_int=\count118
+\c__fp_trailing_shift_int=\count119
+\c__fp_big_leading_shift_int=\count120
+\c__fp_big_middle_shift_int=\count121
+\c__fp_big_trailing_shift_int=\count122
+\c__fp_Bigg_leading_shift_int=\count123
+\c__fp_Bigg_middle_shift_int=\count124
+\c__fp_Bigg_trailing_shift_int=\count125
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3box.sty"
+Package: l3box 2012/07/16 v3991 L3 Experimental boxes
+\l_tmpb_box=\box29
+\g_tmpa_box=\box30
+\g_tmpb_box=\box31
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3coffins.sty"
+Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
+\l__coffin_internal_box=\box32
+\l__coffin_internal_dim=\dimen116
+\l__coffin_offset_x_dim=\dimen117
+\l__coffin_offset_y_dim=\dimen118
+\l__coffin_x_dim=\dimen119
+\l__coffin_y_dim=\dimen120
+\l__coffin_x_prime_dim=\dimen121
+\l__coffin_y_prime_dim=\dimen122
+\c_empty_coffin=\box33
+\l__coffin_aligned_coffin=\box34
+\l__coffin_aligned_internal_coffin=\box35
+\l_tmpa_coffin=\box36
+\l_tmpb_coffin=\box37
+\l__coffin_display_coffin=\box38
+\l__coffin_display_coord_coffin=\box39
+\l__coffin_display_pole_coffin=\box40
+\l__coffin_display_offset_dim=\dimen123
+\l__coffin_display_x_dim=\dimen124
+\l__coffin_display_y_dim=\dimen125
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3color.sty"
+Package: l3color 2012/08/29 v4156 L3 Experimental color support
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3luatex.sty"
+Package: l3luatex 2012/08/03 v4049 L3 Experimental LuaTeX-specific functions
+\g__cctab_allocate_int=\count126
+\g__cctab_stack_int=\count127
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3candidates.sty"
+Package: l3candidates 2012/05/12 v3633 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen126
+\l__box_bottom_dim=\dimen127
+\l__box_left_dim=\dimen128
+\l__box_right_dim=\dimen129
+\l__box_top_new_dim=\dimen130
+\l__box_bottom_new_dim=\dimen131
+\l__box_left_new_dim=\dimen132
+\l__box_right_new_dim=\dimen133
+\l__box_internal_box=\box41
+\l__coffin_bounding_shift_dim=\dimen134
+\l__coffin_left_corner_dim=\dimen135
+\l__coffin_right_corner_dim=\dimen136
+\l__coffin_bottom_corner_dim=\dimen137
+\l__coffin_top_corner_dim=\dimen138
+\l__coffin_scaled_total_height_dim=\dimen139
+\l__coffin_scaled_width_dim=\dimen140
 ))
-(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: breqn 2012/05/10 v0.98b Breaking equations
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mh\flexisym.sty"
+Package: flexisym 2010/09/17 v0.97b Make math characters macros
+LaTeX Info: Redefining \textprime on input line 296.
+LaTeX Info: Redefining \not on input line 354.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mh\cmbase.sym"
+File: cmbase.sym 2007/12/19 v0.92
+LaTeX Info: Redefining \hbar on input line 323.
+LaTeX Info: Redefining \surd on input line 325.
+LaTeX Info: Redefining \angle on input line 333.
+LaTeX Info: Redefining \neq on input line 334.
+LaTeX Info: Redefining \mapsto on input line 335.
+LaTeX Info: Redefining \cong on input line 336.
+LaTeX Info: Redefining \notin on input line 339.
+LaTeX Info: Redefining \rightleftharpoons on input line 340.
+LaTeX Info: Redefining \doteq on input line 341.
+LaTeX Info: Redefining \hookrightarrow on input line 342.
+LaTeX Info: Redefining \hookleftarrow on input line 343.
+LaTeX Info: Redefining \bowtie on input line 344.
+LaTeX Info: Redefining \models on input line 345.
+LaTeX Info: Redefining \Longrightarrow on input line 346.
+LaTeX Info: Redefining \longrightarrow on input line 347.
+LaTeX Info: Redefining \Longleftarrow on input line 348.
+LaTeX Info: Redefining \longleftarrow on input line 349.
+LaTeX Info: Redefining \longmapsto on input line 350.
+LaTeX Info: Redefining \longleftrightarrow on input line 351.
+LaTeX Info: Redefining \Longleftrightarrow on input line 352.
+LaTeX Info: Redefining \cdots on input line 356.
+LaTeX Info: Redefining \vdots on input line 359.
+LaTeX Info: Redefining \ddots on input line 364.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mh\mathstyle.sty"
+Package: mathstyle 2011/08/03 v0.90 Tracking mathstyle implicitly
+LaTeX Info: Redefining \displaystyle on input line 81.
+LaTeX Info: Redefining \textstyle on input line 83.
+LaTeX Info: Redefining \scriptstyle on input line 85.
+LaTeX Info: Redefining \scriptscriptstyle on input line 87.
+LaTeX Info: Redefining \genfrac on input line 121.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count101
-\calc@Bcount=\count102
-\calc@Adimen=\dimen112
-\calc@Bdimen=\dimen113
-\calc@Askip=\skip50
-\calc@Bskip=\skip51
+\calc@Acount=\count128
+\calc@Bcount=\count129
+\calc@Adimen=\dimen141
+\calc@Bdimen=\dimen142
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count103
-\calc@Cskip=\skip52
+\calc@Ccount=\count130
+\calc@Cskip=\skip56
 )
-\inf@bad=\count104
-\maxint=\count105
-\listwidth=\dimen114
-\eqnumsep=\dimen115
-\eqmargin=\dimen116
-\eqlinespacing=\skip53
-\eqlineskip=\skip54
-\eqlineskiplimit=\dimen117
-\eqbinoffset=\muskip11
-\eqdelimoffset=\muskip12
-\eqindentstep=\dimen118
+\inf@bad=\count131
+\maxint=\count132
+\listwidth=\dimen143
+\eqnumsep=\dimen144
+\eqmargin=\dimen145
+\eqlinespacing=\skip57
+\eqlineskip=\skip58
+\eqlineskiplimit=\dimen146
+\eqbinoffset=\muskip17
+\eqdelimoffset=\muskip18
+\eqindentstep=\dimen147
 \eqstyle=\toks22
-\eqbreakdepth=\count106
-\eqinterlinepenalty=\count107
-\intereqpenalty=\count108
-\intereqskip=\skip55
-\prerelpenalty=\count109
-\prebinoppenalty=\count110
-\Dmedmuskip=\muskip13
-\Dthickmuskip=\muskip14
-\eqleftskip=\skip56
-\eqrightskip=\skip57
-\eq@vspan=\skip58
-\eq@binoffset=\muskip15
-\EQ@box=\box29
-\EQ@copy=\box30
-\EQ@numbox=\box31
-\eq@wdNum=\dimen119
-\GRP@numbox=\box32
-\grp@wdNum=\dimen120
-\eq@lines=\count111
-\eq@curline=\count112
-\eq@badness=\count113
-\EQ@vims=\count114
-\eq@dp=\dimen121
-\eq@wdL=\dimen122
-\eq@wdT=\dimen123
-\eq@wdMin=\dimen124
-\grp@wdL=\dimen125
-\grp@wdR=\dimen126
-\grp@wdT=\dimen127
-\eq@wdRmax=\dimen128
-\eq@firstht=\dimen129
-\eq@wdCond=\dimen130
-\eq@indentstep=\dimen131
-\eq@linewidth=\dimen132
-\grp@linewidth=\dimen133
-\eq@hshift=\dimen134
-\eq@given@sidespace=\dimen135
-\mathindent=\dimen136
-\eq@final@linecount=\count115
-\eq@wdR=\dimen137
+\eqbreakdepth=\count133
+\eqinterlinepenalty=\count134
+\intereqpenalty=\count135
+\intereqskip=\skip59
+\prerelpenalty=\count136
+\prebinoppenalty=\count137
+\Dmedmuskip=\muskip19
+\Dthickmuskip=\muskip20
+\eqleftskip=\skip60
+\eqrightskip=\skip61
+\eq@vspan=\skip62
+\eq@binoffset=\muskip21
+\EQ@box=\box42
+\EQ@copy=\box43
+\EQ@numbox=\box44
+\eq@wdNum=\dimen148
+\GRP@numbox=\box45
+\grp@wdNum=\dimen149
+\eq@lines=\count138
+\eq@curline=\count139
+\eq@badness=\count140
+\EQ@vims=\count141
+\eq@dp=\dimen150
+\eq@wdL=\dimen151
+\eq@wdT=\dimen152
+\eq@wdMin=\dimen153
+\grp@wdL=\dimen154
+\grp@wdR=\dimen155
+\grp@wdT=\dimen156
+\eq@wdRmax=\dimen157
+\eq@firstht=\dimen158
+\eq@wdCond=\dimen159
+\eq@indentstep=\dimen160
+\eq@linewidth=\dimen161
+\grp@linewidth=\dimen162
+\eq@hshift=\dimen163
+\eq@given@sidespace=\dimen164
+\mathindent=\dimen165
+\eq@final@linecount=\count142
+\eq@wdR=\dimen166
 \EQ@continue=\toks23
-\lr@level=\count116
+\lr@level=\count143
 \GRP@queue=\toks24
-\GRP@box=\box33
-\GRP@wholebox=\box34
-\darraycolsep=\skip59
-\cur@row=\count117
-\cur@col=\count118
-\conditionsep=\skip60
+\GRP@box=\box46
+\GRP@wholebox=\box47
+\darraycolsep=\skip63
+\cur@row=\count144
+\cur@col=\count145
+\conditionsep=\skip64
 )
-(/usr/share/texmf-texlive/tex/latex/doublestroke/dsfont.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\dstroke\dsfont.sty"
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
-(/usr/share/texmf-texlive/tex/latex/fundus/calligra.sty
-Package: calligra 1996/07/18 v1.8 LaTeX package calligra
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fundus-calligra\calligra.sty"
+Package: calligra 2012/04/10 v1.9 LaTeX package calligra
 )
-(/usr/share/texmf-texlive/tex/latex/ltxmisc/cancel.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cancel\cancel.sty"
 Package: cancel 2000/03/12 v2.1 Cancel math terms
 )
-(/usr/share/texmf/tex/latex/tipa/tipa.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\tipa.sty"
 Package: tipa 2002/08/08 TIPA version 1.1
 
-(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/share/texmf/tex/latex/tipa/t3enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\t3enc.def"
 File: t3enc.def 2001/12/31 T3 encoding
 Now handling font encoding T3 ...
 ... no UTF-8 mapping file for font encoding T3
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 357.
 
 
-(/usr/share/texmf-texlive/tex/latex/base/t1cmss.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ))
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )))
-(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
-Package: geometry 2008/12/21 v4.2 Page Geometry
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count119
-\Gm@cntv=\count120
-\c@Gm@tempcnt=\count121
-\Gm@bindingoffset=\dimen138
-\Gm@wd@mp=\dimen139
-\Gm@odd@mp=\dimen140
-\Gm@even@mp=\dimen141
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count146
+\Gm@cntv=\count147
+\c@Gm@tempcnt=\count148
+\Gm@bindingoffset=\dimen167
+\Gm@wd@mp=\dimen168
+\Gm@odd@mp=\dimen169
+\Gm@even@mp=\dimen170
+\Gm@layoutwidth=\dimen171
+\Gm@layoutheight=\dimen172
+\Gm@layouthoffset=\dimen173
+\Gm@layoutvoffset=\dimen174
 \Gm@dimlist=\toks25
 
-(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
-(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip61
-\f@ncyO@elh=\skip62
-\f@ncyO@erh=\skip63
-\f@ncyO@olh=\skip64
-\f@ncyO@orh=\skip65
-\f@ncyO@elf=\skip66
-\f@ncyO@erf=\skip67
-\f@ncyO@olf=\skip68
-\f@ncyO@orf=\skip69
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip65
+\f@ncyO@elh=\skip66
+\f@ncyO@erh=\skip67
+\f@ncyO@olh=\skip68
+\f@ncyO@orh=\skip69
+\f@ncyO@elf=\skip70
+\f@ncyO@erf=\skip71
+\f@ncyO@olf=\skip72
+\f@ncyO@orf=\skip73
 )
    defining Unicode char U+221E (decimal 8734)
    defining Unicode char U+00B7 (decimal 183)
    defining Unicode char U+2192 (decimal 8594)
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+00D7 (decimal 215)
- (./main.aux)
-\openout1 = `main.aux'.
+   defining Unicode char U+2254 (decimal 8788)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 112.
+No file main.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 111.
 
-
-(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 112.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 112.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 111.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 111.
 
-(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    ... okay on input line 111.
 
-*geometry auto-detecting driver*
-*geometry detected driver: pdftex*
--------------------- Geometry parameters^^Jpaper: a4paper^^Jlandscape: --^^Jtwo
-column: --^^Jtwoside: --^^Jasymmetric: --^^Jh-parts: 71.13188pt, 455.24411pt, 7
-1.13188pt^^Jv-parts: 56.9055pt, 731.23584pt, 56.9055pt^^Jhmarginratio: --^^Jvma
-rginratio: --^^Jlines: --^^Jheightrounded: --^^Jbindingoffset: 0.0pt^^Jtruedime
-n: --^^Jincludehead: --^^Jincludefoot: --^^Jincludemp: --^^Jdriver: pdftex^^J--
------------------- Page layout dimensions and switches^^J\paperwidth  597.50787
-pt^^J\paperheight 845.04684pt^^J\textwidth  455.24411pt^^J\textheight 731.23584
-pt^^J\oddsidemargin  -1.1381pt^^J\evensidemargin -1.1381pt^^J\topmargin  -48.36
-449pt^^J\headheight 15.0pt^^J\headsep    18.0pt^^J\footskip   42.0pt^^J\marginp
-arwidth 74.68849pt^^J\marginparsep   12.8401pt^^J\columnsep  10.0pt^^J\skip\foo
-tins  9.0pt plus 4.0pt minus 2.0pt^^J\hoffset 0.0pt^^J\voffset 0.0pt^^J\mag 100
-0^^J^^J(1in=72.27pt, 1cm=28.45pt)^^J-----------------------
-(./v2.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
- (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count149
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count150
+\scratchdimen=\dimen175
+\scratchbox=\box48
+\nofMPsegments=\count151
+\nofMParguments=\count152
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count153
+\MPscratchDim=\dimen176
+\MPnumerator=\count154
+\makeMPintoPDFobject=\count155
+\everyMPtoPDFconversion=\toks27
+)))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=731.23584pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-48.36449pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\Christopher\Studium\Analysis\Ana-Vorlesung\v11.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 11.
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
-(/usr/share/texmf-texlive/tex/latex/doublestroke/Udsrom.fd
+ []
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\dstroke\udsrom.fd"
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--14
-
- []
-
-
-Overfull \hbox (12.65158pt too wide) detected at line 21
-[] \OT1/cmr/m/n/10 + [] = [] + [] = [] = []
- []
-
-
-Overfull \hbox (2.22168pt too wide) in paragraph at lines 28--37
-$[]$ $[]$ 
- []
-
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
-(Font)              scaled to size 14.40002pt on input line 66.
+(Font)              scaled to size 14.40002pt on input line 65.
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
-(Font)              scaled to size 20.73602pt on input line 66.
+(Font)              scaled to size 20.73602pt on input line 65.
 
-Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
-st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
-is may cause the page layout to be inconsistent, however.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 19.37555pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 19.37555pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
+[3
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--95
+]
+Underfull \hbox (badness 10000) in paragraph at lines 112--125
 
  []
 
-)
 
-Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
-st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
-is may cause the page layout to be inconsistent, however.
+Underfull \hbox (badness 10000) in paragraph at lines 125--131
 
-[2] (./main.aux) ) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 19.37555pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4])
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 19.37555pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5] (C:\Users\Christopher\Studium\Analysis\Ana-Vorlesung\main.aux) ) 
 Here is how much of TeX's memory you used:
- 5306 strings out of 493848
- 68526 string characters out of 1152823
- 144192 words of memory out of 3000000
- 8487 multiletter control sequences out of 15000+50000
- 17535 words of font info for 56 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 39i,10n,43p,245b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <
-/home/gamer01/.texmf-var/fonts/pk/ljfour/public/calligra/callig15.829pk></usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on main.pdf (2 pages, 156591 bytes).
+ 11591 strings out of 494045
+ 181519 string characters out of 3145950
+ 247656 words of memory out of 3000000
+ 14690 multiletter control sequences out of 15000+200000
+ 20285 words of font info for 65 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 43i,10n,47p,252b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\
+Christopher\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx207
+4.pk> <C:\Users\Christopher\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecsx1200.pk> <C:\Users\Christopher\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\tcrm1000.pk> <C:\Users\Christopher\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Christopher\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk> <C:\Users
+\Christopher\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi829\ca
+llig15.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/dstroke/dsrom10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/dstroke/dsrom12.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (5 pages, 154461 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 216 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
