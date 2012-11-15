@@ -1,0 +1,74 @@
+\wdh
+Eine Abbildung $f:x→y$\\
+\begin{itemize}
+\item{ist \underline{injektiv} wenn gilt:\\
+für alle $a,b\in X$ mit $f(a)=f(b)$ ist $a=b$}
+\item{ist \underline{surjektiv} wenn für jedes $y\in Y$ ein $a\in X$ existiert mit $f(a)=y$}
+\end{itemize}}
+Sei $D\subseteq\R$ Teilmenge. Eine Funktion auf D ist eine Abbildung $f:D→\R$
+%
+\uS{Monotone Funktionen}
+\bem
+Eine Funktion $(a_n)_{n\geq 0}$ reeler Zahlen ist eine Abbildung $a:\N_0→\Re$ d.h. eine Funktion auf $\No_0$
+%
+\def
+Sei $D\subseteq\R$. Eine Funktion  $f:D→\R$ heißt:
+\begin{enumerate}
+\item{\underline{monoton wachsend} wenn gilt:\\
+Für alle $a,b\in D$ mit $a<b$ ist immer $f(a)\leq f(b)$}
+\item{\underline{streng monoton wachsend}: $a<b\Rarr f(a)<f(b)$}
+\item{\underline{monoton fallend}: $a<b\Rarr f(a)\geq f(b)$}
+\item{\underline{streng monoton fallend}: $a<b\Rarr f(a)> f(b)$}
+\end{enumerate}
+%
+\bem
+Jede streng monotone Funktion f ist injektiv
+%
+\bew
+Zeige: $a\neq b\Rarr f(a)\neq f(b)$\\
+Wenn $a\neq b$ dann $a< b$ oder $b<a$\\
+Wenn f streng monoton wachsend: Folgt $f(a)< f(b)$ oder $f(b)< f(a)$ also $f(a)\neq f(b)$\\
+Wenn f streng monoton fällt: es folgt $f(a)> f(b)$ oder $f(b)> f(a)$ also $f(a)\neq f(b)$\qed
+%
+%\sS{Beispiel}
+%\begin{enumerate}
+%\item{$f:\R_{\geq 0}→\R,\ x\mapsto x^k =:f(x)$ mit $k\geq 1$\\%umgekehrtes define
+%f ist streng monoton wachsend/steigend%bild tafel 2.2
+%\end{enumerate}
+%
+% Cristopher: Tafel 2.2.2 bis 5.2.1
+%
+\chapter{Stetigkeit}
+\underline{Idee:} Eine Funktion ohne sprünge heißt \underline{stetig}\\
+\def
+Sei $D\subseteq \R,\ f:D→\R$ eine Funktion\\
+\begin{enumerate}
+\item{f heißt stetig in $x\in D$ wenn gilt:\\
+Für jedes $\e>0$ gibt es ein $\delta>0$ so dass für jedes $y\in D$ mit $|x-y|<\delta$ gilt $|f(x)-f(y)<\e$ %graph 6.2}
+\item{f heißt stetig wenn f in jedem $x\in D$ stetig ist}
+\end{enumerate}
+\bsp
+\begin{enumerate}
+\item{Die Funktion $id:\R→\R,\ x\mapsto x ist stetig$}
+\item{Die Funktion $f:\R→\Re,\ f(x)=x^2$ ist stetig. %graph klein
+\bew
+Sei $x,y\in\R\quad y=x+k$.\\
+$$f(y)-f(x)=(x+h)^2-x^2=x^2+2xh+h^2-x^2=2xh+h^2$$\\
+Wähle jedenfalls $\delta\leq 1$. Wenn $|h|=|x-y|>\delta$ dann $|h|<1$\\
+$$|f(y)-f(x)|=|2xh+h^2|\leq|2x|·|h|+|h|^2<|2x|·|h|+|h|=(|2x|+1)·|h|$$\\
+Gegeben sei $\e>0$\\
+Wähle $\delta=min\left\{1,\dfrac{\e}{|2x|+1}\right\}$\\
+Wenn $|x-y|<\delta$ dann $$|f(x)-f(y)|<(2|x|+1)·|h|<(2|x|+1)·\dfrac{\e}{2|x|+1}=\e$$\\
+Also $f$ stetig in $x$}
+\item{$g≔\R→\R,\ g(x)≔\{x\}$\\ %graph
+g ist stetig an $x$ \equ $x\notin\Z$
+\Bew{g nicht stetig an $x\in\Z$:}
+Zeige: es gibt ein $\e>0$ so dass kein $\delta>0$ existiert mit: $|x-y|>\delta\Rarr|g(x)-g(y)|<\e$\\
+z.B. $\e=1$ Sei $\delta>0.\ y=x-\dfrac{\delta}{2}\quad |x-y|=\dfrac{\delta}{2}<\delta$\\
+aber $g(y)=\{x-\dfrac{\delta}{2}\}=x-1$ (weil $x\in\Z$)\\
+|g(x)-g(y)|=|x-(x-1)|=1 \not<\e\qed}
+\end{enumerate}
+%
+% Christopher
+%
+
