@@ -1,17 +1,23 @@
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra {\Large Vorlesung Nr. 11}}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra \Large{15.11.2012}}
+% **************************************************
+%
 \wdh
 Eine Abbildung $f:x→y$\\
 \begin{itemize}
 \item{ist \underline{injektiv} wenn gilt:\\
 für alle $a,b\in X$ mit $f(a)=f(b)$ ist $a=b$}
 \item{ist \underline{surjektiv} wenn für jedes $y\in Y$ ein $a\in X$ existiert mit $f(a)=y$}
-\end{itemize}}
+\end{itemize}
 Sei $D\subseteq\R$ Teilmenge. Eine Funktion auf D ist eine Abbildung $f:D→\R$
 %
 \uS{Monotone Funktionen}
 \bem
-Eine Funktion $(a_n)_{n\geq 0}$ reeler Zahlen ist eine Abbildung $a:\N_0→\Re$ d.h. eine Funktion auf $\No_0$
+Eine Funktion $(a_n)_{n\geq 0}$ reeler Zahlen ist eine Abbildung $a:\N_0→\Re$ d.h. eine Funktion auf $\N_0$
 %
-\def
+\sS{Definition}
 Sei $D\subseteq\R$. Eine Funktion  $f:D→\R$ heißt:
 \begin{enumerate}
 \item{\underline{monoton wachsend} wenn gilt:\\
@@ -30,21 +36,44 @@ Wenn $a\neq b$ dann $a< b$ oder $b<a$\\
 Wenn f streng monoton wachsend: Folgt $f(a)< f(b)$ oder $f(b)< f(a)$ also $f(a)\neq f(b)$\\
 Wenn f streng monoton fällt: es folgt $f(a)> f(b)$ oder $f(b)> f(a)$ also $f(a)\neq f(b)$\qed
 %
-%\sS{Beispiel}
-%\begin{enumerate}
-%\item{$f:\R_{\geq 0}→\R,\ x\mapsto x^k =:f(x)$ mit $k\geq 1$\\%umgekehrtes define
-%f ist streng monoton wachsend/steigend%bild tafel 2.2
-%\end{enumerate}
-%
-% Cristopher: Tafel 2.2.2 bis 5.2.1
+\sS{Beispiel}
+\begin{enumerate}
+\item{$f:\R_{\geq 0}→\R,\ x\mapsto x^k =:f(x)$ mit $k\geq 1$\\%umgekehrtes define
+f ist streng monoton wachsend/steigend 
+%bild tafel 2.2
+\item{$h: \R \to \R, h(x) = [x]$}\\
+% Stufenfunktion Diagramm
+h ist monoton wachsend, aber nicht streng monoton.\\
+Monoton wachsend: $x < y \Rarr [x] < [y]$\\
+$x < y \not\Rarr [x] < [y]$\\
+z. B.: $1,2 < 1,3 , [1,2] = 1 = [1,3] $}
+\item{Exponentialfunktion\\
+$exp: \R \to \R, exp(x)= \ds\sum_{k=0}^{\infty} \frac{x^k}{k!}$\\
+Ist streng monoton wachsend.\\
+\bew
+\begin{enumerate}
+\item{$exp(0) = 1 + \frac{0}{1!} + \frac{0}{2!} + ... = 1$}
+\item{Sei $a > 0$\\
+$exp(a) = = 1 + \frac{a}{1!} + \frac{a}{2!} + ... > 1$}
+\item{Sei $a > 0 exp(-a) \cdot exp(a) = exp(-a + a) = exp(0) = 1$\\
+$\Rarr exp(-a) = \frac{1}{exp(a)} \Rarr 0 < exp(a) < 1$\\
+%das kann ich nicht lesen... (iPhone Bild)
+$exp(b) > 0$ für alle $b \in \R$}
+\item{Sei $a > b$\\
+$exp(a) = exp(a - b + b) = exp(a - b) \cdot exp(b)$ %overbraces über exp(a - b) => {> 1} über exp(b) => {> 0}
+> exp(b) $\Rarr$ exp streng monoton wachsend \qed }
+\end{enumerate}
+}
+\end{enumerate}
 %
 \chapter{Stetigkeit}
 \underline{Idee:} Eine Funktion ohne sprünge heißt \underline{stetig}\\
-\def
+\sS{Definition}
 Sei $D\subseteq \R,\ f:D→\R$ eine Funktion\\
 \begin{enumerate}
 \item{f heißt stetig in $x\in D$ wenn gilt:\\
-Für jedes $\e>0$ gibt es ein $\delta>0$ so dass für jedes $y\in D$ mit $|x-y|<\delta$ gilt $|f(x)-f(y)<\e$ %graph 6.2}
+Für jedes $\e>0$ gibt es ein $\delta>0$ so dass für jedes $y\in D$ mit $|x-y|<\delta$ gilt $|f(x)-f(y)<\e$ %graph 6.2
+}
 \item{f heißt stetig wenn f in jedem $x\in D$ stetig ist}
 \end{enumerate}
 \sS{Beispiel}
@@ -60,16 +89,54 @@ Gegeben sei $\e>0$\\
 Wähle $\delta=min\left\{1,\dfrac{\e}{|2x|+1}\right\}$\\
 Wenn $|x-y|<\delta$ dann $$|f(x)-f(y)|<(2|x|+1)·|h|<(2|x|+1)·\dfrac{\e}{2|x|+1}=\e$$\\
 Also $f$ stetig in $x$}
-\item{$g≔\R→\R,\ g(x)≔\{x\}$\\ %graph
+\item{$g:=\R \to \R,\ g(x):=\{x\}$\\
+%graph
 g ist stetig an $x$ \equ $x\notin\Z$
 \Bew{g nicht stetig an $x\in\Z$:}
 Zeige: es gibt ein $\e>0$ so dass kein $\delta>0$ existiert mit: $|x-y|>\delta\Rarr|g(x)-g(y)|<\e$\\
 z.B. $\e=1$ Sei $\delta>0.\ y=x-\dfrac{\delta}{2}\quad |x-y|=\dfrac{\delta}{2}<\delta$\\
 aber $g(y)=\{x-\dfrac{\delta}{2}\}=x-1$ (weil $x\in\Z$)\\
-|g(x)-g(y)|=|x-(x-1)|=1 \not<\e\qed}
+$|g(x)-g(y)|=|x-(x-1)|=1 \not<\e\qed$}
 \end{enumerate}
 %
-% Christopher
+\sS{Satz}
+Die Exponentialfunktion $exp: \R \to \R$ ist stetig.\\
+\bew
+Verwende nur:
+\begin{itemize}
+\item{Funktionalgleichung: $exp(x + y) = exp(x) \cdot exp(y)$}
+\item{exp ist streng monoton wachsend}
+\item{exp(0) = 1}
+\end{itemize}
+\subsection*{Behauptung}
+Für jedes $\epsilon > 0$ gibt es ein $n \in \N$ mit $exp(\frac{1}{n}) < 1 + \epsilon$\\
+%Graf
+Angenommen, $exp(\frac{1}{n}) \geq 1 + \epsilon$\\
+Dann $exp(1) = \frac{1}{n} + ... \frac{1}{n}$ % underbrace unter den Brüchen {n}
+\phantom{Dann $exp(1) $} $= exp(\frac{1}{n}) + ... + exp(\frac{1}{n}) = exp(\frac{1}{n})^n$ \\
+\phantom{Dann $exp(1) $} $ \geq (1 + \epsilon)^n \geq 1 + n \epsilon $ %(Pfeil auf letztes geq Bernoulli)
+\\
+$exp(1) \geq 1 + n \epsilon$\\
+$n \leq \frac{exp(1) - 1}{\epsilon}$\\
+Das gilt nur für endliche viele $n \in \N$\\
+$Rarr$ Beh.\\
+\underline{Zeige:} exp ist stetig an 0. Gegeben sei $\epsilon > 0, OE ? \epsilon < 1$\\
+Wähle $n \in \N$ mit $exp(\frac{1}{n}) < 1 + \epsilon$\\
+$$Rarr exp(-\frac{1}{n}) = exp(\frac{1}{n})^{-1} < \frac{1}{1 + \epsilon} = \frac{1 - \epsilon}{(1+\epsilon)(1-\epsilon)} = \frac{1-\epsilon}{1 - \epsilon^2} > 1 - \epsilon$$\\
+Sei $\delta \frac{1}{n}$\\
+Sei $y \in \R, |0 - y| < \delta = \frac{1}{n}$\\
+$|y| < \frac{1}{n}$ d.h.\\
+$-\frac{1}{n} < y < \frac{1}{n}$\\
+exp streng monoton wachsend.\\
+$$Rarr 1 - \epsilon < exp(-\frac{1}{n}) < \exp(y) < exp(\frac{1}{n}) < 1 + \epsilon$$\\
+$Rarr |exp(y) - exp(0)| < \epsilon$ Also exp stetig in 0\\
+\underline{Zeige:} exp ist eine stetig in $x \in \R$. Gegeben sei $\epsilon > $\\
+Sei $y = x + h$, $|h| < \delta$ ($\delta$ noch zu wählen)
+$$|exp(y) - exp(x)| = |exp(x + h) - exp(x)| = |exp(x) \cdot exp(h) - exp(x)| = exp(x) \cdot exo(h) -1$$\\
+$|exp(y) -exp(x) | < \epsilon$\\
+$$\Leftrightarrow exp(x) \cdot |exp(h) - 1| < \epsilon \Leftrightarrow exp(h) - 1 < \frac{\epsilon}{exp(x)} = \epsilon '$$\\
+Weil exp stetig in 0 ist gibt es ein $\delta > 0$ mit $|h| < \delta \Rarr |exp(h) -1| < \frac{\epsilon}{exp(x)}$\\
+$Rarr$ exp ist stetig in x \qed\\
 %
 \sS{Satz (Folgenstetigkeit)}
 Sei $D\subseteq\R,\ x\in D,\ f:D→\R$ Funktion $f$ ist genau dann stetig in $x$ wenn gilt:\\
@@ -77,7 +144,7 @@ Sei $D\subseteq\R,\ x\in D,\ f:D→\R$ Funktion $f$ ist genau dann stetig in $x$
 \item{Für jede Folge $(x_n)_{n\geq 0}$ mit $x_n\in D,\ x_n→x$ für $n→∞$ gilt auch $f(x_n)→f(x)$ für $n→∞$}
 \end{itemize}
 %
-\satz
+\sS{Satz}
 Sei $D\subseteq\R,\ f,g:D→\R$ in $x\in D$\\
 Dann gilt:\\
 \begin{itemize}
@@ -86,6 +153,13 @@ Dann gilt:\\
 \item{Wenn $g(x)\neq 0$ für alle $x'\in D$}
 \end{itemize}
 Dann ist $\dfrac{1}{f}:D→\R$ stetig in x.
-\bew
-mit Folgenstetigkeit
-%letzte seite
+\Bew{mit Folgenstetigkeit}
+Sei $x_n \to x$ für $n \to \infty$\\
+mit $x_n \in D$\\
+$f, g$ stetig $Rarr f(x_n) \to f(x)$ \\
+\phantom{$f, g$ stetig $Rarr$} $g(x_n) \to g(x)$\\
+$\Rarr f(x_n) + g(x_n) \to f(x) + g(x)$
+$\phantom{\Rarr} f(x_n) \cdot g(x_n) \to f(x) \cdot g(x)$\\
+Wenn also $f(x) \neq 0$\\
+$f(x_n)^{-1} \to f(x)^{-1}$\\
+$\Rarr f + g, f) \cdot g, \frac{1}{f}$ stetig in x \qed

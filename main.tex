@@ -35,7 +35,7 @@
 \DeclareUnicodeCharacter{2192}{\text{$\to$}}
 \DeclareUnicodeCharacter{2026}{\text{\ldots}}
 \DeclareUnicodeCharacter{00D7}{\text{$\times$}}
-
+\DeclareUnicodeCharacter{2254}{\text{:=}}
 
 % ***********************
 % *** costum commands ***
@@ -58,7 +58,7 @@
 
 % griechische Buchstaben
 \mcmd{\z}{\zeta}
-\mcmd{\e}{\varepsilon}
+\mcmd{\e}{\varepsilon}	
 
 % Pfeile
 \mcmd{\equ}{\Leftrightarrow}
@@ -91,8 +91,7 @@
 % Textkürzel
 \cmd{\ok}{\marginpar{\checkmark}}
 \cmd{\einruck}[2]{#1\vspace{-12pt}\begin{addmargin}{.05\textwidth}#2\end{addmargin}}
-\cmd{\ind}[2]{\einruck{IA:}{#1\ok}\einruck{IS: }{$n\to n+1$\\#2\qed}}
-\cmd{\indIV}[3]{\einruck{IA:}{#1\ok}\einruck{IV:}{#2}\einruck{IS: }{$n\to n+1$\\#3\qed}}
+\cmd{\ind}[3]{\einruck{IA:}{#1\ok}\\\einruck{IV:}{#2}\\\einruck{IS: }{$n\to n+1$#3\qed}}
 \cmd{\notat}[1]{\einruck{\em Notation:}{\em#1}}
 
 % Environments
@@ -118,11 +117,11 @@
 %\chapter{Angeordneter Körper}
 %\chapter{Folgen}
 %\chapter{Konvergenzsätze}
-%\input{v6todo}\newpage
+%\input{v6}\newpage
 %\input{v7}\newpage
 %\input{v8}\newpage
 %\input{v9}\newpage
 %\input{v10}\newpage
-%\input{v11}
+\input{v11}\newpage
 \end{document}
 
