@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  14 NOV 2012 22:11
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  15 NOV 2012 07:34
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -800,36 +800,10 @@ Overfull \hbox (2.22168pt too wide) in paragraph at lines 28--37
 $[]$ $[]$ 
  []
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 \ind{$n=0$ Dann $k=0$\\}{}{}
-                                 Sei $\#A=n+1 \Rarr 0 \leq k \leq (n+1)$
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 \ind{$n=0$ Dann $k=0$\\}{}{}
-                                 Sei $\#A=n+1 \Rarr 0 \leq k \leq (n+1)$
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
-(Font)              scaled to size 14.40002pt on input line 60.
+(Font)              scaled to size 14.40002pt on input line 66.
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
-(Font)              scaled to size 20.73602pt on input line 60.
+(Font)              scaled to size 20.73602pt on input line 66.
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
 st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
@@ -838,12 +812,12 @@ is may cause the page layout to be inconsistent, however.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
+Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
 
@@ -857,11 +831,11 @@ is may cause the page layout to be inconsistent, however.
 Here is how much of TeX's memory you used:
  5305 strings out of 493848
  68521 string characters out of 1152823
- 144160 words of memory out of 3000000
+ 144159 words of memory out of 3000000
  8486 multiletter control sequences out of 15000+50000
  17535 words of font info for 56 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 39i,10n,43p,245b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,10n,43p,245b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <
 /home/gamer01/.texmf-var/fonts/pk/ljfour/public/calligra/callig15.829pk></usr/s
 hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-
@@ -874,7 +848,7 @@ e/texmf-texlive/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on main.pdf (2 pages, 156524 bytes).
+Output written on main.pdf (2 pages, 156606 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

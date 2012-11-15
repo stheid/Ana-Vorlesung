@@ -47,8 +47,8 @@ $\{1,2\}, \{1,3\}, \{1,4\}, \{2,3\}, \{2,4\}, \{3,4\} \to 6\qquad \binom{4}{2}=6
 \bew
 Vorüberlegung: Sei $k=0 \vee k=n$\\
 $P_0(A)=1=\binom{n}{0}$ $\#P_n(A)=1=\binom{n}{n}$\ok\\
-Jetzt: Induktionsbeweis nach n
-\ind{$n=0$ Dann $k=0$\\}{}{}Sei $\#A=n+1 \Rarr 0 \leq k \leq (n+1)$
+Jetzt: Induktionsbeweis nach n\\[4pt]
+\ind{$n=0$ Dann $k=0$}{Sei $\#A=n+1 \Rarr 0 \leq k \leq (n+1)$
 Falls $k = 0\vee k = n + 1$\\
 Sei also: $o < k < n + 1$\\
 Wähle $a\in A$\\
@@ -63,6 +63,7 @@ Man kann die Wahl einer k-elementigen Teilmenge von A so strukturieren
 \end{enumerate}
 \end{enumerate}
 $$\Rarr\ \#P_k(A)=\#P_k(B)+\#P_{k-1} (B) \stackrel{IV}{=} \binom{n}{k} + \binom{e}{ -1} \stackrel{1.11}{=} \binom{n+1}{k}$$
+}
 %
 \sS{Satz (Binomische Formel)}
 Seien $a,b$ Zahlen, $n\in\N$\\
@@ -74,7 +75,7 @@ $(a+b)^2=a^2+2ab+b^2$
 %
 \bew
 Schreibe $(a+b)^n=\underbrace{(a+b)(a+b)(a+b)(a+b)…(a+b)}_{n-Faktoren}$
-
+%
 \sss{Ausmultiplizieren}
 Halte Terme der Form $a^{n-k}b^k$ mit $0\leq k\leq n$\\
 Häufigkeit von $a^{n-k}b^k$ = Anzahl der Möglichkeiten aus n-Faktoren k mal b zu wählen.\\
