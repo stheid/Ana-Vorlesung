@@ -15,3 +15,13 @@
 Formeln die über eine ganze zeile gehen werden mit $$ oder \[ begonnen und mit $$ oder \] abgeschlossen!!
 
 leere zeilen die nicht für neue Absätze stehen auskommentieren
+
+Costum commands in \text – wenn sie im textmode verwendet werden – wie \Rarr müssen mit geschweiften Klammern enden sonst fressen sie folgenden whitespace (z.B. \Rarr{})
+
+Wir müssen uns wegen Einrückungen einigen zur auswahl steht:
+tabular, minipage, parbox, addmargin, quote
+
+ich bin für tabular mit nem hspace vorher
+größtes problem ist die einrückung hinter der überschrift (also in der selben zeile)
+
+Linefeed muss verbessert werden wg seitenumbruch und zeilenabstand

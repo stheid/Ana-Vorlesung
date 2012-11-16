@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  16 NOV 2012 20:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  16 NOV 2012 21:46
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -728,33 +728,33 @@ Package ifvtex Info: VTeX not detected.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 121.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 115.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 115.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 121.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 121.
 
 (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    ... okay on input line 121.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -819,21 +819,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+
+ []
+
 )
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
 st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
 is may cause the page layout to be inconsistent, however.
 
-[4] (./main.aux) ) 
+[5]
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
+
+[6] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5328 strings out of 493848
- 68777 string characters out of 1152823
- 145274 words of memory out of 3000000
- 8505 multiletter control sequences out of 15000+50000
+ 5333 strings out of 493848
+ 68787 string characters out of 1152823
+ 145370 words of memory out of 3000000
+ 8510 multiletter control sequences out of 15000+50000
  19950 words of font info for 64 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 39i,13n,43p,261b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,43p,261b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/gamer01/.texmf-var/fonts/pk/ljfour/public/calligra/ca
 llig15.829pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/s
 hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-
@@ -849,9 +865,9 @@ public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx
 1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/p
 ublic/cm-super/sfti1000.pfb>
-Output written on main.pdf (4 pages, 203762 bytes).
+Output written on main.pdf (6 pages, 210646 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
