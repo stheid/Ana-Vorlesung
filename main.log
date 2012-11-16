@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  16 NOV 2012 21:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  16 NOV 2012 23:17
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -770,25 +770,42 @@ pt^^J\oddsidemargin  -1.1381pt^^J\evensidemargin -1.1381pt^^J\topmargin  -48.36
 arwidth 74.68849pt^^J\marginparsep   12.8401pt^^J\columnsep  10.0pt^^J\skip\foo
 tins  9.0pt plus 4.0pt minus 2.0pt^^J\hoffset 0.0pt^^J\voffset 0.0pt^^J\mag 100
 0^^J^^J(1in=72.27pt, 1cm=28.45pt)^^J-----------------------
-(./v1.tex
-Chapter 1.
-LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+LaTeX Font Info:    Try loading font information for U+msa on input line 123.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+LaTeX Font Info:    Try loading font information for U+msb on input line 123.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 28.
-
-(/usr/share/texmf-texlive/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
+Class scrreprt Info: You've told me to use the font selection of the element
+(scrreprt)           `sectioning' that is an alias of element `disposition'
+(scrreprt)            on input line 1.
+Class scrreprt Info: You've told me to use the font selection of the element
+(scrreprt)           `sectioning' that is an alias of element `disposition'
+(scrreprt)            on input line 18.
+Class scrreprt Info: You've told me to use the font selection of the element
+(scrreprt)           `sectioning' that is an alias of element `disposition'
+(scrreprt)            on input line 32.
+)
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [2
+
+] (./v1.tex
+Chapter 1.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 28.
+(/usr/share/texmf-texlive/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [3
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
@@ -802,7 +819,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
 st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
 is may cause the page layout to be inconsistent, however.
 
-[2]
+[4]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
@@ -814,8 +831,43 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
 st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
 is may cause the page layout to be inconsistent, however.
 
-[3] (./v4.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--9
+[5] (./v2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+
+Overfull \hbox (12.65158pt too wide) detected at line 21
+[] \OT1/cmr/m/n/10 + [] = [] + [] = [] = []
+ []
+
+
+Overfull \hbox (2.22168pt too wide) in paragraph at lines 28--37
+$[]$ $[]$ 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 92--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--120
 
  []
 
@@ -824,8 +876,53 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
 st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
 is may cause the page layout to be inconsistent, however.
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 96--98
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
+
+[8]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+[9
+
+])
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
+
+[10] (./v3.tex
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
@@ -835,39 +932,220 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
 st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
 is may cause the page layout to be inconsistent, however.
 
-[5]
+[11] (./v4.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
 st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
 is may cause the page layout to be inconsistent, however.
 
-[6] (./main.aux) ) 
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
+
+[13]
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
+
+[14]
+Chapter 3.
+) [15
+
+] (./v6.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 18.7653pt.^^J We now make it that large for the rest of the document.^^J Thi
+s may cause the page layout to be inconsistent, however.
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--108
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 18.7653pt.^^J We now make it that large for the rest of the document.^^J Thi
+s may cause the page layout to be inconsistent, however.
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 123--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--158
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 18.7653pt.^^J We now make it that large for the rest of the document.^^J Thi
+s may cause the page layout to be inconsistent, however.
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--179
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 18.7653pt.^^J We now make it that large for the rest of the document.^^J Thi
+s may cause the page layout to be inconsistent, however.
+
+[19] (./main.aux) ) ) 
 Here is how much of TeX's memory you used:
- 5333 strings out of 493848
- 68787 string characters out of 1152823
+ 5368 strings out of 493848
+ 69214 string characters out of 1152823
  145370 words of memory out of 3000000
- 8510 multiletter control sequences out of 15000+50000
- 19950 words of font info for 64 fonts, out of 3000000 for 9000
+ 8531 multiletter control sequences out of 15000+50000
+ 21486 words of font info for 66 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 39i,14n,43p,261b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/gamer01/.texmf-var/fonts/pk/ljfour/public/calligra/ca
-llig15.829pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx
-1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfti1000.pfb>
-Output written on main.pdf (6 pages, 210646 bytes).
+ 39i,14n,43p,280b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/gamer01/.texmf-var/fonts/pk/ljfour/public/calligra
+/callig15.576pk> </home/gamer01/.texmf-var/fonts/pk/ljfour/public/calligra/call
+ig15.829pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/doub
+lestroke/dsrom10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/latx
+font/line10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/m
+sam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm7.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfti1000.pfb>
+Output written on main.pdf (19 pages, 336726 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
+ 182 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
