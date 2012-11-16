@@ -3,6 +3,8 @@
 *.synctex.gz
 *.aux
 *.toc
+*.pdf
 
 #VIM
-./*~
+*~
+*.swp
