@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  16 NOV 2012 12:58
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.8)  16 NOV 2012 20:07
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -770,19 +770,88 @@ pt^^J\oddsidemargin  -1.1381pt^^J\evensidemargin -1.1381pt^^J\topmargin  -48.36
 arwidth 74.68849pt^^J\marginparsep   12.8401pt^^J\columnsep  10.0pt^^J\skip\foo
 tins  9.0pt plus 4.0pt minus 2.0pt^^J\hoffset 0.0pt^^J\voffset 0.0pt^^J\mag 100
 0^^J^^J(1in=72.27pt, 1cm=28.45pt)^^J-----------------------
-(./v4.tex) (./main.aux) ) 
-Here is how much of TeX's memory you used:
- 5217 strings out of 493848
- 67244 string characters out of 1152823
- 134271 words of memory out of 3000000
- 8433 multiletter control sequences out of 15000+50000
- 7445 words of font info for 19 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 39i,1n,43p,245b,80s stack positions out of 5000i,500n,10000p,200000b,50000s
+(./v1.tex
+Chapter 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 
-No pages of output.
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 28.
+
+(/usr/share/texmf-texlive/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
+
+ []
+
+LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
+(Font)              scaled to size 14.40002pt on input line 121.
+LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
+(Font)              scaled to size 20.73602pt on input line 121.
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
+
+[2]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 140.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
+
+[3] (./v4.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
+
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): ^^J Make it at lea
+st 19.37555pt.^^J We now make it that large for the rest of the document.^^J Th
+is may cause the page layout to be inconsistent, however.
+
+[4] (./main.aux) ) 
+Here is how much of TeX's memory you used:
+ 5328 strings out of 493848
+ 68777 string characters out of 1152823
+ 145274 words of memory out of 3000000
+ 8505 multiletter control sequences out of 15000+50000
+ 19950 words of font info for 64 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 39i,13n,43p,261b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/gamer01/.texmf-var/fonts/pk/ljfour/public/calligra/ca
+llig15.829pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx
+1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfti1000.pfb>
+Output written on main.pdf (4 pages, 203762 bytes).
 PDF statistics:
- 0 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
