@@ -1,8 +1,8 @@
 # Tex
-main.log
+*.log
 *.synctex.gz
 *.aux
 *.toc
 
 #VIM
-*~
+./*~

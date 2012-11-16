@@ -1,0 +1,8 @@
+# Tex
+*.log
+./*.synctex.gz
+./*.aux
+./*.toc
+
+#VIM
+./*~
