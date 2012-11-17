@@ -116,5 +116,50 @@ Sei $x\eR,\ x>0\qquad \frac{m}{n}\eQ$\\
 \sss{Potenzrechnung:} $$x^{(a+b)}=x^a·x^b,\ x^{a·b}=(x^a)^b$$\hfill für $x\eR,\ x>0,\ a,b\eQ$\\
 \bem
 Später wir definiert: $x^a$ für $x\eR,\ x>0,\ a\eR$
+%
 \chapter{Folgen und Reihen reeller Zahlen}
-
+Grundbegriff der Analysis: Konvergenz
+\bsp
+Wenn \nN{} immer größer wird, geht $\frac{1}{n}$ immer näher an Null.\\
+Sei $\N_0=\{0,1,2,3,4…\}$
+\Def
+Eine Folge reeller Zahlen ist eine Abbildung $\N_0→\R$ d.h. jeder natürliche Zahl $n\geq 0$ wird eine reelle Zahl $a_n$ zugeordnet.\\
+\notat{($(a_n)_{\nN_0}$ oder $(a_n)_{\N\geq 0}$ oder $(a_0,a_1,a_2,a_3,…)$}
+\sss{Variante:}
+Folgen, die bei $k\in\Z$ anfangen: $(a_n)_{\N\geq 0}=(a_k,a_{k+1},a_{k+2},…)$
+\bsp
+\begin{enumerate}
+\item{konstante Folge: $a_n=a,\ a\eR$ fest: $(a,a,a,a,a,…)$}
+\item{$a_n=\frac{1}{n}$ für $n\geq 1$\\
+$(a_n)_{n\geq 1}=(1,\frac{1}{2},\frac{1}{3},…)$}
+\item{$a_n=(-1)^n\qquad n>0$\\
+$(1,-1,1,-1,1,-1,1,-1,1,-1,…$}
+\item{$(\frac{n}{n+1})_{n\geq 0}n=(0,\frac{1}{2},\frac{2}{3},\frac{3}{4},\frac{4}{5},…$}
+\end{enumerate}
+%
+\Def
+Sei $(a_n)_{n\geq 0}$ eine Folge reeller Zahlen
+\begin{enumerate}
+\item{Eine Folge $(a_n)$ konvergiert gegen $a\eR$ wenn gilt: Für jedes $\e>\R$ gibt es ein $N\eN$, so dass $|a_n-a|<\e$ für jedes \nN{} mit $n\geq N$\\
+Dann heißt $a$ Grenzwert der Folge $(a_n)$\\
+\notat{$\ds\lim_{n→∞}a_n=a$ oder $a_n→a$ für $n→∞$}}
+\item{Die Folge $(a_n)$ heißt \underline{Nullfolge}, wenn $a_n→a$ für $n→∞$}
+\item{Die Folge $(a_n)$ ist divergent, wenn sie keinen Grenzwert hat.}
+\end{enumerate}
+%
+\bsp
+\begin{enumerate}
+\item{$a_n=\frac{1}{n}$ für $n\geq 1$
+\sss{Behauptung:} $a_n→a$ für $n→∞$ SKIZZE % SKIZZE
+\bew
+Sei $\e>0$ wähle $N=0$ für $n\geq N$ gilt $|a_k-a|=0<\e$\qed}
+\item{$a_n=(-1)^n=(1,-1,1,-1,1,-1,…)$ SKIZZE % SKIZZE
+\sss{Behauptung:} $(a_n)$ ist divergent. 
+\bew
+Angenommen, $a\eR$ ist Grenzwert der Folge.\\
+Wähle $\e=1$. Es gibt $N\eN$ mit $|a_n-a|<1$ für alle $n\geq N$\\
+Wenn $n$ gerade: $a_n=1\qquad |1-a|<1$
+Wenn $n$ ungerade: $a_n=-1\qquad |-1-a|<1 \Rarr |1+a|<1$\\
+$2=|2|=|1-a+1+a|\leq |1-a|+|1+a|<2 \Rarr 2<2$\\
+Widerspruch: Also ist $(a_n)$ divergent\qed}
+\end{enumerate}
