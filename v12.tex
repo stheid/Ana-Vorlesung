@@ -5,10 +5,10 @@
 % **************************************************
 \wdh
 Sei $D \subseteq \R$. eine Funktion $f: D \to \R$ ist stetig in $x \in D$ wenn gilt:\\
-\begin{array}{ll}
+$\begin{array}{ll}
 \text{Für jedes $\epsilon > 0$ gibt es ein $\delta > 0$ so dass gilt:}\\
-\text{wenn $y \in D$ mit $|x - y| < \d$ dann $|f(x) - f(y)| < \e$}
-\end{array}
+\text{wenn $y \in D$ mit $|x - y| < \delta$ dann $|f(x) - f(y)| < \epsilon$}
+\end{array}$
 \bsp
 $exp:R→\R$ ist stetig (d.h. stetig an jedem $x\eR$)\\
 $[·]:R→\R$ ist stetig an $x \equ x\not\in\Z$\\
@@ -40,10 +40,10 @@ Polynomfunktionen und rationale Funktionen sind stetig.
 \item{6.5 und Induktion \Rarr{} für $\R→\R,\ f(x)=x^n$ stetig für jedes $n\quad (x^n=x·x^{n-1}$}
 \item{6.5 \Rarr{} Jede Funktion $f(x)=a_n·x^{n}+a_{n-1}·x^{n-1}+…+a_0,\ f:\R→\R$ ist stetig}
 \item{6.5 \Rarr{} wenn $f,g:\R→\R$ Polynomfunktionen, dann $\frac{f}{g}:D→\R$ stetig, wobei $D=\{x\eR|g(x)\neq 0\}$ (denn $(\frac{f}{g}=f·\frac{1}{g})$\qed}
-\end{{enumerate}
+\end{enumerate}
 \sS{Satz Stetigkeit der Komposition}
 Sei $f: C \to \R$, $g: D \to \R$ Funktionen mit $f(C) \subseteq D$. Wenn $f$ stetig in $x \in D$ und g stetig in $f(x)$ dann ist:\\
-$g \cird f: C \to \R$ stetig in x.\\
+$g \circ f: C \to \R$ stetig in x.\\
 \bew mit Folgenstetigkeit:
 Sei $x_n \to x$ mit $x_n \in C$\\
 $f$ stetig in $x \Rarr \ f(x_n) \to f(x)$\\
@@ -64,7 +64,7 @@ Schreibe $\ds\lim_{x\searrow a}f(x)=y$ wenn gilt:\\
 Für jede Folge $(x_n)$ mit $x_n→a$ und $x_n\in D$ und $x_n>a$ gilt $f(x_n)→y$}
 \item{Angenommen, $a\neq -∞$ ist eine Berührpunkt von $D\cap(-∞,a)$ Schreibe $\ds\lim_{x\nearrow a}f(x)=y$ wenn für jede Folge $(x_n)$ mit $x_n→a$ und $x_n\in D$ und $x_n<a$ gilt $f(x_n)→y$
 \bsp
-$D=\R\bsc\{0\}\ f:D→\R,\ f(x)=\frac{|x|}{x}$ SKIZZE\\
+$D= \R \setminus \{0\}\ f:D→\R,\ f(x)=\frac{|x|}{x}$ SKIZZE\\
 \underline{Bemerke} f(x)=$\left\{\begin{array}{lcl}1 & \text{wenn} & x>0\\-1 & \text{wenn} & x<0\end{array}\right.$\\
 $\ds\lim_{x\nearrow a}f(x)=-1,\ \lim_{x\searrow a}f(x)=1,\ \lim_{x→0}f(x)existiert nicht$\\
 \ul{Vorher} $a = 0$ ist Berührpunkt vpn $D$ und $D \cap (0, \infty)$ und $D \cap (- \infty , 0)$, denn $\frac{1}{n} \to 0$ und $-\frac{1}{n} \to 0$}
@@ -92,11 +92,11 @@ $\ds\lim_{x \to 0} f(x) = \infty$\\
 Somit $f$ nicht nach oben beschränkt}
 \item{$g(0,1) \to \R, \ g(x) = x$\\
 $g$ beschränkt. $g((0,1)) = (0,1)$\\
-$sup \{\g(x) | x \in (0, 1) \} = 1$\\
+$sup \{g(x) | x \in (0, 1) \} = 1$\\
 Aber $g(x) < 1$ für alle $x \in (0, 1)$. Also nimmt g nicht ihr Maximum an.}
 \end{enumerate}
 \sss{Beweis von 6.11}
-Sei $y:=sup\{f(x)|x\in D}\eR \cup \{∞\}$\\
+Sei $y := sup\{ f(x)| x \in D\} \eR \cup \{ ∞ \}$\\
 Wähle eine Folge $(x_n)$ mit $x_n\in D$ und $f(x_n)→y$ für $n→∞$\\
 Bolzano-Weierstraß \Rarr{} Es gibt eine konvergente Teilfolge $(x_{n_k})_{k\geq 0}$ von $(x_{n})_{k\geq 0}$ \marginpar{Die Folge $(x_n)$ ist beschränkt $D=[a,b]$}\\
 Sei $x_{n_k}→x$ für $k→∞$ $a\leq x_n\leq b$ für alle $n$ \Rarr $a\leq x\leq b,\ x\in D=[a,b]$\\
