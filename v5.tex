@@ -1,0 +1,84 @@
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 5}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 22.10.2012}
+% *****************************************
+%
+\wdh
+Eine Folge $(a_n)_{n\eN_0}$ reeller Zahlen konvergiert genen $a\eR$ wenn gilt:\\
+Für jedes $\e>0$ gibt es ein $N\eN$ so dass $|a_1·a|<\e$ für alle $n\geq\N$.\\
+%bez oder so was, nicht ganz klar zu lesen
+\ul{Bezüglich} $a_n→a$ für $n→∞$ oder $\ds\lim_{n→∞}(a_n)=a$\\
+\bsp
+$\frac{1}{n}→0$ für $n→∞\qquad(-1)^n$ divergiert\\
+$(a_n)$ ist divergent, wenn sie gegen kein $a\eR$ konvergiert
+\bsp
+$(1,0,\frac{1}{2},0,\frac{1}{3},0,\frac{1}{4},0,…)$ konvergiert gegen $0$
+%
+\sS{Satz: (Eindeutigkeit der Grenzwerte)}
+Sei $(a_n)$ Folge reeller Zahlen und $a,b\eR$ mit $a_n→a$ und $a_n→b$ für $n→∞$. Dann ist $a·b$ %mut zur lücke, würde ich behaupten
+\bem
+Dann ist bez %wie oben, whatever it means
+$a=\ds\ļim_{n→∞}(a_n)$ sinnvoll
+\bew
+Angenommen $a\neq b$\\
+Sei $\e:=\dfrac{|a-b|}{2}$ SKIZZE\\ % SKIZZE
+Konvergenz: es gibt $N_1\eN$ mit $|a_n-a|<\e$, $N_2\eN$ mit $|a_n-b|<\e$ für $n\geq N_2$\\
+Sei $n=max(N_1,N_2)$\\
+$|a-b|=|a-a_n+a_n-b|\leq|a-a_n|+|a_n-b|<\e+\e=|a-b|$\\
+\Rarr $|a+b|<|a-b|$ Widerspruch\\
+\Rarr nicht $a\neq b$, d.h. $a=b$\qed
+%
+\sS{Definition}
+Eine Folge $(a_n)$ reeller Zahlen heißt $\left\{\begin{array}\text{nach oben beschränkt}\\\text{nach unten beschränkt}\\\text{beschränkt}
+\end{array}\right\}$ wenn die menge $\{a_n|n\eN_0\}$ dieselbe Eigenschaft hat.
+%
+\sS{Satz:}
+Jede konvergente Folge reeller Zahlen ist beschränkt.
+\bew
+Angenommen $a_n→a$ für \nif\\
+Wähle $\e=1$, Es gibt $N\eN$ so dass $|a_n-a|<1$ für $n\geq N$\\
+Sei $C:=max\{|a_0|,|a_1|,…,|a_{n-1}|,|a|+1\}$\\
+Dann $|a_n|\leq C$ für $n\leq N-1$\\
+Für $n\geq N$ gilt:
+$$|a_n|=|a_n-a+a|\leq|a_n-a|+|a|<1+|a|\leq C$$
+Somit $|a_n|\leq C$ für alle $n$\\
+$-C\leq a_n\leq C$ für alle $n$\\
+\Rarr Folge $(a_n)$ ist beschränkt.
+\bem
+Nicht jede beschränkte Folge konvergiert.\\
+z.B. $((-1)^n)_{n\eN_0}$ ist beschränkt, aber konvergiert nicht.
+%
+\sS{Definition}
+Eine Folge reeller Zahlen $(a_n)$ konvergiert uneigentlich gegen ∞ wenn gilt:\\
+Für jedes $C\eR$ gibt es $N\eR$ mit $a_m>C$ für alle $n\geq N$ SKIZZE
+\bem
+Alternative Terminologie:\\
+"konvergiert uneigentlich"="divergiert bestimmt"
+\bsp
+\begin{enumerate}
+\item{$a_n=n.\ a_n→∞$}
+\item{$a_n=(-1)^n.\ (0,-1,2,-3,4,-5,…)$ konvergiert \ul{nicht} uneigentlich gegen ∞
+\end{enumerate}
+\notat{$a_n→∞$ für \nif{} $\ds\lim_\nif\an=∞$}
+%
+\sS{Satz (Potenzwachstum)}
+Sei $x\eR$ betrachtete % sehr unsicher, steht nur "Betr." dort
+Folge $(x^n)_n\geq 0$
+\begin{enumerate}
+\item{wenn $|x|>1$ dann ist $(x^n)$ divergent}
+\item{wenn $x>1$ dann $x^n→∞$ für \nif}
+\item{wenn $|x|<1$ dann ist $x^n→0$  für \nif}
+\end{enumerate}
+%
+\Bew{2)}
+Sei $x>1$\\[4pt]
+Schreibe $x=1+a$. Dann $a>0$ Gegeben $C\eR$\\
+$\underset{\text{Satz 2.9}}{\Rarr} x^n=(1+a)^n\geq 1+n·a$\\
+Archimedes: $∃ N\eN$ mit $N·a>C$\ok
+%
+\begin{enumerate}
+\item{Sei $|x|>1$ Dann $|x^n|=|x|^n,\ |x|>1$}
+\item{\Rarr{} $|x^n|$ st nicht beschränkt für \nN{} \Rarr{} $(x^n)$ divergiert} %etwas unschlüssig was die lustigen einrückungen für die logik bedeuten
+\item{Sei $|x|<1$ Wenn $x=0 \Rarr x^n=0$ für alle $n$\ok}
+\end{enumerate}

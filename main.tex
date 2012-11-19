@@ -53,17 +53,17 @@
 
 
 % Mengen
-\mcmd{\N}{\text{$\mathds{N}$}}
-\mcmd{\Z}{\text{$\mathds{Z}$}}
-\mcmd{\Q}{\text{$\mathds{Q}$}}
-\mcmd{\R}{\text{$\mathds{R}$}}
-\mcmd{\C}{\text{$\mathds{C}$}}
+\mcmd{\N}{\mathds{N}}
+\mcmd{\Z}{\mathds{Z}}
+\mcmd{\Q}{\mathds{Q}}
+\mcmd{\R}{\mathds{R}}
+\mcmd{\C}{\mathds{C}}
 
-\mcmd{\nN}{\text{$n\in\N$}}
-\mcmd{\eN}{\text{$\in\N$}}
-\mcmd{\eZ}{\text{$\in\Z$}}
-\mcmd{\eQ}{\text{$\in\Q$}}
-\mcmd{\eR}{\text{$\in\R$}}
+\mcmd{\nN}{n\in\N}
+\mcmd{\eN}{\in\N}
+\mcmd{\eZ}{\in\Z}
+\mcmd{\eQ}{\in\Q}
+\mcmd{\eR}{\in\R}
 
 % griechische Buchstaben
 \mcmd{\z}{\zeta}
@@ -79,6 +79,10 @@
 \mcmd{\bs}{\backslash}
 \mcmd{\ba}{\backslash}
 
+% häufige mathemathische Ausdrücke
+\mcmd{\nif}{n→∞}}
+\mcmd{\an}{(a_n)}
+
 % Formelkürzel
 \cmd{\bino}[2]{\text{$\ds\binom{#1}{#2} = \frac{#1!}{#2!\cdot(#1-#2)!}$}}
 
@@ -89,14 +93,14 @@
 \cmd{\uS}[1]{\section*{\underline{#1}}}
 \cmd{\Wdh}[1]{\section*{Wiederholung #1}}
 \cmd{\wdh}{\Wdh{}}
-\cmd{\sss}[1]{\vspace{-4mm}\subsection*{\underline{#1}}}
+\cmd{\sss}[1]{\subsection*{\underline{#1}}}
 \cmd{\bsp}{\sss{Beispiel:}}
-\cmd{\Bsp}[1]{\vspace{-4mm}\subsection*{\underline{Beispiel:} #1}}
+\cmd{\Bsp}[1]{\subsection*{\underline{Beispiel:} #1}}
 \cmd{\bem}{\sss{Bemerkung:}}
 \cmd{\bew}{\sss{Beweis:}}
-\cmd{\Bew}[1]{\vspace{-4mm}\subsection*{\underline{Beweis} #1:}}
+\cmd{\Bew}[1]{\subsection*{\underline{Beweis} #1:}}
 \cmd{\anm}{\sss{Anmerkung:}}
-\cmd{\ssss}[1]{\vspace{4mm}{\bf\underline{#1}}\\}
+\cmd{\ssss}[1]{{\bf\underline{#1}}\\}
 
 % Textkürzel
 \cmd{\ok}{\hfill{\checkmark}}
