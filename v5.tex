@@ -19,7 +19,7 @@ $(1,0,\frac{1}{2},0,\frac{1}{3},0,\frac{1}{4},0,…)$ konvergiert gegen $0$
 Sei $(a_n)$ Folge reeller Zahlen und $a,b\eR$ mit $a_n→a$ und $a_n→b$ für $n→∞$. Dann ist $a·b$ %mut zur lücke, würde ich behaupten
 \bem
 Dann ist bez %wie oben, whatever it means
-$a=\ds\ļim_{n→∞}(a_n)$ sinnvoll
+$a=\ds\lim_{n→∞}(a_n)$ sinnvoll
 \bew
 Angenommen $a\neq b$\\
 Sei $\e:=\dfrac{|a-b|}{2}$ SKIZZE\\ % SKIZZE
@@ -86,7 +86,7 @@ Sei $0<|x|<1$\\
 Dann $\frac{1}{|x|}>1$\\
 Gegeben sei $\e>0$\\
 Setze $C=\frac{1}{\e}$\\
-\underset{\text{2)}}{\Rarr} es gibt $N\eN$ mit $\frac{1}{|x|^n}>C$ für $n\geq N$ \Rarr $|x|^n<\e$ für $n\geq N$\qed 
+$\underset{\text{2)}}{\Rarr}$ es gibt $N\eN$ mit $\frac{1}{|x|^n}>C$ für $n\geq N$ \Rarr $|x|^n<\e$ für $n\geq N$\qed 
 %
 \sS{Satz (Rechenregeln)}
 Seien $(a_n)_{\nN_0},\ (b_n)_{\nN_0}$ zwei konvergente Folgen reeller Zahlen\\
@@ -117,5 +117,25 @@ Rechne:
 $$|a_n·b_n-a·b|=|a_n·b_n-a_n·b+a_n·b-a·b|=|a_n(b_n-b)+b(a_n-a)|\geq |a_n|·|b_n-b|+|b|·|a_n-a|$$
 Es gibt $N\eN$ mit $\left.\begin{array}|a_n-a|<\frac{1}{2C}·\e\\|b_n-b|<\frac{1}{2C}·\e\end{array} \left\}$ für $n\geq N$\\
 Für $n\geq N$ gilt:
-$$|a_n·b_n-a·b|<|a_n|\frac{1}{2C}\e+|b|\frac{1}{2C}\e\leq C·\frac{1}{2C}\e+C·\frac{1}{2C}\e=\e \Rarr \text{2) gilt}$$}
+$$|a_n·b_n-a·b|<|a_n|\frac{1}{2C}\e+|b|\frac{1}{2C}\e\leq C·\frac{1}{2C}\e+C·\frac{1}{2C}\e=\e \Rarr \text{ 2) gilt}$$}
+\item{Sei $b\neq 0$\\
+Wähle $\edef=\frac{1}{2}|b|>0$ SKIZZE\\
+Es gibt $N\eN$ mit $|b_n-b|<\frac{1}{2}|b|$ für $n\geq N$\\
+Dann gilt für $n\geq N$:
+$$|b_n|=|b_n-b+b|=|b-b+b_n|=|b-(b-b_n)|\geq |b|-|b-b_n|>|b|-\frac{1}{2}|b|=\frac{1}{2}|b|$$
+Insbesondere $|b_n|\neq 0$ für $n\geq N$\\
+Rechne:
+$$\left|\frac{1}{b}-\frac{1}{b_n}\right|=\left|\frac{b_n-b}{b·b_n}\right|=\frac{1}{|b|·|b_n|}·|b_n-b|<\frac{2}{|b|^2}·|b_n-b| \text{ für $n\geq N$}$$\footnote{NR: $|b_n|>\frac{1}{2}|b| \Rarr \frac{1}{|b_n|}<\frac{2}{|b_n|}$}
+Gegeben sei $\e>0$\\
+Es gibt $N_1\eN$ mit $|b_n-b|<\frac{|b|^2}{2}\e$ für $n\geq N_1$\Rarr{} für $n\geq max(N_1,N_2)$ gilt:\\
+$$|\frac{1}{b_n}-\frac{1}{b}<\frac{2}{|b|^2}·\frac{|b|^2}{2}\e=\e \Rarr \text{ 3) gilt}$$\qed}
 \end{enumerate}
+\ul\{Zusatz:\} Wenn \$a\_n→a\$ und \$b\_n→b\$ für \verb+\+nif\{\} dann gilt:
+\begin{enumerate}
+\setcounter{enumi}{3}
+\item{Für $C\eR$ ist $C·a_n→C·a$ für \nif }% C groß oder klein?
+\item{$(a_n-b_n)→a-b$ für \nif}
+\item{Wenn $b\neq 0$ dann $\frac{a_n}{b_n}→\frac{a}{b}$ für \nif}
+\end{enumerate}
+\bew
+Übung
