@@ -119,24 +119,24 @@ Dann $exp(1) = \frac{1}{n} + ... \frac{1}{n}$ % underbrace unter den Brüchen {n
 $exp(1) \geq 1 + n \epsilon$\\
 $n \leq \frac{exp(1) - 1}{\epsilon}$\\
 Das gilt nur für endliche viele $n \in \N$\\
-$Rarr$ Beh.\\
+$\Rarr$ Beh.\\
 \underline{Zeige:} exp ist stetig an 0. Gegeben sei $\epsilon > 0, OE ? \epsilon < 1$\\
 Wähle $n \in \N$ mit $exp(\frac{1}{n}) < 1 + \epsilon$\\
-$$Rarr exp(-\frac{1}{n}) = exp(\frac{1}{n})^{-1} < \frac{1}{1 + \epsilon} = \frac{1 - \epsilon}{(1+\epsilon)(1-\epsilon)} = \frac{1-\epsilon}{1 - \epsilon^2} > 1 - \epsilon$$\\
+$$\Rarr exp(-\frac{1}{n}) = exp(\frac{1}{n})^{-1} < \frac{1}{1 + \epsilon} = \frac{1 - \epsilon}{(1+\epsilon)(1-\epsilon)} = \frac{1-\epsilon}{1 - \epsilon^2} > 1 - \epsilon$$\\
 Sei $\delta \frac{1}{n}$\\
 Sei $y \in \R, |0 - y| < \delta = \frac{1}{n}$\\
 $|y| < \frac{1}{n}$ d.h.\\
-$-\frac{1}{n} < y < \frac{1}{n}$\\
+$-\frac{1}{n} < y < \frac{1}{n}$\\ \\
 exp streng monoton wachsend.\\
-$$Rarr 1 - \epsilon < exp(-\frac{1}{n}) < \exp(y) < exp(\frac{1}{n}) < 1 + \epsilon$$\\
-$Rarr |exp(y) - exp(0)| < \epsilon$ Also exp stetig in 0\\
+$$\Rarr 1 - \epsilon < exp(-\frac{1}{n}) < \exp(y) < exp(\frac{1}{n}) < 1 + \epsilon$$\\
+$\Rarr |exp(y) - exp(0)| < \epsilon$ Also exp stetig in 0\\
 \underline{Zeige:} exp ist eine stetig in $x \in \R$. Gegeben sei $\epsilon > $\\
 Sei $y = x + h$, $|h| < \delta$ ($\delta$ noch zu wählen)
 $$|exp(y) - exp(x)| = |exp(x + h) - exp(x)| = |exp(x) \cdot exp(h) - exp(x)| = exp(x) \cdot exo(h) -1$$\\
 $|exp(y) -exp(x) | < \epsilon$\\
 $$\Leftrightarrow exp(x) \cdot |exp(h) - 1| < \epsilon \Leftrightarrow exp(h) - 1 < \frac{\epsilon}{exp(x)} = \epsilon '$$\\
 Weil exp stetig in 0 ist gibt es ein $\delta > 0$ mit $|h| < \delta \Rarr |exp(h) -1| < \frac{\epsilon}{exp(x)}$\\
-$Rarr$ exp ist stetig in x \qed\\
+$\Rarr$ exp ist stetig in x \qed\\
 %
 \sS{Satz (Folgenstetigkeit)}
 Sei $D\subseteq\R,\ x\in D,\ f:D→\R$ Funktion $f$ ist genau dann stetig in $x$ wenn gilt:\\
