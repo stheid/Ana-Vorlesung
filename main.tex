@@ -87,7 +87,8 @@
 \cmd{\Def}{\sS{Definition:}}
 \cmd{\Satz}{\sS{Satz:}}
 \cmd{\uS}[1]{\section*{\underline{#1}}}
-\cmd{\wdh}{\section*{Wiederholung}}
+\cmd{\Wdh}[1]{\section*{Wiederholung #1}}
+\cmd{\wdh}{\Wdh{}}
 \cmd{\sss}[1]{\vspace{-4mm}\subsection*{\underline{#1}}}
 \cmd{\bsp}{\sss{Beispiel:}}
 \cmd{\Bsp}[1]{\vspace{-4mm}\subsection*{\underline{Beispiel:} #1}}
@@ -119,7 +120,11 @@
 \renewcommand*{\contentsname}{Inhaltsverzeichnis}
 
 \begin{document}
-%\maketitle\tableofcontents\newpage\input{v1}\newpage\input{v2}\newpage\input{v3}\newpage\input{v4}\newpage\input{v6}\newpage\input{v7}\newpage\input{v8}\newpage\input{v9}\newpage\input{v10}\newpage\input{v11}\newpage
-\input{v12-s}\newpage
+%\maketitle\tableofcontents\newpage\input{v1}\newpage\input{v2}\newpage
+%\input{v3}\newpage
+%\input{v4}\newpage\input{v6}\newpage
+\input{v7}\newpage\input{v8}\newpage\input{v9}\newpage\input{v10}\newpage
+\input{v11}\newpage
+%\input{v12-s}\newpage
 \end{document}
 
