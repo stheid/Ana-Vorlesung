@@ -56,4 +56,82 @@ Ein Körper K ist eine Menge mit $+$ und $\cdot$, sodass gewisse Eigenschaften e
 	$0 < 1 \Rarr 1 < 1 + 1 \Rarr 1 + 1 < 1 + 1 + 1 $ etc.\\
 	$0 < 1 < 1 + 1 < 1 + 1 +1 $ etc.
 	Für $n \in \N$ setze $underbrace{n:= 1 + 1 + 1 + ... + 1}$
+	\phantom{Für $n \in \N$ setze XXX} n-Faktoren\\
+	Dann $0 < 1 < 2 < 3 ... $ in $K$}}
+	\underline{Folge:} Verschiedene natürliche Zahlen bleiben in $K$ verschieden.\\
+	%Falscher Pfeil, verbesserung kommt noch
+	Fasse $\N$ als Teilmenge von $K$ auf.\\
+	Dann $$\Z = \left\lbrace a - b | a, b \in N \right\rbrace \subseteq K$$\\
+	\phantom{Dann }$$Q = \left\lbrace \frac{a}{b} | a, b \in N\right\rbrace \subseteq K$$\\ \\
+	Insbesondere ist $K$ unendlich.\\
+	\\
+	z.B. hat $F_z$ keine Anordnung.\\
+	\\
+\sS{Definition}
+	Sei $K$ ein angeordneter Körper mit $a \in K$\\
+	Der Absolutbetrag von $a$ ist definiert als \\
+	$|a| = \left\lbrace \begin{array}{lll}
+	\text{$a$ wenn a > 0}\\
+	\text{$-a$ wenn a < 0}
+	\end{array}\right.$
+\sS{Satz}
+	Sei $K$ ein angeordneter Körper $a, b, c \in K$\\
+	Dann gilt:
+	\begin{enumerate}
+	\item{$a = 0$ wenn $|a| = 0$}
+	\item{$-|a| \leq a \leq |a|$}
+	\item{Dreiecksungleichung\\
+	$|a + b| \leq |a| + |b|$}
+	\item{untere Dreiecksungleichung
+	$|a - b| \geq |a| - |b|$} % Nochmal prüfen...
+	\end{enumerate}
+\bew
+	\begin{enumerate}
+	\item{klar.}
+	\item{wenn $a \geq 0$:\\
+	$|a| \geq 0$\\
+	$\Rarr -|a| \leg 0 \leq a \leq |a|$\\
+	wenn $a \leq 0$:
+	$-|a| \leg a \leq 0 \leq |a|$}
+	\item{Es gilt: $-|a| \leq a \leq |a|$, $-|b| \leq b \leq |b|$\\
+	wenn $a + b \geq 0$\\
+	$|a + b| = a + b \leq |a| + b \leq |a| + |b|$
+	wenn $a + b < 0$\\
+	$|a + b| = -(a + b) = (-a) + (-b) \leq |a| + |b|$}
+	\item{$(a - b) + b = a$\\
+	$\Rarr |a| = |(a - b) + b| \leq |a - b| + b$\\
+	$|a - b| \leq |a - b|$} % ??? Noch mal gegenlesen, mathematisch schwierig.
+	\end{enumerate}
+\sS{Satz Bernoulli'sche Ungleichungen}
+	Sei $K$ ein angeordneter Körper $a, b \in K, a > -1$ und $n \in \N \{0, 1, 2, 3, 4, ...\}$.\\
+	Dann gilt:\\
+	$(1 + a)^n \geq 1 + n \cdot a$\\
+	\\
+	Beweis durch vollständige Induktion:
+	\ind{
+		$$n = 0\\
+		(1 + a)^0 = 1 = 1 + 0 \cdot a$$
+	}{
+		Annahme:\\
+		$$(1 + a)^{n + 1} &= (1 + a)(1 + a)^n \geq (1 + a)(1 + n \cdot a)$$\\
+		weil $1 + a > 0$\\
+		$&= 1 + a + n \cdot a + n \cdot a^2$\\
+		$&= 1 + (n + 1) \cdot a + n \cdot a^2$\\
+		weil $a^2 \geq 0 \Rarr n \cdot a^2 \geq 0$
+	}
+\sS{Definition}
+	Sei $K$ ein angeordneter Körper, $M \subseteq K$ eine Teilmenge, $a \in K$.\\
+	\begin{enumerate}
+	\item{$M \leq a$ bedeutet: $x \leq a$ für jedes $x \in M$}
+	\item{$a$ heißt ",obere Schranke"' von $M$, wenn $M \leq a$.\\
+		$a$ heißt ",untere Schranke"' wenn $M \geq a$}
+	\item{$M$ heißt nach oben beschränkt wenn $M$ eine obere Schranke hat.\\
+	Analog: nach unten beschränkt wenn $M$ eine untere Schranke hat.}
+	\item{$a$ heißt Maximum von $M$, wenn $M \leq a$ \underline{und} $a \in M$. $a = max(M)$\\
+		$a$ heißt Minimum von $M$, wenn $M \geq a$ \underline{und} $a \in M$. $a = min{M}$}
+	\end{enumerate}
+\bew
+	Sei $a, b \in M$\\
+	$M \leq a, M \leq b$\\
+	Dann $b \leq a$ und $b \leq a \Rarr a = b$\\
 	
