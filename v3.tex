@@ -22,7 +22,7 @@ $a^{n \cdot m} = (a^{n})^m$\\
 Übung
 %
 \sS{Definition}
-    Ein angeordneter Körper ist ein Körper K für dessen Elemente eine "Kleiner als Beziehung" < definiert ist, so dass folgende Eigenschaften erfüllt sind:\\
+    Ein angeordneter Körper ist ein Körper K für dessen Elemente eine "Kleiner als Beziehung" $<$ definiert ist, so dass folgende Eigenschaften erfüllt sind:\\
     \begin{enumerate}
     \item{Für alle $a, b \in K$ gilt genau eine von drei Notationen:\\
     $a < b oder a = b oder a > b$}
@@ -53,24 +53,27 @@ $a^{n \cdot m} = (a^{n})^m$\\
 	Sei $K$ ein Angeordneter Körper:\\
 	$0 < 1 \Rarr 1 < 1 + 1 \Rarr 1 + 1 < 1 + 1 + 1 $ etc.\\
 	$0 < 1 < 1 + 1 < 1 + 1 +1 $ etc.
-	Für $n \in \N$ setze $\underbrace{n:= 1 + 1 + 1 + ... + 1}_{\text{n-Faktoren}}$\\
+	Für $n \in \N$ setze $underbrace{n:= 1 + 1 + 1 + ... + 1}$
+	
+	\phantom{Für $n \in \N$ setze XXX} n-Faktoren\\
 	Dann $0 < 1 < 2 < 3 ... $ in $K$
-	\ul{Folge:} Verschiedene natürliche Zahlen bleiben in $K$ verschieden.\\
+	\underline{Folge:} Verschiedene natürliche Zahlen bleiben in $K$ verschieden.\\
 	%Falscher Pfeil, verbesserung kommt noch
 	Fasse $\N$ als Teilmenge von $K$ auf.\\
-	Dann 
-	$$\Z = \left\lbrace a - b | a, b \in N \right\rbrace \subseteq K$$
-$$Q = \left\lbrace \frac{a}{b} | a, b \in N\right\rbrace \subseteq K$$
-	Insbesondere ist $K$ unendlich.\\[4pt]
-	z.B. hat $F_z$ keine Anordnung.\\[4pt]
-\Def
+	Dann $$\Z = \left\lbrace a - b | a, b \in N \right\rbrace \subseteq K$$\\
+	\phantom{Dann }$$Q = \left\lbrace \frac{a}{b} | a, b \in N\right\rbrace \subseteq K$$\\ \\
+	Insbesondere ist $K$ unendlich.\\
+	\\
+	z.B. hat $F_z$ keine Anordnung.\\
+	\\
+\sS{Definition}
 	Sei $K$ ein angeordneter Körper mit $a \in K$\\
 	Der Absolutbetrag von $a$ ist definiert als \\
 	$|a| = \left\lbrace \begin{array}{lll}
-	a & \text{wenn} & a > 0\\
-	-a & \text{wenn} & a < 0
+	\text{$a$ wenn a > 0}\\
+	\text{$-a$ wenn a < 0}
 	\end{array}\right.$
-\Satz
+\sS{Satz}
 	Sei $K$ ein angeordneter Körper $a, b, c \in K$\\
 	Dann gilt:
 	\begin{enumerate}
@@ -86,7 +89,7 @@ $$Q = \left\lbrace \frac{a}{b} | a, b \in N\right\rbrace \subseteq K$$
 	\item{klar.}
 	\item{wenn $a \geq 0$:\\
 	$|a| \geq 0$\\
-	\Rarr $ -|a| \leq 0 \leq a \leq |a|$\\
+	$\Rarr -|a| \leq 0 \leq a \leq |a|$\\
 	wenn $a \leq 0$:
 	$-|a| \leq a \leq 0 \leq |a|$}
 	\item{Es gilt: $-|a| \leq a \leq |a|$, $-|b| \leq b \leq |b|$\\
@@ -103,13 +106,13 @@ $$Q = \left\lbrace \frac{a}{b} | a, b \in N\right\rbrace \subseteq K$$
 	Dann gilt:\\
 	$(1 + a)^n \geq 1 + n \cdot a$\\
 	\\
-	Beweis durch vollständige Induktion:
+	Beweis durch vollständige Induktion:\\
 	\ind{
 		$$n = 0\\
 		(1 + a)^0 = 1 = 1 + 0 \cdot a$$
 	}{
 		Annahme:\\
-		$$(1 + a)^{n + 1} = (1 + a)(1 + a)^n \geq (1 + a)(1 + n \cdot a)$$
+		$$(1 + a)^{n + 1} = (1 + a)(1 + a)^n \geq (1 + a)(1 + n \cdot a)$$\\
 		weil $1 + a > 0$\\
 		$= 1 + a + n \cdot a + n \cdot a^2$\\
 		$= 1 + (n + 1) \cdot a + n \cdot a^2$\\
@@ -129,6 +132,70 @@ $$Q = \left\lbrace \frac{a}{b} | a, b \in N\right\rbrace \subseteq K$$
 \bew
 	Sei $a, b \in M$\\
 	$M \leq a, M \leq b$\\
-	Dann $b \leq a$ und $b \leq a \Rarr a = b$\\
-	Für \nN{} setze $underbrace{n:= 1 + 1 + 1 + … + 1}$
-	
+	Dann $b \leq a$ und $b \leq a \Rarr a = b$ \qed\\
+\bsp
+	$K = \Q$
+	\begin{enumerate}
+	\item{$M = \N$\\
+	Sei $a \in \Q$\\
+	$a \leq N \equ a \leq n$ für alle $n \in N$\\
+	\phantom{$a \leq \N $} $\equ a \leq 1$\\
+	Wenn $N$ nach unten beschränkt $1 = min(N)$}
+	\item{$M = \left\lbrace -\frac{1}{n} | n \in \N \right\rbrace \qquad 0 \notin M$\\
+	\begin{tabbing}
+	$-1 = min(M)$ \= $\Rarr M$ ist nach unten beschränkt.\\
+	$M \leq 0$	\> $\Rarr M$ ist nach oben beschränkt.\\
+	\end{tabbing}
+	$M$ hat kein Maximum.\\
+	Sei $a \in M$ dann $a = -\frac{1}{n}, n \in N, -\frac{1}{n + 1} \in M$\\
+	$n + 1 > n \Rarr \frac{1}{n + 1} < \frac{1}{n} \Rarr -\frac{1}{n + 1} > -\frac{1}{n}$\\
+	$M \nleq -\frac{1}{n}$ $a$ ist keine obere Schranke.}
+	\item{$M = \left\lbrace -\frac{1}{n} | n \in \N\right\rbrace \cup \{ 0 \}$\\
+	$min(M) = -1$\\
+	$max(M) = 0$}
+	\item{$M = \emptyset$ hat weder ein $min(M)$ noch ein $max(M)$\\
+	Jedes $a \in \Q$ erfüllt $a \leq M$ und $M \leq a$}
+	\end{enumerate}
+\sS{Satz}
+	\begin{enumerate}
+	\item{Sei $K$ ein angeordneter Körper.\\
+	Wenn $M$ endlich und nicht leer, dann hat $M$ auch ein $max$ und ein $min$}
+	\item{Wohlordnungsprinzip\\
+	Jede nicht leere Teilmenge $M \in \N$ hat ein Minimum.}
+	\end{enumerate}
+\bew
+	\begin{enumerate}
+	\item{klar.}
+	\item{$M$ ist nicht leer, wähle $n \in M$\\
+	$\{1, 2, 3, 4, 5, ... n\}$, endlich aber nicht leer.\\
+	Dann $min(\{1, 2, 3, 4, 5, ... n\} \cap M) = min(M)$ \qed}
+	\end{enumerate}
+\sS{Definition: Vollständigkeit}
+	Sei $K$ ein angeordneter Körper und $M \subseteq K$, $a \in K$\\
+	$a \ heißt kleinste obere Schranke von M oder Supremum.$
+	\begin{enumerate}
+	\item{$M \leq a$}\\[6pt]
+	und
+	\item{kein $b \in K$ mit $b < a$ erfüllt $M \leq b$}
+	\end{enumerate}
+	$a$ ist größte untere Schranke oder Infimum vom $M$, wenn
+	\begin{enumerate}
+	\item{$a \leq M$}\\[6pt]
+	und
+	\item{Kein $b \in M$ mit $a < b$ erfüllt $b \leq M$}
+	\end{enumerate}
+\notat{
+	$a = sup(M)$\\
+	$a = inf(M)$}
+\bem
+	Wenn $a = max(M) \Rarr a = sup(M)$ 
+\bew
+	Sei $a, b \in M$ und $a \nleq b$\\
+	$\Rarr M \nleq b \Rarr a$ ist Supremum
+\bem
+	Wenn ein Supremum existiert, ist es eindeutig.
+\bew
+	$a, b$ sind Supremum von M\\
+	$M \leq a$, $M \leq b \Rarr a \leq b $ und $b \leq a \Rarr a = b$ \qed
+\bsp
+	$sup(\{ -\frac{1}{n} | n \in \N \})$

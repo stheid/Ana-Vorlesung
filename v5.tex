@@ -1,0 +1,141 @@
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 5}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 22.10.2012}
+% *****************************************
+%
+\wdh
+Eine Folge $(a_n)_{n\eN_0}$ reeller Zahlen konvergiert genen $a\eR$ wenn gilt:\\
+Für jedes $\e>0$ gibt es ein $N\eN$ so dass $|a_1·a|<\e$ für alle $n\geq\N$.\\
+%bez oder so was, nicht ganz klar zu lesen
+\ul{Bezüglich} $a_n→a$ für $n→∞$ oder $\ds\lim_{n→∞}(a_n)=a$\\
+\bsp
+$\frac{1}{n}→0$ für $n→∞\qquad(-1)^n$ divergiert\\
+$(a_n)$ ist divergent, wenn sie gegen kein $a\eR$ konvergiert
+\bsp
+$(1,0,\frac{1}{2},0,\frac{1}{3},0,\frac{1}{4},0,…)$ konvergiert gegen $0$
+%
+\sS{Satz: (Eindeutigkeit der Grenzwerte)}
+Sei $(a_n)$ Folge reeller Zahlen und $a,b\eR$ mit $a_n→a$ und $a_n→b$ für $n→∞$. Dann ist $a·b$ %mut zur lücke, würde ich behaupten
+\bem
+Dann ist bez %wie oben, whatever it means
+$a=\ds\lim_{n→∞}(a_n)$ sinnvoll
+\bew
+Angenommen $a\neq b$\\
+Sei $\e:=\dfrac{|a-b|}{2}$ SKIZZE\\ % SKIZZE
+Konvergenz: es gibt $N_1\eN$ mit $|a_n-a|<\e$, $N_2\eN$ mit $|a_n-b|<\e$ für $n\geq N_2$\\
+Sei $n=max(N_1,N_2)$\\
+$|a-b|=|a-a_n+a_n-b|\leq|a-a_n|+|a_n-b|<\e+\e=|a-b|$\\
+\Rarr $|a+b|<|a-b|$ Widerspruch\\
+\Rarr nicht $a\neq b$, d.h. $a=b$\qed
+%
+\sS{Definition}
+Eine Folge $(a_n)$ reeller Zahlen heißt $\left\{\begin{array}{c}\text{nach oben beschränkt}\\\text{nach unten beschränkt}\\\text{beschränkt}
+\end{array}\right\}$ wenn die menge $\{a_n|n\eN_0\}$ dieselbe Eigenschaft hat.
+%
+\sS{Satz:}
+Jede konvergente Folge reeller Zahlen ist beschränkt.
+\bew
+Angenommen $a_n→a$ für \nif\\
+Wähle $\e=1$, Es gibt $N\eN$ so dass $|a_n-a|<1$ für $n\geq N$\\
+Sei $C:=max\{|a_0|,|a_1|,…,|a_{n-1}|,|a|+1\}$\\
+Dann $|a_n|\leq C$ für $n\leq N-1$\\
+Für $n\geq N$ gilt:
+$$|a_n|=|a_n-a+a|\leq|a_n-a|+|a|<1+|a|\leq C$$
+Somit $|a_n|\leq C$ für alle $n$\\
+$-C\leq a_n\leq C$ für alle $n$\\
+\Rarr Folge $(a_n)$ ist beschränkt.
+\bem
+Nicht jede beschränkte Folge konvergiert.\\
+z.B. $((-1)^n)_{n\eN_0}$ ist beschränkt, aber konvergiert nicht.
+%
+\sS{Definition}
+Eine Folge reeller Zahlen $(a_n)$ konvergiert uneigentlich gegen ∞ wenn gilt:\\
+Für jedes $C\eR$ gibt es $N\eR$ mit $a_m>C$ für alle $n\geq N$ SKIZZE
+\bem
+Alternative Terminologie:\\
+"konvergiert uneigentlich"="divergiert bestimmt"
+\bsp
+\begin{enumerate}
+\item{$a_n=n.\ a_n→∞$}
+\item{$a_n=(-1)^n.\ (0,-1,2,-3,4,-5,…)$ konvergiert \ul{nicht} uneigentlich gegen ∞}
+\end{enumerate}
+\notat{$a_n→∞$ für \nif{} $\ds\lim_\nif\an=∞$}
+%
+\sS{Satz (Potenzwachstum)}
+Sei $x\eR$ betrachtete % sehr unsicher, steht nur "Betr." dort
+Folge $(x^n)_n\geq 0$
+\begin{enumerate}
+\item{wenn $|x|>1$ dann ist $(x^n)$ divergent}
+\item{wenn $x>1$ dann $x^n→∞$ für \nif}
+\item{wenn $|x|<1$ dann ist $x^n→0$  für \nif}
+\end{enumerate}
+%
+% folgendes ist von der einrückunt und unterordnung sehr unsicher bitte überprüfen
+%
+\Bew{2)}
+Sei $x>1$\\[4pt]
+Schreibe $x=1+a$. Dann $a>0$ Gegeben $C\eR$\\
+$\underset{\text{Satz 2.9}}{\Rarr} x^n=(1+a)^n\geq 1+n·a$\\
+Archimedes: $∃ N\eN$ mit $N·a>C$\ok
+\Bew{1}
+Sei $|x|>1$ Dann $|x^n|=|x|^n,\ |x|>1\underset{\text{2)}}{\Rarr}|x^n|$ ist nicht beschränkt für \nN{} \Rarr{} $(x^n)$ divergiert
+\Bew{3}
+Sei $|x|<1$ Wenn $x=0 \Rarr x^n=0$ für alle $n$\ok\\
+Sei $0<|x|<1$\\
+Dann $\frac{1}{|x|}>1$\\
+Gegeben sei $\e>0$\\
+Setze $C=\frac{1}{\e}$\\
+$\underset{\text{2)}}{\Rarr}$ es gibt $N\eN$ mit $\frac{1}{|x|^n}>C$ für $n\geq N$ \Rarr $|x|^n<\e$ für $n\geq N$\qed 
+%
+\sS{Satz (Rechenregeln)}
+Seien $(a_n)_{\nN_0},\ (b_n)_{\nN_0}$ zwei konvergente Folgen reeller Zahlen\\
+Sei $a_n→a$ für \nif\\
+\phantom{Sei }$b_n→a$ für \nif\\ % EINRÜCKUNG
+Dann gilt:
+\begin{enumerate}
+\item{$(a_n+b_n)→a+b$ für \nif}
+\item{$(a_n·b_n)→a·b$ für \nif}
+\item{Angenommen $b\neq 0$\\
+Dann ist $b\neq 0$ für fast alle \nN{} und $\frac{1}{b_n}→\frac{1}{b}$ für \nif}
+\end{enumerate}
+%
+\sss{Definition}
+"fast alle"="alle bis auf endlich viele".
+%
+\bew
+\begin{enumerate}
+\item{Gegeben sei $\e>0$\\
+Es gibt $N_1\eN$ mit $|a_n-a|<\frac{\e}{2}$ für $n\geq N_1$\\
+Es gibt $N_2\eN$ mit $|b_n-b|<\frac{\e}{2}$ für $n\geq N_2$\\
+Sei $N=max(N_1,N_2)$ für $n\geq N$ gilt:\\
+$$|a_n+b_n-(a+b)|=|(a_n-a)+(b_n-b)|\leq |a_n-a|+|b_n-b|<\frac{\e}{2}+\frac{\e}{2}=\e \Rarr \text{1)}$$}
+\item{$(a_n)$ konvergiert \Rarr{} ist beschränkt.\\
+Es gibt $C\eR$ mit $|a_n|<C$ für alle $\nN_0$\\
+ohne Einschränkungen sei $C>|b|$\\
+Rechne:
+$$|a_n·b_n-a·b|=|a_n·b_n-a_n·b+a_n·b-a·b|=|a_n(b_n-b)+b(a_n-a)|\geq |a_n|·|b_n-b|+|b|·|a_n-a|$$
+Es gibt $N\eN$ mit $\left.\begin{array}{l}|a_n-a|<\frac{1}{2C}·\e\\|b_n-b|<\frac{1}{2C}·\e\end{array} \right\}$ für $n\geq N$\\
+Für $n\geq N$ gilt:
+$$|a_n·b_n-a·b|<|a_n|\frac{1}{2C}\e+|b|\frac{1}{2C}\e\leq C·\frac{1}{2C}\e+C·\frac{1}{2C}\e=\e \Rarr \text{ 2) gilt}$$}
+\item{Sei $b\neq 0$\\
+Wähle $\e=\frac{1}{2}|b|>0$ SKIZZE\\
+Es gibt $N\eN$ mit $|b_n-b|<\frac{1}{2}|b|$ für $n\geq N$\\
+Dann gilt für $n\geq N$:
+$$|b_n|=|b_n-b+b|=|b-b+b_n|=|b-(b-b_n)|\geq |b|-|b-b_n|>|b|-\frac{1}{2}|b|=\frac{1}{2}|b|$$
+Insbesondere $|b_n|\neq 0$ für $n\geq N$\\
+Rechne:
+$$\left|\frac{1}{b}-\frac{1}{b_n}\right|=\left|\frac{b_n-b}{b·b_n}\right|=\frac{1}{|b|·|b_n|}·|b_n-b|<\frac{2}{|b|^2}·|b_n-b| \text{ für $n\geq N$}$$\footnote{NR: $|b_n|>\frac{1}{2}|b| \Rarr \frac{1}{|b_n|}<\frac{2}{|b_n|}$}
+Gegeben sei $\e>0$\\
+Es gibt $N_1\eN$ mit $|b_n-b|<\frac{|b|^2}{2}\e$ für $n\geq N_1$\Rarr{} für $n\geq max(N_1,N_2)$ gilt:\\
+$$|\frac{1}{b_n}-\frac{1}{b}<\frac{2}{|b|^2}·\frac{|b|^2}{2}\e=\e \Rarr \text{ 3) gilt}$$\qed}
+\end{enumerate}
+\ul\{Zusatz:\} Wenn \$a\_n→a\$ und \$b\_n→b\$ für \verb+\+nif\{\} dann gilt:
+\begin{enumerate}
+\setcounter{enumi}{3}
+\item{Für $C\eR$ ist $C·a_n→C·a$ für \nif }% C groß oder klein?
+\item{$(a_n-b_n)→a-b$ für \nif}
+\item{Wenn $b\neq 0$ dann $\frac{a_n}{b_n}→\frac{a}{b}$ für \nif}
+\end{enumerate}
+\bew
+Übung
