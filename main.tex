@@ -1,13 +1,14 @@
 \documentclass[a4paper,10pt]{scrreprt}
-\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+%\usepackage[ngerman]{babel}
 \usepackage{amsmath,amssymb}
-\usepackage{textcomp}
-\usepackage[T1]{fontenc}
-\usepackage{breqn}
+%\usepackage{unicode-math}
+%\usepackage[T1]{fontenc}
+%\usepackage{breqn}
 \usepackage{dsfont}
 \usepackage{calligra}
 \usepackage{cancel}
-\usepackage{tipa}
+%\usepackage{tipa}
 \usepackage{soulutf8}
 
 % set underline
@@ -34,26 +35,6 @@
 \fancyhead[L]{\calligra\Large Inhaltsverzeichnis}
 % Kopfzeile rechts bzw. außen
 \fancyhead[R]{\calligra\Large{}}
-% *************************
-% *** costum characters ***
-% *************************
-
-% Unicode Character definition
-\DeclareUnicodeCharacter{00E4}{"a}
-\DeclareUnicodeCharacter{00C4}{"A}
-\DeclareUnicodeCharacter{00F6}{"o}
-\DeclareUnicodeCharacter{00D6}{"O}
-\DeclareUnicodeCharacter{00FC}{"u}
-\DeclareUnicodeCharacter{00DC}{"U}
-\DeclareUnicodeCharacter{221E}{\text{$\infty$}}
-\DeclareUnicodeCharacter{00B7}{\text{$\cdot$}}
-\DeclareUnicodeCharacter{2192}{\text{$\to$}}
-\DeclareUnicodeCharacter{2026}{\text{\ldots}}
-\DeclareUnicodeCharacter{00D7}{\text{$\times$}}
-\DeclareUnicodeCharacter{2254}{\text{:=}}
-\DeclareUnicodeCharacter{2260}{\text{$\neq$}}
-\DeclareUnicodeCharacter{2200}{\text{$\forall$}}
-\DeclareUnicodeCharacter{2203}{\text{$\exists$}}
 
 % ***********************
 % *** costum commands ***
@@ -68,11 +49,11 @@
 
 
 % Mengen
-\mcmd{\N}{\mathds{N}}
-\mcmd{\Z}{\mathds{Z}}
-\mcmd{\Q}{\mathds{Q}}
-\mcmd{\R}{\mathds{R}}
-\mcmd{\C}{\mathds{C}}
+\mcmd{\N}{\mathbb{N}}
+\mcmd{\Z}{\mathbb{Z}}
+\mcmd{\Q}{\mathbb{Q}}
+\mcmd{\R}{\mathbb{R}}
+\mcmd{\C}{\mathbb{C}}
 
 \mcmd{\nN}{n\in\N}
 \mcmd{\eN}{\in\N}

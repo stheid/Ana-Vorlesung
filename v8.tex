@@ -60,7 +60,7 @@ Sei $a \in \R$. Die Reihe $\ds \sum_{k=1}^{\infty} \frac{1}{k^a}$ konvergiert ge
 \bew
 Wenn $a \leq 0$ dann $\frac{1}{k^a} \geq 1$ \Rarr Reihe divergiert.\\
 Sei $a >0$, sei $a_n = \frac{1}{n^a}$ \\
-$\ds n < n+1 \Rarr n^a < (n+1)^a \Rarr a_n > a_{n+1}$ Somit (a_n) monoton fallend.\\
+%$\ds n < n+1 \Rarr n^a < (n+1)^a \Rarr a_n > a_{n+1}$ Somit $(a_n)$ monoton fallend.\\
 $\ds \lim_{n\to \infty} n^a = \infty \Rarr \lim_{n \to \infty} \frac{1}{n^a} = 0$ \Rarr Verdichtungslemma ist anwendbar.\\
 Bilde $\ds 2^n · a_{2^n} = 2^n · \frac{1}{(2^n)^a} = 2^n · 2^{-n · a} = 2^{n(1-a)} = (2^{1-a})^n = x^n$\\
 mit $x:=2^{1-a}$\\
@@ -99,7 +99,7 @@ Unterscheide zwei Fälle:\\
     \item{Es gibt unendlich viele extreme $n \in \N$\\
 Dies seien $n_0, < n_1, n_2...$\\
 Dann $a_{n_0} \geq a_{n_1} \geq a_{n_2} …$\\
-Weil n_0 extrem ... weil n_1 extrem.\\
+Weil $n_0$ extrem ... weil $n_1$ extrem.\\
 → monoton fallende Teilfolge gefunden}
     \item{Es gibt nur endlich viele extreme $n$\\
 Wähle $n_0 \in \N$ s.d. gilt: $m \geq n \Rarr m$ nicht extrem.\\
@@ -127,12 +127,12 @@ Gegeben sei $\e > 0$. Es gilt $N \in \N$ so dass $|a_n - a| < \frac{\e}{2}$ für
 Für $n, m \geq N$ gilt:\\
 $|a_n - a_m| = |a_n - a + a - a_m| \leq |a_n - a| + |a - a_m| < \frac{\e}{2} + \frac{\e}{2} = \e$\\
 $\Rarr (a_n)$ ist eine Cauchyfolge\\
-$Larr :$ Sei (a_n) eine Cauchyfolge\\
+$\Larr :$ Sei $(a_n)$ eine Cauchyfolge
 \sss{Behauptung:} $(a_n)$ ist beschränkt
 \bew
 Wähle $\e=1$ Es gibt $N\in\N$ mit $|a_n-a_m|<1$ für $m,n\geq N$\\
 Sei $C=max\{|a_0|,|a_1|,|a_2| … |a_N|,|a_N|+1\}$\\
-Dann $|a_n| \leq C$ für alle \N\\
+Dann $|a_n| \leq C$ für alle $\N$\\
 $(n\geq N \Rarr |a_n-a_N| < 1 \Rarr |a_n|<|a_N|+1)$\\
 Also ist $(a_n)$ beschränkt\\
 %
