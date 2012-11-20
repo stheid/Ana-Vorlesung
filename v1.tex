@@ -4,7 +4,7 @@
 \fancyhead[R]{\calligra\Large 8.10.2012}
 % **************************************************
 \chapter{Mengen}
-\Def
+\sS{Definition:}
 \begin{enumerate}
 \item Eine Menge ist eine Ansammlung verschiedener Objekte
 \item Die Objekte in einer Menge heißen \underline{Elemente}\\
@@ -27,7 +27,7 @@ Dann gilt: W $\subseteq$ M, W $\subseteq$ F, M ${\not\subseteq}$ F, F ${\not\sub
 \item {Die Menge der natürlichen Zahlen
 $\N = \{1,2,3,4 …\}$
 G sei die Menge der geraden natürlichen Zahlen
-$G := \{n \in \N | $n ist gerade$\} = \{2m | m \in \mathds{N}\} = \{2,4,6,8 …\}$
+$G := \{n \in \N | $n ist gerade$\} = \{2m | m \in \N\} = \{2,4,6,8 …\}$
 Es gilt G $\subseteq \N, \N \subseteq$ G}
 \item {Die Menge der ganzen Zahlen
 $\Z = \{0,1,-1,2,-2,3,-3, …\}$}
@@ -81,12 +81,12 @@ Ziel: Beweisen, Dass A(n) für jedes $n \in \N$ mehr ist dafür reicht es zu zei
 \item{Induktionsschrit (IS): Wenn für ein $n \in \N$ A(n) wahr ist, dann ist auch A(n+1) wahr}
 \end{enumerate}
 %
-\Satz
+\sS{Satz:}
 Für jede natürliche Zahl n gilt: $\ds 1+2+3+4+5+…+n=\frac{n(n+1)}{2}$\\
 Probe:\\
 \begin{tabular}{r|c|c|c|c}
 n & 1 & 2 & 3 & 4\\ \hline\hline
-1+2+3...+n & 1 & 3 & 6 & 10\\ \hline
+1+2+3…+n & 1 & 3 & 6 & 10\\ \hline
 $\ds \frac{n(n+1)}{2}$ & 1 & 3 & 6 & 10\\
 \end{tabular}
 \sss{Beweis des Satzes mit Induktion}
@@ -96,22 +96,22 @@ Aussage: A(n): $\ds S(n) = \frac{n(n+1)}{2}$
 \item {Induktionsanfang (IA): n=1 $S(1) = 1 = \dfrac{1·2}{2}$\marginpar{ok!}}
 \item {Induktionsschritt (IS): $n → n+1$\\
 Annahme: A(n) gilt: $\ds S(n) = \frac{n(n+1)}{2}$\\
-Zu zeigen: A(n+1) gilt: $S(n+1)=\frac{(n+1)\cdot(n+2)}{2}$\\
+Zu zeigen: A(n+1) gilt: $S(n+1)=\frac{(n+1)·(n+2)}{2}$\\
 $\ds S(n+1)=S(n)+n+1=\frac{n(n+1)}{2}+\frac{2(n+1)}{2}=\frac{(n+2)(n+1)}{2}$\\
 Das beendet den Beweis} \qed
 \end{enumerate}
 Zur Vereinfachung der Notation:\\
-Seien $a_1,a_2,a_3,...,a_n$ Zahlen $n \in \N$\\
+Seien $a_1,a_2,a_3,…,a_n$ Zahlen $n \in \N$\\
 Setze: $\sum_{k=1}^n a_k := a_1+a_2+a_3+…+a_n$\\
 \begin{tabbing}
-Allgemeiner: \=Sei $l,m \in \mathds{N}$, $l \le m \le n$\\
+Allgemeiner: \=Sei $l,m \in \N$, $l \le m \le n$\\
 \>$\sum_{k=l}^m a_k = a_l+a_{l+1}+…+a_m$\\
 \end{tabbing}
 Aussage des Satzes:
 \[ \sum_{k=1}^n k = \frac{n(n+1)}{2}\]
 \hfill\underline{Kombinatorik} (mathematisches Zählen)
 
-\Def
+\sS{Definition}
 Seien A, B Mengen. Das kartesische Produkt von A und B ist definiert als $A × B := \{(a,b)|a\in A, b \in B\}$ Die Elemente von $A × B$ heißen geordnete Paare\\
 Bsp.: $\{1,7\}\times \{2,3\}=\{(1,2),(1,3),(7,2),(7,3)\}$\\
 Allgemeiner: Gegeben seien Mengen
@@ -123,26 +123,26 @@ Falls $A_1=A_2=…=A_k=A$, schreibe $\underbrace{A\times…\times A}_{k-mal}=A^k
 Eine Menge A ist endlich, wenn A nur endlich viele Elemente hat. Dann bezeichnet
 $\#A = \{|A|\}$ die Anzahl der Elemente von A und somit dessen Kardinalit\"at
 oder M\"achtigkeit. Wenn A nicht endlich ist, so schreibe: $\# A= \infty$\\
-Bsp.: $\#\emptyset = 0, \#\mathds{N}=\infty, \# \{1,3,5\} = 3$
+Bsp.: $\#\emptyset = 0, \#\N=\infty, \# \{1,3,5\} = 3$
 
 \section{Bemerkung}
 \begin{enumerate}
 \item Sei A endliche Menge. $U,V\subseteq A$ disjunkte Teilmengen\\
 Dann $\#(U\cup V)=\# U + \# V$ 
-\item Seien $A_1,...,A_k$ endliche Mengen $k \in \mathds{N}$\\
-Dann: $\#(A_1 \times ... \times A_k)=(\#A_1)(\#A_2)...(\#A_k)$
+\item Seien $A_1,…,A_k$ endliche Mengen $k \in \N$\\
+Dann: $\#(A_1 \times … \times A_k)=(\#A_1)(\#A_2)…(\#A_k)$
 \end{enumerate}
 
 \section{Definition}
 \begin{enumerate}
-\item Für $n\in \mathds{N}$ setze $n!=1\cdot 2\cdot 3\cdot ... \cdot n=\prod_{k=i}^n k$
+\item Für $n\in \N$ setze $n!=1· 2· 3· … · n=\prod_{k=i}^n k$
 Setze $0!=1$
-\item Für $k,n\in \Z$ mit $0\le k \le n$ sei ${n \choose k} := \frac{n!}{k!\cdot(n-1)!}$ $\leftarrow$ Binomialkoeffizient\\
+\item Für $k,n\in \Z$ mit $0\le k \le n$ sei $\binom{n}{k}:= \frac{n!}{k!·(n-1)!}$ \Rarr{} Binomialkoeffizient\\
 \begin{tabular}{r|c|c|c|c|c|c|c}
 n & 0 & 1 & 2 & 3 & 4 & 5 & 6\\ \hline
 n! & 1 & 1 & 2 & 6 & 24 & 120 & 720
 \end{tabular}\\
 \bsp
-${5 \choose 2} := \frac{5!}{2!\cdot 3!} = \frac{5\cdot 4 \cdot\cancel{3 \cdot 2 \cdot 1}}{2\cdot 1\cdot \cancel{3\cdot 2}\cdot 1 } = \frac{20}{2}=10$\\
-Bemerkung: ${ n \choose 0 }= 1 = {n \choose n}$
+$\binom{5}{2} := \frac{5!}{2!· 3!} = \frac{5· 4 ·\cancel{3 · 2 · 1}}{2· 1· \cancel{3· 2}· 1 } = \frac{20}{2}=10$\\
+Bemerkung: $\binom{n}{0}= 1 = \binom{n}{n}$
 \end{enumerate}
