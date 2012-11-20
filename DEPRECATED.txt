@@ -1,0 +1,18 @@
+\Def \sS{Definition}
+\Satz \sS{Satz}
+\sss{Beweis} \bew
+\sss{Beweis:} \bew
+\sss{Bemerkung} \bem
+\sss{Bemerkung:} \bem
+
+\mathds{N} \N
+\mathds{Z} \Z
+\mathds{Q} \Q
+\mathds{R} \R
+\mathds{C} \C
+
+\mathbb{N} \N
+\mathbb{Z} \Z
+\mathbb{Q} \Q
+\mathbb{R} \R
+\mathbb{C} \C
