@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 %Kopfzeile links bzw. innen
 \fancyhead[L]{\calligra\Large Vorlesung Nr. 6}
 %Kopfzeile rechts bzw. außen
@@ -169,4 +170,177 @@ $$\ds\sum\limits_{k = 1}^{∞} \frac{1}{k}= 1 + \frac{1}{2} + \frac{1}{3} + …\
 $\ds\phantom{= }1 + \frac{1}{2} + \frac{1}{3} +\frac{1}{4} +\frac{1}{5} +\frac{1}{6} +\frac{1}{7} + \frac{1}{8} +\frac{1}{9} +…$\\
 $\phantom{\geq }1 + \ds\frac{1}{2} +\frac{1}{4}+\frac{1}{4}+\frac{1}{8}+\frac{1}{8} + \frac{1}{8} + \ds\frac{1}{8} + \ds\frac{1}{16} + …$\\
 $\phantom{= }1 + \ds\frac{1}{2} + \ds\frac{2}{4} + \ds\frac{4}{8} + \ds\frac{8}{16} + …$\\
+=======
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 6}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 25.10.2012}
+% *****************************************
+%
+%\setcounter{chapter}{3}
+%\setcounter{section}{9}
+%
+\wdh
+Eine Folge reeller Zahlen $(a_n)$ konvergiert uneigentlich gegen ∞ wenn gilt:\\
+Für jedes $C\eR$ gibt es ein \nN{} mit $a_n > C$ für jedes \nN\\[4pt]
+$(a_n)$ konvergiert uneigentlich gegen $- ∞$ wenn $(-a_n)$ gegen $∞$ konvergiert.\\
+%
+\notat{
+$a_n \to ∞ \qquad \text{ für } n \to ∞$\\
+$a_n \to - ∞ \qquad \text{ für } n \to ∞$
+}
+%
+\bsp
+$a_n = n^2 \to ∞$\\
+$a_n = -n^2 \to -∞$\\
+$a_n = (-1)^n · n^2$\\
+$(0, -1, 4, -9)$ konvergiert weder gegen $∞$ noch gegen $ - ∞$
+%
+\sss{Rechenregeln:}
+Angenommen $(a_n), (b_n)$ sind konvergente Folgen.\\
+\begin{enumerate}
+\item{$(a_n + b_n) \to a + b$}
+\item{$(a_n · b_n) \to ab$}
+\item{$\ds\frac{1}{b_n} \to \frac{1}{b}$}
+\item{$c · a_n \to c · a$}
+\item{$a_n - b_n \to a - b$}
+\item{$\ds\frac{a_n}{b_n} \to \frac{a}{b}$}
+\end{enumerate}
+%
+\Bew{6}
+3) $\Rightarrow\ds\frac{1}{b_n}→\frac{1}{b}$\\
+$\ds\frac{a_n}{b_n} = a_n ·\frac{1}{b}$\\
+2) $\ds\Rightarrow a_n · \frac{1}{b_n} \to a ·\frac{1}{b} = \frac{a}{b}$\qed
+%
+\bsp
+\begin{tabular}{l|c|c|c|c|c|r}
+$n$   & 0 & 1 & 2 & 3 & 10 & 100\\\hline
+$a_n$ & 0 & 0 & $\frac{2}{9}$ & $\frac{6}{19}$ & $\frac{90}{201}$ & $\frac{9900}{20001}$ \\
+\end{tabular}
+\vspace{5mm}
+Vermutung: $a_n \to \ds\frac{1}{2}$ für $n \to ∞$\\
+Rechenregel 6 anwenden:\\
+\begin{itemize}
+\item[1.]{Versuch:\\
+$a_n = \frac{b_n}{c_n}$\\[4pt]
+$b_n = n^2 -n; c_n = 2n^2 + 1$\\
+$(b_n) und (c_n)$ sind divergend. Schlecht.}
+\item[2.]{Versuch:\\
+$\ds\frac{n^2 - n}{2n^2 + 1} = \frac{n^2(1 - \frac{1}{n})}{n^2(2 + \frac{1}{n^2}}$ für $n \geq 1$\\[4pt]
+$= \ds\frac{1-\frac{1}{n}}{2 +\frac{1}{n^2}}=\frac{b_n}{c_n}$ mit $b_n:=1-\frac{1}{n},\ c_n = 2 + \frac{1}{n^2}$\\[4pt]
+$\ds\frac{1}{n} \to 0$ für $n \to ∞ $\\[4pt]
+$\ds\Rightarrow 1 - \frac{1}{n} \to 1 - 0 = 1$ für $n \to ∞$\\[4pt]
+$\Rightarrow 2 + \ds\frac{1}{n^2} \to 2 + 0 = 2$ für $n \to ∞$}
+\end{itemize}
+%
+$\Rightarrow a_n \to \frac{1}{2}$ für $n \to ∞$
+%
+\sS{Satz}
+Seien $a_n \to a$, $b_n \to b$ zwei konvergente Folgen reeler Zahlen.\\
+wenn $a_n \leq b_n$ für unendlich viele $n \in \N{}$ dann ist $a \leq b$.
+\bew
+Angenommen: $a > b$\\
+
+Wähle $\e := \ds\frac{a - b}{2} > 0$\\
+Es gibt $N \in \N{}$ so dass:
+$
+\left.
+\begin{array}{ll}
+\mid a_n - a \mid  < \e \\
+\mid b_n - b \mid  < \e
+\end{array} \right\rbrace$ für $n \geq N$\\
+$\Rightarrow a_n > a - \e$\\ \\
+$= a - \frac{a - b}{2} = \ds\frac{a + b}{2} = b + \ds\frac{a - b}{2}\\
+\\
+= b + \e > b_n \Rightarrow a_n > b_n$ für $n \geq \N{}$\\
+Widerspruch zur Annahme.\\
+$a_n \leq b_n$ für unendlich viele $n \in \N$\qed
+
+\sS{Definition: Reihen}
+Sei $(a_n)_{n \geq 0}$ eine Folge reeler Zahlen.\\
+Bilde eine Folge:
+\begin{align*}
+s_0 &= a_0\\
+s_1 &= a_0 + a_1\\
+s_2 &= a_0 + a_1 + a_2\\
+&\vdots\\
+s_n &= a_0 + a_1 + a_n = \sum\limits_{k = 0}^{n} a_k
+\end{align*}
+Die Folge $(s_n)_{n \geq 0}$ heißt Reihe mit den Gliedern $a_n$.\\
+$s_n$ heißen die \underline{Partialsummen} der Reihe.\\
+Bezeichnung:\\
+$\sum\limits_{k = 0}^{∞} a_k$ oder $a_0 + a_1 + a_2 + a_3 + …$\\ \\
+Wenn $s_n \to s \in \R{}$ für $n \to ∞$ dann schreiben wir:\\
+$\sum\limits_{k = 0}^{∞} a_k = s$\\
+Summe der Reihe.\\[4pt]
+\ul{Achtung:} Symbol $\ds\sum_{k = 0}^{∞} a_k$ hat \ul{zwei} Bedeutungen:
+\begin{enumerate}
+\item{die Folge $(s_n)$}\\[8pt]
+oder 
+\item{deren Grenzwert}
+\end{enumerate}
+\bsp
+\begin{enumerate}
+\item{$\sum\limits_{k = 1}^{∞} 1 = 1+1+1+…$\\
+ist die Folge $(1, 2, 3, 4,…) = (n + 1)_{n \in \N{}_{0}}$}
+\item{$\sum\limits_{k = 1}^{∞} k = 0 + 1 + 2 + 3+ …$ \\
+ist die Folge $(1, 3, 6, 10,…) = (\ds\frac{n(n - 1)}{2})_{n \in \N{}}$ }
+\item{$\sum\limits_{k = 1}^{∞} \ds\frac{1}{k(k+1)} = \ds\frac{1}{2} + \ds\frac{1}{6} + \ds\frac{1}{12} + …$\\
+ist die Folge $(\ds\frac{1}{2}, \ds\frac{2}{3}, \ds\frac{3}{4})$}
+\end{enumerate}
+\vspace{5mm}
+Vorüberlegung:\\ %bullshit
+$\ds\frac{1}{k(k+1)} = \ds\frac{(k+1) - k}{k(k+1)} = \frac{1}{k} - \ds\frac{1}{k + 1}$\\ \\
+$s_n := \sum\limits_{k = 1}^{∞} \ds\frac{1}{k(k+1)}
+= (\ds\frac{1}{1} - \ds\frac{1}{2}) + (\ds\frac{1}{2} - \ds\frac{1}{3}) + … + (\ds\frac{1}{n} - \ds\frac{1}{n + 1})\\ \\
+= 1 - \ds\frac{1}{n + 1}\\ $ Teleskopsumme \\ \\
+$\ds\frac{1}{n + 1} \to 0$ für $n \to ∞$\\ \\
+Summe der Reihe:\\ \\
+$\sum\limits_{k = 1}^{∞} \ds\frac{1}{k(k+1)} = \lim_{n \to ∞}(1 - \ds\frac{1}{n + 1}) = 1$\qed\\ 
+\\
+\bem Jede Folge kann man auch als Reihe Schreiben. (Differenzen bilden)\\
+z.B.: die Folge der Primzahlen:\\
+$(2, 3, 5, 7, 11, 13, 17, 19)$\\
+ist die Reihe:\\
+$(2 + 1 + 2+ 4+2+4+2+…)$\\
+Goldbachsche Vermutung: in dieser Reihe kommt die Zahl 2 unendlich oft vor.\\
+\sS{Satz, Die geometrische Reihe}
+Sei $x \in \R{}$\\
+a) $ \sum\limits_{k = 0}^{∞} x^k = 1 + x^1 + x^2 + x^3 + … = \frac{1}{1-x} \text{ wenn } \mid x \mid < 1$\\
+b) $ \sum\limits_{k = 0}^{∞} x^k \text{ divergiert wenn } \mid x \mid \geq 1$\\
+\begin{itemize}
+\item[a] {wenn $|x| < 1$\\
+dann folgt $\sum{k=0}{∞} a_k = \ds\lim_{n \to ∞}(\frac{1}{1 - x} - \frac{x}{1-x} · x^n) = \frac{1}{1 - x}$}
+\item[b]{wenn $|x| > 1$\\
+dann $(x^n)$ divergent $\Rightarrow (\frac{x}{1-x} · x^n)$ divergent\\
+denn $\frac{x}{1-x} \neq 0$\\
+$\Rightarrow (\frac{?}{?})$}
+\end{itemize}
+\bew
+$x = 1 \phantom{xxx} \sum_{k = 0}^{∞} x^k = (1 + 1 + 1 +…)\text{ divergiert, ok}\\
+\text{Sei nun }x \neq\\
+\text{Bekannt aus der Übung: } \ds\sum_{k = 0}^{∞} x^k = 1 + x + x^2 +x^3 … +x^n = \ds\frac{1 -x^{n+1}}{1 - x} = \ds\frac{1}{1 - x} - \ds\frac{x}{1 - x} · x^n \\ $
+Potenzenwachstum\\
+$x^n \to 0$ für $ n \to ∞$ \underline{wenn} $|x| < 1$\\
+$(x^n)$ divergiert, wenn $(|x| \geq 1 \text{ und } x \neq 1)$\\
+%
+\sS{Satz}
+Wenn die Reihe $\ds\sum\limits_{k=0}^{∞} a_k $ kovergiert, dann ist $(a_n)_{n \in \N{}}$ eine Nullfolge.\\
+\\
+\bew Gegeben sei $\e > 0$\\
+Sei $a = \ds\sum\limits_{k = 0}^{∞} a_k = $ $\ds\lim_{n \to ∞}(s_n)$ mit $s_n = a_0 + … + a_n$\\
+Es gibt $ N \ in \N{}$ mit $|s_n - a| < \ds\frac{\e}{2}$ für $n \geq N$\\
+$|a_n| = |s_n - s_{n-1}|$\\
+\phantom{$|a_n| $} = $|s_n - a + a - s_{n-1}|$\\
+\phantom{$|a_n| $} $\leq |s_n - a| + |a - s_{n-1}| < \ds\frac{\e}{2} + \frac{\e}{2} = \e$\\
+für $n \geq N + 1$\\
+$\Rightarrow a_n \to 0$ für $n \to ∞$\\
+%
+\sS{Satz, die harmonische Reihe}
+$$\ds\sum\limits_{k = 1}^{∞} \frac{1}{k}= 1 + \frac{1}{2} + \frac{1}{3} + …\text{ divergiert}$$
+\sss{Beweisidee:}
+$\ds\phantom{= }1 + \frac{1}{2} + \frac{1}{3} +\frac{1}{4} +\frac{1}{5} +\frac{1}{6} +\frac{1}{7} + \frac{1}{8} +\frac{1}{9} +…$\\
+$\phantom{\geq }1 + \ds\frac{1}{2} +\frac{1}{4}+\frac{1}{4}+\frac{1}{8}+\frac{1}{8} + \frac{1}{8} + \ds\frac{1}{8} + \ds\frac{1}{16} + …$\\
+$\phantom{= }1 + \ds\frac{1}{2} + \ds\frac{2}{4} + \ds\frac{4}{8} + \ds\frac{8}{16} + …$\\
+>>>>>>> 138559371c6e8996b6cb0c1e5be89f88c981940b
 $\phantom{= }1 + \ds\frac{1}{2} + \ds\frac{1}{2} + \ds\frac{1}{2} + \ds\frac{1}{2} + … = ∞$

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 %Kopfzeile links bzw. innen
 \fancyhead[L]{\calligra\Large Vorlesung Nr. 7}
 %Kopfzeile rechts bzw. außen
@@ -133,4 +134,141 @@ $S_n \to b$ für $n \to \infty$\\[4pt]
 Gegeben sei $\e > 0$. Es gibt $N \in \N{}$ so dass für $n \leq N$:\\
 $|b_n - b| < \e, |c_n - c| < \epsilon$\\
 Somit für $n \geq 2N+1 $\\
+=======
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 7}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 29.10.2012}
+%
+% set chapters end sections
+%\setcounter{chapter}3
+%
+Sei $(n_n)$ eine Folge reeler Zahlen.\\
+Die Reihe mit den Gliedern $a_n$ ist die Folge $s_n = a_0 + a_1 + ... + a_n)_\nN$ \\
+Bezeichnung: $\ds\sum_{k=1}^{\infty} a_k$\\
+Wenn $S_n \to a$ für $n \to \infty$\\
+Schreibe: $\ds\sum_{k = 0}^{\infty} a_k = a$
+\Bsp{Geometrische Reihe}
+$\ds|x| = 1 \Rarr \sum\limits_{k = 0}^{\infty} x^k = \frac{1}{1-x}$ für $x = 0$ setzte $0^0 = 1$\\[4pt]
+Harmonische Reihe\\
+$\displaystyle\sum\limits_{k = 1}^{\infty} \frac{1}{k}$ Konvergiert nicht.\\
+\sS{Satz Rechenregeln für Reihen}
+Seien $\sum\limits_{k = 0}^{\infty} a_k = a$ und $\sum\limits_{k = 0}^{\infty} b_k = b$ zwei konvergente Reihen. Dann:
+\begin{enumerate}
+\item{$\sum\limits_{k = 0}^{\infty} (a_k + b_k) = a + b$}
+\item{Für $c \in \R{}$ ist $\sum\limits_{k = 0}^{\infty} c \cdot a_k = c \cdot a$}
+\end{enumerate}
+\bew
+folgt aus 3.9.
+\bem
+Produkte von Reihen sind komplizierter.\\
+\underline{Korrektur:}
+Primzahlen-Vermutung: es gibt ∞ viele Primzahlen $p$ so dass $p + 2$ auch Prim ist.\\
+Goldbach-Vermutung: Jede gerade natürliche Zahl ist die Summe von zwei Primzahlen.\\
+\chapter{Konvergenzsätze}
+Erinnerung: \R{} ist Dedekind-vollständig. Das heißt, jede nicht-leere nach oben beschränkte Teilmenge $M \subset R$ hat eine kleinste obere Schranke $sup(M)$\\
+\phantom{XXX}\Rarr{} Existenz von Grenzwerten\\
+\sS{Definition Monotone Folgen}
+Eine Folge $(a_n)_{n \geq 0}$ heißt monoton wachsend, wenn $a{n + 1} \geq a_n$ für alle $n \in \N_0$\\
+\phantom{Eine Folge $(a_n)_{n \geq 0}$ heißt}monoton fallend, wenn $a{n + 1} \leq a_n$ für alle $n \in \N{}_0$\\
+\phantom{Eine Folge $(a_n)_{n \geq 0}$ heißt}streng monoton wachsend, wenn $a{n + 1} > a_n$ für alle $n \in \N{}_0$\\
+\phantom{Eine Folge $(a_n)_{n \geq 0}$ heißt}streng monoton fallend, wenn $a{n + 1} < a_n$ für alle $n \in \N_0$
+\bsp
+$a_n = n$ ist streng monoton wachsend\\
+$a_n = \frac{1}{n}$ ist streng monoton fallend\\
+\sS{Satz}
+\begin{enumerate}
+\item{Jede nach oben beschränkte monoton wachsende Folge $(a_n)_{\nN}$ ist konvergent\\
+% Bild?
+Hier Fehlt was, das Bild, der Tafel, auf dem das stehen sollte ist nicht auffindbar, hast du da noch eine Mitschrift?
+}
+\item{Jede nach unten beschränkte monoton fallende Folge $(a_n)_\nN$ ist konvergent\\
+% Bild?
+}
+\end{enumerate}
+\bew
+Sei $(a_n)$ nach oben beschränkt, monoton wachsend\\
+Setze $a:= sup(\{a_n | n \in \N{}\})$\\
+dann \begin{enumerate}
+\item{$a_n \leq a$ für alle $n$}
+\item{Für jedes $\epsilon > 0$ ist $a - \epsilon$ \underline{keine} obere Schranke, d.h. es gibt $N \in N$ so dass $a_N > a - \epsilon$
+\\Für $n \geq N$ gilt\\
+$a - \epsilon < a_N \leq a_n \leq a$\\
+weil $(a_n)$ monoton wachsend\\
+$\Rightarrow a - \epsilon < a_N \leq a_n \leq a \Rightarrow |a_n -a| < \epsilon$\\
+Somit $a_n \to a$ für $n \to \infty$\phantom{XXX}$q.e.d.$\\
+Monoton fallend: analog}
+\end{enumerate}
+\uS{Reihen mit nicht-negativen Gliedern}
+\bem
+Sei $\ds\sum\limits_{k=0}^{\infty} a_k$ Reihe reeller Zahlen\\
+Die Folge der Partialsummen ist monoton wachsend $\Leftrightarrow a_n \geq 0$ für $n \geq 1$
+\Satz
+Eine Reihe $\ds\sum\limits_{k=0}^{\infty} a_k$ mit $a_k \geq 0$ für ale $k$ konvergiert, genau dann, wenn sie beschränkt ist (Das heißt die Folge der Partialsummen ist beschränkt)\qed
+\Def
+Sei $\displaystyle\sum\limits_{k=0}^{\infty} a_k$ eine Reihe mit $a_n \geq 0$ für alle $k$\\
+Eine Reihe $\ds\sum\limits_{k=0}^{\infty} b_k$ heißt \underline{Majorante} von $\ds\sum a_k$ wenn $a_k \leq b_k$ für alle $k$
+\sS{Satz Majorantenkriterium}
+Wenn eine Reihe mit nicht-negativen Gliedern eine konvergente Majorante hat, dann konvergiert sie.
+\bew
+Sei $0 \leq a_k \leq b_k$ für alle $k \geq 0$\\
+Es gilt $a_0 + ... + a_n \leq b_0 + ... + b_n$ \\
+$\sum b$ konvergiert $\Rightarrow (b_0 + ... + b_n)_{n \geq 0}$  beschränkt\\
+$\Rightarrow ((a_0 + ... + a_n)_{n \geq 0})$ beschränkt $\Rightarrow \ds\sum_{k= 0}^{\infty} a_k$ konvergiert.
+\Bsp{4.6:}
+$$\sum\limits_{k=1}^{\infty} \frac{1}{k^2} = \left( 1 + \frac{1}{4} + \frac{1}{9}+ \frac{1}{16} + … \right)$$
+$$\sum\limits_{k=1}^{\infty} \frac{1}{k^2} = 1 + \sum\limits_{k=1}^{\infty} \frac{1}{(k + 1)^2}$$
+$$\frac{1}{(k + 1)^2} \leq \frac{1}{k \cdot (k + 1)}$$
+$$\Rarr \sum\limits_{k=1}^{\infty} \frac{1}{k \cdot (k + 1)}\text{ ist Majorante von }\sum\limits_{k=1}^{\infty} \frac{1}{k^2}$$
+$$\sum\limits_{k=1}^{\infty} \frac{1}{k \cdot (k + 1)}\text{ konvergiert (bekannt)}$$
+\sS{Satz Quotientenkriterium}
+Sei $C \in \R{}, (a_n)$ eine Folge reeller Zahlen mit $a_n \geq 0$ für alle $n$ \ul{und} $a_{n + 1} \leq C \cdot a_n$ für fast alle nder$n$\\
+$0 \leq C \leq 1$\\
+Dann konvergiert die Reihe $\ds\sum\limits_{k=0}^{\infty} a_k$
+\bew
+Konvergenz ändert sich nicht, wenn endlich viele $a_n$ geändert werden.\\
+Also kann man annehmen, dass $a_{n + 1} \leq C \cdot a_n$ für alle $n$ gilt.\\
+Dann gilt $a_1 < C \cdot a_0$\\
+$a_2 < C \cdot a_1 \leq C \cdot C \cdot a_0 = C^2 \cdot a_0$\\
+$a_3 < C \cdot a_2 \leq C \cdot C \cdot a_1 = C^3 \cdot a_0$\\
+etc. $\Rightarrow a_n \leq C^n \cdot a_0$\\
+Somit ist $\displaystyle\sum\limits_{k=0}^{\infty} C^k \cdot a_0$ konvergente Majorante von $\ds\sum_{k=0}^{\infty} a_k$ (Geometrische Reihe)
+\sS{Beispiel Die Exponentialreihe}
+$$exp(x) := \sum\limits_{k=0}^{\infty} \frac{x^k}{k!} \text{ für } x \in \R{}, x \geq 0$$
+Setze $a_k = \frac{x^k}{k!}$\\
+$$a_n+1 = \frac{x^{n + 1}}{(n + 1)!} = \frac{x}{n+1} \cdot \frac{x^n}{n!} = \frac{x}{n+1} \cdot a_n \leq \frac{1}{2} a_n$$
+\Rarr{} Quotientenregel ist erfüllt.\\
+Reihe $exp(x)$ konvergiert.\\
+Bezeichnung: $$exp(x) = \sum_{k=0}^{\infty} \frac{x^k}{k!} \eR$$
+%
+\uS{Bezeichnung:}
+$$exp(1) = \sum\limits_{k=0}^{\infty} \frac{1}{k!} = e\text{ (Eulerische Zahl)}$$
+\sS{Leibnitz-Kriterium}
+Sei $(a_n)_{n \in \N{}_0}$ eine Monoton monoton fallende Nullfolge\footnote{$a_n → 0$ für $n→∞$} mit $a_n \geq 0$ für alle $n$\\
+Dann konvergiert die alternierende Reihe\\
+$$\sum_{k=0}^{\infty} (-1)^k · a_k$$
+\bsp
+$$a_k = \frac{1}{k + 1} \sum_{k=0}^{\infty} (-1)^k · a_k = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5}= log(2)$$
+\bew
+Sei $s_n = a_0 + ... + a_n$
+\uS{Behauptung: }
+$S_{2n + 1} \leq S_{2n + 3} \leq S_{2n + 2} \leq S_{2n}$ für jedes $n \in \N{}$
+%
+\ul{Rechne:}\\
+$S_{2n + 2} - S_{2n} = - a_{2n + 1} + a_{2n + 2} \leq 0 \Rightarrow (3)$\\
+$S_{2n + 3} - S_{2n + 1} = - a_{2n + 3} \leq 0 \Rightarrow (2)$\\
+$S_{2n + 3} - S_{2n + 1} = - a_{2n + 2} - a_{2n + 3} \leq 0 \Rightarrow (1)$\\[8pt]
+Die Folge $b_n = S_{2n}$\\
+\phantom{Die Folge }$c_n = S_{2n + 1}$\\
+sind beschränkt und monoton (fallend bzw. steigend)\\
+$\Rightarrow b_n \text{ und } c_n$ konvergieren\\[4pt]
+Sei $$b = \lim_{n \to \infty} b_n \qquad c = \lim_{n \to \infty} c_n$$
+$$c - b = \lim_{n \to \infty} (c_n - b_n) = \lim_{n \to \infty} (a_{2n + 1}) = 0$$
+weil $(a_n)$ Nullfolge
+\sS{Behauptung:} % uS stande dort ich vermute so
+$S_n \to b$ für $n \to \infty$\\[4pt]
+Gegeben sei $\e > 0$. Es gibt $N \in \N{}$ so dass für $n \leq N$:\\
+$|b_n - b| < \e, |c_n - c| < \epsilon$\\
+Somit für $n \geq 2N+1 $\\
+>>>>>>> 138559371c6e8996b6cb0c1e5be89f88c981940b
 $|S_n - b| < \e$ also $S_n \to b$\qed
