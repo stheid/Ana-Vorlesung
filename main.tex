@@ -8,33 +8,43 @@
 \usepackage{calligra}
 \usepackage{cancel}
 \usepackage{tipa}
+\usepackage{soulutf8}
 
-%Beschreibaren Seitenbereich definieren
+% set underline
+\setul{.3mm}{.8pt}
+
+% Beschreibaren Seitenbereich definieren
 \usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
 
-%Kopf- und Fußzeile einfügen
+% Kopf- und Fußzeile einfügen
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
-%Kopfzeile Linie oben
+% Kopfzeile Linie oben
 \renewcommand{\headrulewidth}{0.5pt}
 
-%Fußzeile mittig
+% Fußzeile mittig
 \fancyfoot[C]{\thepage}
 
-%Linie unten
+% Linie unten
 \renewcommand{\footrulewidth}{0.5pt}
 
-%Kopfzeilen fürs Inhaltsverzeichnis:
-%Kopfzeile links bzw. innen
+% Kopfzeilen fürs Inhaltsverzeichnis:
+% Kopfzeile links bzw. innen
 \fancyhead[L]{\calligra\Large Inhaltsverzeichnis}
-%Kopfzeile rechts bzw. außen
+% Kopfzeile rechts bzw. außen
 \fancyhead[R]{\calligra\Large{}}
 % *************************
 % *** costum characters ***
 % *************************
 
 % Unicode Character definition
+\DeclareUnicodeCharacter{00E4}{"a}
+\DeclareUnicodeCharacter{00C4}{"A}
+\DeclareUnicodeCharacter{00F6}{"o}
+\DeclareUnicodeCharacter{00D6}{"O}
+\DeclareUnicodeCharacter{00FC}{"u}
+\DeclareUnicodeCharacter{00DC}{"U}
 \DeclareUnicodeCharacter{221E}{\text{$\infty$}}
 \DeclareUnicodeCharacter{00B7}{\text{$\cdot$}}
 \DeclareUnicodeCharacter{2192}{\text{$\to$}}
@@ -95,17 +105,17 @@
 \cmd{\sS}[1]{\section{#1}}
 \cmd{\Def}{\sS{Definition:}}
 \cmd{\Satz}{\sS{Satz:}}
-\cmd{\uS}[1]{\section*{\underline{#1}}}
+\cmd{\uS}[1]{\section*{\ul{#1}}}
 \cmd{\Wdh}[1]{\section*{Wiederholung #1}}
 \cmd{\wdh}{\Wdh{}}
-\cmd{\sss}[1]{\subsection*{\underline{#1}}}
+\cmd{\sss}[1]{\subsection*{\ul{#1}}}
 \cmd{\bsp}{\sss{Beispiel:}}
-\cmd{\Bsp}[1]{\subsection*{\underline{Beispiel:} #1}}
+\cmd{\Bsp}[1]{\subsection*{\ul{Beispiel:} #1}}
 \cmd{\bem}{\sss{Bemerkung:}}
 \cmd{\bew}{\sss{Beweis:}}
-\cmd{\Bew}[1]{\subsection*{\underline{Beweis} #1:}}
+\cmd{\Bew}[1]{\subsection*{\ul{Beweis} #1:}}
 \cmd{\anm}{\sss{Anmerkung:}}
-\cmd{\ssss}[1]{{\bf\underline{#1}}\\}
+\cmd{\ssss}[1]{{\bf\ul{#1}}\\}
 
 % Textkürzel
 \cmd{\ok}{\hfill{\checkmark}}
@@ -113,7 +123,7 @@
 
 % Environments
 \cmd{\ds}{\displaystyle}
-\cmd{\ul}[1]{\underline{#1}}
+%\cmd{\ul}[1]{\underline{#1}}
 \cmd{\einruck}[2]{#1\vspace{-3.65ex}\begin{addmargin}{.05\textwidth}#2\end{addmargin}}
 \cmd{\ind}[2]{\einruck{IA:}{#1\ok}\einruck{IS: }{$n\to n+1$#2\qed}}
 \cmd{\indIV}[3]{\einruck{IA:}{#1\ok}\einruck{IV:}{#2}\\\einruck{IS: }{$n\to n+1$#3\qed}}
