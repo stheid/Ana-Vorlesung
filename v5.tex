@@ -30,7 +30,7 @@ $|a-b|=|a-a_n+a_n-b|\leq|a-a_n|+|a_n-b|<\e+\e=|a-b|$\\
 \Rarr nicht $a\neq b$, d.h. $a=b$\qed
 %
 \sS{Definition}
-Eine Folge $(a_n)$ reeller Zahlen heißt $\left\{\begin{array}\text{nach oben beschränkt}\\\text{nach unten beschränkt}\\\text{beschränkt}
+Eine Folge $(a_n)$ reeller Zahlen heißt $\left\{\begin{array}{c}\text{nach oben beschränkt}\\\text{nach unten beschränkt}\\\text{beschränkt}
 \end{array}\right\}$ wenn die menge $\{a_n|n\eN_0\}$ dieselbe Eigenschaft hat.
 %
 \sS{Satz:}
@@ -58,7 +58,7 @@ Alternative Terminologie:\\
 \bsp
 \begin{enumerate}
 \item{$a_n=n.\ a_n→∞$}
-\item{$a_n=(-1)^n.\ (0,-1,2,-3,4,-5,…)$ konvergiert \ul{nicht} uneigentlich gegen ∞
+\item{$a_n=(-1)^n.\ (0,-1,2,-3,4,-5,…)$ konvergiert \ul{nicht} uneigentlich gegen ∞}
 \end{enumerate}
 \notat{$a_n→∞$ für \nif{} $\ds\lim_\nif\an=∞$}
 %
@@ -106,20 +106,20 @@ Dann ist $b\neq 0$ für fast alle \nN{} und $\frac{1}{b_n}→\frac{1}{b}$ für \
 \bew
 \begin{enumerate}
 \item{Gegeben sei $\e>0$\\
-Es gibt $N_1\eN$ mit $|a_n-a|<\frac{\e}{2}$ für $n\geq N_1$}\\
-Es gibt $N_2\eN$ mit $|b_n-b|<\frac{\e}{2}$ für $n\geq N_2$}\\
+Es gibt $N_1\eN$ mit $|a_n-a|<\frac{\e}{2}$ für $n\geq N_1$\\
+Es gibt $N_2\eN$ mit $|b_n-b|<\frac{\e}{2}$ für $n\geq N_2$\\
 Sei $N=max(N_1,N_2)$ für $n\geq N$ gilt:\\
-$$|a_n+b_n-(a+b)|=|(a_n-a)+(b_n-b)|\leq |a_n-a|+|b_n-b|<\frac{\e}{2}+\frac{\e}{2}=\e \Rarr \text{1)}$$
+$$|a_n+b_n-(a+b)|=|(a_n-a)+(b_n-b)|\leq |a_n-a|+|b_n-b|<\frac{\e}{2}+\frac{\e}{2}=\e \Rarr \text{1)}$$}
 \item{$(a_n)$ konvergiert \Rarr{} ist beschränkt.\\
 Es gibt $C\eR$ mit $|a_n|<C$ für alle $\nN_0$\\
 ohne Einschränkungen sei $C>|b|$\\
 Rechne:
 $$|a_n·b_n-a·b|=|a_n·b_n-a_n·b+a_n·b-a·b|=|a_n(b_n-b)+b(a_n-a)|\geq |a_n|·|b_n-b|+|b|·|a_n-a|$$
-Es gibt $N\eN$ mit $\left.\begin{array}|a_n-a|<\frac{1}{2C}·\e\\|b_n-b|<\frac{1}{2C}·\e\end{array} \left\}$ für $n\geq N$\\
+Es gibt $N\eN$ mit $\left.\begin{array}{l}|a_n-a|<\frac{1}{2C}·\e\\|b_n-b|<\frac{1}{2C}·\e\end{array} \right\}$ für $n\geq N$\\
 Für $n\geq N$ gilt:
 $$|a_n·b_n-a·b|<|a_n|\frac{1}{2C}\e+|b|\frac{1}{2C}\e\leq C·\frac{1}{2C}\e+C·\frac{1}{2C}\e=\e \Rarr \text{ 2) gilt}$$}
 \item{Sei $b\neq 0$\\
-Wähle $\edef=\frac{1}{2}|b|>0$ SKIZZE\\
+Wähle $\e=\frac{1}{2}|b|>0$ SKIZZE\\
 Es gibt $N\eN$ mit $|b_n-b|<\frac{1}{2}|b|$ für $n\geq N$\\
 Dann gilt für $n\geq N$:
 $$|b_n|=|b_n-b+b|=|b-b+b_n|=|b-(b-b_n)|\geq |b|-|b-b_n|>|b|-\frac{1}{2}|b|=\frac{1}{2}|b|$$
