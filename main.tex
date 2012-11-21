@@ -1,14 +1,12 @@
 \documentclass[a4paper,10pt]{scrreprt}
-\usepackage{fontspec}
-%\usepackage[ngerman]{babel}
+\usepackage[ngerman]{polyglossia}
 \usepackage{amsmath,amssymb}
 %\usepackage{unicode-math}
-%\usepackage[T1]{fontenc}
 %\usepackage{breqn}
 \usepackage{dsfont}
+\usepackage{fontspec}
 \usepackage{calligra}
 \usepackage{cancel}
-%\usepackage{tipa}
 \usepackage{soulutf8}
 
 % set underline
@@ -49,11 +47,11 @@
 
 
 % Mengen
-\mcmd{\N}{\mathbb{N}}
-\mcmd{\Z}{\mathbb{Z}}
-\mcmd{\Q}{\mathbb{Q}}
-\mcmd{\R}{\mathbb{R}}
-\mcmd{\C}{\mathbb{C}}
+\mcmd{\N}{\mathds{N}}
+\mcmd{\Z}{\mathds{Z}}
+\mcmd{\Q}{\mathds{Q}}
+\mcmd{\R}{\mathds{R}}
+\mcmd{\C}{\mathds{C}}
 
 \mcmd{\nN}{n\in\N}
 \mcmd{\eN}{\in\N}
@@ -117,7 +115,6 @@
 
 % Less detailed TOC
 \setcounter{tocdepth}{1}
-\renewcommand*{\contentsname}{Inhaltsverzeichnis}
 
 \begin{document}
 \maketitle
