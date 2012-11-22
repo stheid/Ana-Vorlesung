@@ -1,0 +1,66 @@
+	\ul{Idee:} Folge von Intervallen $[a_n, b_n]$ \"Konvergent\" gegen gesuchtes $x$.\\*
+	Die Folge $(a_n)_{n \geq 0}$ ist monoton wachsend und beschränkt, ($b$ ist obere Schranke) \Rarr $(a_n)$ konvergiert, sei $x:=\lim_{n \to \infty} a_n$\\*
+	Die Folge $(b_n)_{n \geq 0}$ ist monoton fallen und beschränkt \Rarr konvergent nach 4.2\\*
+	Sei $x' = \lim_{n \to \infty} b_n$\\
+	$x' - x = \lim_{n \to \infty} (b_n - a_n)$\\*
+	$= \lim_{n \to \infty} (2^{-n} \cdot (b_0 - a_0)) = 0$\\*
+	also $x = x'$ $f(x) = ?$\\
+	$f$ stetig $\Rarr f(x) = \lim_{n \to \infty} f(a_n) = \lim_{n \to \infty} f(b_n)$\\
+	Wegen $f(a_n) \leq y \leq f(b_n)$ für alle $n$ gilt $f(x) = \lim_{n \to \infty} f(a_n) \leq y \leq \lim_{n \to \infty} f(b_n)$\\*
+	$\Rarr f(x) = y$\\
+\bew
+	Weil $a \leq a_n \leq b$ gilt $a \leq x \leq b$ d.h. $x \in [a, b]$\qed\\
+\uS{Anwendung}
+
+%% Stefan
+% Satz 6.13
+
+\ul{Also:} $x \geq a \Rarr f(x) = x^n \cdot g(x) > 0$\\*
+	$x \geq a \Rarr f(x) = x^n \cdot g(x) < 0$\\* %Pfeil auf x^n mit {x^n < 0} % Pfeil auf g(x) {> 0}
+	$f(-a) < 0 < f(a)$\\*
+	Zwischenwertsatz \Rarr er gibt $x \in [-a, a]$ mit $f(x) = 0$\\*
+
+\sS{Satz Ergänzung Zwischenwertsatz} % 6.14
+	Sei $f: D \to \R$ \ul{stetig} und $D \subseteq \R$ ein nicht-leeres Intervall. Dann ist $f(D) = \{f(x) | x \in D\}$ auch ein Intervall (d.h. hat keine Lücken.)
+\bem
+	Hier sind auch uneigentliche Intervalle zugelassen. (z.B. $(0, \infty)$)
+
+% Stefan
+% Beispiele
+
+\sS{Satz Umkehrfunktion}
+	Sei $D$ ein Intervall, $f: D \to \R$, stetig, streng monoton wachsend oder fallend. Sei $D' = f(D)$ (Intervall nach 6.14)\\*
+	Dann ist die Abbildung $f: D \to D'$ bijektiv und die Umkehrabbildung $f^{-1}: D' \to D$ ist stetig und streng monoton wachsend, bzw. fallen.\\*
+% Graph
+% Stefan
+% Beweis
+% Annahme
+% Behauptung
+
+\beh
+	$f^{-1}$ ist stetig. Gegeben $x \in D$\\*
+	Annahme $x$ ist kein Randpunkt des Intervalls $D'$\\*
+	Gegeben sei $\e > 0$ Suche $\delta$ mit (Stetigkeitsdefinition)\\*
+	$y := f^{-1}(x) \in D$ ist kein Randpunkt (weil $f,\ f^{-1}$ bijektiv und strenk monoton.)
+	%Graph
+	Wähle $\e' \leq \e$ mit $\e \> 0$ sodass $[y-\e', y+\e'] \subseteq D'$\\*
+	$f(y - \e') < f(y) = x \Larr y - \e' < y$\\*
+	also $f(y - \e') = x - \delta_1 \qquad \delta_1 > 0$\\*
+	$genauso f(y + \e') = x + \delta_2 \qquad \delta_2 > 0$ \\*
+	%Graph
+	Sei $\delta = min(\delta_1, \delta_2)$
+\beh
+	Wenn $z \in D'$ mit $|z - x| < \delta$ dann $|f^{-1}(z) - f^{-1}(x)| < \e$
+	
+\uS{2 Anwendungen}
+\sS{Bsp}
+	Sei $k \ in \N$\\*
+	Die Abbildung $f: \R_{\geq 0} \to \R_{\geq 0} f(x) = x^k$
+	%Graph
+	\ul{Bekannt:} $f$ ist stetig streng monoton wachsend. \\*
+	$f(0) = 0, \qquad \lim_{x \to \infty} x^k = \infty$\\*
+	$D:= [0, \infty) = \R_{\geq 0}$\\*
+	$f(D) = D' = [0, \infty)$\\*
+	6.15 \Rarr f hat \ul{stetige} und streng monoton wachsende Unterfunktionen\\*
+	$f^{-1} : [0, \infty) \to [0, \infty)$\\*
+	Bezeichnung: $f^{-1}(x) = \sqrt[k]{x}$
