@@ -65,9 +65,38 @@ Es gibt $x_1,x_2\in D$ mit $a<f(x_1)<y<f(x_2)<b$\\*
 Zwischenwertsatz \Rarr{} es gibt $x$ zwischen $x_1,x_2$\\*
 (\Rarr $x\in D$ weil $D$ Intervall) mit $f(x)=y$\\*
 Also $(a,b) \subseteq f(D)$\\*
-Dann ist $f(D)$ eines der Intervalle $(a,b),[a,b),(a,b],\underset{\overset{\uparrow}{\text{nur wenn }a\neq -∞, b\neq ∞}}{[a,b]}\qed
+Dann ist $f(D)$ eines der Intervalle $(a,b),[a,b),(a,b],\underset{\overset{\uparrow}{\text{nur wenn }a\neq -∞, b\neq ∞}}{[a,b]}$\qed
 % whatever
-
-
-
-
+\bew
+Die Abbildung $f:D→D'$ ist
+\begin{itemize}
+\item{surjektiv nach Definition von $D'$}
+\item{streng monoton \Rarr{} injektiv}
+\item{also bijektiv. Somit existiert $f^{-1}:D'→D$}
+\end{itemize}
+\sss{Annahme}
+$f$ streng monoton wachsend (fallend analog)
+\beh
+$f^{-1}$ ist streng monoton wachsend, d.h. gegeben $x_1,x_2\in D'$ mit $x_1<x_2$ zeige:
+$$f^{-1}(x_1)<f^{-1}(x_2)$$
+Angenommen $f^{-1}(x_1)\geq f^{-1}(x_2)$ \Rarr{} $f$ monoton wachsend \Rarr{} $x_1=f(f^{-1}(x_1))\geq f(f^{-1}(x_2))=x_2$ \Rarr{} Widerspruch\\*
+also $f^{-1}(x_1)<f^{-1}(x_2)$ \Rarr{} $f^{-1}$ streng monoton wachsend
+% beh
+\bew
+$$x+δ_1\lew x-δ<z<x+δ\leq x+δ-2$$
+$f^{-1}$ streng monoton wachsend \Rarr
+$$f^{-1}(x)-ε'=f^{-1}(x-δ_1)<f^{-1}(z)<f^{-1}(x+δ-2)=y+ε'=f^{-1}(x)+ε'$$
+$$\Rarr |f^{-1}(z)-f^{-1}(x)|<ε'\leq ε \text{\Rarr{} Behauptung}$$
+Somit $f^{-1}$ stetig in $x$\\*
+Falls $x$ Randpunkt: Betrachte $[x,x+δ]$ bzw. $[x-δ,x]$ wieder analog\qed
+% 2 Anwendungen
+\uS{Logarithmus und allgemeine Potenzen}
+\sS{Satz}
+Die Exponentialfunktion $exp:\R→\R_{>0}=(0,∞)$ ist stetig, streng monoton wachsend und $exp(\R)=\R_{>0}$
+\bew
+Bekannt: $exp$ stetig, streng monoton wachsend.
+Für $x>0$ ist $$exp(x)=1+x+\frac{x^2}{2}+…\geq 1+x$$
+also gilt $$\lim_{x→∞} exp(x)=∞$$
+$$exp(-x)=\frac{1}{exp(x)}\Rarr \lim_{x→-∞}exp(x)=\lim_{x→∞}\frac{1}{exp(x)}$$
+Somit $exp(\R)=(0,∞)$\qed
+Folge mittels 6.15: $exp:\R→\R_{>0}$ ist bijektiv und die Umkehrfunktion $exp^{-1}:=log:\R_{>0}→\R$ ist stetig, streng monoton wachsend, bijektiv \footnote{$exp^{-1}=log$ heißt Logarithmusfunktion}
