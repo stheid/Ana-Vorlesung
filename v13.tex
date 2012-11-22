@@ -1,0 +1,156 @@
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 13}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 22.11.2012}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 13}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 22.11.2012}
+% **************************************************
+%
+\wdh
+Zwischenwertsatz\\*
+Sei $a\leq b,\ f:[a,b]→\R$ stetig\\*
+Sei $y\eR$ zwischen $f(a)$ und $f(b)$ d.h. $f(a)\leq y\leq f(b)$ oder $f(a)\geq y\geq f(b)$\\*
+Dann gibt es ein $x\in[a,b]$ mit $f(x)=y$ SKIZZE
+\Bew {Intervallschachtelung}
+Starte mit $[a_0,b_0]=[a,b]$\\*
+Definiere unendliche Kette von Intervallen\\*
+$[a_0,b_0]\subseteqq [a_1,b_1]\subseteqq [a_2,b_2]\subseteqq …$\\*
+So dass $[b_n-a_n]=2^{-n}[b_0,a_0]$ und $y$ zwischen $f(a_n)$ und $f(b_n)$ liegt.\\*
+Annahme: $f(a)\leq y\leq f(b)$ (Anderer Fall $f(a)\geq y\geq f(b)$ analog)\\*
+Angenommen, $[a_n,b_n]$ ist konstruiert so dass $[_n-a_n=2^{-n}(b_0,a_0)$ und $f(a_n)\leq y\leq f(b_n)$\\*
+Betrachte $m:=\frac{a_n+b_n}{2}$, Wenn $f(m)\geq y$ dann setze $[a_{n+1},b_{n+1}]:=[a_n,m]$\\*
+Wenn $f(m)<y$ dann setze $[a_{n+1},b_{n+1}]:=[m,b_n]$\\*
+Dann gilt in beiden Fällen:
+$$b_{n+1}-a_{n+1}=\frac{1}{2}(b_n-a_n)=2^{-1}·2^{-n}(b_0-a_0)=2^{-n-1}(b_0-a_0)$$
+und $f(a_{n+1})\leq y\leq f(b_{n+1})$
+%
+\ul{Idee:} Folge von Intervallen $[a_n, b_n]$ \"Konvergent\" gegen gesuchtes $x$.\\*
+	Die Folge $(a_n)_{n \geq 0}$ ist monoton wachsend und beschränkt, ($b$ ist obere Schranke) \Rarr $(a_n)$ konvergiert, sei $x:=\lim_{n \to \infty} a_n$\\*
+	Die Folge $(b_n)_{n \geq 0}$ ist monoton fallen und beschränkt \Rarr konvergent nach 4.2\\*
+	Sei $x' = \lim_{n \to \infty} b_n$\\
+	$x' - x = \lim_{n \to \infty} (b_n - a_n)$\\*
+	$= \lim_{n \to \infty} (2^{-n} \cdot (b_0 - a_0)) = 0$\\*
+	also $x = x'$ $f(x) = ?$\\
+	$f$ stetig $\Rarr f(x) = \lim_{n \to \infty} f(a_n) = \lim_{n \to \infty} f(b_n)$\\
+	Wegen $f(a_n) \leq y \leq f(b_n)$ für alle $n$ gilt $f(x) = \lim_{n \to \infty} f(a_n) \leq y \leq \lim_{n \to \infty} f(b_n)$\\*
+	$\Rarr f(x) = y$ 
+%
+\bem
+Weil $a\leq a_n\leq b$ gilt $a\leq x\leq b$ d.h. $x\in[a,b]$\qed
+\uS{Anwendung}
+\sS{Satz}
+Sei \nN{} \ul{ungerade}, $f:\R→\R$
+$$f(x)=x^n+a_{n-1}·x^{n-1}+…+a_0$$
+Dann hat $f$ eine Nullstelle, d.h. es gibt $x\eR$ mit $f(x)=0$
+\bew
+Für $x\neq 0$ betrachte
+$$g(x)=\frac{1}{x^n}f(x)=1+\frac{a_{n-1}}{x}+\frac{a_{n-2}}{x^2}+…+\frac{a_0}{x^n}$$
+Für $x→∞$ ist $g(x)→1$\\*
+Für $x→-∞$ ist $g(x)→1$\\*
+D.h. es gibt $a\eR$ mit $a>0$ und
+$$x\geq a \Rarr g(x)>0$$
+$$x\geq -a \Rarr g(x)>0$$
+%
+\ul{Also:} $x \geq a \Rarr f(x) = x^n \cdot g(x) > 0$\\*
+	$x \geq a \Rarr f(x) = x^n \cdot g(x) < 0$\\* %Pfeil auf x^n mit {x^n < 0} % Pfeil auf g(x) {> 0}
+	$f(-a) < 0 < f(a)$\\*
+	Zwischenwertsatz \Rarr er gibt $x \in [-a, a]$ mit $f(x) = 0$\\*
+
+\sS{Satz Ergänzung Zwischenwertsatz} % 6.14
+	Sei $f: D \to \R$ \ul{stetig} und $D \subseteq \R$ ein nicht-leeres Intervall. Dann ist $f(D) = \{f(x) | x \in D\}$ auch ein Intervall (d.h. hat keine Lücken.)
+\bem
+	Hier sind auch uneigentliche Intervalle zugelassen. (z.B. $(0, \infty)$)
+%
+\bsp
+$f(x)=x^3-x+20$ GRAPH
+\bsp
+Bedingung "$n$ ungerade" ist wesentlich, denn $f(x)=x^2+1$ hat keine Nullstelle
+% Satz + bem
+\bsp
+$$f:(0,1)→\R,\ f(x)=\frac{1}{x}$$
+$$f(D)=(1,∞)$$ GRAPH
+\bsp
+$$f:(-1,1)→\R,\ f(x)=x^2$$
+$$f(D)=[0,1)$$ GRAPH
+\bew
+$f:D→\R$ stetig\\*
+Sei $a:=inf(f(D))\eR\cup\{-∞\}$\\*
+\phantom{Sei }$a:=inf(f(D))\eR\cup\{-∞\}$\\*
+Angenommen $y\eR$ mit $a<y<b$ d.h. $x\in(a,b)$\\*
+Es gibt $x_1,x_2\in D$ mit $a<f(x_1)<y<f(x_2)<b$\\*
+Zwischenwertsatz \Rarr{} es gibt $x$ zwischen $x_1,x_2$\\*
+(\Rarr $x\in D$ weil $D$ Intervall) mit $f(x)=y$\\*
+Also $(a,b) \subseteq f(D)$\\*
+Dann ist $f(D)$ eines der Intervalle $(a,b),[a,b),(a,b],\underset{\overset{\uparrow}{\text{nur wenn }a\neq -∞, b\neq ∞}}{[a,b]}$\qed
+% 
+\sS{Satz Umkehrfunktion}
+	Sei $D$ ein Intervall, $f: D \to \R$, stetig, streng monoton wachsend oder fallend. Sei $D' = f(D)$ (Intervall nach 6.14)\\*
+	Dann ist die Abbildung $f: D \to D'$ bijektiv und die Umkehrabbildung $f^{-1}: D' \to D$ ist stetig und streng monoton wachsend, bzw. fallen.
+%
+\bew
+Die Abbildung $f:D→D'$ ist
+\begin{itemize}
+\item{surjektiv nach Definition von $D'$}
+\item{streng monoton \Rarr{} injektiv}
+\item{also bijektiv. Somit existiert $f^{-1}:D'→D$}
+\end{itemize}
+\sss{Annahme}
+$f$ streng monoton wachsend (fallend analog)
+%
+\beh
+$f^{-1}$ ist streng monoton wachsend, d.h. gegeben $x_1,x_2\in D'$ mit $x_1<x_2$ zeige:
+$$f^{-1}(x_1)<f^{-1}(x_2)$$
+Angenommen $f^{-1}(x_1)\geq f^{-1}(x_2)$ \Rarr{} $f$ monoton wachsend \Rarr{} $x_1=f(f^{-1}(x_1))\geq f(f^{-1}(x_2))=x_2$ \Rarr{} Widerspruch\\*
+also $f^{-1}(x_1)<f^{-1}(x_2)$ \Rarr{} $f^{-1}$ streng monoton wachsend
+%
+\beh
+	$f^{-1}$ ist stetig. Gegeben $x \in D$\\*
+	Annahme $x$ ist kein Randpunkt des Intervalls $D'$\\*
+	Gegeben sei $\e > 0$ Suche $\delta$ mit (Stetigkeitsdefinition)\\*
+	$y := f^{-1}(x) \in D$ ist kein Randpunkt (weil $f,\ f^{-1}$ bijektiv und strenk monoton.)
+	%Graph
+	Wähle $\e' \leq \e$ mit $\e \> 0$ sodass $[y-\e', y+\e'] \subseteq D'$\\*
+	$f(y - \e') < f(y) = x \Larr y - \e' < y$\\*
+	also $f(y - \e') = x - \delta_1 \qquad \delta_1 > 0$\\*
+	$genauso f(y + \e') = x + \delta_2 \qquad \delta_2 > 0$ \\*
+	%Graph
+	Sei $\delta = min(\delta_1, \delta_2)$
+\beh
+	Wenn $z \in D'$ mit $|z - x| < \delta$ dann $|f^{-1}(z) - f^{-1}(x)| < \e$
+%
+\bew
+$$x+δ_1\leq x-δ<z<x+δ\leq x+δ-2$$
+$f^{-1}$ streng monoton wachsend \Rarr
+$$f^{-1}(x)-ε'=f^{-1}(x-δ_1)<f^{-1}(z)<f^{-1}(x+δ-2)=y+ε'=f^{-1}(x)+ε'$$
+$$\Rarr |f^{-1}(z)-f^{-1}(x)|<ε'\leq ε \text{\Rarr{} Behauptung}$$
+Somit $f^{-1}$ stetig in $x$\\*
+Falls $x$ Randpunkt: Betrachte $[x,x+δ]$ bzw. $[x-δ,x]$ wieder analog\qed
+%
+\uS{2 Anwendungen}
+\sS{Bsp}
+	Sei $k \ in \N$\\*
+	Die Abbildung $f: \R_{\geq 0} \to \R_{\geq 0} f(x) = x^k$
+	%Graph
+	\ul{Bekannt:} $f$ ist stetig streng monoton wachsend. \\*
+	$f(0) = 0, \qquad \lim_{x \to \infty} x^k = \infty$\\*
+	$D:= [0, \infty) = \R_{\geq 0}$\\*
+	$f(D) = D' = [0, \infty)$\\*
+	6.15 \Rarr f hat \ul{stetige} und streng monoton wachsende Unterfunktionen\\*
+	$f^{-1} : [0, \infty) \to [0, \infty)$\\*
+	Bezeichnung: $f^{-1}(x) = \sqrt[k]{x}$
+%
+\uS{Logarithmus und allgemeine Potenzen}
+\sS{Satz}
+Die Exponentialfunktion $exp:\R→\R_{>0}=(0,∞)$ ist stetig, streng monoton wachsend und $exp(\R)=\R_{>0}$
+\bew
+Bekannt: $exp$ stetig, streng monoton wachsend.
+Für $x>0$ ist $$exp(x)=1+x+\frac{x^2}{2}+…\geq 1+x$$
+also gilt $$\lim_{x→∞} exp(x)=∞$$
+$$exp(-x)=\frac{1}{exp(x)}\Rarr \lim_{x→-∞}exp(x)=\lim_{x→∞}\frac{1}{exp(x)}$$
+Somit $exp(\R)=(0,∞)$\qed
+Folge mittels 6.15: $exp:\R→\R_{>0}$ ist bijektiv und die Umkehrfunktion $exp^{-1}:=log:\R_{>0}→\R$ ist stetig, streng monoton wachsend, bijektiv \footnote{$exp^{-1}=log$ heißt Logarithmusfunktion} konkret: $log(x)=y \equ x=exp(y)$ GRAPH

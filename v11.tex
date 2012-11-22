@@ -14,9 +14,9 @@
 \wdh
 Eine Abbildung $f:x→y$\\
 \begin{itemize}
-\item{ist \underline{injektiv} wenn gilt:\\
+\item{ist \ul{injektiv} wenn gilt:\\
 für alle $a,b\in X$ mit $f(a)=f(b)$ ist $a=b$}
-\item{ist \underline{surjektiv} wenn für jedes $y\in Y$ ein $a\in X$ existiert mit $f(a)=y$}
+\item{ist \ul{surjektiv} wenn für jedes $y\in Y$ ein $a\in X$ existiert mit $f(a)=y$}
 \end{itemize}
 Sei $D\subseteq\R$ Teilmenge. Eine Funktion auf $D$ ist eine Abbildung $f:D→\R$
 %
@@ -27,11 +27,11 @@ Eine Funktion $(a_n)_{n\geq 0}$ reeller Zahlen ist eine Abbildung $a:\N_0→\R$ 
 \sS{Definition}
 Sei $D\subseteq\R$. Eine Funktion  $f:D→\R$ heißt:
 \begin{enumerate}
-\item{\underline{monoton wachsend} wenn gilt:\\
+\item{\ul{monoton wachsend} wenn gilt:\\
 Für alle $a,b\in D$ mit $a<b$ ist immer $f(a)\leq f(b)$}
-\item{\underline{streng monoton wachsend}: $a<b\Rarr f(a)<f(b)$}
-\item{\underline{monoton fallend}: $a<b\Rarr f(a)\geq f(b)$}
-\item{\underline{streng monoton fallend}: $a<b\Rarr f(a)> f(b)$}
+\item{\ul{streng monoton wachsend}: $a<b\Rarr f(a)<f(b)$}
+\item{\ul{monoton fallend}: $a<b\Rarr f(a)\geq f(b)$}
+\item{\ul{streng monoton fallend}: $a<b\Rarr f(a)> f(b)$}
 \end{enumerate}
 %
 \bem
@@ -74,7 +74,7 @@ $exp(a) = exp(a - b + b) = exp(a - b) \cdot exp(b)$ %overbraces über exp(a - b)
 \end{enumerate}
 %
 \chapter{Stetigkeit}
-\underline{Idee:} Eine Funktion ohne sprünge heißt \underline{stetig}\\
+\ul{Idee:} Eine Funktion ohne sprünge heißt \ul{stetig}\\
 \sS{Definition}
 Sei $D\subseteq \R,\ f:D→\R$ eine Funktion\\
 \begin{enumerate}
@@ -127,7 +127,7 @@ $exp(1) \geq 1 + n \epsilon$\\
 $n \leq \frac{exp(1) - 1}{\epsilon}$\\
 Das gilt nur für endliche viele $n \in \N$\\
 $\Rarr$ Beh.\\
-\underline{Zeige:} exp ist stetig an 0. Gegeben sei $\epsilon > 0, OE ? \epsilon < 1$\\
+\ul{Zeige:} exp ist stetig an 0. Gegeben sei $\epsilon > 0, OE ? \epsilon < 1$\\
 Wähle $n \in \N$ mit $exp(\frac{1}{n}) < 1 + \epsilon$\\
 $$\Rarr exp(-\frac{1}{n}) = exp(\frac{1}{n})^{-1} < \frac{1}{1 + \epsilon} = \frac{1 - \epsilon}{(1+\epsilon)(1-\epsilon)} = \frac{1-\epsilon}{1 - \epsilon^2} > 1 - \epsilon$$\\
 Sei $\delta \frac{1}{n}$\\
@@ -137,7 +137,7 @@ $-\frac{1}{n} < y < \frac{1}{n}$\\ \\
 exp streng monoton wachsend.\\
 $$\Rarr 1 - \epsilon < exp(-\frac{1}{n}) < \exp(y) < exp(\frac{1}{n}) < 1 + \epsilon$$\\
 $\Rarr |exp(y) - exp(0)| < \epsilon$ Also exp stetig in 0\\
-\underline{Zeige:} exp ist eine stetig in $x \in \R$. Gegeben sei $\epsilon > $\\
+\ul{Zeige:} exp ist eine stetig in $x \in \R$. Gegeben sei $\epsilon > $\\
 Sei $y = x + h$, $|h| < \delta$ ($\delta$ noch zu wählen)
 $$|exp(y) - exp(x)| = |exp(x + h) - exp(x)| = |exp(x) \cdot exp(h) - exp(x)| = exp(x) \cdot exo(h) -1$$\\
 $|exp(y) -exp(x) | < \epsilon$\\
