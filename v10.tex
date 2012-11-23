@@ -149,6 +149,21 @@ $ \Gamma_f \subseteq D \times \R$
 \bem Oft ist $D$ ein Intervall
 %
 \sS{Definition Intervalle}
+\fbox{%
+  \vbox to 0cm{\hbox to 17cm{\hfill \fbox{
+\begin{tikzpicture}[scale=.5, domain=-3:3, samples=500]
+    \draw[very thin,color=gray] (-3.5,-0.0) grid (3.5,9.0);
+    \draw[->] (-3.5,0) -- (3.5,0) node[right] {$x$};
+    \draw[->] (0,-0.2) -- (0,9.2) node[above] {$f(x)$};
+    \draw[color=red] plot[id=abb1.1] function{x*x} 
+        node[right] {$f(x) =x^2$};
+    \draw[color=blue] plot[id=abb1.2] function{abs(x)} 
+        node[right] {$f(x) = |x|$};
+    \draw[color=blue] plot[id=abb1.2] function{exp(x)} 
+        node[right] {$f(x) = exp(x)$};
+\end{tikzpicture}  
+  }}}
+}
 seien $a, b \in \R$ \\
 $[a, b] = \{x \in \R| a \leq x \leq b\}$ (abgeschlossen)\\
 $(a, b] = \{x \in \R| a < x \leq b\}$ (halboffen)\\
@@ -164,10 +179,7 @@ $(- \infty, \infty) = \R$\\
 %
 \Bsp{Funktionen}
 \begin{enumerate}
-\item{$f:[0,2]→\R, f(x)=x^2, \Gamma_f \leq [0,2] x\R$
-% Graphenpackage suchen Tafel 10.2
-%
-}
+\item{$f:[0,2]→\R, f(x)=x^2, \Gamma_f \leq [0,2] x\R$}
 \item{Betragsfunktionen: $|\ |: \R→\R, x\mapsto|x|$
 %noch mehr graphen aaaahahhahahah
 }

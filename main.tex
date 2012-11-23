@@ -1,25 +1,31 @@
 \documentclass[a4paper,10pt]{scrreprt}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage{amsmath}	% Mathebibliothek 2
+\usepackage{amssymb}	% Mathebibliothek 2
 \usepackage{breqn}
 \usepackage{dsfont}
 \usepackage{fontspec}
 \usepackage{polyglossia}
-\usepackage[math-style=TeX]{unicode-math}
+\usepackage[math-style=TeX]{unicode-math}	% Unicode Unterstützung
 \setmainfont{FreeSerif.otf}
 \setmathfont{Asana-Math.otf}
-\usepackage{calligra}
-\usepackage{cancel}
-\usepackage{soulutf8}
+\usepackage{calligra}	% Schrift
+\usepackage{cancel}		% Kürzen und Durchstreichen
+\usepackage{soulutf8}	% Für schöne Unterstreichungen
+\usepackage{tikz} 		% Für Graphenzeichnerei
+\usepackage{floatflt}
+\usepackage{graphics}
 
 % Language
 \setdefaultlanguage{german}
+
+\fboxsep0pt
+\fboxrule0pt
 
 % set underline
 \setul{.3mm}{.8pt}
 
 % Beschreibaren Seitenbereich definieren
-\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2.5cm]{geometry}
 
 % Kopf- und Fußzeile einfügen
 \usepackage{fancyhdr}
