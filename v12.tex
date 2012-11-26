@@ -25,13 +25,13 @@ Eine Funktion $f: D \to \R$ ist stetig in $x \in D$ $\equ$ Für jede Folge $(x_n
 (d.h. $f$ erhält Konvergenz)\\*
 \bew
 \begin{description}
-\item["\Rarr"]{\\*Angenommen $f$ ist stetig in $x$, $x_n→x$ mit $x_n\in D$. Zeige $f(x_n)→f(x)$\\*
+\item["\Rarr"]{\hfill\\Angenommen $f$ ist stetig in $x$, $x_n→x$ mit $x_n\in D$. Zeige $f(x_n)→f(x)$\\*
 Gegeben $\e>0$. Stetigkeit \Rarr{} es gibt $\delta>0$ mit:\\*
 Wenn $y\in D$ mit $|x-y|<\delta$ dann $|f(x)-f(y)|<\e$\\*
 Wähle $N\eN$ so dass gilt:\\*
 Für $n\geq N$ ist $|x-x_n|<\delta \Rarr |f(x)-f(x_n)|<\e$\\*
 Also gilt $f(x_n)→f(x)$}
-\item["\Larr"]{\\*Angenommen $f$ ist nicht stetig.\\*
+\item["\Larr"]{\hfill\\Angenommen $f$ ist nicht stetig.\\*
 Zeige: Es gibt eine Folge $(x_n)$ mit $x_n\in D$ und $x_n→x$ aber nicht $f(x_n)→f(x)$ für nicht stetig in $x$ \Rarr{} es gibt ein $\e>0$ so dass für jedes $\delta>0$ ein $y\in D$ existiert mit $|x-y|<\delta$ und $|f(x)-f(y)|\geq \e$\\*
 Wähle für $\delta=\frac{1}{n}$ ein $x_n\in D$ mit $|x_n-x|<\delta,\ |f(x_n)-f(x)|\geq\e$\\*
 Dann gilt $x_n→x$ aber \ul{nicht} $f(x_1)→f(x)$\qed}
