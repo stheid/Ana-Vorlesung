@@ -1,0 +1,80 @@
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 1}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 8.10.2012}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 1}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 8.10.2012}
+% **************************************************
+\wdh{Logarithmus und allgemeine Potenzen}
+Die Funktion $exp: \R \to \R_{\geq 0}$ ist stetig, streng monoton wachsend, bijektiv.\\*
+Die Umkehrfunktion heißt \ul{Logarithmus},\\*
+$$log = exp^{-1}: \R_{\geq 0} \to \R$$
+explizit definiert durch $log(x) = y \equ x = exp(y)$\\*
+\Rarr_{Satz 6.15} log ist stetig, streng monoton wachsend, bijektiv.
+% GRAPH exp(x) | GRAPH log(x)
+%
+% Stefan
+%
+\sS{Lemma}
+Es gibt $a^{\frac{n}{m}} =  exp(\frac{n}{m} \cdot log(a)$\\*
+\bew
+	\begin{enumerate}
+	\item{Sei $n \geq 0$:\\*
+	$$exp(n \cdot log(a)) = exp(\overbrace{log(a) + log(a) + ... + log(a)}{n}) = exp(log(a)) \cdot ... \cdot exp(log(a))$$}
+	\item{Sei $n < 0$\\*
+	 $$exp(n \cdot log(a)) = exp(\underbrace{-n}{-n > 0} \cdot log (a)) = (a^{-1})^{-1} = a^n$$}
+	 \item{Rechne: $exp(\frac{n}{m} log(a))^m = exp(m \cdot \frac{n}{m} \cdot log(a)) = exp(n \log(a)) = a^n$}
+	\end{enumerate}	 
+	$\sqrt[m]{} \Rarr exp(\frac{n}{m} log(a)) = \sqrt[m]{a^n} = a^\frac{n}{m}$
+	
+% Stefan
+
+\sS{Definition Logarithmusbasis}
+Sei $a > 1 \qquad x \in \R$ 
+$$log_a (x) = \frac{log(x)}{log(a)}$$
+\bem $a \neq 0 \Rarr log(a) \neq 0$\\*
+Dann $a^{log_a (x)} = exp(log_a (x) \cdot log(a)) = exp(\frac{log(x)}{log(a)} \cdot log(a)) = exp(log(x)) = x$
+\uS{Gleichmäßige Stetigkeit}
+\wdh
+$f: D \to \R$ stetig an $x \in D$ wenn gilt:\\*
+Für jedes $\e > 0$ gilt $\delta > 0$ mit wenn $y \in D$ mit $|x - y| < \delta$ dann $|f(x) - f(y)| < \e$\\*
+Hier hängt $\delta$ im allgemeinen von $\e$ und $x$ ab!
+% Stefan
+% Graph für Stefan:
+\sS{Satz}
+Seien $a \leq b$ reelle Zahlen\\*
+Jede stetige Funktion $f: [a, b] \to \R$ ist gleichmäßig stetig.\\*
+\bew
+	Angenommen, $f$ ist nicht gleichmäßig stetig:
+	Es gibt ein $\e > 0$ sodass für jedes $\delta > 0$ zwei Zahlen $x, y \in D$ existieren, mit $|x - y| < \delta$ und $|f(x) - f(y)| \geq \e$\\*
+	Wähle zu $\delta = \frac{1}{n}$ Zahlen $x_n, y_n \in D$ mit $|x_n - y_n| \frac{1}{n}, \ |f(x) - f(y)| \geq \e$ (*)\\*
+	Bolzano-Weierstraß \Rarr Es gibt eine Teilfolge $({x_n}_k)_{k\geq 0}$, die konvergiert. Sei $x = \ds\lim_{k\to \infty}({x_n}_k)_{k\geq 0} \in  [a, b] = D$\\*
+	Dann $\ds\lim_{k \to \infty} ({y_n}_k)_{k\geq 0} = \ds\lim_{k \to \infty} (({y_n}_k)_{k\geq 0} - ({x_n}_k)_{k\geq 0}) = 0 + x = x$\\*
+	${x_n}_k)_{k\geq 0} \to x, \ {y_n}_k)_{k\geq 0} \to x \ f: k \to \infty $\\*
+	$f$ stetig \Rarr $f({x_n}_k)_{k} \to f(x), f({y_n}_k)_{k} \to f(x) \ f \ k \to \infty $\\*
+	\Rarr $(f({x_n}_k)_{k}) - f({y_n}_k)_{k})  \to f(x) - f(x) = 0$
+	Widerspruch zu (*) Also ist $f$ gleichmäßig stetig. \qed
+% Stefan
+\item{Existenz vom Inversen:\\*
+Sei $z = (x, y) \in \C, \ x, y \in \R, \ z \neq 0$ \\*
+Zeige es gibt ein $z^{-1} \in \C$ mit $z \cdot z^{-1} = (1,\ 0)$\\*
+$z \neq 0 \Rarr x \neq 0$ oder $y \neq 0 \equ x^2 + y^2 > 0$\\
+$$w:= \left(\frac{x}{x^2 + y^2}, \frac{-y}{x^2 + y^2}\right)$$
+Rechne $z \codt w = (x, y) \cdot \left(\frac{x}{x^2 + y^2}, \frac{-y}{x^2 + y^2}\right)$
+$=\left(\frac{x^2}{x^2 + y^2} - \frac{-y^2}{x^2 + y^2}, \frac{-yx}{x^2 + y^2} + \frac{yx}{x^2 + y^2}\right) = (1, 0)$ }
+Also $w = z^{-1}$ \qed \\*
+Weitere Axiome ähnlich.
+% Stefan
+\sss{Definition}
+Sei $z = x + iy \in \C$\\*
+Realteil: Re(z) := x \\*
+Imagnärteil: Im(z) := y\\*
+Komplex konjugierte Zahl $\={z} = x - iy$\\*
+Komplex konjugation = Spiegelung an der x-Achse.\\*
+\ul{Definition:} Der Betrag von $z = x + iy \in \C$ ist $|z| = \sqrt{x^2 + y^2}$ Abstand von $0 = (0, 0)$ zu $z$
+% Stefan
