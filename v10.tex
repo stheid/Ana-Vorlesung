@@ -148,21 +148,22 @@ $ \Gamma_f \subseteq D \times \R$
 %
 \bem Oft ist $D$ ein Intervall
 %
-\sS{Definition Intervalle}
+%\sS{Definition Intervalle}
 \begin{wrapfigure}{r}{0.2\textwidth}
   \begin{center}
-\begin{tikzpicture}[scale=.5, domain=-3:3, samples=2000]
-    \draw[very thin,color=gray] (-3.5,-0.0) grid (3.5,9.0);
+\begin{tikzpicture}[scale=.5, domain=-3.5:3.5, samples=2000]
+    \draw[very thin,color=gray!50] (-3.5,-3.5) grid (3.5,8.9);
+   	\clip (-3.5,-3.0) rectangle (5,10);
     \draw[->] (-3.5,0) -- (3.5,0) node[right] {$x$};
-    \draw[->] (0,-0.2) -- (0,9.2) node[above] {$f(x)$};
+    \draw[->] (0,-3) -- (0,8.5) node[above] {$y$};
     \draw[color=red] plot[id=abb1.1] function{x*x} 
-        node[right] {$f_1(x) =x^2$};
-    \draw[color=blue] plot[id=abb1.2] function{abs(x)} 
-        node[right] {$f_2(x) = |x|$};
-    \draw[color=cyan] plot[id=abb1.4] function{exp(x)} 
-        node[right] {$f_4(x) = exp(x)$};
-    \draw[color=black] plot[id=abb1.5] function{floor(x)} 
-        node[right] {$f_5(x) = [x]$};
+        node[left] {{\footnotesize $f_1(x) =x^2$}};
+    \draw[color=blue] plot[id=abb1.2,domain=-3.6:3.5] function{abs(x)}
+        node[left] {{\footnotesize $f_2(x) = |x|$}};
+    \draw[color=cyan] plot[id=abb1.4,domain=-3.6:3] function{exp(x)}
+    	node[very near start, below]{{\Large $f_2(x) = exp(x)$}};
+    \draw[color=green!60!black] plot[id=abb1.5] function{floor(x)} 
+        node[left, below] {{\footnotesize $f_5(x) = [x]$}};
 \end{tikzpicture}
   \end{center}
 \end{wrapfigure}
