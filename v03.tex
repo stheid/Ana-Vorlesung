@@ -14,195 +14,190 @@
 \wdh
 Ein Körper K ist eine Menge mit $+$ und ·, sodass gewisse Eigenschaften erfüllt sind:
 \bsp
-$\ds\Q = \left\{\frac{a}{b} | a \in \Z, b \neq 0\right\}$\\
-$F_1 = \{0, 1\} \qquad 1 + 1 = 0$\\
-\notat{Setze $a^n = \underbrace{ a · a · a · a· … · a}_{n-Faktoren}$\\
+$\ds\Q = \left\{\frac{a}{b} | a \in \Z, b \neq 0\right\}$\\*
+$F_1 = \{0, 1\} \qquad 1 + 1 = 0$\\*
+\notat{Setze $a^n = \underbrace{ a · a · a · a· … · a}_{n-Faktoren}$\\*
 $\left.\begin{array}{lcc}
-a^0 &=& 1\\
+a^0 &=& 1\\*
 a^{-n} &=& (a^{-1})^n
 \end{array}\right\}$ wenn $a \neq 0$}
-Daraus folgt $a^n$ ist definiert, wenn $a \neq 0$ und $n \in \Z$\\
-Regeln der Potenzgleichung:\\
-$a^{n+m} = a^n \cdot a^m$\\
-$a^{n \cdot m} = (a^{n})^m$\\
+Daraus folgt $a^n$ ist definiert, wenn $a \neq 0$ und $n \in \Z$\\*
+Regeln der Potenzgleichung:\\*
+$a^{n+m} = a^n \cdot a^m$\\*
+$a^{n \cdot m} = (a^{n})^m$\\*
 \bew
 Übung
 %
 \sS{Definition}
-    Ein angeordneter Körper ist ein Körper K für dessen Elemente eine "Kleiner als Beziehung" $<$ definiert ist, so dass folgende Eigenschaften erfüllt sind:\\
+    Ein angeordneter Körper ist ein Körper K für dessen Elemente eine "Kleiner als Beziehung" $<$ definiert ist, so dass folgende Eigenschaften erfüllt sind:\\*
     \begin{enumerate}
-    \item{Für alle $a, b \in K$ gilt genau eine von drei Notationen:\\
+    \item{Für alle $a, b \in K$ gilt genau eine von drei Notationen:\\*
     $a < b oder a = b oder a > b$}
-    \item{Für alle $a, b, c \in K$ gilt wenn $a < b$ und $b < c$ dann $a < c$\\ (Transitivität)}
+    \item{Für alle $a, b, c \in K$ gilt wenn $a < b$ und $b < c$ dann $a < c$\\* (Transitivität)}
     \item{Für alle $a, b, c \in K$ gilt wenn $a < b$ dann $a + c < b + c$}
     \item{für $a, b, c \in K$ gilt, wenn $a < b$ und $c \neq 0$ dann $a \cdot c < b \cdot c$}
     \end{enumerate}
-	Weitere Beziehungen:\\
-	$a > b$ heißt $b < a$\\
+	Weitere Beziehungen:\\*
+	$a > b$ heißt $b < a$\\*
 	\begin{enumerate}
-	\item{Wenn $a < 0$ dann $-a > 0$:\\
+	\item{Wenn $a < 0$ dann $-a > 0$:\\*
 	$a < 0 \Rarr a + (-a) > 0 + (-a) \Rarr 0 > -a$}
-	\item{Für jedes $a \in K $ gilt wenn $a \neq 0$, dann $a^2 > 0$\\
+	\item{Für jedes $a \in K $ gilt wenn $a \neq 0$, dann $a^2 > 0$\\*
 	\begin{itemize}
 	\item[(a)]{$\begin{array}{ccc}
-	a &>& 0\\
-	a · a &>& 0 · a\\
+	a &>& 0\\*
+	a · a &>& 0 · a\\*
 	a^2 &>& 0
 	\end{array}$\qed}
 	\item[(b)]{$\begin{array}{ccc}
-		a &<& 0\\
-		-a &>& 0 · a\\
+		a &<& 0\\*
+		-a &>& 0 · a\\*
 		a^2 &=& (-a)^2 > 0
 		\end{array}$\qed}
 	\end{itemize}}
 	\item{$1 > 0 $ denn $1 = 1^2$}
 	\end{enumerate}
-	Sei $K$ ein Angeordneter Körper:\\
-	$0 < 1 \Rarr 1 < 1 + 1 \Rarr 1 + 1 < 1 + 1 + 1 $ etc.\\
-	$0 < 1 < 1 + 1 < 1 + 1 +1 $ etc.
-	Für $n \in \N$ setze $underbrace{n:= 1 + 1 + 1 + ... + 1}$
-	
-	\phantom{Für $n \in \N$ setze XXX} n-Faktoren\\
-	Dann $0 < 1 < 2 < 3 ... $ in $K$
-	\underline{Folge:} Verschiedene natürliche Zahlen bleiben in $K$ verschieden.\\
+	Sei $K$ ein Angeordneter Körper:
+	$$0 < 1 \Rarr 1 < 1 + 1 \Rarr 1 + 1 < 1 + 1 + 1 \text{ etc.}$$
+	$$0 < 1 < 1 + 1 < 1 + 1 +1 \text{ etc.}$$
+	Für $n \in \N$ setze $underbrace{n:= 1 + 1 + 1 + … + 1}_{n-Faktoren}$\\*
+	Dann $0 < 1 < 2 < 3 … $ in $K$
+	\ul{Folge:} Verschiedene natürliche Zahlen bleiben in $K$ verschieden.\\*
 	%Falscher Pfeil, verbesserung kommt noch
-	Fasse $\N$ als Teilmenge von $K$ auf.\\
-	Dann $$\Z = \left\lbrace a - b | a, b \in N \right\rbrace \subseteq K$$\\
-	\phantom{Dann }$$Q = \left\lbrace \frac{a}{b} | a, b \in N\right\rbrace \subseteq K$$\\ \\
-	Insbesondere ist $K$ unendlich.\\
-	\\
-	z.B. hat $F_z$ keine Anordnung.\\
-	\\
+	Fasse $\N$ als Teilmenge von $K$ auf.\\*
+	Dann $$\Z = \left\lbrace a - b | a, b \in N \right\rbrace \subseteq K$$\\*
+	\phantom{Dann }$$Q = \left\lbrace \frac{a}{b} | a, b \in N\right\rbrace \subseteq K$$\\*[8pt]
+	Insbesondere ist $K$ unendlich.\\*[8pt]
+	z.B. hat $F_z$ keine Anordnung.
 \sS{Definition}
-	Sei $K$ ein angeordneter Körper mit $a \in K$\\
-	Der Absolutbetrag von $a$ ist definiert als \\
+	Sei $K$ ein angeordneter Körper mit $a \in K$\\*
+	Der Absolutbetrag von $a$ ist definiert als \\*
 	$|a| = \left\lbrace \begin{array}{lll}
-	\text{$a$ wenn a > 0}\\
-	\text{$-a$ wenn a < 0}
+	a\text{ wenn }a > 0\\*
+	-a\text{ wenn }a < 0}
 	\end{array}\right.$
 \sS{Satz}
-	Sei $K$ ein angeordneter Körper $a, b, c \in K$\\
+	Sei $K$ ein angeordneter Körper $a, b, c \in K$\\*
 	Dann gilt:
 	\begin{enumerate}
 	\item{$a = 0$ wenn $|a| = 0$}
 	\item{$-|a| \leq a \leq |a|$}
-	\item{Dreiecksungleichung\\
-	$|a + b| \leq |a| + |b|$}
-	\item{untere Dreiecksungleichung
-	$|a - b| \geq |a| - |b|$} % Nochmal prüfen...
+	\item{Dreiecksungleichung:
+	$$|a + b| \leq |a| + |b|$$}
+	\item{untere Dreiecksungleichung:
+	$$|a - b| \geq |a| - |b|$$}
 	\end{enumerate}
 \bew
 	\begin{enumerate}
 	\item{klar.}
-	\item{wenn $a \geq 0$:\\
-	$|a| \geq 0$\\
-	$\Rarr -|a| \leq 0 \leq a \leq |a|$\\
+	\item{wenn $a \geq 0$:\\*
+	$|a| \geq 0$\\*
+	$\Rarr -|a| \leq 0 \leq a \leq |a|$\\*
 	wenn $a \leq 0$:
 	$-|a| \leq a \leq 0 \leq |a|$}
-	\item{Es gilt: $-|a| \leq a \leq |a|$, $-|b| \leq b \leq |b|$\\
-	wenn $a + b \geq 0$\\
+	\item{Es gilt: $-|a| \leq a \leq |a|$, $-|b| \leq b \leq |b|$\\*
+	wenn $a + b \geq 0$\\*
 	$|a + b| = a + b \leq |a| + b \leq |a| + |b|$
-	wenn $a + b < 0$\\
+	wenn $a + b < 0$\\*
 	$|a + b| = -(a + b) = (-a) + (-b) \leq |a| + |b|$}
-	\item{$(a - b) + b = a$\\
-	$\Rarr |a| = |(a - b) + b| \leq |a - b| + b$\\
+	\item{$(a - b) + b = a$\\*
+	$\Rarr |a| = |(a - b) + b| \leq |a - b| + b$\\*
 	$|a - b| \leq |a - b|$} % ??? Noch mal gegenlesen, mathematisch schwierig.
 	\end{enumerate}
 \sS{Satz Bernoulli'sche Ungleichungen}
-	Sei $K$ ein angeordneter Körper $a, b \in K, a > -1$ und $n \in \N \{0, 1, 2, 3, 4, ...\}$.\\
-	Dann gilt:\\
-	$(1 + a)^n \geq 1 + n \cdot a$\\
-	\\
-	Beweis durch vollständige Induktion:\\
+	Sei $K$ ein angeordneter Körper $a, b \in K, a > -1$ und $n \in \N \{0, 1, 2, 3, 4, …\}$.\\*
+	Dann gilt:
+	$$(1 + a)^n \geq 1 + n \cdot a$$
+	Beweis durch vollständige Induktion:\\*
 	\ind{
-		$$n = 0\\
+		$$n = 0\\*
 		(1 + a)^0 = 1 = 1 + 0 \cdot a$$
 	}{
-		Annahme:\\
-		$$(1 + a)^{n + 1} = (1 + a)(1 + a)^n \geq (1 + a)(1 + n \cdot a)$$\\
-		weil $1 + a > 0$\\
-		$= 1 + a + n \cdot a + n \cdot a^2$\\
-		$= 1 + (n + 1) \cdot a + n \cdot a^2$\\
+		Annahme:\\*
+		$$(1 + a)^{n + 1} = (1 + a)(1 + a)^n \geq (1 + a)(1 + n \cdot a)$$\\*
+		weil $1 + a > 0$\\*
+		$= 1 + a + n \cdot a + n \cdot a^2$\\*
+		$= 1 + (n + 1) \cdot a + n \cdot a^2$\\*
 		weil $a^2 \geq 0 \Rarr n \cdot a^2 \geq 0$
 	}
 \sS{Definition}
-	Sei $K$ ein angeordneter Körper, $M \subseteq K$ eine Teilmenge, $a \in K$.\\
+	Sei $K$ ein angeordneter Körper, $M \subseteq K$ eine Teilmenge, $a \in K$.\\*
 	\begin{enumerate}
 	\item{$M \leq a$ bedeutet: $x \leq a$ für jedes $x \in M$}
-	\item{$a$ heißt ",obere Schranke"' von $M$, wenn $M \leq a$.\\
+	\item{$a$ heißt ",obere Schranke"' von $M$, wenn $M \leq a$.\\*
 		$a$ heißt ",untere Schranke"' wenn $M \geq a$}
-	\item{$M$ heißt nach oben beschränkt wenn $M$ eine obere Schranke hat.\\
+	\item{$M$ heißt nach oben beschränkt wenn $M$ eine obere Schranke hat.\\*
 	Analog: nach unten beschränkt wenn $M$ eine untere Schranke hat.}
-	\item{$a$ heißt Maximum von $M$, wenn $M \leq a$ \underline{und} $a \in M$. $a = max(M)$\\
-		$a$ heißt Minimum von $M$, wenn $M \geq a$ \underline{und} $a \in M$. $a = min{M}$}
+	\item{$a$ heißt Maximum von $M$, wenn $M \leq a$ \ul{und} $a \in M$. $a = max(M)$\\*
+		$a$ heißt Minimum von $M$, wenn $M \geq a$ \ul{und} $a \in M$. $a = min{M}$}
 	\end{enumerate}
 \bew
-	Sei $a, b \in M$\\
-	$M \leq a, M \leq b$\\
-	Dann $b \leq a$ und $b \leq a \Rarr a = b$ \qed\\
+	Sei $a, b \in M$\\*
+	$M \leq a, M \leq b$\\*
+	Dann $b \leq a$ und $b \leq a \Rarr a = b$ \qed\\*
 \bsp
 	$K = \Q$
 	\begin{enumerate}
-	\item{$M = \N$\\
-	Sei $a \in \Q$\\
-	$a \leq N \equ a \leq n$ für alle $n \in N$\\
-	\phantom{$a \leq \N $} $\equ a \leq 1$\\
+	\item{$M = \N$\\*
+	Sei $a \in \Q$\\*
+	$a \leq N \equ a \leq n$ für alle $n \in N$\\*
+	\phantom{$a \leq \N $} $\equ a \leq 1$\\*
 	Wenn $N$ nach unten beschränkt $1 = min(N)$}
-	\item{$M = \left\lbrace -\frac{1}{n} | n \in \N \right\rbrace \qquad 0 \notin M$\\
+	\item{$M = \left\lbrace -\frac{1}{n} | n \in \N \right\rbrace \qquad 0 \notin M$\\*
 	\begin{tabbing}
-	$-1 = min(M)$ \= $\Rarr M$ ist nach unten beschränkt.\\
-	$M \leq 0$	\> $\Rarr M$ ist nach oben beschränkt.\\
+	$-1 = min(M)$ \= $\Rarr M$ ist nach unten beschränkt.\\*
+	$M \leq 0$	\> $\Rarr M$ ist nach oben beschränkt.\\*
 	\end{tabbing}
-	$M$ hat kein Maximum.\\
-	Sei $a \in M$ dann $a = -\frac{1}{n}, n \in N, -\frac{1}{n + 1} \in M$\\
-	$n + 1 > n \Rarr \frac{1}{n + 1} < \frac{1}{n} \Rarr -\frac{1}{n + 1} > -\frac{1}{n}$\\
+	$M$ hat kein Maximum.\\*
+	Sei $a \in M$ dann $a = -\frac{1}{n}, n \in N, -\frac{1}{n + 1} \in M$\\*
+	$n + 1 > n \Rarr \frac{1}{n + 1} < \frac{1}{n} \Rarr -\frac{1}{n + 1} > -\frac{1}{n}$\\*
 	$M \nleq -\frac{1}{n}$ $a$ ist keine obere Schranke.}
-	\item{$M = \left\lbrace -\frac{1}{n} | n \in \N\right\rbrace \cup \{ 0 \}$\\
-	$min(M) = -1$\\
+	\item{$M = \left\lbrace -\frac{1}{n} | n \in \N\right\rbrace \cup \{ 0 \}$\\*
+	$min(M) = -1$\\*
 	$max(M) = 0$}
-	\item{$M = \emptyset$ hat weder ein $min(M)$ noch ein $max(M)$\\
+	\item{$M = \emptyset$ hat weder ein $min(M)$ noch ein $max(M)$\\*
 	Jedes $a \in \Q$ erfüllt $a \leq M$ und $M \leq a$}
 	\end{enumerate}
 \sS{Satz}
 	\begin{enumerate}
-	\item{Sei $K$ ein angeordneter Körper.\\
+	\item{Sei $K$ ein angeordneter Körper.\\*
 	Wenn $M$ endlich und nicht leer, dann hat $M$ auch ein $max$ und ein $min$}
-	\item{Wohlordnungsprinzip\\
+	\item{Wohlordnungsprinzip\\*
 	Jede nicht leere Teilmenge $M \in \N$ hat ein Minimum.}
 	\end{enumerate}
 \bew
 	\begin{enumerate}
 	\item{klar.}
-	\item{$M$ ist nicht leer, wähle $n \in M$\\
-	$\{1, 2, 3, 4, 5, ... n\}$, endlich aber nicht leer.\\
-	Dann $min(\{1, 2, 3, 4, 5, ... n\} \cap M) = min(M)$ \qed}
+	\item{$M$ ist nicht leer, wähle $n \in M$\\*
+	$\{1, 2, 3, 4, 5, … n\}$, endlich aber nicht leer.\\*
+	Dann $min(\{1, 2, 3, 4, 5, … n\} \cap M) = min(M)$ \qed}
 	\end{enumerate}
 \sS{Definition: Vollständigkeit}
-	Sei $K$ ein angeordneter Körper und $M \subseteq K$, $a \in K$\\
+	Sei $K$ ein angeordneter Körper und $M \subseteq K$, $a \in K$\\*
 	$a \ heißt kleinste obere Schranke von M oder Supremum.$
 	\begin{enumerate}
-	\item{$M \leq a$}\\[6pt]
+	\item{$M \leq a$}\\*[6pt]
 	und
 	\item{kein $b \in K$ mit $b < a$ erfüllt $M \leq b$}
 	\end{enumerate}
 	$a$ ist größte untere Schranke oder Infimum vom $M$, wenn
 	\begin{enumerate}
-	\item{$a \leq M$}\\[6pt]
+	\item{$a \leq M$}\\*[6pt]
 	und
 	\item{Kein $b \in M$ mit $a < b$ erfüllt $b \leq M$}
 	\end{enumerate}
 \notat{
-	$a = sup(M)$\\
+	$a = sup(M)$\\*
 	$a = inf(M)$}
 \bem
 	Wenn $a = max(M) \Rarr a = sup(M)$ 
 \bew
-	Sei $a, b \in M$ und $a \nleq b$\\
+	Sei $a, b \in M$ und $a \nleq b$\\*
 	$\Rarr M \nleq b \Rarr a$ ist Supremum
 \bem
 	Wenn ein Supremum existiert, ist es eindeutig.
 \bew
-	$a, b$ sind Supremum von M\\
+	$a, b$ sind Supremum von M\\*
 	$M \leq a$, $M \leq b \Rarr a \leq b $ und $b \leq a \Rarr a = b$ \qed
 \bsp
 	$sup(\{ -\frac{1}{n} | n \in \N \})$
