@@ -6,7 +6,7 @@
 *.pdf
 
 # gnuplot
-plots/
+plots/*
 
 # VIM
 *~
