@@ -5,6 +5,9 @@
 *.toc
 *.pdf
 
-#VIM
+# gnuplot
+plots/
+
+# VIM
 *~
 *.swp
