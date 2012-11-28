@@ -60,38 +60,32 @@ $a_n = \frac{b_n}{c_n}$\\*[4pt]
 $b_n = n^2 -n; c_n = 2n^2 + 1$\\*
 $(b_n) und (c_n)$ sind divergend. Schlecht.}
 \item[2.]{Versuch:\\*
-$\ds\frac{n^2 - n}{2n^2 + 1} = \frac{n^2(1 - \frac{1}{n})}{n^2(2 + \frac{1}{n^2}}$ für $n \geq 1$\\*[4pt]
-$= \ds\frac{1-\frac{1}{n}}{2 +\frac{1}{n^2}}=\frac{b_n}{c_n}$ mit $b_n:=1-\frac{1}{n},\ c_n = 2 + \frac{1}{n^2}$\\*[4pt]
-$\ds\frac{1}{n} \to 0$ für $n \to ∞ $\\*[4pt]
-$\ds\Rightarrow 1 - \frac{1}{n} \to 1 - 0 = 1$ für $n \to ∞$\\*[4pt]
-$\Rightarrow 2 + \ds\frac{1}{n^2} \to 2 + 0 = 2$ für $n \to ∞$}
+$$\frac{n^2 - n}{2n^2 + 1} = \frac{n^2(1 - \frac{1}{n})}{n^2(2 + \frac{1}{n^2}}\quad\text{ für }n \geq 1= \frac{1-\frac{1}{n}}{2 +\frac{1}{n^2}}=\frac{b_n}{c_n}\quad\text{ mit }b_n:=1-\frac{1}{n},\ c_n = 2 + \frac{1}{n^2}$$
+$$\frac{1}{n} \to 0\qquad\text{ für }n \to ∞ $$
+$$\Rightarrow 1 - \frac{1}{n} \to 1 - 0 = 1\qquad\text{ für }n \to ∞$$
+$$\Rightarrow 2 +\frac{1}{n^2}\to 2 + 0 = 2\qquad\text{ für }n \to ∞$$}
 \end{itemize}
-%
-$\Rightarrow a_n \to \frac{1}{2}$ für $n \to ∞$
+$$\Rightarrow a_n \to \frac{1}{2}\qquad\text{ für }n \to ∞$$
 %
 \sS{Satz}
 Seien $a_n \to a$, $b_n \to b$ zwei konvergente Folgen reeler Zahlen.\\*
 wenn $a_n \leq b_n$ für unendlich viele $n \in \N{}$ dann ist $a \leq b$.
 \bew
-Angenommen: $a > b$\\*
-
+Angenommen: $a > b$\\*[4pt]
 Wähle $\e := \ds\frac{a - b}{2} > 0$\\*
 Es gibt $N \in \N{}$ so dass:
-$
-\left.
+$\left.
 \begin{array}{ll}
-\mid a_n - a \mid  < \e \\*
-\mid b_n - b \mid  < \e
+| a_n - a | < \e \\*
+| b_n - b | < \e
 \end{array} \right\rbrace$ für $n \geq N$\\*
 $\Rightarrow a_n > a - \e$\\*[8pt]
-$= a - \frac{a - b}{2} = \ds\frac{a + b}{2} = b + \ds\frac{a - b}{2}\\*
-\\*
-= b + \e > b_n \Rightarrow a_n > b_n$ für $n \geq \N{}$\\*
+$$= a - \frac{a - b}{2} = \ds\frac{a + b}{2} = b + \ds\frac{a - b}{2}= b + \e > b_n \Rightarrow a_n > b_n\qquad\text{ für }n \geq \N{}$$
 Widerspruch zur Annahme.\\*
 $a_n \leq b_n$ für unendlich viele $n \in \N$\qed
-
+%
 \sS{Definition: Reihen}
-Sei $(a_n)_{n \geq 0}$ eine Folge reeler Zahlen.\\*
+Sei $(a_n)_{n \geq 0}$ eine Folge reeller Zahlen.\\*
 Bilde eine Folge:
 \begin{align*}
 s_0 &= a_0\\*
@@ -102,7 +96,7 @@ s_n &= a_0 + a_1 + a_n = \sum\limits_{k = 0}^{n} a_k
 \end{align*}
 Die Folge $(s_n)_{n \geq 0}$ heißt Reihe mit den Gliedern $a_n$.\\*
 $s_n$ heißen die \ul{Partialsummen} der Reihe.\\*
-Bezeichnung:\\*
+Bezeichnung:
 $$\sum\limits_{k = 0}^{∞} a_k\text{ oder }a_0 + a_1 + a_2 + a_3 + …$$
 Wenn $s_n \to s \in \R{}$ für $n \to ∞$ dann schreiben wir:
 $$\sum\limits_{k = 0}^{∞} a_k = s$$

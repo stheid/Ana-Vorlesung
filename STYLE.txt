@@ -12,7 +12,7 @@
         \notat für Notationen (\em{})
 \cancel für Durchstreichungen und Kürzen
 
-Formeln die über eine ganze zeile gehen werden mit $$ oder \[ begonnen und mit $$ oder \] abgeschlossen!!
+Formeln die über eine ganze zeile gehen werden mit $$ begonnen und mit $$ abgeschlossen!!
 
 leere zeilen die nicht für neue Absätze stehen auskommentieren
 
@@ -25,3 +25,5 @@ ich bin für tabular mit nem hspace vorher
 größtes problem ist die einrückung hinter der überschrift (also in der selben zeile)
 
 Linefeed muss verbessert werden wg seitenumbruch und zeilenabstand
+
+bei Betrag |bla|; bei senkrechten linien in Mengen \{(a,b)\mid a\eN\}

@@ -93,25 +93,25 @@ und $|b-t_n|<\frac{\e}{2a^*}^{(2)}$ für alle $n\geq N$\\*
 (geht weil $b-t_n→0$ für alle $m→∞$)
 %
 \bem
-Wenn $a^*=0$ dann $a_n=0$ für alle k. Dann alles klar.
-Für alle $n\geq 2N$ gilt:\\*
-$|a_0(b-t_n)+a_1(b-t_{n-1})+…+a_n(b-t_0)|\leq |a_0|·|(b-t_n)|+|a_1|·|(b-t_{n-1})|+…+|a_n|·|(b-t_0)|$\\*[4pt]
-$\leq(|a_0|+|a_1|+|a_2|+…|a_N|)·\underset{\overset{\uparrow}{wegen\left(2\right)}}{\frac{\e}{2a^*}} +(|a_{N+1}|+|a_{N+2}|+|a_{N+3}|+…|a_n|) · C \leq a^* ·\frac{\e}{2a^*}+\frac{\e}{2}=\frac{\e}{2}+\frac{\e}{2}=\e$\\*
-Also gilt: $s_n-u→0$ für $n→∞$\qed\\*
-\ul{Zusatz:} Wenn $\sum a_k$ und $\sum b_k$ beide absolut konvertieren, dann auch das Cauchy-Produkt $\sum c_k$\\*
+Wenn $a^*=0$ dann $a_n=0$ für alle k. Dann alles klar. Für alle $n\geq 2N$ gilt:
+$$|a_0(b-t_n)+a_1(b-t_{n-1})+…+a_n(b-t_0)|\leq |a_0|·|(b-t_n)|+|a_1|·|(b-t_{n-1})|+…+|a_n|·|(b-t_0)|$$
+$$\leq(|a_0|+|a_1|+|a_2|+…|a_N|)·\underset{\overset{\uparrow}{wegen\left(2\right)}}{\frac{\e}{2a^*}} +(|a_{N+1}|+|a_{N+2}|+|a_{N+3}|+…|a_n|) · C \leq a^* ·\frac{\e}{2a^*}+\frac{\e}{2}=\frac{\e}{2}+\frac{\e}{2}=\e$$
+Also gilt: $s_n-u→0$ für $n→∞$\qed\\[4pt]
+\ul{Zusatz:} Wenn $\sum a_k$ und $\sum b_k$ beide absolut konvertieren, dann auch das Cauchy-Produkt $\sum c_k$
 \bew
 Sei $\sum a_k^*$ das Cauchy-Produkt von  $\sum |a_k|$ und  $\sum |b_k|$. Beide konvergieren \Rarr $\sum_n c_n^*$ konvergiert\\*[8pt]
 d.h. $c_n^*=|a_0·b_{n}|+|a_1·b_{n-1}|+…+|a_n·b_{0}|\geq|a_0·b_{n}+a_1·b_{n-1}+…+a_n·b_{0}|=|c_n|$\\*[8pt]
 Also $\sum_n c_n^*$ ist konvergente Majorante von $\sum_n c_n$ \Rarr $\sum_n c_n$ konvergent absolut\qed
-
 \bsp
 Die Reihe $\ds\sum_{k=0}^{∞} a_k = 1-+\dfrac{1}{\sqrt{2}}+\dfrac{1}{\sqrt{3}}-\dfrac{1}{\sqrt{4}}+\dfrac{1}{\sqrt{5}}-…\quad $ konvergiert (Leibnitz)\\*
-Das Cauchy-Produkt der Reihe von $\sum a_k$ und $\sum a_k$ konvergiert nicht.\\*
-
+Das Cauchy-Produkt der Reihe von $\sum a_k$ und $\sum a_k$ konvergiert nicht.
+%
 \sS{Beispiel}
 Für jedes $x\in\R$ ist die Exponentialreihe $\ds exp(x)=\sum_{k=0}^{∞} \frac{x^k}{k!}$ absolut konvergent.\\*
-Es gilt \fbox{$exp(x)-exp(y)=exp(x+y)$} Funktionalgleichung der Exponentialfunktion.\\*
+Es gilt \fbox{$exp(x)-exp(y)=exp(x+y)$} Funktionalgleichung der Exponentialfunktion.
+%
 \bew
 Betrag von $\ds \sum_{k=0}^{∞} |\frac{x^k}{k!}|=\sum_{k=0}^{∞} \frac{|x|^k}{k!}=exp(|x|)$ konvergiert (bekannt, Quotientenkriterium)\\*
-Berechne Cauchy-Produkt $\ds exp(x)·exp(y)=\sum_{k=0}^{∞} c_k$\\*
-$$\ds c_k = \frac{x^0}{0!}·\frac{x^n}{n!}+\frac{x^1}{1!}·\frac{y^{n-1}}{(n-1)!}+…+\frac{x^n}{n!}·\frac{y^0}{0!}=\dfrac{1}{n!}·\left(\dfrac{n!}{0!·n!}·x^0y^n+\dfrac{n!}{1!·(n-1)!}·x^1y^{n-1}+…+\dfrac{n!}{n!·0!}·x^ny^0+\right)=\dfrac{1}{n!}\sum_{k=0}^{n}\dfrac{n!}{k!·(n-k)!}x^ky^{n-k} =\dfrac{1}{n!}\sum_{k=0}^{n}\binom{n}{k}x^ky^{n-k}\underset{binomische Formel}{=}\dfrac{1}{n!}(x+y)^n\Rarr\sum_{k=0}^{∞}c_k=exp(x+y)$$\qed
+Berechne Cauchy-Produkt $\ds exp(x)·exp(y)=\sum_{k=0}^{∞} c_k$
+$$c_k = \frac{x^0}{0!}·\frac{x^n}{n!}+\frac{x^1}{1!}·\frac{y^{n-1}}{(n-1)!}+…+\frac{x^n}{n!}·\frac{y^0}{0!}=\dfrac{1}{n!}·\left(\dfrac{n!}{0!·n!}·x^0y^n+\dfrac{n!}{1!·(n-1)!}·x^1y^{n-1}+…+\dfrac{n!}{n!·0!}·x^ny^0+\right)$$
+$$=\dfrac{1}{n!}\sum_{k=0}^{n}\dfrac{n!}{k!·(n-k)!}x^ky^{n-k}=\dfrac{1}{n!}\sum_{k=0}^{n}\binom{n}{k}x^ky^{n-k}\underset{\overset{ }{binomische Formel}}{=}\dfrac{1}{n!}(x+y)^n\Rarr\sum_{k=0}^{∞}c_k=exp(x+y)$$\qed
