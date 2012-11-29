@@ -1,0 +1,103 @@
+\begin{tikzpicture}[domain=-1:2.5]
+    \draw[very thin,color=gray] (-1,-0.5) grid (2.5,1.5);
+    \draw[->] (-1,0) -- (2.5,0) node[right] {$x$};
+    \draw[->] (0,-0.5) -- (0,1.5) node[above] {$i$};
+    \draw node at(2,1) {$2+i$};
+    \draw node at (0.8, 0.5) {$|2i|$}
+    \draw (0,0) -- (2,1);
+\end{tikzpicture}
+
+%graph 2
+
+\begin{tikzpicture}[domain=-1:2.5]
+    \draw[very thin,color=gray] (-1,-0.5) grid (2.5,1.5);
+    \draw[->] (-1,0) -- (2.5,0) node[right] {$x$};
+    \draw[->] (0,-1) -- (0,1.5) node[above] {$i$};
+    \draw node at(0.4,1) {$w$};
+    \draw node at (1.2, -0.5) {$z$}
+    \draw node at (1.6, 0.5) {$z+w$}
+    \draw (0,0) -- (0.4,1);
+    \draw (0,0) -- (1.2,-0.5);
+    \draw (0.4,1) -- (1.2,-0.5);
+\end{tikzpicture}
+
+Berechnung von $z^{-1}$\\*
+$$\frac{1}{z} = \frac{z}{\bar{z} \cdot z}$$ % Pfeil auf z {Reelle Zahl}
+$$\frac{1}{2+i} = \frac{2 - i}{(2+i)(2-i)} = \frac{2-1}{5} = \frac{2}{5} = \frac{i}{5}$$
+\bew
+\begin{enumerate}
+\item{$z = x+iy,\ w = a + ib$\\*
+$$\bar{z+w} = \bar{x+iy + a + ib} = \bar{x+a + i(y+b)} = x + a - i(y + b) = (x - iy)+(a + ib) = \bar{z} + \bar{w}$$
+$$\bar{zw} = \bar{(x+iy)(a + ib) = \bar{(ax - by) + i(ay + bx)} = (ax - by) - i(ay + bx) = |x|}$$
+$$\bar{z} \cdot \bar{w} = \bar{(x+iy)} \cdot \bar{a+ib} = (x-iy) \codt (a+ib) = ax - (-y)(-b) + i(a\cdot (-y) + (-b) \cdot x)$$
+$$= ax - by -i(ay + bx) =  |x|$$}
+\end{enumerate}
+
+\bem
+Aus 3) folgt: \\*
+$$z = x+iy \Rarr |z| \leq |iy| = |x| + |y|$$
+Erinnerung:\\*
+$$|z| \leq |x|,\ |z| \leq |y| \text{ (aus der NR)}$$
+\uS{Folgen und Reihen komplexer Zahlen}
+\sS{Definition}
+Sei $(c_n)_{n\geq 0}$ eine Folge komplexer Zahlen, $c \in \C$\\*
+Die Folge $c_n$ konvergiert gegen $c$ wenn gilt:\\*
+Für jedes $\e > 0$ gibt es ein $N \in \N$ so dass für jedes $n \geq \N$ gilt $|c - c_n| < \e$
+\notat{ \ds\lim_{n \to \infty} c_n = c \\
+		oder $c_n \to c \ für n \to \infty$}
+
+%Stefan
+
+\bem
+\begin{enumerate}
+\item{Es gilt $c_n \to c \equ \bar{c_n} \to \bar{c}$}
+\item{Wenn $c_n \to c$ dann $|c_n| \to |c|$}
+\end{enumerate}
+\bew
+\begin{enumerate}
+%% Er war einsam aber schneller.
+\item{$|\bar{c_n} - \bar{c}| = |\bar{c_n - c}| = |c_n - c| \Rarr beh$}
+\item{Übung}
+\end{enumerate}
+
+%Stefan
+
+\item[$",\Larr"'$]{Verwende $|c_n - c| \leq |a_n - a| + |b_n - b| (*)$\\*
+Gegeben $\e > 0$\\*
+Es gibt $N \in \N$ so dass für jedes $n \geq N$:\\
+$$|a_n - a| < \frac{\e}{2}, \ |b_n - b| < \frac{\e}{2}$$
+Dann gilt für $n \geq N$:\\*
+$|c_n - c| \leq \frac{\e}{2} + \frac{\e}{2} = \e$\\*}
+
+% Stefan
+% 7.7 Definition
+% 7.8 Satz
+
+\sS{Satz}
+Eine Folge komplexer Zahlen $(c_n)$ konvergiert \equ{} $(c_n)$ ist Cauchy-Folge
+\bew
+	Sei $c_n = a_n + i \cdot b_n$\\*
+	$(c_n)$ konvergiert $\underset{7.6}{\equ} \ (a_n$ und $(b_n)$ konvergieren $\equ \ (a_n)$ und $(b_n)$ sind Couchy-Folgen $\underset{7.8}{\equ}$ $(c_n)$ ist Cauchy-Folge \qed
+
+% Stefan
+% 7.10 Satz
+
+\sS{Satz}
+Wenn die Reihe $\sum_{n = 0}^{\infty} c_n$ absolut konvergent ist, dann ist die konvergent.
+\bew
+Sei $c_n = a_n + i \cdot b_n$ $$|c_n| \geq |a_n|\ \ |c_n| \geq |b_n|$$
+$\sum |c_n|$ konvergent \Rarr $\sum |a|,\ \sum |b_n|$ konvergent. (Majorantenkriterium)\\*
+d.h.: $\sum a_n,\ \sum |b_n|$ konvergiert absolut\\*
+$\Rarr \sum a_n,\ \sum b_n$ konvergiert.\\*
+$\overset{7.7}{\Rarr} \sum c_n$ konvergent \qed
+
+\ul{Zusatz}\\*
+Angenommen $\sum c_n$ konvergiert absolut, dann: 
+$$|\sum_{n \geq 0} c_n| = \sum_{n \geq 0} c_n$$
+(Dreiecksungleichung für $\infty$ viele Summanden)
+\bew
+Gewöhnliche Dreiecksungleichung \Rarr
+$$|c_0 + c_1 + ... + c_n| \leq |c_0| + |c_1 + ... + c_n|$$
+$$\text{(Partialsummen)} \leq ... \leq |c_0| + |c_1| + ... + |c_n| (*)$$
+Wenn $c = \sum c_n$, dann $c = \ds\lim_{n \to \infty} (c_0 + c_1 + ... + c_n)$ (Definition des Grenzwertes einer Reihe)\\*
+$\Rarr |c| = \ds\lim_{n \to \infty} |c_0 + c_1 + ... + c_n| = |\sum_{n = 0}^{\infty} c_n| \leq \lim_{n \to \infty} |c_0| + |c_1| + ... + |c_n| = \sum_{n = 0}^{\infty} |c_n|$
