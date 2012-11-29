@@ -60,3 +60,53 @@ $$\sqrt{}\ \Rarr\ |z+w|=|z|+|w|$$\qed}
 %BEMERKUNG}
 
 \end{enumerate}
+%Definition
+
+\sS{Satz:}
+Sei $c_n=a_n+i*b_n,\quad c=a+ib$\\*
+Es gilt $c_n→c\ \equ \ a_n→a$ und $b_n→b$
+\bew
+\begin{description}
+\item["\Rarr"]{Es gilt:
+$$|a_n-a|=|Re(c_n-c)|\leq |c_n-c|$$
+$$|b_n-b|=|Im(c_n-c)|\leq |c_n-c|$$
+also gilt: $|c_n-c|<ε\ \Rarr \ |a_n-a|<ε$ und  $|b_n-b|<ε$ Somit gilt die "\Rarr"}
+%\Rückrichtung LARR
+\end{description}
+\sS{Definition}
+Eine Folge komplexer Zahlen $(c_n)_{n\geq 0}$ heißt Cauchy-Folge, wenn für jedes $ε>0$ ein $N\eN$ existiert, so dass gilt:\\*
+Für alle $n,m\geq N$ gilt $|c_n-c_m|<ε$
+\sS{Satz}
+Sei $c_n=a_n+ib_n$\\*
+$(c_n)$ ist Cauchy-Folge \equ{} $(a_n)$ und $(b_n)$ sind Cauchy-Folgen
+\bew
+Genau wie Beweis von 7.6 verwende:
+$$|a_n-a_m|\leq |c_n-c_m|$$
+$$|b_n-b_m|\leq |c_n-c_m|$$
+$$|c_n-c_m|\leq |a_n-a_m|+|b_n-b_m|$$\qed
+%Satz 7.9
+\sS{Satz}
+Wenn $c_n→c, c'_n→c'$ konvergente Folgen komplexer Zahlen sind, dann gilt:
+\begin{enumerate}
+\item{$c_n+c_m→c+c'$}
+\item{$c_n·c_m→c·c'$}
+\item{Wenn $c\neq 0$ dann $c_n\neq 0$ für fast alle $n$ und $\frac{1}{c_n}→\frac{1}{c}$}
+\end{enumerate}
+\bew
+Analog zum Fall reeller Folgen\qed
+\sS{Definition}
+Eine Reihe komplexer Zahlen\\*
+$\ds\sum_{n=0}^{∞}c_n$ heißt \ul{absolut konvergent, wenn die Reihe $\ds\sum_{n=0}^{∞}|c_n|$ konvergent ist}
+%Satz 7.12
+\sS{Satz}
+Sei $c_n\eC$ für \nN\\*
+\begin{enumerate}
+\item{Majorantenkriterium:\\*
+Wenn reelle Zahlen $a_n$ existieren, so dass $|c_n|\leq |a_n|$ und $\sum a_n$ konvergiert, dann konvergiert auch $\sum c_n$ absolut}
+\item{Quotientenkriterium:\\*
+Wenn eine reelle zahl $b\eR$ existiert mit $0\leq b<1$, so dass $|c_{n+1}\leq b·|c_n|$ für fast alle \nN\\*
+Dann konvergiert $\ds\sum_{n\geq 0} c_n$ absolut}
+\end{enumerate}
+\sS{Satz}
+Seien $\sum c_n$ und $\sum d_n$ zwei konvergente Reihen komplexer Zahlen, $\sum c_n=c,\ \sum d_n=d$\\*
+Wenn eine der Reihen absolut konvergiert, konvergiert auch das Cauchy-Produkt mit Grenzwert $c·d$
