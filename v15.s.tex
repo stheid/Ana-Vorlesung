@@ -1,0 +1,62 @@
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 15}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 29.11.2012}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 15}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 29.11.2012}
+% **************************************************
+%
+\wdh
+$\C=\R^2$ mit 
+$$(x,y)+(x',y')=(x+x',y+y')$$
+$$(x,y)·(x',y')=(x·x'-y·y',x·y'-y·x')$$
+$$(x,y)=x+i·y\qquad i=(0,1)\qquad i^2=(-1)$$
+SKIZZE\\
+$$z=x+i·y \eC\ \Rarr\ Re(z)=x \quad Im(z)=y$$
+$\bar{z}=x-i·y$
+$$z·\bar{z}=(x+i·y)(x-i·y)=x^2-(i·y)^2=x^2-i^2·y^2=x^2·y^2$$
+Abstand von 0 nach $z$ ist:
+$$|z|=\sqrt{x^2+y^2}=\sqrt{z·\bar{z}}\footnote{\ul{Betrag} von $z$}$$
+$$|2+i|=\sqrt{2^2+i^2}=\sqrt{5}$$%muss Wurzel 3 rauskommen
+%Berechnung
+\sS{Lemma}
+Sei $z,w\eC$ dann gilt:
+\begin{enumerate}
+\item{$$\bar{zw}=\bar{z}·\bar{w},\ \bar{z+w}=\bar{z}+\bar{w}$$}
+\item{$z+\bar{z}=2 Re(z),\ z-\bar{z}=2i·Im(z)$\\*
+$Re(z)=\frac{z+\bar{z}}{z}\qquad Re(z)=\frac{z-\bar{z}}{2i}$}
+\end{enumerate}
+%
+\bew
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item{$$z=x+i·y$$
+$$z+\bar{z}=(x+i·y)+(x-i·y)=2x=2Re(z)$$
+$$z-\bar{z}=(x+i·y)-(x-i·y)=2iy=2i·Im(z)$$}
+\end{enumerate}
+%\Bew{1}
+\sS{Satz}
+Sei $z,w\eC$
+\begin{enumerate}
+\item{$|z|\geq 0$, und $|z|=0$ \equiv{} $z=0$ (klar)}
+\item{$|z·w|=|z|·|w|,\ |\bar{z}|=|z|$}
+\item{$|z+w|\leq|z|+|w|$ (Dreiecksungleichung)
+SKIZZE}
+\end{enumerate}
+\bew
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item{$$|z·w|=\sqrt{zw·\bar{zw}}\underset{7.3}{=}\sqrt{z·w·\bar{z}·\bar{w}}=\sqrt{z·\bar{z}·w·\bar{w}}=\sqrt{z·\bar{z}}\sqrt{w·\bar{w}}=|z|·|w|$$
+beide reell $\geq 0$
+Nachtrag rechts unten 3. tafel}
+\item{$$|z+w|=(z+w)·(\bar{z+w})\underset{7.3}{=}(z+w)·(\bar{z}+\bar{w})=z·\bar{z}+z·\bar{w}+w·\bar{z}+w·\bar{w}=\footnote{$\bar{z·\bar{w}}=\bar{z}·\bar{\bar{w}}=\bar{z}·w=w·\bar{z}$}z·\bar{z}+\underbrace{z·\bar{w}+\bar{z·\bar{w}}}_{2·Re(z·\bar{w})}+w·\bar{w}$$
+$$=z·\bar{z}+2·Re(z·\bar{w})+w·\bar{w}\leq |z|^2+2·|z|·|w|+|w|^2=(|z|+|w|)^2\footnote{Für jedes $u=c+d·i\eC$ gilt $|u|=\sqrt{c^2+d^2}\geq \sqrt{c^2}=|c|=|Re(u)|$}$$
+$$\sqrt{}\ \Rarr\ |z+w|=|z|+|w|$$\qed}
+%BEMERKUNG}
+
+\end{enumerate}
