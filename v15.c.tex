@@ -1,35 +1,79 @@
-\begin{tikzpicture}[domain=-1:2.5]
-    \draw[very thin,color=gray] (-1,-0.5) grid (2.5,1.5);
-    \draw[->] (-1,0) -- (2.5,0) node[right] {$x$};
-    \draw[->] (0,-0.5) -- (0,1.5) node[above] {$i$};
-    \draw node at(2,1) {$2+i$};
-    \draw node at (0.8, 0.5) {$|2i|$}
-    \draw (0,0) -- (2,1);
-\end{tikzpicture}
-
-%graph 2
-
-\begin{tikzpicture}[domain=-1:2.5]
-    \draw[very thin,color=gray] (-1,-0.5) grid (2.5,1.5);
-    \draw[->] (-1,0) -- (2.5,0) node[right] {$x$};
-    \draw[->] (0,-1) -- (0,1.5) node[above] {$i$};
-    \draw node at(0.4,1) {$w$};
-    \draw node at (1.2, -0.5) {$z$}
-    \draw node at (1.6, 0.5) {$z+w$}
-    \draw (0,0) -- (0.4,1);
-    \draw (0,0) -- (1.2,-0.5);
-    \draw (0.4,1) -- (1.2,-0.5);
-\end{tikzpicture}
+%\begin{tikzpicture}[domain=-1:2.5]
+%    \draw[very thin,color=gray] (-1,-0.5) grid (2.5,1.5);
+%    \draw[->] (-1,0) -- (2.5,0) node[right] {$x$};
+%    \draw[->] (0,-0.5) -- (0,1.5) node[above] {$i$};
+%    \draw node at(2,1) {$2+i$};
+%    \draw node at (0.8, 0.5) {$|2i|$}
+%    \draw (0,0) -- (2,1);
+%\end{tikzpicture}
+%
+%%graph 2
+%
+%\begin{tikzpicture}[domain=-1:2.5]
+%    \draw[very thin,color=gray] (-1,-0.5) grid (2.5,1.5);
+%    \draw[->] (-1,0) -- (2.5,0) node[right] {$x$};
+%    \draw[->] (0,-1) -- (0,1.5) node[above] {$i$};
+%    \draw node at(0.4,1) {$w$};
+%    \draw node at (1.2, -0.5) {$z$}
+%    \draw node at (1.6, 0.5) {$z+w$}
+%    \draw (0,0) -- (0.4,1);
+%    \draw (0,0) -- (1.2,-0.5);
+%    \draw (0.4,1) -- (1.2,-0.5);
+%\end{tikzpicture}
+%
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 15}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 29.11.2012}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 15}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 29.11.2012}
+% **************************************************
+%
+\wdh
+$\C=\R^2$ mit 
+$$(x,y)+(x',y')=(x+x',y+y')$$
+$$(x,y)·(x',y')=(x·x'-y·y',x·y'-y·x')$$
+$$(x,y)=x+i·y\qquad i=(0,1)\qquad i^2=(-1)$$
+SKIZZE\\
+$$z=x+i·y \eC\ \Rarr\ Re(z)=x \quad Im(z)=y$$
+$\overline{z}=x-i·y$
+$$z·\overline{z}=(x+i·y)(x-i·y)=x^2-(i·y)^2=x^2-i^2·y^2=x^2·y^2$$
+Abstand von 0 nach $z$ ist:
+$$|z|=\sqrt{x^2+y^2}=\sqrt{z·\overline{z}}\footnote{\ul{Betrag} von $z$}$$
+$$|2+i|=\sqrt{2^2+i^2}=\sqrt{5}$$%muss Wurzel 3 rauskommen
 
 Berechnung von $z^{-1}$\\*
-$$\frac{1}{z} = \frac{z}{\bar{z} \cdot z}$$ % Pfeil auf z {Reelle Zahl}
+$$\frac{1}{z} = \frac{z}{\overline{z} \cdot z}$$ % Pfeil auf z {Reelle Zahl}
 $$\frac{1}{2+i} = \frac{2 - i}{(2+i)(2-i)} = \frac{2-1}{5} = \frac{2}{5} = \frac{i}{5}$$
+\sS{Lemma}
+Sei $z,w\eC$ dann gilt:
+\begin{enumerate}
+\item{$$\bar{zw}=\bar{z}·\bar{w},\ \bar{z+w}=\bar{z}+\bar{w}$$}
+\item{$z+\bar{z}=2 Re(z),\ z-\bar{z}=2i·Im(z)$\\*
+$Re(z)=\frac{z+\bar{z}}{z}\qquad Re(z)=\frac{z-\bar{z}}{2i}$}
+\end{enumerate}
+%
 \bew
 \begin{enumerate}
+
+\end{enumerate}
+
+\bew
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item{$$z=x+i·y$$
+$$z+\bar{z}=(x+i·y)+(x-i·y)=2x=2Re(z)$$
+$$z-\bar{z}=(x+i·y)-(x-i·y)=2iy=2i·Im(z)$$}
+\setcounter{enumi}{1}
 \item{$z = x+iy,\ w = a + ib$\\*
-$$\bar{z+w} = \bar{x+iy + a + ib} = \bar{x+a + i(y+b)} = x + a - i(y + b) = (x - iy)+(a + ib) = \bar{z} + \bar{w}$$
-$$\bar{zw} = \bar{(x+iy)(a + ib) = \bar{(ax - by) + i(ay + bx)} = (ax - by) - i(ay + bx) = |x|}$$
-$$\bar{z} \cdot \bar{w} = \bar{(x+iy)} \cdot \bar{a+ib} = (x-iy) \codt (a+ib) = ax - (-y)(-b) + i(a\cdot (-y) + (-b) \cdot x)$$
+$$\overline{z+w} = \ol{x+iy + a + ib} = \ol{x+a + i(y+b)} = x + a - i(y + b) = (x - iy)+(a + ib) = \ol{z} + \ol{w}$$
+$$\ol{zw} = \ol{(x+iy)(a + ib) = \ol{(ax - by) + i(ay + bx)} = (ax - by) - i(ay + bx) = |x|}$$
+$$\ol{z} \cdot \ol{w} = \ol{(x+iy)} \cdot \ol{a+ib} = (x-iy) \codt (a+ib) = ax - (-y)(-b) + i(a\cdot (-y) + (-b) \cdot x)$$
 $$= ax - by -i(ay + bx) =  |x|$$}
 \end{enumerate}
 
@@ -50,13 +94,13 @@ Für jedes $\e > 0$ gibt es ein $N \in \N$ so dass für jedes $n \geq \N$ gilt $
 
 \bem
 \begin{enumerate}
-\item{Es gilt $c_n \to c \equ \bar{c_n} \to \bar{c}$}
+\item{Es gilt $c_n \to c \equ \ol{c_n} \to \ol{c}$}
 \item{Wenn $c_n \to c$ dann $|c_n| \to |c|$}
 \end{enumerate}
 \bew
 \begin{enumerate}
 %% Er war einsam aber schneller.
-\item{$|\bar{c_n} - \bar{c}| = |\bar{c_n - c}| = |c_n - c| \Rarr beh$}
+\item{$|\ol{c_n} - \ol{c}| = |\ol{c_n - c}| = |c_n - c| \Rarr beh$}
 \item{Übung}
 \end{enumerate}
 
