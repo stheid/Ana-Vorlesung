@@ -1,3 +1,7 @@
+Leerzeile vor jedem \sS oder höcherwertig
+
+\\* vor \notat, aber keine Leerzeile
+
 \chapters als Hauptüberschriften (einstellig) BSP 1. Mengen
   \uS für unterstrichene Überschriten
     \sS für zweistellige Überschriften BSP  1.1 Defintion
@@ -12,16 +16,12 @@
         \notat für Notationen (\em{})
 \cancel für Durchstreichungen und Kürzen
 
-Formeln die über eine ganze zeile gehen werden mit $$ begonnen und mit $$ abgeschlossen!!
+Ganzzeilige Formeln werden von $$»Formel«$$ eingeschlossen!!
 
 leere zeilen die nicht für neue Absätze stehen auskommentieren
 
 Costum commands in \text – wenn sie im textmode verwendet werden – wie \Rarr müssen mit geschweiften Klammern enden sonst fressen sie folgenden whitespace (z.B. \Rarr{})
 
-Wir müssen uns wegen Einrückungen einigen zur auswahl steht:
-tabular, minipage, parbox, addmargin, quote
-
-ich bin für tabular mit nem hspace vorher
 größtes problem ist die einrückung hinter der überschrift (also in der selben zeile)
 
 Linefeed muss verbessert werden wg seitenumbruch und zeilenabstand
