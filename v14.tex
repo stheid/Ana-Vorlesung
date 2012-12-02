@@ -14,7 +14,7 @@
 Die Funktion $exp: \R \to \R_{\geq 0}$ ist stetig, streng monoton wachsend, bijektiv.\\*
 Die Umkehrfunktion heißt \ul{Logarithmus},\\*
 $$log = exp^{-1}: \R_{\geq 0} \to \R$$
-explizit definiert durch $log(x) = y \equ x = exp(y)$\\*
+explizit definiert durch $log(x) = y\ \equ\ x = exp(y)$\\*
 $\underset{\text{\scriptsize{nach satz 6.5}}}{\Rarr}$ log ist stetig, streng monoton wachsend, bijektiv.
 % GRAPH exp(x) | GRAPH log(x)
 \sS{Satz (Eigenschaften des Logarithmus)}
@@ -29,14 +29,14 @@ Folgt aus Eigenschaften von $exp$, Details: Übung
 \sss{Erinnerung:}
 also $a>0,\ n\eZ,\ m\eN$ ist $a^{\frac{n}{m}}:=\sqrt[m]{a^n}$
 \sS{Lemma}
-Es gibt $a^{\frac{n}{m}} =  exp(\frac{n}{m} \cdot log(a)$\\*
+Es gibt $a^{\frac{n}{m}} =  exp(\frac{n}{m} \cdot log(a))$\\*
 \bew
 	\begin{enumerate}
 	\item{Sei $n \geq 0$:\\*
-	$$exp(n \cdot log(a)) = exp(\overbrace{log(a) + log(a) + ... + log(a)}^{n}) = exp(log(a)) \cdot ... \cdot exp(log(a))$$}
+	$$exp(n \cdot log(a)) = exp(\overbrace{log(a) + log(a) + …+ log(a)}^{n}) = exp(log(a)) \cdot … \cdot exp(log(a))$$}
 	\item{Sei $n < 0$\\*
 	 $$exp(n \cdot log(a)) = exp(\underbrace{-n}_{-n > 0} \cdot log (a)) = (a^{-1})^{-1} = a^n$$}
-	 \item{Rechne: $exp(\frac{n}{m} log(a))^m = exp(m \cdot \frac{n}{m} \cdot log(a)) = exp(n \log(a)) = a^n$}
+	 \item{Rechne: $$exp(\frac{n}{m} log(a))^m = exp(m \cdot \frac{n}{m} \cdot log(a)) = exp(n \log(a)) = a^n$$}
 	\end{enumerate}	 
 	$\sqrt[m]{\ } \Rarr exp(\frac{n}{m} log(a)) = \sqrt[m]{a^n} = a^{\frac{n}{m}}$
 \sS{Definition}
@@ -49,20 +49,23 @@ $$a^{x+y}=exp((x+y)·log(a))=exp(x·log(a))·exp(y·log(a))=a^x·a^y$$
 $$a^{x·y}=exp(x·y·log(a))=(a^x)^y=exp(y·log(exp(x·log(a))))\footnote{$log\circ exp= id$}=exp(y·x·log(a))$$\qed
 \bem
 Eulersche Zahl
-$$e:=exp(1)=2{,}7…\footnote{$log(e)=1$}\qquad e^x=exp(x·log(e))=exp(x)$$
+$$e:=\footnote{$log(e)=1$}exp(1)=2{,}7…\qquad e^x=exp(x·log(e))=exp(x)$$
 
 \sS{Definition Logarithmusbasis}
 Sei $a > 1 \qquad x \in \R$ 
 $$log_a (x) = \frac{log(x)}{log(a)}$$
-\bem $a \neq 0 \Rarr log(a) \neq 0$\\*
-Dann $a^{log_a (x)} = exp(log_a (x) \cdot log(a)) = exp(\frac{log(x)}{log(a)} \cdot log(a)) = exp(log(x)) = x$
+\bem
+$a \neq 0 \Rarr log\left(a\right) \neq 0$\\*
+Dann:
+$$a^{log_a \left(x\right)} = exp\left(log_a \left(x\right) \cdot log\left(a\right)\right) = exp\left(\frac{log\left(x\right)}{log\left(a\right)} \cdot log(a)\right) = exp(log(x)) = x$$
+
 \uS{Gleichmäßige Stetigkeit}
 \wdh
 $f: D \to \R$ stetig an $x \in D$ wenn gilt:\\*
 Für jedes $\e > 0$ gilt $\delta > 0$ mit wenn $y \in D$ mit $|x - y| < \delta$ dann $|f(x) - f(y)| < \e$\\*
 Hier hängt $\delta$ im allgemeinen von $\e$ und $x$ ab!
-%
-\sS{Definition:}
+
+\sS{Definition gleichmäßige Stetigkeit:}
 Eine Funktion $f:D→\R$ heißt gleichmäßig stetig wenn gilt:\\*
 Für jedes $ε>0$ gibt es ein $δ>0$ so dass für alle $x,y\in D$ mit $|x-y|<δ$ gilt:
 $$|f(x)-f(y)|<ε$$
@@ -74,38 +77,36 @@ GRAPH $f$ stetig, aber nicht gleichmäßig stetig
 \bew
 Wähle $ε=1$. Angenommen es gibt $δ>0$ mit $|x-y|<δ\Rarr |f(x)-f(y)<1$
 Wähle: $x=\frac{1}{n},\ y\frac{1}{n+1}$ so dass $\frac{1}{n·(n+1)}<δ$
-$$|x-y|=|\frac{1}{n}-\frac{1}{n+1}|=|\frac{n+1-n}{n·(n+1)}|=\frac{1}{n·(n+1)}$$
+$$|x-y|=\left|\frac{1}{n}-\frac{1}{n+1}\right|=\left|\frac{n+1-n}{n·(n+1)}\right|=\frac{1}{n·(n+1)}$$
 Dann $$|f(x)-f(y)|=|n-(n+1)|=1$$
-Das Zeigt: $δ$ existiert nicht.
+Das zeigt: $δ$ existiert nicht.
 
 \sS{Satz}
 Seien $a \leq b$ reelle Zahlen\\*
 Jede stetige Funktion $f: [a, b] \to \R$ ist gleichmäßig stetig.\\*
 \bew
 	Angenommen, $f$ ist nicht gleichmäßig stetig:
-	Es gibt ein $\e > 0$ sodass für jedes $\delta > 0$ zwei Zahlen $x, y \in D$ existieren, mit $|x - y| < \delta$ und $|f(x) - f(y)| \geq \e$\\*
-	Wähle zu $\delta = \frac{1}{n}$ Zahlen $x_n, y_n \in D$ mit $|x_n - y_n| \frac{1}{n}, \ |f(x) - f(y)| \geq \e$ (*)\\*
-	Bolzano-Weierstraß \Rarr Es gibt eine Teilfolge $({x_n}_k)_{k\geq 0}$, die konvergiert. Sei $x = \ds\lim_{k\to \infty}({x_n}_k)_{k\geq 0} \in  [a, b] = D$\\*
-	Dann $\ds\lim_{k \to \infty} ({y_n}_k)_{k\geq 0} = \ds\lim_{k \to \infty} (({y_n}_k)_{k\geq 0} - ({x_n}_k)_{k\geq 0}) = 0 + x = x$\\*
-	${x_n}_k)_{k\geq 0} \to x, \ {y_n}_k)_{k\geq 0} \to x \ f: k \to \infty $\\*
-	$f$ stetig \Rarr $f({x_n}_k)_{k} \to f(x), f({y_n}_k)_{k} \to f(x) \ f \ k \to \infty $\\*
-	\Rarr $(f({x_n}_k)_{k}) - f({y_n}_k)_{k})  \to f(x) - f(x) = 0$
-	Widerspruch zu (*) Also ist $f$ gleichmäßig stetig. \qed
-
+	Es gibt ein $\e > 0$ sodass für jedes $\delta > 0$ zwei Zahlen $x, y \in D$ existieren, mit $|x - y| < \delta$ und $|f(x) - f(y)| \geq \e$\\*[4pt]
+	$f(y)| \geq \e$ (*)\\*[4pt]
+Bolzano-Weierstraß \Rarr\ Es gibt eine Teilfolge $({x_n}_k)_{k\geq 0}$, die konvergiert. Sei $x = \ds\lim_{k\to \infty}({x_n}_k)_{k\geq 0} \in  [a, b] = D$\\*
+Dann $$\ds\lim_{k \to \infty} ({y_n}_k)_{k\geq 0} = \ds\lim_{k \to \infty} (({y_n}_k)_{k\geq 0} - ({x_n}_k)_{k\geq 0}) = 0 + x = x$$
+$${x_n}_k)_{k\geq 0} \to x, \ {y_n}_k)_{k\geq 0} \to x \ f: k \to \infty $$
+$f$ stetig $$\Rarr\ f({x_n}_k)_{k} \to f(x), f({y_n}_k)_{k} \to f(x) \ f \ k \to \infty $$
+$$\Rarr\ (f({x_n}_k)_{k}) - f({y_n}_k)_{k})  \to f(x) - f(x) = 0$$
+Widerspruch zu (*) Also ist $f$ gleichmäßig stetig. \qed
 
 \chapter{Komplexe Zahlen und Trigonometrie}
 Der Körper \C{} der komplexen Zahlen\\*
 Mangel von \R{}: Die Gleichung $x^2=-1$ hat keine Lösung\\*
-\sS{Definition}
+\sS{Definition Komplexe Zahlen}
 Es sei $\C=\R^2=\{(x,y)|x,y\eR\}$ mit folgender Addition und Multiplikation:
 $$(x,y)+(x',y'):=(x+x',y+y')$$
 $$(x,y)·(x',y'):=(x·x'-y·y',x·y'-y·x')$$
 Addition gleich der Vektoraddition in $\R^2$ GRAPH
-\sS{Satz}
+\sS{Satz: \C ist Körper}
 \C{} ist ein Körper mit Null (0,0) und Eins (1,0)
 \bew
-Überprüfe Körperaxiome
-\ssss{Exemplarisch:}
+Überprüfe Körperaxiome \ul{exemplarisch:}
 \begin{enumerate}
 \item{Assotiativgesetz der Multiplikation\\*
 Gegeben $(x,y),\ (x',y'),\ (x'',y'')\eC$
@@ -114,11 +115,10 @@ Gegeben $(x,y),\ (x',y'),\ (x'',y'')\eC$
 &=(x·x'·x''-y·y'·x''-x·y'·y''-y·x'·y'',x·x'·y''-y·y'·y''+x·y'·x''+y·x'·x'')\\ \\
 (x,y)((x',y')(x'',y''))&=…\text{ erhalte gleiches Ergebnis}
 \end{align*}}
-
 \item{Existenz vom Inversen:\\*
-Sei $z = (x, y) \in \C, \ x, y \in \R, \ z \neq 0$ \\*
-Zeige es gibt ein $z^{-1} \in \C$ mit $z \cdot z^{-1} = (1,\ 0)$\\*
-$z \neq 0 \Rarr x \neq 0$ oder $y \neq 0 \equ x^2 + y^2 > 0$\\
+Sei $z = (x, y) \in \C, \ x, y \in \R, \ z \neq 0$ \\*[4pt]
+Zeige es gibt ein $z^{-1} \in \C$ mit $z \cdot z^{-1} = (1,\ 0)$\\*[4pt]
+$z \neq 0 \Rarr x \neq 0$ oder $y \neq 0 \equ x^2 + y^2 > 0$
 $$w:= \left(\frac{x}{x^2 + y^2}, \frac{-y}{x^2 + y^2}\right)$$
 Rechne $z \cdot w = (x, y) \cdot \left(\frac{x}{x^2 + y^2}, \frac{-y}{x^2 + y^2}\right)$
 $=\left(\frac{x^2}{x^2 + y^2} - \frac{-y^2}{x^2 + y^2}, \frac{-yx}{x^2 + y^2} + \frac{yx}{x^2 + y^2}\right) = (1, 0)$
@@ -127,17 +127,16 @@ Weitere Axiome ähnlich.}
 \end{enumerate}
 \sss{Definition:}
 $i:=(0,1)$ (imaginäre Einheit)\\*
-Dann ist $$i^2=(0,1)·(0,1)=(-1,0) \Rarr i^2+1=0$$
+Dann ist $$i^2=(0,1)·(0,1)=(-1,0)\ \Rarr\ i^2+1=0$$
 \bem
 Für $x,x'\eR$ gilt:
 $$(x,0)+(x',0)=(x+x',0)$$
 $$(x,0)·(x',0)=(x·x',0)$$
-Die Abbildung $\R→\C,\ x\mapsto(x,0)$ ist injektiv und verträglich mit $+,·$\\*
+Die Abbildung $\R→\C,\ x\mapsto(x,0)$ ist injektiv und verträglich mit $+,\ ·$\\*
 $\leadsto$ Fasse \R{} mittels diese Abbildung als Teilmenge von \C{} auf, einschließlich der Körperstruktur\\
 Dann $i^2=-1$.\\*
-Für
-$(x,y)\eC$ gilt $(x,y)=(x,0)+(0,y)=(x,0)+(0,1)·(y,0)=x+i·y$
-Jede komplexe Zahl $z$ hat eine eindeutige Darstellung $z=x+i·y$ mit $x,y\eR$.\\
+Für $(x,y)\eC$ gilt $(x,y)=(x,0)+(0,y)=(x,0)+(0,1)·(y,0)=x+i·y$
+Jede komplexe Zahl $z$ hat eine eindeutige Darstellung $z=x+i·y$ mit $x,y\eR$.
 \sss{Idee}
 \C{} entsteht aus \R{} durch Hinzunahme einer Zahl $i$ mit $i^2=-1$\\
 Interpretation der Multiplikation in \C:\\*
