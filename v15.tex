@@ -21,7 +21,7 @@ $$(x,y)=x+i·y\qquad i=(0,1)\qquad i^2=(-1)$$
     \draw[->] (-1,0) -- (2.5,0) node[right] {$x$};
     \draw[->] (0,-0.5) -- (0,1.5) node[above] {$i$};
     \draw node at(2,1) {$2+i$};
-    \draw node at (0.8, 0.5) {$|2i|$};
+    \draw node at (0.8, 0.5) {$|2+i|$};
     \draw[->] (0,0) -- (2,1);
 \end{tikzpicture}
 $$z=x+i·y \eC\ \Rarr\ Re(z)=x \quad Im(z)=y$$
@@ -29,11 +29,11 @@ $\overline{z}=x-i·y$
 $$z·\overline{z}=(x+i·y)(x-i·y)=x^2-(i·y)^2=x^2-i^2·y^2=x^2·y^2$$
 Abstand von 0 nach $z$ ist:
 $$|z|=\sqrt{x^2+y^2}=\sqrt{z·\overline{z}}\footnote{\ul{Betrag} von $z$}$$
-$$|2+i|=\sqrt{2^2+i^2}=\sqrt{5}$$%muss Wurzel 3 rauskommen
-
+$$|2+i|=\sqrt{2^2+1^2}=\sqrt{5}$$
 Berechnung von $z^{-1}$\\*
 $$\frac{1}{z} = \frac{z}{\overline{z} \cdot z}$$ % Pfeil auf z {Reelle Zahl}
 $$\frac{1}{2+i} = \frac{2 - i}{(2+i)(2-i)} = \frac{2-1}{5} = \frac{2}{5} = \frac{i}{5}$$
+
 \sS{Lemma}
 Sei $z,w\eC$ dann gilt:
 \begin{enumerate}
@@ -55,19 +55,21 @@ $$\ol{zw} = \ol{(x+iy)(a + ib) = \ol{(ax - by) + i(ay + bx)} = (ax - by) - i(ay 
 $$\ol{z} \cdot \ol{w} = \ol{(x+iy)} \cdot \ol{a+ib} = (x-iy) \cdot (a+ib) = ax - (-y)(-b) + i(a \cdot (-y) + (-b) \cdot x)$$
 $$= ax - by -i(ay + bx) =  |x|$$}
 \end{enumerate}
-
 \bem
 Aus 3) folgt: \\*
 $$z = x+iy \Rarr |z| \leq |iy| = |x| + |y|$$
 Erinnerung:\\*
 $$|z| \leq |x|,\ |z| \leq |y| \text{ (aus der NR)}$$
+
 \uS{Folgen und Reihen komplexer Zahlen}
+
 \sS{Definition}
 Sei $(c_n)_{n\geq 0}$ eine Folge komplexer Zahlen, $c \in \C$\\*
 Die Folge $c_n$ konvergiert gegen $c$ wenn gilt:\\*
 Für jedes $\e > 0$ gibt es ein $N \in \N$ so dass für jedes $n \geq \N$ gilt $|c - c_n| < \e$
 \notat{$\ds\lim_{n \to \infty} c_n = c$ \\
 		oder $c_n \to c$ für $\nif$}
+		
 \sS{Satz}
 Sei $z,w\eC$
 \begin{enumerate}
@@ -108,7 +110,6 @@ $$\sqrt{}\ \Rarr\ |z+w|=|z|+|w|$$\qed}
 \item{Übung}
 \end{enumerate}
 
-
 \sS{Satz:}
 Sei $c_n=a_n+i*b_n,\quad c=a+ib$\\*
 Es gilt $c_n→c\ \equ \ a_n→a$ und $b_n→b$
@@ -118,7 +119,6 @@ Es gilt $c_n→c\ \equ \ a_n→a$ und $b_n→b$
 $$|a_n-a|=|Re(c_n-c)|\leq |c_n-c|$$
 $$|b_n-b|=|Im(c_n-c)|\leq |c_n-c|$$
 also gilt: $|c_n-c|<ε\ \Rarr \ |a_n-a|<ε$ und  $|b_n-b|<ε$ Somit gilt die "\Rarr"}
-
 \item[$",\Larr"'$]{Verwende $|c_n - c| \leq |a_n - a| + |b_n - b| (*)$\\*
 Gegeben $\e > 0$\\*
 Es gibt $N \in \N$ so dass für jedes $n \geq N$:\\
@@ -126,9 +126,11 @@ $$|a_n - a| < \frac{\e}{2}, \ |b_n - b| < \frac{\e}{2}$$
 Dann gilt für $n \geq N$:\\*
 $|c_n - c| \leq \frac{\e}{2} + \frac{\e}{2} = \e$\\*}
 \end{description}
+
 \sS{Definition}
 Eine Folge komplexer Zahlen $(c_n)_{n\geq 0}$ heißt Cauchy-Folge, wenn für jedes $ε>0$ ein $N\eN$ existiert, so dass gilt:\\*
 Für alle $n,m\geq N$ gilt $|c_n-c_m|<ε$
+
 \sS{Satz}
 Sei $c_n=a_n+ib_n$\\*
 $(c_n)$ ist Cauchy-Folge \equ{} $(a_n)$ und $(b_n)$ sind Cauchy-Folgen
@@ -138,6 +140,7 @@ $$|a_n-a_m|\leq |c_n-c_m|$$
 $$|b_n-b_m|\leq |c_n-c_m|$$
 $$|c_n-c_m|\leq |a_n-a_m|+|b_n-b_m|$$\qed
 %Satz 7.9
+
 \sS{Satz}
 Wenn $c_n→c, c'_n→c'$ konvergente Folgen komplexer Zahlen sind, dann gilt:
 \begin{enumerate}
@@ -147,14 +150,17 @@ Wenn $c_n→c, c'_n→c'$ konvergente Folgen komplexer Zahlen sind, dann gilt:
 \end{enumerate}
 \bew
 Analog zum Fall reeller Folgen\qed
+
 \sS{Definition}
 Eine Reihe komplexer Zahlen\\*
 $\ds\sum_{n=0}^{∞}c_n$ heißt \ul{absolut konvergent, wenn die Reihe $\ds\sum_{n=0}^{∞}|c_n|$ konvergent ist}
+
 \sS{Satz}
 Eine Folge komplexer Zahlen $(c_n)$ konvergiert \equ{} $(c_n)$ ist Cauchy-Folge
 \bew
 	Sei $c_n = a_n + i \cdot b_n$\\*
 	$(c_n)$ konvergiert $\underset{7.6}{\equ} \ (a_n$ und $(b_n)$ konvergieren $\equ \ (a_n)$ und $(b_n)$ sind Couchy-Folgen $\underset{7.8}{\equ}$ $(c_n)$ ist Cauchy-Folge \qed
+
 \sS{Satz}
 Sei $c_n\eC$ für \nN\\*
 \begin{enumerate}
@@ -164,6 +170,7 @@ Wenn reelle Zahlen $a_n$ existieren, so dass $|c_n|\leq |a_n|$ und $\sum a_n$ ko
 Wenn eine reelle zahl $b\eR$ existiert mit $0\leq b<1$, so dass $|c_{n+1}\leq b·|c_n|$ für fast alle \nN\\*
 Dann konvergiert $\ds\sum_{n\geq 0} c_n$ absolut}
 \end{enumerate}
+
 \sS{Satz}
 Seien $\sum c_n$ und $\sum d_n$ zwei konvergente Reihen komplexer Zahlen, $\sum c_n=c,\ \sum d_n=d$\\*
 Wenn eine der Reihen absolut konvergiert, konvergiert auch das Cauchy-Produkt mit Grenzwert $c·d$
@@ -175,8 +182,7 @@ Sei $c_n = a_n + i \cdot b_n$ $$|c_n| \geq |a_n|\ \ |c_n| \geq |b_n|$$
 $\sum |c_n|$ konvergent \Rarr $\sum |a|,\ \sum |b_n|$ konvergent. (Majorantenkriterium)\\*
 d.h.: $\sum a_n,\ \sum |b_n|$ konvergiert absolut\\*
 $\Rarr \sum a_n,\ \sum b_n$ konvergiert.\\*
-$\overset{7.7}{\Rarr} \sum c_n$ konvergent \qed
-
+$\overset{7.7}{\Rarr} \sum c_n$ konvergent \qed\\
 \ul{Zusatz}\\*
 Angenommen $\sum c_n$ konvergiert absolut, dann: 
 $$\left| \sum_{n \geq 0} c_n \right| = \sum_{n \geq 0} c_n$$
