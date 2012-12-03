@@ -28,57 +28,56 @@ $$z=x+i·y \eC\ \Rarr\ Re(z)=x \quad Im(z)=y$$
 $\overline{z}=x-i·y$
 $$z·\overline{z}=(x+i·y)(x-i·y)=x^2-(i·y)^2=x^2-i^2·y^2=x^2·y^2$$
 Abstand von 0 nach $z$ ist:
-$$|z|=\footnote{\ul{Betrag} von $z$}\sqrt{x^2+y^2}=\sqrt{z·\overline{z}}$$
+$$|z|=\footnote{Betrag von $z$}\sqrt{x^2+y^2}=\sqrt{z·\ol{z}}$$
 $$|2+i|=\sqrt{2^2+1^2}=\sqrt{5}$$
 Berechnung von $z^{-1}$\\*
-$$\frac{1}{z} = \frac{z}{\overline{z} \cdot z}$$ % Pfeil auf z {Reelle Zahl}
+$$\frac{1}{z} = \frac{\overset{\underset{↓}{reelle\ Zahl}}{z}}{\ol{z} \cdot z}$$ % Pfeil auf z {Reelle Zahl}
 $$\frac{1}{2+i} = \frac{2 - i}{(2+i)(2-i)} = \frac{2-1}{5} = \frac{2}{5} = \frac{i}{5}$$
 
 \sS{Lemma}
 Sei $z,w\eC$ dann gilt:
 \begin{enumerate}
-\item{$$\ol{zw}=\ol{z}·\ol{w},\ \ol{z+w}=\ol{z}+\ol{w}$$}
-\item{$z+\ol{z}=2 Re(z),\ z-\ol{z}=2i·Im(z)$\\*
+\item{$\ds \ol{zw}=\ol{z}·\ol{w},\ \ol{z+w}=\ol{z}+\ol{w}$}
+\item{$\ds z+\ol{z}=2 Re(z),\ z-\ol{z}=2i·Im(z)$\\*
 $Re(z)=\frac{z+\ol{z}}{z}\qquad Re(z)=\frac{z-\ol{z}}{2i}$}
 \end{enumerate}
 %
 \bew
 \begin{enumerate}
 \setcounter{enumi}{1}
-\item{$$z=x+i·y$$
-$$z+\ol{z}=(x+i·y)+(x-i·y)=2x=2Re(z)$$
-$$z-\ol{z}=(x+i·y)-(x-i·y)=2iy=2i·Im(z)$$}
+\item{\alg{z&=x+i·y\\*
+z+\ol{z}&=(x+i·y)+(x-i·y)=2x=2Re(z)\\*
+z-\ol{z}&=(x+i·y)-(x-i·y)=2iy=2i·Im(z)}}
 \setcounter{enumi}{0}
-\item{$z = x+iy,\ w = a + ib$\\*
-$$\ol{z+w} = \ol{x+iy + a + ib} = \ol{x+a + i(y+b)} = x + a - i(y + b) = (x - iy)+(a + ib) = \ol{z} + \ol{w}$$
-$$\ol{zw} = \ol{(x+iy)(a + ib) = \ol{(ax - by) + i(ay + bx)} = (ax - by) - i(ay + bx) = |x|}$$
-$$\ol{z} \cdot \ol{w} = \ol{(x+iy)} \cdot \ol{a+ib} = (x-iy) \cdot (a+ib) = ax - (-y)(-b) + i(a \cdot (-y) + (-b) \cdot x)$$
-$$= ax - by -i(ay + bx) =  |x|$$}
+\item{\alg{z &= x+iy,\ w = a + ib\\*
+\ol{z+w} &= \ol{x+iy + a + ib} = \ol{x+a + i(y+b)} = x + a - i(y + b) = (x - iy)+(a-ib) = \ol{z} + \ol{w}\\*
+\ol{zw} &= \ol{(x+iy)(a + ib)} = \ol{(ax - by) + i(ay + bx)} = (ax - by) - i(ay + bx) = |x|\\*
+\ol{z} \cdot \ol{w} &= \ol{(x+iy)} \cdot \ol{(a+ib)} = (x-iy) \cdot (a+ib) = ax - (-y)(-b) + i(a \cdot (-y) + (-b) \cdot x)\\*
+&= ax - by -i(ay + bx) =  |x|}}
 \end{enumerate}
 \bem
 Aus 3) folgt: \\*
-$$z = x+iy \Rarr |z| \leq |iy| = |x| + |y|$$
+$$z = x+iy\ \Rarr\ |z| \leq |iy| = |x| + |y|$$
 Erinnerung:\\*
 $$|z| \leq |x|,\ |z| \leq |y| \text{ (aus der NR)}$$
 
 \uS{Folgen und Reihen komplexer Zahlen}
 
-\sS{Definition}
+\sS{Definition (Grenzwert)}
 Sei $(c_n)_{n\geq 0}$ eine Folge komplexer Zahlen, $c \in \C$\\*
-Die Folge $c_n$ konvergiert gegen $c$ wenn gilt:\\*
-Für jedes $\e > 0$ gibt es ein $N \in \N$ so dass für jedes $n \geq \N$ gilt $|c - c_n| < \e$
-\notat{$\ds\lim_{n \to \infty} c_n = c$ \\
-		oder $c_n \to c$ für $\nif$}
+Die Folge $c_n$ konvergiert gegen $c$ wenn gilt:\\[4pt]
+Für jedes $\e > 0$ gibt es ein $N \in \N$, so dass für jedes $n \geq \N$ gilt $|c - c_n| < \e$
+\notat{$\ds\lim_{\nif} c_n = c$ oder $c_n \to c$ für \nif}
 		
 \sS{Satz}
 Sei $z,w\eC$
 \begin{enumerate}
-\item{$|z|\geq 0$, und $|z|=0$ \equiv{} $z=0$ (klar)}
+\item{$|z|\geq 0$, und $|z|=0$ \equ{} $z=0$ (klar)} % hier stand ein equiv
 \item{$|z·w|=|z|·|w|,\ |\ol{z}|=|z|$}
 \item{$|z+w|\leq|z|+|w|$ (Dreiecksungleichung)}
-\begin{tikzpicture}[domain=-1:2.5]
-    \draw[very thin,color=gray] (-1,-0.5) grid (2.5,1.5);
-    \draw[->] (-1,0) -- (2.5,0) node[right] {$x$};
+\begin{tikzpicture}[domain=-1.1:2.5]
+    \draw[very thin,color=gray] (-1.1,-0.5) grid (2.5,1.5);
+    \draw[->] (-1.1,0) -- (2.5,0) node[right] {$x$};
     \draw[->] (0,-1) -- (0,1.5) node[above] {$i$};
     \draw node at (0.4,1) {$w$};
     \draw node at (1.2, -0.5) {$z$};
@@ -91,35 +90,34 @@ Sei $z,w\eC$
 \bew
 \begin{enumerate}
 \setcounter{enumi}{1}
-\item{$$|z·w|=\sqrt{zw·\ol{zw}}\underset{7.3}{=}\sqrt{z·w·\ol{z}·\ol{w}}=\sqrt{z·\ol{z}·w·\ol{w}}=\sqrt{z·\ol{z}}\sqrt{w·\ol{w}}=|z|·|w|$$
-beide reell $\geq 0$
+\item{$\ds |z·w|=\sqrt{zw·\ol{zw}}\underset{7.3}{=}\sqrt{z·w·\ol{z}·\ol{w}}=\sqrt{z·\ol{z}·w·\ol{w}}=\sqrt{z·\ol{z}}\sqrt{w·\ol{w}}=|z|·|w|$beide reell $\geq 0$
 Nachtrag rechts unten 3. tafel}
-\item{$$|z+w|=(z+w)·(\ol{z+w})\underset{7.3}{=}(z+w)·(\ol{z}+\ol{w})=z·\ol{z}+z·\ol{w}+w·\ol{z}+w·\ol{w}=\footnote{$\ol{z·\ol{w}}=\ol{z}·\ol{\ol{w}}=\ol{z}·w=w·\ol{z}$}z·\ol{z}+\underbrace{z·\ol{w}+\ol{z·\ol{w}}}_{2·Re(z·\ol{w})}+w·\ol{w}$$
-$$=z·\ol{z}+2·Re(z·\ol{w})+w·\ol{w}\leq |z|^2+2·|z|·|w|+|w|^2=\footnote{Für jedes $u=c+d·i\eC$ gilt $|u|=\sqrt{c^2+d^2}\geq \sqrt{c^2}=|c|=|Re(u)|$}(|z|+|w|)^2$$
-$$\sqrt{}\ \Rarr\ |z+w|=|z|+|w|$$\qed}
+\item{\alg{|z+w|&=(z+w)·(\ol{z+w})\underset{7.3}{=}(z+w)·(\ol{z}+\ol{w})=z·\ol{z}+z·\ol{w}+w·\ol{z}+w·\ol{w}=\footnote{$\ol{z·\ol{w}}=\ol{z}·\ol{\ol{w}}=\ol{z}·w=w·\ol{z}$}z·\ol{z}+\underbrace{z·\ol{w}+\ol{z·\ol{w}}}_{2·Re(z·\ol{w})}+w·\ol{w}
+&=z·\ol{z}+2·Re(z·\ol{w})+w·\ol{w}\leq |z|^2+2·|z|·|w|+|w|^2=\footnote{Für jedes $u=c+d·i\eC$ gilt $|u|=\sqrt{c^2+d^2}\geq \sqrt{c^2}=|c|=|Re(u)|$}(|z|+|w|)^2
+\sqrt{}\ &\Rarr\ |z+w|=|z|+|w|\qed}}
 \end{enumerate}
 \bem
 \begin{enumerate}
-\item{Es gilt $c_n \to c \equ \ol{c_n} \to \ol{c}$}
+\item{Es gilt $c_n \to c\ \equ\ \ol{c_n} \to \ol{c}$}
 \item{Wenn $c_n \to c$ dann $|c_n| \to |c|$}
 \end{enumerate}
 \bew
 \begin{enumerate}
-%% Er war einsam aber schneller.
-\item{$|\ol{c_n} - \ol{c}| = |\ol{c_n - c}| = |c_n - c| \Rarr beh$}
+%% Er war einsam, aber schneller.
+\item{$|\ol{c_n} - \ol{c}| = |\ol{c_n - c}| = |c_n - c|\ \Rarr$ Behauptung}
 \item{Übung}
 \end{enumerate}
 
 \sS{Satz:}
-Sei $c_n=a_n+i*b_n,\quad c=a+ib$\\*
+Sei $c_n=a_n+i·b_n,\qquad c=a+ib$\\*
 Es gilt $c_n→c\ \equ \ a_n→a$ und $b_n→b$
 \bew
 \begin{description}
-\item["\Rarr"]{Es gilt:
-$$|a_n-a|=|Re(c_n-c)|\leq |c_n-c|$$
-$$|b_n-b|=|Im(c_n-c)|\leq |c_n-c|$$
-also gilt: $|c_n-c|<ε\ \Rarr \ |a_n-a|<ε$ und  $|b_n-b|<ε$ Somit gilt die "\Rarr"}
-\item[$",\Larr"'$]{Verwende $|c_n - c| \leq |a_n - a| + |b_n - b| (*)$\\*
+\item["\Rarr"]{\desc{Es gilt:}{
+$\ds |a_n-a|=|Re(c_n-c)|\leq |c_n-c|$\\*[4pt]
+$\ds |b_n-b|=|Im(c_n-c)|\leq |c_n-c|$}
+Also gilt: $|c_n-c|<ε\ \Rarr \ |a_n-a|<ε$ und  $|b_n-b|<ε$, somit gilt "\Rarr"}
+\item["\Larr"]{Verwende $|c_n - c| \leq |a_n - a| + |b_n - b| (*)$\\*
 Gegeben $\e > 0$\\*
 Es gibt $N \in \N$ so dass für jedes $n \geq N$:\\
 $$|a_n - a| < \frac{\e}{2}, \ |b_n - b| < \frac{\e}{2}$$
