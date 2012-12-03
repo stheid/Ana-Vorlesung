@@ -10,7 +10,6 @@
 %Kopfzeile rechts bzw. außen
 \fancyhead[R]{\calligra\Large 15.11.2012}
 % **************************************************
-%
 \wdh
 Eine Abbildung $f:x→y$\\*
 \begin{itemize}
@@ -19,11 +18,11 @@ für alle $a,b\in X$ mit $f(a)=f(b)$ ist $a=b$}
 \item{ist \ul{surjektiv} wenn für jedes $y\in Y$ ein $a\in X$ existiert mit $f(a)=y$}
 \end{itemize}
 Sei $D\subseteq\R$ Teilmenge. Eine Funktion auf $D$ ist eine Abbildung $f:D→\R$
-%
+
 \uS{Monotone Funktionen}
 \bem
 Eine Funktion $(a_n)_{n\geq 0}$ reeller Zahlen ist eine Abbildung $a:\N_0→\R$ d.h. eine Funktion auf $\N_0$
-%
+
 \sS{Definition}
 Sei $D\subseteq\R$. Eine Funktion  $f:D→\R$ heißt:
 \begin{enumerate}
@@ -42,7 +41,7 @@ Zeige: $a\neq b\Rarr f(a)\neq f(b)$\\*
 Wenn $a\neq b$ dann $a< b$ oder $b<a$\\*
 Wenn $f$ streng monoton wachsend: Folgt $f(a)< f(b)$ oder $f(b)< f(a)$ also $f(a)\neq f(b)$\\*
 Wenn $f$ streng monoton fällt: es folgt $f(a)> f(b)$ oder $f(b)> f(a)$ also $f(a)\neq f(b)$\qed
-%
+
 \sS{Beispiel}
 \begin{enumerate}
 \item{$f:\R_{\geq 0}→\R,\ x\mapsto x^k =:f(x)$ mit $k\geq 1$\\*%umgekehrtes define
@@ -72,9 +71,10 @@ $exp(a) = exp(a - b + b) = \overbrace{exp(a - b) \cdot exp(b)}^{>0}$
 \end{enumerate}
 }
 \end{enumerate}
-%
+
 \chapter{Stetigkeit}
-\ul{Idee:} Eine Funktion ohne Sprünge heißt \ul{stetig}\\*
+\ul{Idee:} Eine Funktion ohne Sprünge heißt \ul{stetig}
+
 \sS{Definition}
 Sei $D\subseteq \R,\ f:D→\R$ eine Funktion\\*
 \begin{enumerate}
@@ -83,6 +83,7 @@ Für jedes $\e>0$ gibt es ein $\delta>0$ so dass für jedes $y\in D$ mit $|x-y|<
 }
 \item{$f$ heißt stetig wenn f in jedem $x\in D$ stetig ist}
 \end{enumerate}
+
 \sS{Beispiel}
 \begin{enumerate}
 \item{Die Funktion $id:\R→\R,\ x\mapsto x$ ist stetig}
@@ -105,7 +106,7 @@ z.B. $\e=1$ Sei $\delta>0.\ y=x-\dfrac{\delta}{2}\quad |x-y|=\dfrac{\delta}{2}<\
 aber $g(y)=\{x-\dfrac{\delta}{2}\}=x-1$ (weil $x\in\Z$)\\*
 $|g(x)-g(y)|=|x-(x-1)|=1 \not<\e\qed$}
 \end{enumerate}
-%
+
 \sS{Satz}
 Die Exponentialfunktion $exp: \R \to \R$ ist stetig.\\*
 \bew
@@ -115,14 +116,13 @@ Verwende nur:
 \item{exp ist streng monoton wachsend}
 \item{exp(0) = 1}
 \end{itemize}
-\subsection*{Behauptung}
+\sss{Behauptung}
 Für jedes $\e > 0$ gibt es ein $n \in \N$ mit $exp(\frac{1}{n}) < 1 + \e$\\*
 %Graf
 Angenommen, $exp(\frac{1}{n}) \geq 1 + \e$\\*
-Dann $exp(1) = \frac{1}{n} + ... \frac{1}{n}$ % underbrace unter den Brüchen {n}
-\phantom{Dann $exp(1) $} $= exp(\frac{1}{n}) + ... + exp(\frac{1}{n}) = exp(\frac{1}{n})^n$ \\*
-\phantom{Dann $exp(1) $} $ \geq (1 + \e)^n \geq 1 + n \e $ %(Pfeil auf letztes geq Bernoulli)
-\\*
+\desc{Dann $exp(1)$}{$= \underbrace{\frac{1}{n} + ... \frac{1}{n}}_n$\\*
+$= exp(\frac{1}{n}) + ... + exp(\frac{1}{n}) = exp(\frac{1}{n})^n$ \\*
+$\geq (1 + \e)^n \underset{\overset{\uparrow}{Bernulli}}{\geq} 1 + n \e$}
 $exp(1) \geq 1 + n \e$\\*
 $n \leq \frac{exp(1) - 1}{\e}$\\*
 Das gilt nur für endliche viele $n \in \N$\\*
@@ -144,13 +144,13 @@ $|exp(y) -exp(x) | < \e$\\*
 $$\Leftrightarrow exp(x) \cdot |exp(h) - 1| < \e \Leftrightarrow exp(h) - 1 < \frac{\e}{exp(x)} = \e '$$\\**
 Weil exp stetig in 0 ist gibt es ein $\delta > 0$ mit $|h| < \delta \Rarr |exp(h) -1| < \frac{\e}{exp(x)}$\\*
 $\Rarr$ exp ist stetig in x \qed\\*
-%
+
 \sS{Satz (Folgenstetigkeit)}
 Sei $D\subseteq\R,\ x\in D,\ f:D→\R$ Funktion $f$ ist genau dann stetig in $x$ wenn gilt:\\*
 \begin{itemize}
 \item{Für jede Folge $(x_n)_{n\geq 0}$ mit $x_n\in D,\ x_n→x$ für $n→∞$ gilt auch $f(x_n)→f(x)$ für $n→∞$}
 \end{itemize}
-%
+
 \sS{Satz}
 Sei $D\subseteq\R,\ f,g:D→\R$ in $x\in D$\\*
 Dann gilt:\\*
@@ -163,10 +163,10 @@ Dann ist $\dfrac{1}{f}:D→\R$ stetig in x.
 \Bew{mit Folgenstetigkeit}
 Sei $x_n \to x$ für $n \to \infty$\\*
 mit $x_n \in D$\\*
-$f, g$ stetig $\Rarr f(x_n) \to f(x)$ \\*
-\phantom{$f, g$ stetig \Rarr}$g(x_n) \to g(x)$\\*
-$\Rarr f(x_n) + g(x_n) \to f(x) + g(x)$
-$\phantom{\Rarr} f(x_n) \cdot g(x_n) \to f(x) \cdot g(x)$\\*
+\desc{$f, g$ stetig $\Rarr$}{$f(x_n) \to f(x)$ \\*
+$g(x_n) \to g(x)$}
+\desc{\Rarr}{$f(x_n) + g(x_n) \to f(x) + g(x)$\\*
+$f(x_n) \cdot g(x_n) \to f(x) \cdot g(x)$}
 Wenn also $f(x) \neq 0$\\*
 $f(x_n)^{-1} \to f(x)^{-1}$\\*
 $\Rarr f + g, f) \cdot g, \frac{1}{f}$ stetig in x \qed
