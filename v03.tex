@@ -14,7 +14,7 @@
 \wdh
 Ein Körper $K$ ist eine Menge mit $+$ und $·$, sodass gewisse Eigenschaften erfüllt sind:
 \bsp
-$\ds\Q = \left\{\frac{a}{b} | a \in \Z, b \neq 0\right\}$\\*
+$\ds\Q = \left\{\frac{a}{b} \mid a \in \Z, b \neq 0\right\}$\\*
 $F_1 = \{0, 1\} \qquad 1 + 1 = 0$\\*
 \notat{Setze $a^n = \underbrace{ a · a · a · a· … · a}_{n-Faktoren}$\\*
 $\left.\begin{array}{lcc}
@@ -60,34 +60,32 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	Sei $K$ ein Angeordneter Körper:
 	$$0 < 1 \Rarr 1 < 1 + 1 \Rarr 1 + 1 < 1 + 1 + 1 \text{ etc.}$$
 	$$0 < 1 < 1 + 1 < 1 + 1 +1 \text{ etc.}$$
-	Für $n \in \N$ setze $underbrace{n:= 1 + 1 + 1 + … + 1}_{n-Faktoren}$\\*
-	Dann $0 < 1 < 2 < 3 … $ in $K$
+	Für $n \in \N$ setze $\underbrace{n:= 1 + 1 + 1 + … + 1}_{n-Faktoren}$\\*
+	Dann $0 < 1 < 2 < 3 … $ in $K$\\*[4pt]
 	\ul{Folge:} Verschiedene natürliche Zahlen bleiben in $K$ verschieden.\\*
 	%Falscher Pfeil, verbesserung kommt noch
 	Fasse $\N$ als Teilmenge von $K$ auf.\\*
-	\desc{Dann}{$\ds \Z = \left\lbrace a - b | a, b \in N \right\rbrace \subseteq K$\\*[4pt]
-	$\ds Q = \left\lbrace \frac{a}{b} | a, b \in N\right\rbrace \subseteq K$}
+	\desc{Dann}{$\ds \Z = \left\lbrace a - b \mid a, b \in N \right\rbrace \subseteq K$\\*[4pt]
+	$\ds \Q = \left\lbrace \frac{a}{b} \mid a, b \in N\right\rbrace \subseteq K$}
 	Insbesondere ist $K$ unendlich.\\*[8pt]
 	z.B. hat $F_z$ keine Anordnung.
 
-\sS{Definition}
+\sS{Definition Absolutbetrag}
 	Sei $K$ ein angeordneter Körper mit $a \in K$\\*
 	Der Absolutbetrag von $a$ ist definiert als \\*
-	$|a| = \left\lbrace \begin{array}{lll}
-	a\text{ wenn }a > 0\\*
-	-a\text{ wenn }a < 0
+	$|a| = \left\lbrace \begin{array}{rcr}
+	a&\text{ wenn }&a > 0\\*
+	-a&\text{ wenn }&a < 0
 	\end{array}\right.$
 
-\sS{Satz}
+\sS{Satz (Dreiecksungleichung)}
 	Sei $K$ ein angeordneter Körper $a, b, c \in K$\\*
 	Dann gilt:
 	\begin{enumerate}
 	\item{$a = 0$ wenn $|a| = 0$}
 	\item{$-|a| \leq a \leq |a|$}
-	\item{Dreiecksungleichung:
-	$$|a + b| \leq |a| + |b|$$}
-	\item{untere Dreiecksungleichung:
-	$$|a - b| \geq |a| - |b|$$}
+	\item{Dreiecksungleichung: $\ds |a + b| \leq |a| + |b|$}
+	\item{untere Dreiecksungleichung: $\ds |a - b| \geq |a| - |b|$}
 	\end{enumerate}
 \bew
 	\begin{enumerate}
@@ -156,7 +154,7 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	Sei $a \in M$ dann $a = -\frac{1}{n}, n \in N, -\frac{1}{n + 1} \in M$\\*
 	$n + 1 > n\ \Rarr\ \frac{1}{n + 1} < \frac{1}{n}\ \Rarr\ -\frac{1}{n + 1} > -\frac{1}{n}$\\*
 	$M \nleq -\frac{1}{n}$ $a$ ist keine obere Schranke.}
-	\item{$M = \left\lbrace -\frac{1}{n} | n \in \N\right\rbrace \cup \{ 0 \}$\\*
+	\item{$M = \left\lbrace -\frac{1}{n} \mid n \in \N\right\rbrace \cup \{ 0 \}$\\*
 	$min(M) = -1$\\*
 	$max(M) = 0$}
 	\item{$M = \emptyset$ hat weder ein $min(M)$ noch ein $max(M)$\\*
@@ -204,4 +202,4 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	$a, b$ sind Supremum von M\\*
 	$M \leq a$, $M \leq b\ \Rarr\ a \leq b $ und $b \leq a\ \Rarr\ a = b$ \qed
 \bsp
-	$sup(\{ -\frac{1}{n} | n \in \N \})$
+	$sup(\{ -\frac{1}{n} \mid n \in \N \})$
