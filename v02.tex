@@ -22,7 +22,7 @@ $$\bino{n}{k} \qquad\qquad\qquad \bino{n}{0}=\bino{n}{n}=1$$
 
 \sS{Lemma}
 Für $0<k< n$ gilt:
-$$\binom{n}{k} = \binom{n -1}{1} + \binom{n-1}{k}$$\\*
+$$\binom{n}{k} = \binom{n -1}{k-1} + \binom{n-1}{k}$$\\*
 %
 \bew 
 $$\binom{n-1}{k-1}+ \binom{n-1}{k}=\frac{(n-1)!}{(k-1)!·(n-k)!} +\frac{(n-1)!}{(k-1)!·(n-1-k)!} = \frac{k(n-1)!+(n-k)\cdot(n-1)!}{k! (n-k)!}=\frac{n(n-1)!}{k!(n-k)!}$$
@@ -38,13 +38,13 @@ $\binom{3}{0} \binom{3}{1} \binom{3}{2} \binom{3}{3}$}\hfill
 1 1\\*
 1 2 1\\*
 1 3 3 1}\\*[5mm]
-Folge $\binom{n}{k}\in \N$ für alle $0\leq k\leq<n$
+Folge $\binom{n}{k}\in \N$ für alle $0\leq k\leq n$
 %
 
 \sS{Satz: Anzahl von Teilmengen}
 Sei $A$ endliche Menge. $\#A=n$\\*[4pt]
 Sei $k\in\Z$ mit $0\leq k\leq n$\\*[4pt]
-$P_k(A):=\{U\subseteq A| \#U=k\}$ (Menge aller $k$-elementigen Teilmengen von $A$)\\*[4pt]
+$P_k(A):=\{U\subseteq A\mid \#U=k\}$ (Menge aller $k$-elementigen Teilmengen von $A$)\\*[4pt]
 Dann gilt $\#P_k(A)=\binom{n}{k}$\\*
 \bsp
 $A=\{1,2,3,4\}$ $n=4$ $k=2$\\*[4pt]
