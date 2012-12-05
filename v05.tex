@@ -10,23 +10,20 @@
 %Kopfzeile rechts bzw. außen
 \fancyhead[R]{\calligra\Large 22.10.2012}
 % *****************************************
-%
 \wdh
-Eine Folge $(a_n)_{n\eN_0}$ reeller Zahlen konvergiert genen $a\eR$ wenn gilt:\\*
+Eine Folge $(a_n)_{n\eN_0}$ reeller Zahlen konvergiert gegen $a\eR$ wenn gilt:\\*
 Für jedes $\e>0$ gibt es ein $N\eN$ so dass $|a_1·a|<\e$ für alle $n\geq\N$.\\*
-%bez oder so was, nicht ganz klar zu lesen
-\ul{Bez"uglich} $a_n→a$ für $n→∞$ oder $\ds\lim_{n→∞}(a_n)=a$\\*
+\ul{Bezeichnung} $a_n→a$ für $n→∞$ oder $\ds\lim_{n→∞}(a_n)=a$\\*
 \bsp
 $\frac{1}{n}→0$ für $n→∞\qquad(-1)^n$ divergiert\\*
 $(a_n)$ ist divergent, wenn sie gegen kein $a\eR$ konvergiert
 \bsp
 $(1,0,\frac{1}{2},0,\frac{1}{3},0,\frac{1}{4},0,…)$ konvergiert gegen $0$
-%
+
 \sS{Satz: (Eindeutigkeit der Grenzwerte)}
-Sei $(a_n)$ Folge reeller Zahlen und $a,b\eR$ mit $a_n→a$ und $a_n→b$ für $n→∞$. Dann ist $a·b$ %mut zur lücke, würde ich behaupten
+Sei $(a_n)$ Folge reeller Zahlen und $a,b\eR$ mit $a_n→a$ und $a_n→b$ für $n→∞$. Dann ist $a=b$
 \bem
-Dann ist bez %wie oben, whatever it means
-$a=\ds\lim_{n→∞}(a_n)$ sinnvoll
+Darum ist Bezeichnung $a=\ds\lim_{n→∞}(a_n)$ sinnvoll
 \bew
 Angenommen $a\neq b$\\*
 Sei $\e:=\dfrac{|a-b|}{2}$ SKIZZE\\* % SKIZZE
@@ -35,11 +32,11 @@ Sei $n=max(N_1,N_2)$\\*
 $|a-b|=|a-a_n+a_n-b|\leq|a-a_n|+|a_n-b|<\e+\e=|a-b|$\\*
 \Rarr $|a+b|<|a-b|$ Widerspruch\\*
 \Rarr nicht $a\neq b$, d.h. $a=b$\qed
-%
-\sS{Definition}
+
+\sS{Definition Beschränktheit von Folgen}
 Eine Folge $(a_n)$ reeller Zahlen heißt $\left\{\begin{array}{c}\text{nach oben beschränkt}\\*\text{nach unten beschränkt}\\*\text{beschränkt}
-\end{array}\right\}$ wenn die menge $\{a_n|n\eN_0\}$ dieselbe Eigenschaft hat.
-%
+\end{array}\right\}$ wenn die Menge $\{a_n\mid n\eN_0\}$ dieselbe Eigenschaft hat.
+
 \sS{Satz:}
 Jede konvergente Folge reeller Zahlen ist beschränkt.
 \bew
@@ -55,8 +52,8 @@ $-C\leq a_n\leq C$ für alle $n$\\*
 \bem
 Nicht jede beschränkte Folge konvergiert.\\*
 z.B. $((-1)^n)_{n\eN_0}$ ist beschränkt, aber konvergiert nicht.
-%
-\sS{Definition}
+
+\sS{Definition Uneigentliche Konvergenz}
 Eine Folge reeller Zahlen $(a_n)$ konvergiert uneigentlich gegen ∞ wenn gilt:\\*
 Für jedes $C\eR$ gibt es $N\eR$ mit $a_m>C$ für alle $n\geq N$ SKIZZE
 \bem
@@ -68,10 +65,9 @@ Alternative Terminologie:\\*
 \item{$a_n=(-1)^n.\ (0,-1,2,-3,4,-5,…)$ konvergiert \ul{nicht} uneigentlich gegen ∞}
 \end{enumerate}
 \notat{$a_n→∞$ für \nif{} $\ds\lim_\nif\an=∞$}
-%
+
 \sS{Satz (Potenzwachstum)}
-Sei $x\eR$ betrachtete % sehr unsicher, steht nur "Betr." dort
-Folge $(x^n)_n\geq 0$
+Sei $x\eR$, betrachte Folge $(x^n)_n\geq 0$
 \begin{enumerate}
 \item{wenn $|x|>1$ dann ist $(x^n)$ divergent}
 \item{wenn $x>1$ dann $x^n→∞$ für \nif}
@@ -80,25 +76,28 @@ Folge $(x^n)_n\geq 0$
 %
 % folgendes ist von der einrückunt und unterordnung sehr unsicher bitte überprüfen
 %
-\Bew{2)}
-Sei $x>1$\\*[4pt]
+\bew
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item{Sei $x>1$\\*[4pt]
 Schreibe $x=1+a$. Dann $a>0$ Gegeben $C\eR$\\*
 $\underset{\text{Satz 2.9}}{\Rarr} x^n=(1+a)^n\geq 1+n·a$\\*
-Archimedes: $∃ N\eN$ mit $N·a>C$\ok
-\Bew{1}
-Sei $|x|>1$ Dann $|x^n|=|x|^n,\ |x|>1\underset{\text{2)}}{\Rarr}|x^n|$ ist nicht beschränkt für \nN{} \Rarr{} $(x^n)$ divergiert
-\Bew{3}
-Sei $|x|<1$ Wenn $x=0 \Rarr x^n=0$ für alle $n$\ok\\*
+Archimedes: $∃ N\eN$ mit $N·a>C$\ok}
+\setcounter{enumi}{0}
+\item{Sei $|x|>1$ Dann $|x^n|=|x|^n,\ |x|>1\underset{\text{2)}}{\Rarr}|x^n|$ ist nicht beschränkt für \nN{} \Rarr{} $(x^n)$ divergiert}
+\setcounter{enumi}{2}
+\item{Sei $|x|<1$ Wenn $x=0 \Rarr x^n=0$ für alle $n$\ok\\*
 Sei $0<|x|<1$\\*
 Dann $\frac{1}{|x|}>1$\\*
 Gegeben sei $\e>0$\\*
 Setze $C=\frac{1}{\e}$\\*
-$\underset{\text{2)}}{\Rarr}$ es gibt $N\eN$ mit $\frac{1}{|x|^n}>C$ für $n\geq N$ \Rarr $|x|^n<\e$ für $n\geq N$\qed 
-%
+$\underset{\text{2)}}{\Rarr}$ es gibt $N\eN$ mit $\frac{1}{|x|^n}>C$ für $n\geq N$ \Rarr $|x|^n<\e$ für $n\geq N$\qed}
+\end{enumerate}
+
 \sS{Satz (Rechenregeln)}
 Seien $(a_n)_{\nN_0},\ (b_n)_{\nN_0}$ zwei konvergente Folgen reeller Zahlen\\*
-Sei $a_n→a$ für \nif\\*
-\phantom{Sei }$b_n→a$ für \nif\\* % EINRÜCKUNG
+\desc{Sei}{$a_n→a$ für \nif\\*
+$b_n→a$ für \nif}
 Dann gilt:
 \begin{enumerate}
 \item{$(a_n+b_n)→a+b$ für \nif}
