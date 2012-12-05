@@ -14,7 +14,7 @@
 \wdh
 $\C=\R^2$ mit 
 $$(x,y)+(x',y')=(x+x',y+y')$$
-$$(x,y)·(x',y')=(x·x'-y·y',x·y'-y·x')$$
+$$(x,y)·(x',y')=(x·x'-y·y',x·y'+y·x')$$
 $$(x,y)=x+i·y\qquad i=(0,1)\qquad i^2=(-1)$$
 \begin{tikzpicture}[domain=-1:2.5]
     \draw[very thin,color=gray] (-1,-0.5) grid (2.5,1.5);
@@ -31,7 +31,7 @@ Abstand von 0 nach $z$ ist:
 $$|z|=\footnote{Betrag von $z$}\sqrt{x^2+y^2}=\sqrt{z·\ol{z}}$$
 $$|2+i|=\sqrt{2^2+1^2}=\sqrt{5}$$
 Berechnung von $z^{-1}$\\*
-$$\frac{1}{z} = \frac{\overset{\underset{↓}{reelle\ Zahl}}{z}}{\ol{z} \cdot z}$$ % Pfeil auf z {Reelle Zahl}
+$$\frac{1}{z} = \frac{\ol{z}}{\underbrace{\ol{z} \cdot z}_{reelle\ Zahl}}$$ % Pfeil auf z {Reelle Zahl}
 $$\frac{1}{2+i} = \frac{2 - i}{(2+i)(2-i)} = \frac{2-1}{5} = \frac{2}{5} = \frac{i}{5}$$
 
 \sS{Lemma}

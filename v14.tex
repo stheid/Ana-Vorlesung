@@ -28,6 +28,7 @@ $\underset{\text{\scriptsize{nach satz 6.5}}}{\Rarr}$ log ist stetig, streng mon
 Folgt aus Eigenschaften von $exp$, Details: Übung
 \sss{Erinnerung:}
 also $a>0,\ n\eZ,\ m\eN$ ist $a^{\frac{n}{m}}:=\sqrt[m]{a^n}$
+
 \sS{Lemma}
 Es gibt $a^{\frac{n}{m}} =  exp(\frac{n}{m} \cdot log(a))$\\*
 \bew
@@ -39,14 +40,16 @@ Es gibt $a^{\frac{n}{m}} =  exp(\frac{n}{m} \cdot log(a))$\\*
 	 \item{Rechne: $$exp(\frac{n}{m} log(a))^m = exp(m \cdot \frac{n}{m} \cdot log(a)) = exp(n \log(a)) = a^n$$}
 	\end{enumerate}	 
 	$\sqrt[m]{\ } \Rarr exp(\frac{n}{m} log(a)) = \sqrt[m]{a^n} = a^{\frac{n}{m}}$
+
 \sS{Definition}
 Sei $a>0,\ x\eR$ setze $a^x:=exp(x·log(a))$\\*
+
 \sS{Bemerkung}
 Die Regeln der Potenzrechnung gelten:
 $$a^{x+y}=a^x·a^y,\qquad a^{x·y}=(a^x)^y$$
 \bew
 $$a^{x+y}=exp((x+y)·log(a))=exp(x·log(a))·exp(y·log(a))=a^x·a^y$$
-$$a^{x·y}=exp(x·y·log(a))=(a^x)^y=exp(y·log(exp(x·log(a))))\footnote{$log\circ exp= id$}=exp(y·x·log(a))$$\qed
+$$a^{x·y}=\footnote{$log\circ exp= id$}exp(x·y·log(a))=(a^x)^y=exp(y·log(exp(x·log(a))))=exp(y·x·log(a))$$\qed
 \bem
 Eulersche Zahl
 $$e:=\footnote{$log(e)=1$}exp(1)=2{,}7…\qquad e^x=exp(x·log(e))=exp(x)$$
@@ -101,7 +104,7 @@ Mangel von \R{}: Die Gleichung $x^2=-1$ hat keine Lösung\\*
 \sS{Definition Komplexe Zahlen}
 Es sei $\C=\R^2=\{(x,y)|x,y\eR\}$ mit folgender Addition und Multiplikation:
 $$(x,y)+(x',y'):=(x+x',y+y')$$
-$$(x,y)·(x',y'):=(x·x'-y·y',x·y'-y·x')$$
+$$(x,y)·(x',y'):=(x·x'-y·y',x·y'+y·x')$$
 Addition gleich der Vektoraddition in $\R^2$ GRAPH
 \sS{Satz: \C\ ist Körper}
 \C{} ist ein Körper mit Null (0,0) und Eins (1,0)

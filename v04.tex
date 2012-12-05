@@ -10,7 +10,7 @@
 %Kopfzeile rechts bzw. außen
 \fancyhead[R]{\calligra\Large 18.10.2012}
 % *****************************************
-%\wdh
+\wdh
 Angeordneter Körper:\\*
 Menge $K$ mit $+, ·, <$\\*
 so dass gewisse Eigenschaften erfüllt sind
@@ -32,7 +32,7 @@ $\left.
 \vspace*{5ex}
 %
 \bsp
-$K=\Q\qquad M=\{-\frac{1}{n}|n\in\N\}=\{-1,-\frac{1}{2},-\frac{1}{3},?\}$\\*
+$K=\Q\qquad M=\{-\frac{1}{n}|n\in\N\}=\{-1,-\frac{1}{2},-\frac{1}{3},?\}$
 \sss{Behauptung}
 $sup(M)=0$
 \bew
@@ -44,22 +44,23 @@ Schreibe $b=\frac{m}{n},\ m\in\Z, n\in\N$\\*[1ex]
 $b<0$ heißt $m<0,\ m\leq -1$\\*[1ex]
 $b=\frac{m}{n} \leq \frac{-1}{n} \leq \frac{-1}{n+1}\in M$\\*[1ex]
 \Rarr{} $M\not\leq b$ (nicht $M\leq b$)\qed
-%
+
 \uS{Vollständigkeit}
-\Def
+\sS{Definition Vollständigkeit}
 Ein angeordneter Körper $K$ heißt Dedekind-vollständig, wenn jede nach oben beschränkte Teilmenge von $K$ eine kleinste obere Schranke hat.
-\Satz
+
+\sS{Satz}
 Es gibt genau einen Dedekind-vollständigen, angeordneten Körper $K$\\*
 Dieser heißt Körper der reellen Zahlen\\*
 \ul{Bezeichnung:} \R\\*
 (Beweis ausgelassen)
-%
-\Satz
+
+\sS{Satz}
 Die Teilmenge \N{} von \R{} ist unbeschränkt
 \bew
 (verwende nur die Axiome)\\*
 Indirekter Beweis: Angenommen, \N{} ist beschränkt\\*
-\einruck{Vollständigkeit:}{\vspace{3.65ex}\N{} hat eine kleinste obere Schranke $a\in\R$\\*
+\desc{Vollständigkeit:}{\N{} hat eine kleinste obere Schranke $a\in\R$\\*
 Es gilt $a-1<a \Rarr{} a-1$ ist kleinste obere Schranke von $\N\ n\leq a\qquad ∀ n\in\N\\*
 \Rarr{} n+1\leq a\qquad ∀ n\in\N\\*
 \Rarr{} n\leq a-1\qquad ∀n\in\N$ Widerspruch!\\*
@@ -74,18 +75,18 @@ Seien $x,y\in\R,\ x>0$, Dann gibt es $n\in\N$ mit $n·x>y$\\*
 SKIZZE % SKIZZE
 %
 \bew
-$nx>y \equ n>\frac{y}{x}$ (weil $x>0$)\\*
+$n·x>y\ \equ\ n>\frac{y}{x}$ (weil $x>0$)\\*
 \N{} unbeschränkt und nicht nach oben beschränkt \Rarr{} $\frac{y}{x}$ ist keine obere Schranke von \N\\*
 \Rarr{} es gibt $n\in\N$ mit $n>\frac{y}{x}$\qed
-%
+
 \sS{Folgerung}
-Sei $x\in\R,\ x>0$ Dann gibt es $n\in\N$ mit $\frac{1}{n}<x$\\*
+Sei $x\in\R,\ x>0$, dann gibt es $n\in\N$ mit $\frac{1}{n}<x$\\*
 SKIZZE % SKIZZE
 \bew
-$\frac{1}{n}<x \equ 1<n·x \equ \frac{1}{x}<n$ (weil $x$ positiv)\\*
+$\frac{1}{n}<x\ \equ\ 1<n·x\ \equ\ \frac{1}{x}<n$ (weil $x$ positiv)\\*
 $\frac{1}{x}$ keine obere Schranke von \N{} \Rarr{} es gibt \nN{} mit $\frac{1}{x}<n$\qed
-%
-\Satz
+
+\sS{Satz}
 Seien $x,y\eR$ mit $x<y$\\*
 Dann gibt es $a\eQ$ mit $x<a<y$, man sagt \Q{} liegen dicht in \R\\*
 SKIZZE % SKIZZE
@@ -100,43 +101,45 @@ $m\in M \Rarr x<\frac{m}{n}$\\*
 $m-1\not\in M \Rarr x\geq\frac{m-1}{n}$\\*
 $y-\frac{m}{n} =y-x+x-\frac{m}{n}>\frac{1}{n}+x-\frac{m}{n}=x-\frac{m-1}{n}\geq0$\\*
 $y>\frac{m}{n}$\qed
-%
+
 \uS{Wurzeln}
-\Satz
+\sS{Satz}
 Es gibt kein $a\eQ$ mit $a^2=2$\\*
 \bew
 Angenommen $a\frac{m}{n}\eQ,\ a^2=2,\ m,\nN$\\*
 Kürze den Bruch $\Rarr \frac{m}{n}$ teilerfremd\\*
-$$a^2=2\Rarr \frac{m^2}{n^2}=2 \Rarr m^2=2n^2 \Rarr m^2 \text{ gerade } \Rarr m \text{ gerade } \Rarr m=2q,\ q\eN$$
-$$(2q)^2=2n^2 \Rarr 4q^2=2n^2 \Rarr 2q^2=n^2 \Rarr  n^2 \text{ gerade } \Rarr n \text{ gerade }$$
+$$a^2=2\ \Rarr\ \frac{m^2}{n^2}=2 \ \Rarr\ m^2=2n^2 \ \Rarr\ m^2 \text{ gerade } \ \Rarr\ m \text{ gerade } \ \Rarr\ m=2q,\ q\eN$$
+$$(2q)^2=2n^2 \ \Rarr\ 4q^2=2n^2 \ \Rarr\ 2q^2=n^2 \ \Rarr\  n^2 \text{ gerade } \Rarr n \text{ gerade }$$
 Widerspruch zur Annahme $m,n$ teilerfremd\qed\\*
-SKIZZE WURZEL 2 \Rarr $\sqrt{2}$ sollte existieren % SKIZZE
+SKIZZE WURZEL 2 \Rarr\ $\sqrt{2}$ sollte existieren % SKIZZE
 \bem
 Wenn \nN, keine Quadratzahl, dann gibt es kein $a\eQ$ mit $a^2=n$ (ähnlicher Beweis)
-%
-\Satz
+
+\sS{Satz}
 Sei $x\eR, x\geq 0, \nN$\\*
 Dann gibt es \ul{genau ein} $y\eR, x\geq 0$ mit $y^n=x$\\*
-Bezeichnung: $x=\sqrt[n]{x}$
+Bezeichnung: $x=\sqrt[n]{y}$
 \bew
 später\\*
-\ul{Ansatz:} $sup\{a\eQ|a^n\leq x\}=:y$ (sup existiert weil \R{} Dedekind-vollständig)
-%
-\Def
+\ul{Ansatz:} $sup\{a\eQ\mid a^n\leq x\}=:y$ (sup existiert weil \R{} Dedekind-vollständig)
+
+\sS{Definition Potentzrechnung}
 Sei $x\eR,\ x>0\qquad \frac{m}{n}\eQ$\\*
-\nN, $m\eZ\qquad x^{\frac{m}{n}}=\sqrt[n]{x^m}\qquad x^{\frac{1}{n}}=\sqrt[n]{x}$\\*
-\sss{Potenzrechnung:} $$x^{(a+b)}=x^a·x^b,\ x^{a·b}=(x^a)^b$$\hfill für $x\eR,\ x>0,\ a,b\eQ$\\*
+\nN, $m\eZ\qquad x^{\frac{m}{n}}=\sqrt[n]{x^m}\qquad x^{\frac{1}{n}}=\sqrt[n]{x}$
+\sss{Potenzrechnung:}
+$\ds x^{(a+b)}=x^a·x^b,\ x^{a·b}=(x^a)^b$\hfill für $x\eR,\ x>0,\ a,b\eQ$
 \bem
 Später wir definiert: $x^a$ für $x\eR,\ x>0,\ a\eR$
-%
+
 \chapter{Folgen und Reihen reeller Zahlen}
 Grundbegriff der Analysis: Konvergenz
 \bsp
 Wenn \nN{} immer größer wird, geht $\frac{1}{n}$ immer näher an Null.\\*
 Sei $\N_0=\{0,1,2,3,4…\}$
-\Def
+
+\sS{Definition Folge}
 Eine Folge reeller Zahlen ist eine Abbildung $\N_0→\R$ d.h. jeder natürliche Zahl $n\geq 0$ wird eine reelle Zahl $a_n$ zugeordnet.\\*
-\notat{($(a_n)_{\nN_0}$ oder $(a_n)_{\N\geq 0}$ oder $(a_0,a_1,a_2,a_3,…)$}
+\notat{$(a_n)_{\nN_0}$ oder $(a_n)_{\N\geq 0}$ oder $(a_0,a_1,a_2,a_3,…)$}
 \sss{Variante:}
 Folgen, die bei $k\in\Z$ anfangen: $(a_n)_{\N\geq 0}=(a_k,a_{k+1},a_{k+2},…)$
 \bsp
@@ -148,11 +151,11 @@ $(a_n)_{n\geq 1}=(1,\frac{1}{2},\frac{1}{3},…)$}
 $(1,-1,1,-1,1,-1,1,-1,1,-1,…$}
 \item{$(\frac{n}{n+1})_{n\geq 0}n=(0,\frac{1}{2},\frac{2}{3},\frac{3}{4},\frac{4}{5},…$}
 \end{enumerate}
-%
-\Def
+
+\sS{Definition Konvergenz}
 Sei $(a_n)_{n\geq 0}$ eine Folge reeller Zahlen
 \begin{enumerate}
-\item{Eine Folge $(a_n)$ konvergiert gegen $a\eR$ wenn gilt: Für jedes $\e>\R$ gibt es ein $N\eN$, so dass $|a_n-a|<\e$ für jedes \nN{} mit $n\geq N$\\*
+\item{Eine Folge $(a_n)$ konvergiert gegen $a\eR$ wenn gilt: Für jedes $\e>0$ gibt es ein $N\eN$, so dass $|a_n-a|<\e$ für jedes \nN{} mit $n\geq N$\\*
 Dann heißt $a$ Grenzwert der Folge $(a_n)$\\*
 \notat{$\ds\lim_{n→∞}a_n=a$ oder $a_n→a$ für $n→∞$}}
 \item{Die Folge $(a_n)$ heißt \ul{Nullfolge}, wenn $a_n→a$ für $n→∞$}
