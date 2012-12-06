@@ -45,3 +45,36 @@ Die Funktion $cos:[0,2]→\R$ ist streng monoton fallend SKIZZE cos im intervall
 Sei $2\geq x>x\geq 0$, dann gilt $cos(x)-cos(y)\underset{\overset{\uparrow}{Additionstheoreme}}{=}-2·sin(\frac{x+y}{2})·sin(\frac{x-y}{2})$\\*
 Weil $\frac{x+y}{2}, \frac{x-y}{2}\in (0,2]$ gilt mit Lemma 7.27\\*
 $cos(x)-cos(y)<0$, d.h. $cos(x)<cos(y)\qed$
+
+\sS{Satz}
+Die Funktion $cos:[0,2]→\R$ hat genau eine Nullstelle $x$, und es gilt $x>1$
+\bew
+\begin{itemize}
+\item{$cos(1)>0,\ cos(2)<0,\ cos$ stetig \underset{Zwischenwertsatz}{\Rarr} cos \ul{hat} Nullstelle $x\in(1,2)\ (1<x<2)$}
+\item{Da $cos:[0,2]→\R$ streng monoton fallend, hat $cos$ \ul{genau} eine Nullstelle \qed}
+\end{itemize}
+
+\sS{Definition}
+Es sei $\pi\eR$ die eindeutige Zahl, so dass $cos(\frac{\pi}{2})$ und $1\leq\frac{\pi}{2}\leq 2$
+\bem
+$2\leq \pi \leq 4$, tatsächlich: $\pi=3,14159…$ (Kreiszahl)
+\ul{es gilt}
+% tabelle und infos dazu
+
+\sS{Satz}
+Für $x\eR$ gilt:\\*
+\enum{\item{$\ds cos(2\pi+x)=cos(x),\ sin(2\pi+x)=sin(x)$}
+\item{$\ds cos(\pi+x)=-cos(x),\ sin(\pi+x)=-sin(x)$}
+\item{$\ds cos(\pi-x)=cos(-x)=-cos(x),\ sin(\pi-x)=sin(x)$}
+\item{$\ds cos(\frac{\pi}{2}-x)=sin(x)$}}
+\Bew{Additionstheoreme anwenden}
+\enum{\item{$\ds cos(2\pi+x)=\underset{=1}{cos(2\pi)}·cos(x)-\underset{=0}{sin(2\pi)}·sin(x)=cos(x)$}
+\setcounter{enumi}{3}
+\item{$\ds cos(\frac{\pi}{2}-x)=\underset{=0}{cos(\frac{\pi}{2})}·cos(-x)-\underset{=1}{sin(\frac{\pi}{2})}·\underset{=-sin(x)}{sin(-x)}=sin(x)$}}
+\bem
+$cos,sin$ sind periodisch mit Periode $2\pi$, $sin,cos$ sind durch $cos:[0,\frac{\pi}{2}]→\R$ eindeutig bestimmt.
+\bem
+$cos(x),sin(x)$ kann für $x\in \{0,\frac{\pi}{6},\frac{\pi}{4},\frac{\pi}{3},\frac{\pi}{2}\}$ explizit bestimmt werden
+\bsp
+$cos(\frac{\pi}{3})=\frac{1}{2},\ sin(\frac{\pi}{3})=\frac{\sqrt{3}}{2}$
+% Bew 
