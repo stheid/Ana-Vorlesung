@@ -12,15 +12,15 @@
 % **************************************************
 %
 \wdh
-Eine folge reeller Zahlen $(a_n)$ ist eine Cauchy-Folge wenn gilt:\\*
+Eine Folge reeller Zahlen $(a_n)$ ist eine Cauchyfolge wenn gilt:\\*
 Für jedes $\e>0$ gibt es ein $n\in\N$ so dass für $m,n\geq\N$ gilt $|a_n-a_m|<\e$\\*
-$(a_n)$ konvergiert \equ $(a_n)$ ist Cauchy-Folge\\*
-Für Reihen: $\ds \sum_{k=0}^{∞}a_k$ konvergiert \equ Für jedes $\e>0$ gibt es ein $N\in\N$ so dass für $m,n\geq\N$ mit $m\geq n$ ist $\ds \left|\sum_{k=n}^m a_n\right|<\e$
-%
+$(a_n)$ konvergiert \equ\ $(a_n)$ ist Cauchyfolge\\*
+Für Reihen: $\ds \sum_{k=0}^{∞}a_k$ konvergiert \equ\ Für jedes $\e>0$ gibt es ein $N\in\N$ so dass für $m,n\geq\N$ mit $m\geq n$ ist $\ds \left|\sum_{k=n}^m a_n\right|<\e$
+
 \uS{Absolute Konvergenz}
-\sS{Definition}
+\sS{Definition Absolute Konvergenz}
 Eine Reihe $\ds\sum_{k=0}^{∞} a_k$ mit $a_k\in\R$ heißt absolut konvergent wenn die Reihe $\ds\sum_{k=0}^{∞} |a_k|$ konvergiert
-%
+
 \sS{Satz}
 Jede absolut konvergente Reihe konvergiert
 %
@@ -28,53 +28,53 @@ Jede absolut konvergente Reihe konvergiert
 Verwende Cauchy-Kriterium für Reihen\\*
 Sei $\ds\sum_{k=0}^{∞} a_k $ absolut von konvergent.\\*
 \Rarr Für jedes $\e>0$ gibt es $N\in\N$ mit:\\*
-Für $n\geq m\geq N$ gilt $\ds\sum_{k=m}^n |a_k| < \e \Rarr \left|\sum_{k=m}^n a_k\right| \underset{\overset{\uparrow}{Dreiecksungleichung}}{\leq} \sum_{k=m}^n |a_k| < \e \Rarr \sum_{k=m}^n a_k konvergiert$\qed
-
+Für $n\geq m\geq N$ gilt $\ds\sum_{k=m}^n |a_k| < \e\ \Rarr\ \left|\sum_{k=m}^n a_k\right| \underset{\overset{\uparrow}{Dreiecksungleichung}}{\leq} \sum_{k=m}^n |a_k| < \e\ \Rarr\ \sum_{k=m}^n a_k$ konvergiert\qed
 \bem
 Umkehrung gilt nicht.
 $\ds\sum_{k=1}^{∞} (-1)^k \frac{1}{k} = -1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+…$\\*
 konvergiert (Leibnitz)\\*
 denn $\ds\sum_{k=1}^{∞} \left|(-1)^k \frac{1}{k}\right| = \sum_{k=1}^{∞} \frac{1}{k}$ divergiert
 
-\sS{Definition}
+\sS{Definition Majorante}
 Eine Reihe $\ds\sum_{k=0}^{∞} b_k$ heißt Majorante der Reihe $\ds\sum_{k=0}^{∞} a_k$, wenn $|a_k|\leq b_k$ für alle k\\*
 (schon gewesen wenn $a_k\geq 0$)
 
 \sS{Satz (Majorantenkriterium)}
 Wenn eine Reihe eine konvergente Majorante hat, dann konvergiert sie absolut.
 \ul{Beweis} von Satz 4.5\qed
-%
+
 \uS{Umordnung von Reihen}
-\sS{Definition}
-Eine Umordnung einer Reihe $\ds\sum_{k=0}^{∞} a_k$ ist eine Reihe der Form $\ds\sum_{k=0}^{∞} a_{n_k}$ wobei $(n_0,n_1,n_2…)$ eine Folge natürlicher Zahlen ist, in der jedes $n\in\N_0$ genau einmal vorkommt.\\*
-%
+\sS{Definition Umordnung von Reihen}
+Eine Umordnung einer Reihe $\ds\sum_{k=0}^{∞} a_k$ ist eine Reihe der Form $\ds\sum_{k=0}^{∞} a_{n_k}$ wobei $(n_0,n_1,n_2…)$ eine Folge natürlicher Zahlen ist, in der jedes $n\in\N_0$ genau einmal vorkommt.
+
 \sS{Satz}
 Jede Umordnung einer \ul{absolut} konvergenten Reihe ist wieder absolut konvergent und hat den gleichen Grenzwert.\\*
-Im Gegensatz dazu gilt:\\*
+Im Gegensatz dazu gilt:
+
 \sS{Satz}
-Sei $\ds\sum_{k=0}^{∞} a_k$ eine konvergente, nicht absolut konvergente, Reihe. Für jedes $c\in\R\cup\{-∞,∞\}$ hat $\sum a_k$ eine Umordnung, die gegen c konvergiert.
-%
+Sei $\ds\sum_{k=0}^{∞} a_k$ eine konvergente, nicht absolut konvergente, Reihe. Für jedes $c\in\R\cup\{-∞,∞\}$ hat $\sum a_k$ eine Umordnung, die gegen $c$ konvergiert.
 \bsp
 Eine Reihe $\dfrac{1}{2}-\dfrac{1}{2}+\dfrac{1}{3}-\dfrac{1}{3}+\dfrac{1}{4}-\dfrac{1}{4}+\dfrac{1}{5}-\dfrac{1}{5}+…$
 konvergiert gegen 0. Konvergiert aber nicht absolut:\\*
-Folge: $$(\dfrac{1}{2},0,\dfrac{1}{3},0,\dfrac{1}{4},0,…→0)\qquad \sum_{k=1}^{∞} 2·1/k=∞$$
+Folge: $$\left(\dfrac{1}{2},0,\dfrac{1}{3},0,\dfrac{1}{4},0,…→0\right)\qquad \sum_{k=1}^{∞} 2·\frac{1}{k}=∞$$
 Produziere Umordnung, die gegen ∞ konvergiert:
 $$\dfrac{1}{2}-\dfrac{1}{2}+\underbrace{\dfrac{1}{3}+\dfrac{1}{4}}_{\geq\dfrac{1}{4}+\dfrac{1}{4}=\dfrac{1}{2}}-\dfrac{1}{3}+\underbrace{\dfrac{1}{5}+\dfrac{1}{6}+\dfrac{1}{7}+\dfrac{1}{8}}_{\geq\dfrac{1}{2}}-\dfrac{1}{4}+\underbrace{\dfrac{1}{5}+…+\dfrac{1}{16}}_{\geq\dfrac{1}{2}}-\dfrac{1}{5}+…$$
 $$\leq\underbrace{\dfrac{1}{2}-\dfrac{1}{2}}_{\text{\large{0}}}+\underbrace{\dfrac{1}{2}-\dfrac{1}{3}}_{\dfrac{1}{6}}+\underbrace{\dfrac{1}{2}-\dfrac{1}{4}}_{<\qquad\dfrac{1}{4}\qquad<}+\underbrace{\dfrac{1}{2}-\dfrac{1}{5}}_{\dfrac{3}{10}}+…=∞$$
 Beweise von 4.24, 4.25 eventuell später.
-%
+
 \uS{Produkte von Reihen}
 Frage: was ist $$\ds\left(\sum_{k=0}^{∞} a_k\right)·\left(\sum_{k=0}^{∞} b_k\right) ?$$
-%
-\sS{Definition}
-Das Cauchy-Produkt von zwei reihen $\ds\sum_{k=0}^{∞} a_k$ und $\ds\sum_{k=0}^{∞} b_k$ ist eine Reihe $\ds\sum_{k=0}^{∞} c_k$ mit $\ds c_n :=\sum_{k=0}^{∞} a_k·b_{n-k}=a_0·b_n+a_1·b_{n-1}+a_2·b_{n-2}+…+a_n·b_0$\\*
+
+\sS{Definition Produkt von Reihen}
+Das Cauchy-Produkt von zwei Reihen $\Sum_{k=0}^{∞} a_k$ und $\Sum_{k=0}^{∞} b_k$ ist eine Reihe $\ds\sum_{k=0}^{∞} c_k$ mit
+$$c_n :=\sum_{k=0}^{∞} a_k·b_{n-k}=a_0·b_n+a_1·b_{n-1}+a_2·b_{n-2}+…+a_n·b_0$$
 2-dimensionale Anordnung der $a_k·b_l$ 
-% Ed's heft
+SKIZZE% Ed's heft
+
 \sS{Satz}
 Seien $\ds\sum_{k=0}^{∞} a_k$ und $\ds\sum_{k=0}^{∞} b_k$ konvergente Reihen, mindestens eine von ihnen absolut konvergent. Dann konvergiert ihr Cauchy-Produkt $\ds\sum_{k=0}^{∞} c_k$. Wenn $\ds\sum_{k=0}^{∞} a_k = a, \ds\sum_{k=0}^{∞} b_k = b$ $\ds\sum_{k=0}^{∞} c_k = a·b$
-%
 \Bew{von 4.27}
-Sei $\sum a_k$ absolut konvergent, $\sum b_k$ konvergent, so zeige $\sum c_k\ $ konvergent, $\ds c_n :=\sum_{k=0}^{∞} a_k·b_{n-k}$
+Sei $\sum a_k$ absolut konvergent, $\sum b_k$ konvergent, so zeige $\sum c_k\ $ konvergent, $\ds c_n :=\sum_{k=0}^{∞} a_k·b_{n-k}$\\*[4pt]
 Schreibe:
 $s_n=a_0+…+a_n$\\*
 $t_n=b_0+…+b_n$\\*
@@ -91,7 +91,6 @@ Gegeben sei $\ds\e>0$. Wähle $N\in\N$ so dass $C·(|a_N|+|a_{N+1}|+|a_{N+2}|+�
 (geht weil $\sum|a_k|$ konvergiert)\\*
 und $|b-t_n|<\frac{\e}{2a^*}^{(2)}$ für alle $n\geq N$\\*
 (geht weil $b-t_n→0$ für alle $m→∞$)
-%
 \bem
 Wenn $a^*=0$ dann $a_n=0$ für alle k. Dann alles klar. Für alle $n\geq 2N$ gilt:
 $$|a_0(b-t_n)+a_1(b-t_{n-1})+…+a_n(b-t_0)|\leq |a_0|·|(b-t_n)|+|a_1|·|(b-t_{n-1})|+…+|a_n|·|(b-t_0)|$$
@@ -105,10 +104,10 @@ Also $\sum_n c_n^*$ ist konvergente Majorante von $\sum_n c_n$ \Rarr $\sum_n c_n
 \bsp
 Die Reihe $\ds\sum_{k=0}^{∞} a_k = 1-+\dfrac{1}{\sqrt{2}}+\dfrac{1}{\sqrt{3}}-\dfrac{1}{\sqrt{4}}+\dfrac{1}{\sqrt{5}}-…\quad $ konvergiert (Leibnitz)\\*
 Das Cauchy-Produkt der Reihe von $\sum a_k$ und $\sum a_k$ konvergiert nicht.
-%
+
 \sS{Beispiel}
 Für jedes $x\in\R$ ist die Exponentialreihe $\ds exp(x)=\sum_{k=0}^{∞} \frac{x^k}{k!}$ absolut konvergent.\\*
-Es gilt \fbox{$exp(x)-exp(y)=exp(x+y)$} Funktionalgleichung der Exponentialfunktion.
+Es gilt \fbox{$exp(x)·exp(y)=exp(x+y)$} Funktionalgleichung der Exponentialfunktion.
 %
 \bew
 Betrag von $\ds \sum_{k=0}^{∞} |\frac{x^k}{k!}|=\sum_{k=0}^{∞} \frac{|x|^k}{k!}=exp(|x|)$ konvergiert (bekannt, Quotientenkriterium)\\*
