@@ -1,0 +1,47 @@
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 17}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 06.12.2012}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 17}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 06.12.2012}
+% **************************************************
+\wdh
+\begin{itemize}
+\item{Komplexe Exponentialfunktion: $exp:\C→\C,\ z\mapsto exp(z)\ds \sum_{n\geq 0}\frac{z^n}{n!}$ stetig, Funktionalgleichung: $e^{z+w}=e^z·e^w, z,w\eC$
+Additionstheoreme: $cos(x+y)=Re(e^{i(x+y)})=Re(e^{i(x)}·e^{i(y)})=cos(x)·cos(y)-sin(x)·sin(y)$}
+\item{Sinus, Cosinus: $sin,cos:\R→\R,\ sin(x):=Im(e^{ix}),\ cos(x):=Re(e^{ix}),\ e^{ix}=cos(x)+i·sin(x)$}
+\item{Weil $exp:\C→\C$ stetig \Rarr\ $sin, cos:\R→\R$ stetig
+SKIZZE kreis
+\desc{Problem: zu zeigen:}{$\~{sin}$ und $sin$ aus Vorlesung\\*
+$\~{cos}$ und $cos$ aus Vorlesung}
+SKIZZE sinus}
+\end{itemize}
+% ende WDH
+
+% Satz 7.26
+
+
+\uS{Analytische Definition der Zahl \pi}
+\sS{Lemma}
+Für $0<x\leq 2$ gilt: $o<x-\frac{x^3}{6}<sin(x)<x$. SKIZZE sinus und so zeug\\*
+\bew
+Schreibe $sin(x)=\sum(-1)^na_n$ mit $a_n\dfrac{x^{2n+1}}{(2n+1)!}>0$\\*[4pt]
+Für $n\geq 1$ gilt: $$\frac{a_{n+1}}{a_n}=\dfrac{x^{2(n+1)+1}}{(2(n+1)+1)!}·\dfrac{(2n+1)!}{x^{2n+1}}=\frac{x^2}{(2n+3)·(2n+2)}<1$$
+also: $a_1>a_2>a_3>a_4>…$\\*
+Damit: $$x-sin(x)=\underset{>0}{(a_1-a_2)}+\underset{>0}{(a_3-a_4)}+\underset{>0}{(a_5-a_6)}…>0,\text{ d.h. $sin(x)<x$}$$
+$$sin(x)-(x-\frac{x^3}{6})=\underset{>0}{(a_2-a_3)}+\underset{>0}{(a_4-a_5)}…>0,\text{ d.h. $sin(x)>x-\frac{x^3}{6}$}$$
+Schließlich gilt für $0<x\leq 2$:
+$$0<x-\frac{x^3}{6}$}, \text{ denn } \frac{x^3}{6}$}=\frac{x·x^2}{6}\leq x·\frac{4}{6}<x$$\qed}
+%lemma
+
+\sS{Lemma}
+Die Funktion $cos:[0,2]→\R$ ist streng monoton fallend SKIZZE cos im intervall
+\bew
+Sei $2\geq x>x\geq 0$, dann gilt $cos(x)-cos(y)\underset{\overset{\uparrow}{Additionstheoreme}}{=}-2·sin(\frac{x+y}{2})·sin(\frac{x-y}{2})$\\*
+Weil $\frac{x+y}{2}, \frac{x-y}{2}\in (0,2]$ gilt mit Lemma 7.27\\*
+$cos(x)-cos(y)<0$, d.h. $cos(x)<cos(y)\qed$
