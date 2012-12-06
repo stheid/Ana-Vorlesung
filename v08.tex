@@ -33,14 +33,14 @@
 
 \sS{Satz Verdichtungslemma von Candy}
 Sei $(a_n)$ monoton fallende Nullfolge.\\*
-Die Reihe $\sum_{k=0}^{\infty} a_k$ konvergiert genau dann, wenn die verdichtete Reihe $\sum_{k=0}^{\infty} 2^k \cdot a_{2^k} = 1 · a_1 + 2 · a_2 + 4 \cdot a_4$ … konvergiert.
+Die Reihe $\Sum_{k=0}^{\infty} a_k$ konvergiert genau dann, wenn die verdichtete Reihe $\Sum_{k=0}^{\infty} 2^k \cdot a_{2^k} = 1 · a_1 + 2 · a_2 + 4 \cdot a_4$ … konvergiert.
 %
 \bsp
     $a_k = \frac{1}{k}\qquad (k \geq 1)$\\*
     $2^k \cdot a_{2^k} = 2^k \cdot \frac{1}{2^k} = 1$
 
-\sS{Satz:} % sss orginal, ich vermute es ist so
-$\sum_{k=0}^\infty \frac{1}{k}$ konvergent \equ $\sum_{k=0}^\infty 1$ konvergent (ist nicht der Fall.)
+\section*{Satz:} % Keine Nummerierung!
+$\Sum_{k=0}^\infty \frac{1}{k}$ konvergent \equ\ $\Sum_{k=0}^{∞} 1$ konvergent (ist nicht der Fall.)
 \bew
 Sei $b_n = \ds\sum_{k=2^n}^{2^{n+1}-1} a_k$\\*
 Für $\ds 2^n \leq k \leq 2^{n+1} - 1$ ist $\ds a_{2^n} \geq a_{k} \geq a_{2^{n+1} - 1} \geq a_{2^{n+1}}$ \Rarr $\ds 2^n · a_{2^n} \geq b_n \geq  2^n · a_{2^{n+1}}$\\*
@@ -48,8 +48,8 @@ Wenn $\ds \sum_{k \geq 0} 2^k · a_2^k$ beschränkt \Rarr $\ds \sum_{k \geq 0} b
 Hier immer beschränkt \equ konvergent\\*
 Wenn $\ds \sum_{k \geq 0} 2^k · a_k$ beschränkt \Rarr $\ds \sum_{k \geq 0} b_k$ beschränkt \Rarr $\ds \sum_{k \geq 0} 2^{k} · a_2^{k+1}$ beschränkt \equ $\ds \sum_{k \geq 0} 2^{k+1} · a_2^{k+1}$ beschränkt \equ $\ds \sum_{k \geq 0} 2^{k} · a_2^{k}$ beschränkt\\*
 Das zeigt den Satz.\\*
-\ssss{Anwendung:}
-\ssss{Erinnerung:}
+\sss{Anwendung:}
+\sss{Erinnerung:}
     Für $ x\geq 0$ und $a \in \R$ wird später $x^a \in R$ definiert\\*
     Wenn $\ds a = \frac{n}{m}$ mit $m \geq 1$ d.h. $a \in \Q$ dann $\ds x^a = \sqrt[m]{x^n}$.\\*
     Wenn $x > 1$ dann gilt: \\*
