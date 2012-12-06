@@ -77,7 +77,7 @@ $\zeta (6) = \sum_{k\geq1}\frac{1}{k^2}=\frac{\pi^6}{945}$\\*
 Frage: Für welche z ist $\zeta(z)=0$?
 
 \uS{Teilfolgen}
-\sS{Definition}
+\sS{Definition Teilfolge}
 Sei $(a_n)$ eine Folge reeller Zahlen.\\*
 Eine Teilfolge von $(a_n)$ ist eine Folge der Form $(a_{n_k})_{k \geq 0}$ wobei $n_0, n_1, n_2,…$ streng monoton wachsende Folge in $\N_0$ ist.\\*
 \bsp
@@ -117,29 +117,28 @@ Jede beschränkte Folge reeller Zahlen hat eine konvergernte Teilfolge.
 Es gibt ein monotone Teilfolge (Lemma 4.14)\\*
 Diese ist beschränkt \Rarr konvergent.
 
-\sS{Definition}
+\sS{Definition Cauchyfolge}
 Eine Folge reeller Zahlen $(a_n)_{n \geq 0}$ heißt Cauchyfolge wenn gilt:\\*
 Für jedes $\e > 0$ gibt es ein $N \in \N$ sodass für $m, n \geq N$ gilt: $|a_n - a_m| < \e$
 
 \sS{Satz}
 Eine Folge reeller Zahlen $(a_n)$ konvergiert genau dann, wenn sie eine Cauchyfolge ist.
 \bew
-$\Rarr$ Sei $a_n \to a$ für $n \to \infty$\\*
+\begin{description}
+\item["\Rarr"]{Sei $a_n \to a$ für $n \to \infty$\\*
 Gegeben sei $\e > 0$. Es gilt $N \in \N$ so dass $|a_n - a| < \frac{\e}{2}$ für $n \geq N$\\*
 Für $n, m \geq N$ gilt:\\*
 $|a_n - a_m| = |a_n - a + a - a_m| \leq |a_n - a| + |a - a_m| < \frac{\e}{2} + \frac{\e}{2} = \e$\\*
-$\Rarr (a_n)$ ist eine Cauchyfolge\\*
-$\Larr :$ Sei $(a_n)$ eine Cauchyfolge
+$\Rarr (a_n)$ ist eine Cauchyfolge\\*}
+\item["\Larr"]{Sei $(a_n)$ eine Cauchyfolge
 \sss{Behauptung:} $(a_n)$ ist beschränkt
 \bew
 Wähle $\e=1$ Es gibt $N\in\N$ mit $|a_n-a_m|<1$ für $m,n\geq N$\\*
 Sei $C=max\{|a_0|,|a_1|,|a_2| … |a_N|,|a_N|+1\}$\\*
 Dann $|a_n| \leq C$ für alle $\N$\\*
 $(n\geq N \Rarr |a_n-a_N| < 1 \Rarr |a_n|<|a_N|+1)$\\*
-Also ist $(a_n)$ beschränkt
-
-\sS{Lemma}
-\Rarr $(a_n)$ hat eine monotone Teilfolge $(a_{n_k})_{k\geq0}$ diese ist beschränkt \Rarr konvergent.\\*
+Also ist $(a_n)$ beschränkt\\*
+$\underset{Lemma}{\Rarr}\ (a_n)$ hat eine monotone Teilfolge $(a_{n_k})_{k\geq0}$ diese ist beschränkt \Rarr konvergent.\\*
 Sei $\ds \lim_{k→∞}(a_{n_k})$
 \sss{Behauptung}
 $a_n→a$ für $n→∞$\\*
@@ -148,18 +147,17 @@ Sei $\e>0$ gegeben. Es gibt $n\in\N$ so dass
 \item{$n,m\geq N \Rarr |a_n-a_m|< \frac{\e}{2}$}
 \item{$k\geq N \Rarr |a_{n_k}-a|< \frac{\e}{2}$}
 \end{enumerate}
-%
 Sei $k\geq N$
-%
 \bem
 Für jedes $k\in\N$ ist $n_k\geq k$\\*
 $\ds |a_k-a|=|a_{n_k}+a_{n_k}-a| \leq |a_k-a_{n_k}|+|a_{n_k}-a|<\frac{\e}{2}+\frac{\e}{2}=\e$\\*
-Also $a_k→a$ für $n→∞$\qed
-\sss{Umformulierung für Reihen:}
+Also $a_k→a$ für $n→∞$\qed}
+\end{description}
 
+\uS{Umformulierung für Reihen:}
 \sS{Satz (Cauchy-Kriterium für Reihen)}
 Eine reelle Reihe $\ds \sum_{k=0}^\infty a_k$ konvergiert genau dann, wenn gilt:\\*
-Für jedes $\e>0$ gibt es ein $N\in\N$ so dass für alle $\ds n,m\geq N, n\leq m |\sum_{k=n}^m|<\e$
+Für jedes $\e>0$ gibt es ein $N\in\N$ so dass für alle $\ds n,m\geq N,\ n\leq m$ $$\left|\sum_{k=n}^m\right|<\e$$
 %
 \sss{Beweis: Partialsummen}
 $\ds s_n=\sum_{k=0}^n a_k$\\*
