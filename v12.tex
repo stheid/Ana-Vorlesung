@@ -39,6 +39,7 @@ Dann gilt $x_n→x$ aber \ul{nicht} $f(x_1)→f(x)$\qed}
 \sss{Satz 6.5:}
 Wenn $f, g: D \to \R$ stetig in $x \in D$ dann auch $f + g,\ f · g$ und $\frac{1}{g}$ (falls $g(y) \neq 0$ für alle $y \in D$) \\*
 Und $a \cdot f$ für $a \in \R$
+
 \sS{Korollar} 
 Polynomfunktionen und rationale Funktionen sind stetig.
 \bew
@@ -48,6 +49,7 @@ Polynomfunktionen und rationale Funktionen sind stetig.
 \item{6.5 \Rarr{} Jede Funktion $f(x)=a_n·x^{n}+a_{n-1}·x^{n-1}+…+a_0,\ f:\R→\R$ ist stetig}
 \item{6.5 \Rarr{} wenn $f,g:\R→\R$ Polynomfunktionen, dann $\frac{f}{g}:D→\R$ stetig, wobei $D=\{x\eR|g(x)\neq 0\}$ (denn $\frac{f}{g}=f·\frac{1}{g})$\qed}
 \end{enumerate}
+
 \sS{Satz Stetigkeit der Komposition}
 Sei $f: C \to \R$, $g: D \to \R$ Funktionen mit $f(C) \subseteq D$. Wenn $f$ stetig in $x \in D$ und $g$ stetig in $f(x)$ dann ist:\\*
 $g \circ f: C \to \R$ stetig in $x$.\\*
@@ -57,6 +59,7 @@ $f$ stetig in $x \Rarr \ f(x_n) \to f(x)$\\*
 $g$ stetig in $f(x) \Rarr g(f(x_n)) \to g(f(x))$\\*
 d.h. $(g \circ f)(x_n) \to (g \circ f)(x)$\\*
 also ist $g \circ f: C \to \R$ stetig in $x$ \qed
+
 \sS{Definition (Konvergenz bei Funktionen)}
 Sei $D\subseteq\R$ und $f:D→\R$ Funktion\\*
 \begin{enumerate}
@@ -83,14 +86,17 @@ $$\lim_{x \to \infty} g(x) = \infty$$
 $$\lim_{x \to -\infty} g(x) = -\infty$$ 
 \bem{Umformulierung von Satz 6.4}
 Eine Funktion $f: D \to \R$ ist stetig in $a \in D\ \equ\ \ds\lim_{x \to a} f(x) = f(a)$
+
 \uS{Sätze über stetige Funktionen}
-\Def
+\sS{Definition Beschränktheit}
 Eine Funktion $f:D→\R$ heißt nach oben \ul{beschränkt} wenn die Menge $f(D)$ nach oben beschränkt ist, d.h. es gibt $C\eR$ mit $f(x)\leq C$ für alle $x\in D$\\*
 $f$ heißt nach unten beschränkt, wenn $f(D)$ nach unten beschränkt\\*
 $f$ heißt \ul{beschränkt}, wenn $f)$ nach oben und nach unten beschränkt\\*
-\sS{Definition}
-Sei $M \in \R$ eine nicht-leere Teilmenge wenn $M$ nach oben unbeschränkt, schreibe $sub(M) = \infty$ (Sprich: uneigentliches Supremum)\\*
-\Satz
+
+\sS{Definition uneigentliches Supremum}
+Sei $M \in \R$ eine nicht-leere Teilmenge. Wenn $M$ nach oben unbeschränkt, schreibe $sup(M) = \infty$ (Sprich: uneigentliches Supremum)\\*
+
+\sS{Satz}
 Sei $a,b\eR$ mit $a\leq b$ und $f:[a,b]→\R$ eine \ul{stetige} Funktion, dann ist $f$ beschränkt und nimmt ihr Maximum und Minimum an, d.h. es gibt $x_{min},x_{max}\in[a,b]$ mit: $f(x_{min})\leq f(x) \leq f(x_{max})$ für jedes $x\eR$
 \bsp
 \begin{enumerate}
@@ -107,15 +113,14 @@ Sei $y := sup\{ f(x)| x \in D\} \eR \cup \{ ∞ \}$\\*
 Wähle eine Folge $(x_n)$ mit $x_n\in D$ und $f(x_n)→y$ für $n→∞$\\*
 Bolzano-Weierstraß \Rarr{} Es gibt eine konvergente Teilfolge $(x_{n_k})_{k\geq 0}$ von $(x_{n})_{k\geq 0}$ \footnote{Die Folge $(x_n)$ ist beschränkt $D=[a,b]$}\\*
 Sei $x_{n_k}→x$ für $k→∞$ $a\leq x_n\leq b$ für alle $n$ \Rarr $a\leq x\leq b,\ x\in D=[a,b]$\\*
-%\einruck{Und dann gilt:}{$f()x_{n_k})→y$ für $k→∞$ (Teilfolge einer konvergenten Folge)\\*$f()x_{n_k})→f(x)$ für $k→∞$ weil f stetig}
-% EINRÜCKUNG 
-Und dann gilt: $f({x_n}_k) \to y$ für $k \to \infty$ (Teilfolge einer Konvergenten Folge)\\*
-\phantom{Und dann gilt: }$f({x_n}_k)) \to y$ für $k \to \infty$ weil $f$ stetig\\*
+\desc{Und dann gilt:}{$f({x_n}_k) \to y$ für $k \to \infty$ (Teilfolge einer Konvergenten Folge)\\*
+$f({x_n}_k)) \to y$ für $k \to \infty$ weil $f$ stetig}
 Also $y = f(x)$\\*
 Insbesondere $y \neq \infty$ also $f$ beschränkt\\*
 Für alle $x' \in D$ gilt $f(x') \leq sup \{f(D)\} = y = f(x)$\\*
 Setze $x_{max} := x$. Dann $f(x') \leq f(x_{max})$ für alle $x' \in D$\\*
 Anfang findet man $x_{min}$ \qed
+
 \sS{Satz (Zwischenwertsatz)}
 Sei $a\leq b$ und $f:[a,b]→\R$ stetig.\\*
 Wenn $y\eR$ zwischen $f(a)$ und $f(b)$  liegt, d.h. $f(a)\leq y \leq f(b)$ oder $f(a)\geq y \geq f(b)$\\*

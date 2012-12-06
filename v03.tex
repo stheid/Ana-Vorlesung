@@ -12,9 +12,9 @@
 % **************************************************
 %
 \wdh
-Ein Körper K ist eine Menge mit $+$ und $·$, sodass gewisse Eigenschaften erfüllt sind:
+Ein Körper $K$ ist eine Menge mit $+$ und $·$, sodass gewisse Eigenschaften erfüllt sind:
 \bsp
-$\ds\Q = \left\{\frac{a}{b} | a \in \Z, b \neq 0\right\}$\\*
+$\ds\Q = \left\{\frac{a}{b} \mid a \in \Z, b \neq 0\right\}$\\*
 $F_1 = \{0, 1\} \qquad 1 + 1 = 0$\\*
 \notat{Setze $a^n = \underbrace{ a · a · a · a· … · a}_{n-Faktoren}$\\*
 $\left.\begin{array}{lcc}
@@ -27,22 +27,22 @@ $a^{n+m} = a^n \cdot a^m$\\*
 $a^{n \cdot m} = (a^{n})^m$\\*
 \bew
 Übung
-%
-\sS{Definition}
+
+\sS{Definition angeordneter Körper}
     Ein angeordneter Körper ist ein Körper $K$ für dessen Elemente eine "Kleiner als Beziehung" $<$ definiert ist, so dass folgende Eigenschaften erfüllt sind:\\*
     \begin{enumerate}
     \item{Für alle $a, b \in K$ gilt genau eine von drei Notationen:\\*
-    $a < b oder a = b oder a > b$}
+    $a < b$ oder $a = b$ oder $a > b$}
     \item{Für alle $a, b, c \in K$ gilt wenn $a < b$ und $b < c$ dann $a < c$\\* (Transitivität)}
     \item{Für alle $a, b, c \in K$ gilt wenn $a < b$ dann $a + c < b + c$}
     \item{für $a, b, c \in K$ gilt, wenn $a < b$ und $c \neq 0$ dann $a \cdot c < b \cdot c$}
     \end{enumerate}
 	Weitere Beziehungen:\\*
-	$a > b$ heißt $b < a$\\*
+	$a > b$ heißt $b < a$
 	\begin{enumerate}
 	\item{Wenn $a < 0$ dann $-a > 0$:\\*
 	$a < 0 \Rarr a + (-a) > 0 + (-a) \Rarr 0 > -a$}
-	\item{Für jedes $a \in K $ gilt wenn $a \neq 0$, dann $a^2 > 0$\\*
+	\item{Für jedes $a \in K $ gilt wenn $a \neq 0$, dann $a^2 > 0$
 	\begin{itemize}
 	\item[(a)]{$\begin{array}{ccc}
 	a &>& 0\\*
@@ -60,39 +60,39 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	Sei $K$ ein Angeordneter Körper:
 	$$0 < 1 \Rarr 1 < 1 + 1 \Rarr 1 + 1 < 1 + 1 + 1 \text{ etc.}$$
 	$$0 < 1 < 1 + 1 < 1 + 1 +1 \text{ etc.}$$
-	Für $n \in \N$ setze $underbrace{n:= 1 + 1 + 1 + … + 1}_{n-Faktoren}$\\*
-	Dann $0 < 1 < 2 < 3 … $ in $K$
+	Für $n \in \N$ setze $\underbrace{n:= 1 + 1 + 1 + … + 1}_{n-Faktoren}$\\*
+	Dann $0 < 1 < 2 < 3 … $ in $K$\\*[4pt]
 	\ul{Folge:} Verschiedene natürliche Zahlen bleiben in $K$ verschieden.\\*
 	%Falscher Pfeil, verbesserung kommt noch
 	Fasse $\N$ als Teilmenge von $K$ auf.\\*
-	Dann $$\Z = \left\lbrace a - b | a, b \in N \right\rbrace \subseteq K$$\\*
-	\phantom{Dann }$$Q = \left\lbrace \frac{a}{b} | a, b \in N\right\rbrace \subseteq K$$\\*[8pt]
+	\desc{Dann}{$\ds \Z = \left\lbrace a - b \mid a, b \in N \right\rbrace \subseteq K$\\*[4pt]
+	$\ds \Q = \left\lbrace \frac{a}{b} \mid a, b \in N\right\rbrace \subseteq K$}
 	Insbesondere ist $K$ unendlich.\\*[8pt]
 	z.B. hat $F_z$ keine Anordnung.
-\sS{Definition}
+
+\sS{Definition Absolutbetrag}
 	Sei $K$ ein angeordneter Körper mit $a \in K$\\*
 	Der Absolutbetrag von $a$ ist definiert als \\*
-	$|a| = \left\lbrace \begin{array}{lll}
-	a\text{ wenn }a > 0\\*
-	-a\text{ wenn }a < 0
+	$|a| = \left\lbrace \begin{array}{rcr}
+	a&\text{ wenn }&a > 0\\*
+	-a&\text{ wenn }&a < 0
 	\end{array}\right.$
-\sS{Satz}
+
+\sS{Satz (Dreiecksungleichung)}
 	Sei $K$ ein angeordneter Körper $a, b, c \in K$\\*
 	Dann gilt:
 	\begin{enumerate}
 	\item{$a = 0$ wenn $|a| = 0$}
 	\item{$-|a| \leq a \leq |a|$}
-	\item{Dreiecksungleichung:
-	$$|a + b| \leq |a| + |b|$$}
-	\item{untere Dreiecksungleichung:
-	$$|a - b| \geq |a| - |b|$$}
+	\item{Dreiecksungleichung: $\ds |a + b| \leq |a| + |b|$}
+	\item{untere Dreiecksungleichung: $\ds |a - b| \geq |a| - |b|$}
 	\end{enumerate}
 \bew
 	\begin{enumerate}
 	\item{klar.}
 	\item{wenn $a \geq 0$:\\*
 	$|a| \geq 0$\\*
-	$\Rarr -|a| \leq 0 \leq a \leq |a|$\\*
+	$\Rarr\ -|a| \leq 0 \leq a \leq |a|$\\*
 	wenn $a \leq 0$:
 	$-|a| \leq a \leq 0 \leq |a|$}
 	\item{Es gilt: $-|a| \leq a \leq |a|$, $-|b| \leq b \leq |b|$\\*
@@ -101,9 +101,10 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	wenn $a + b < 0$\\*
 	$|a + b| = -(a + b) = (-a) + (-b) \leq |a| + |b|$}
 	\item{$(a - b) + b = a$\\*
-	$\Rarr |a| = |(a - b) + b| \leq |a - b| + b$\\*
+	$\Rarr\ |a| = |(a - b) + b| \leq |a - b| + b$\\*
 	$|a - b| \leq |a - b|$} % ??? Noch mal gegenlesen, mathematisch schwierig.
 	\end{enumerate}
+
 \sS{Satz Bernoulli'sche Ungleichungen}
 	Sei $K$ ein angeordneter Körper $a, b \in K, a > -1$ und $n \in \N \{0, 1, 2, 3, 4, …\}$.\\*
 	Dann gilt:
@@ -118,9 +119,10 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 		weil $1 + a > 0$\\*
 		$= 1 + a + n \cdot a + n \cdot a^2$\\*
 		$= 1 + (n + 1) \cdot a + n \cdot a^2$\\*
-		weil $a^2 \geq 0 \Rarr n \cdot a^2 \geq 0$
+		weil $a^2 \geq 0\ \Rarr\ n \cdot a^2 \geq 0$
 	}
-\sS{Definition}
+
+\sS{Definition Beschränktheit}
 	Sei $K$ ein angeordneter Körper, $M \subseteq K$ eine Teilmenge, $a \in K$.\\*
 	\begin{enumerate}
 	\item{$M \leq a$ bedeutet: $x \leq a$ für jedes $x \in M$}
@@ -129,35 +131,36 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	\item{$M$ heißt nach oben beschränkt wenn $M$ eine obere Schranke hat.\\*
 	Analog: nach unten beschränkt wenn $M$ eine untere Schranke hat.}
 	\item{$a$ heißt Maximum von $M$, wenn $M \leq a$ \ul{und} $a \in M$. $a = max(M)$\\*
-		$a$ heißt Minimum von $M$, wenn $M \geq a$ \ul{und} $a \in M$. $a = min{M}$}
+		$a$ heißt Minimum von $M$, wenn $M \geq a$ \ul{und} $a \in M$. $a = min(M)$}
 	\end{enumerate}
 \bew
 	Sei $a, b \in M$\\*
 	$M \leq a, M \leq b$\\*
-	Dann $b \leq a$ und $b \leq a \Rarr a = b$ \qed\\*
+	Dann $b \leq a$ und $b \leq a\ \Rarr\ a = b$ \qed
 \bsp
 	$K = \Q$
 	\begin{enumerate}
 	\item{$M = \N$\\*
 	Sei $a \in \Q$\\*
-	$a \leq N \equ a \leq n$ für alle $n \in N$\\*
-	\phantom{$a \leq \N $} $\equ a \leq 1$\\*
+	\desc{$a \leq N$}{$\equ a \leq n$ für alle $n \in N$\\*
+	$\equ a \leq 1$}
 	Wenn $N$ nach unten beschränkt $1 = min(N)$}
-	\item{$M = \left\lbrace -\frac{1}{n} | n \in \N \right\rbrace \qquad 0 \notin M$\\*
+	\item{$M = \left\lbrace -\frac{1}{n} | n \in \N \right\rbrace \qquad 0 \notin M$
 	\begin{tabbing}
-	$-1 = min(M)$ \= $\Rarr M$ ist nach unten beschränkt.\\*
-	$M \leq 0$	\> $\Rarr M$ ist nach oben beschränkt.\\*
+	$-1 = min(M)$ \= $\Rarr\ M$ ist nach unten beschränkt.\\*
+	$M \leq 0$	\> $\Rarr\ M$ ist nach oben beschränkt.\\*
 	\end{tabbing}
 	$M$ hat kein Maximum.\\*
 	Sei $a \in M$ dann $a = -\frac{1}{n}, n \in N, -\frac{1}{n + 1} \in M$\\*
-	$n + 1 > n \Rarr \frac{1}{n + 1} < \frac{1}{n} \Rarr -\frac{1}{n + 1} > -\frac{1}{n}$\\*
+	$n + 1 > n\ \Rarr\ \frac{1}{n + 1} < \frac{1}{n}\ \Rarr\ -\frac{1}{n + 1} > -\frac{1}{n}$\\*
 	$M \nleq -\frac{1}{n}$ $a$ ist keine obere Schranke.}
-	\item{$M = \left\lbrace -\frac{1}{n} | n \in \N\right\rbrace \cup \{ 0 \}$\\*
+	\item{$M = \left\lbrace -\frac{1}{n} \mid n \in \N\right\rbrace \cup \{ 0 \}$\\*
 	$min(M) = -1$\\*
 	$max(M) = 0$}
 	\item{$M = \emptyset$ hat weder ein $min(M)$ noch ein $max(M)$\\*
 	Jedes $a \in \Q$ erfüllt $a \leq M$ und $M \leq a$}
 	\end{enumerate}
+
 \sS{Satz}
 	\begin{enumerate}
 	\item{Sei $K$ ein angeordneter Körper.\\*
@@ -172,9 +175,10 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	$\{1, 2, 3, 4, 5, … n\}$, endlich aber nicht leer.\\*
 	Dann $min(\{1, 2, 3, 4, 5, … n\} \cap M) = min(M)$ \qed}
 	\end{enumerate}
-\sS{Definition: Vollständigkeit}
+
+\sS{Definition Infimum Supremum}
 	Sei $K$ ein angeordneter Körper und $M \subseteq K$, $a \in K$\\*
-	$a \ heißt kleinste obere Schranke von M oder Supremum.$
+	$a$ heißt kleinste obere Schranke von $M$ oder Supremum.
 	\begin{enumerate}
 	\item{$M \leq a$}\\*[6pt]
 	und
@@ -186,18 +190,16 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	und
 	\item{Kein $b \in M$ mit $a < b$ erfüllt $b \leq M$}
 	\end{enumerate}
-\notat{
-	$a = sup(M)$\\*
-	$a = inf(M)$}
+\notat{$a = sup(M)$\\*$a = inf(M)$}
 \bem
-	Wenn $a = max(M) \Rarr a = sup(M)$ 
+	Wenn $a = max(M)\ \Rarr\ a = sup(M)$ 
 \bew
 	Sei $a, b \in M$ und $a \nleq b$\\*
-	$\Rarr M \nleq b \Rarr a$ ist Supremum
+	$\Rarr\ M \nleq b\ \Rarr\ a$ ist Supremum
 \bem
 	Wenn ein Supremum existiert, ist es eindeutig.
 \bew
-	$a, b$ sind Supremum von M\\*
-	$M \leq a$, $M \leq b \Rarr a \leq b $ und $b \leq a \Rarr a = b$ \qed
+	$a, b$ sind Supremum von $M$\\*
+	$M \leq a$, $M \leq b\ \Rarr\ a \leq b $ und $b \leq a\ \Rarr\ a = b$ \qed
 \bsp
-	$sup(\{ -\frac{1}{n} | n \in \N \})$
+	$sup(\{ -\frac{1}{n} \mid n \in \N \})$

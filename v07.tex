@@ -3,8 +3,7 @@
 %Kopfzeile links bzw. innen
 \fancyhead[L]{\calligra\Large Vorlesung Nr. 7}
 %Kopfzeile rechts bzw. außen
-\fancyhead[R]{\calligra\Large 29.10.2012}
-}
+\fancyhead[R]{\calligra\Large 29.10.2012}}
 %Kopfzeile links bzw. innen
 \fancyhead[L]{\calligra\Large Vorlesung Nr. 7}
 %Kopfzeile rechts bzw. außen
@@ -12,7 +11,7 @@
 %
 % set chapters end sections
 %\setcounter{chapter}3
-%
+\wdh
 Sei $(n_n)$ eine Folge reeler Zahlen.\\*
 Die Reihe mit den Gliedern $a_n$ ist die Folge $s_n = a_0 + a_1 + ... + a_n)_\nN$ \\*
 Bezeichnung: $\ds\sum_{k=1}^{\infty} a_k$\\*
@@ -36,16 +35,17 @@ Produkte von Reihen sind komplizierter.\\*
 Primzahlen-Vermutung: es gibt ∞ viele Primzahlen $p$ so dass $p + 2$ auch Prim ist.\\*
 Goldbach-Vermutung: Jede gerade natürliche Zahl ist die Summe von zwei Primzahlen.\\*
 \chapter{Konvergenzsätze}
-Erinnerung: \R{} ist Dedekind-vollständig. Das heißt, jede nicht-leere nach oben beschränkte Teilmenge $M \subset R$ hat eine kleinste obere Schranke $sup(M)$\\*
-\phantom{XXX}\Rarr{} Existenz von Grenzwerten\\*
+Erinnerung: \R{} ist Dedekind-vollständig. Das heißt, jede nicht-leere nach oben beschränkte Teilmenge $M \subset R$ hat eine kleinste obere Schranke $sup(M)$\ \Rarr{} Existenz von Grenzwerten
+
 \sS{Definition Monotone Folgen}
-Eine Folge $(a_n)_{n \geq 0}$ heißt monoton wachsend, wenn $a{n + 1} \geq a_n$ für alle $n \in \N_0$\\*
-\phantom{Eine Folge $(a_n)_{n \geq 0}$ heißt}monoton fallend, wenn $a{n + 1} \leq a_n$ für alle $n \in \N{}_0$\\*
-\phantom{Eine Folge $(a_n)_{n \geq 0}$ heißt}streng monoton wachsend, wenn $a{n + 1} > a_n$ für alle $n \in \N{}_0$\\*
-\phantom{Eine Folge $(a_n)_{n \geq 0}$ heißt}streng monoton fallend, wenn $a{n + 1} < a_n$ für alle $n \in \N_0$
+\desc{Eine Folge $(a_n)_{n \geq 0}$ heißt}{monoton wachsend, wenn $a{n + 1} \geq a_n$ für alle $n \in \N_0$\\*
+monoton fallend, wenn $a{n + 1} \leq a_n$ für alle $n \in \N{}_0$\\*
+streng monoton wachsend, wenn $a{n + 1} > a_n$ für alle $n \in \N{}_0$\\*
+streng monoton fallend, wenn $a{n + 1} < a_n$ für alle $n \in \N_0$}
 \bsp
 $a_n = n$ ist streng monoton wachsend\\*
 $a_n = \frac{1}{n}$ ist streng monoton fallend\\*
+
 \sS{Satz}
 \begin{enumerate}
 \item{Jede nach oben beschränkte monoton wachsende Folge $(a_n)_{\nN}$ ist konvergent\\*
@@ -69,13 +69,16 @@ $\Rightarrow a - \epsilon < a_N \leq a_n \leq a \Rightarrow |a_n -a| < \epsilon$
 Somit $a_n \to a$ für $n \to \infty$\phantom{XXX}$q.e.d.$\\*
 Monoton fallend: analog}
 \end{enumerate}
+
 \uS{Reihen mit nicht-negativen Gliedern}
 \bem
 Sei $\ds\sum\limits_{k=0}^{\infty} a_k$ Reihe reeller Zahlen\\*
 Die Folge der Partialsummen ist monoton wachsend $\Leftrightarrow a_n \geq 0$ für $n \geq 1$
-\Satz
+
+\sS{Satz}
 Eine Reihe $\ds\sum\limits_{k=0}^{\infty} a_k$ mit $a_k \geq 0$ für ale $k$ konvergiert, genau dann, wenn sie beschränkt ist (Das heißt die Folge der Partialsummen ist beschränkt)\qed
-\Def
+
+\sSDef
 Sei $\displaystyle\sum\limits_{k=0}^{\infty} a_k$ eine Reihe mit $a_n \geq 0$ für alle $k$\\*
 Eine Reihe $\ds\sum\limits_{k=0}^{\infty} b_k$ heißt \ul{Majorante} von $\ds\sum a_k$ wenn $a_k \leq b_k$ für alle $k$
 \sS{Satz Majorantenkriterium}
