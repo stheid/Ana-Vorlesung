@@ -65,7 +65,7 @@ $\ds \lim_{n\to \infty} n^a = \infty \Rarr \lim_{n \to \infty} \frac{1}{n^a} = 0
 Bilde $\ds 2^n · a_{2^n} = 2^n · \frac{1}{(2^n)^a} = 2^n · 2^{-n · a} = 2^{n(1-a)} = (2^{1-a})^n = x^n$\\*
 mit $x:=2^{1-a}$\\*
 Erhalte:
-$\ds \sum_{k=1}^\infty \frac{1}{k^a}$ konvergiert $\equ \ds \sum_{k=0}^\infty x^k$ konvergiert $\equ |x|<1 \equ x<1 \equ 2^{1-a} <1$\\*
+$\ds \sum_{k=1}^\infty \frac{1}{k^a}$ konvergiert $\equ\ \ds \sum_{k=0}^\infty x^k$ konvergiert $\equ |x|<1 \equ x<1 \equ 2^{1-a} <1$\\*
 $\equ 1-a<0 \equ a>1$\qed\\*[4pt]
 Beziehung:
 $\ds \sum_{k=1}^\infty\frac{1}{k^a}=\zeta (a)$ für $a>1$\\*
@@ -92,7 +92,7 @@ Wenn $a_n \to a$ für alle $n \to \infty$ dann konvergiert jede Teilfolge von $(
 Jede Folge reeller Zahlen $(a_n)_{n\geq 0}$ hat eine monotone Teilfolge.\\*
 %
 \bew
-Wir nennen $n\in \N_0$ \underline{extrem} wenn $a_n \geq a_m$ für alle $m \geq m$\\*
+Wir nennen $n\in \N_0$ \underline{extrem} wenn $a_n \geq a_m$ für alle $m \geq n$\\*
 Unterscheide zwei Fälle:\\*
 \begin{itemize}
     \item{Es gibt unendlich viele extreme $n \in \N$\\*
@@ -101,7 +101,7 @@ Dann $a_{n_0} \geq a_{n_1} \geq a_{n_2} …$\\*
 Weil $n_0$ extrem … weil $n_1$ extrem.\\*
 → monoton fallende Teilfolge gefunden}
     \item{Es gibt nur endlich viele extreme $n$\\*
-Wähle $n_0 \in \N$ s.d. gilt: $m \geq n \Rarr m$ nicht extrem.\\*
+Wähle $n_0 \in \N$ s.d. gilt: $m \geq n_0\ \Rarr\ m$ nicht extrem.\\*
 $n_0$ nicht extrem $\Rarr$ es gibt $n_1 \geq n_0$ mit $a_{n_1} > a_{n_0}$ insbesondere $n_1 > n_0$\\*
 $n_1$ \phantom{nicht extrem }$\Rarr$ \phantom{es gibt }$n_2 \geq n_1$ mit $a_{n_2} > a_{n_1}$ insbesondere $n_2 > n_1$\\*
 $n_2$ \phantom{nicht extrem }$\Rarr$ \phantom{es gibt }$n_3 \geq n_2$ mit $a_{n_3} > a_{n_2}$ insbesondere $n_3 > n_2$\\*
