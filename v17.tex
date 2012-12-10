@@ -22,13 +22,16 @@ Additionstheoreme: $cos(x+y)=Re(e^{i(x+y)})=Re(e^{i(x)}·e^{i(y)})=cos(x)·cos(y
     \draw[->] (-1.2,0) -- (1.2,0) node[right] {$x$};
     \draw[->] (0,-1.2) -- (0,1.2) node[above] {$i$};
 	\draw (0,0) circle (1cm);
-	\draw[thick, blue](0,0.1) -- (0.5, 0.1);
-	\draw[thick, red](0.5,0) -- (0, 0.5);
-	\draw[thick, black](0,0) -- (0.5, 0.5);
-	\draw[decorate, decoration=brace] (0, 0) -- (0.5, 0.5);
+	\draw[thick, blue](0,0.8775) -- (0.4794, 0.8775);
+	\draw[thick, red](0.4794,0) -- (0.4794, 0.8775);
+	\draw[thick, black](0,0) -- (0.4794, 0.8775);
+	\draw[decorate,decoration=brace,red] (0.4794, 0.8775) -- (0.4794,0);
+	\draw[decorate,decoration=brace,blue] (0,0.8775) -- (0.4794, 0.8775);
+	\draw (0.4794, 0.43) node[right, red] {$sin(x)$};
+	\draw (0.24, 0.8775) node[above, blue] {$cos(x)$};
 \end{tikzpicture}
-\desc{Problem: zu zeigen:}{$\overset{~}{sin}$ und $sin$ aus Vorlesung\\*
-$\overset{~}{argument}{cos}$ und $cos$ aus Vorlesung}
+\desc{Problem: zu zeigen:}{$\~{sin}$ und $sin$ aus Vorlesung\\*
+$\~{cos}$ und $cos$ aus Vorlesung}
 \tikz[scale=2,domain=-0.49:2.5, samples=200,prefix=plots/,smooth]{
       \draw[very thin, color=gray!50] (-0.49,-0.25) grid (2.49,2.49);
       \draw[->] (-0.5,0) -- (2.5,0) node[right] {$x$};
@@ -56,7 +59,15 @@ $$cos(x)-cos(y)=2sin \ldots$$
 
 \uS{Analytische Definition der Zahl \pi}
 \sS{Lemma}
-Für $0<x\leq 2$ gilt: $o<x-\frac{x^3}{6}<sin(x)<x$. SKIZZE sinus und so zeug\\*
+Für $0<x\leq 2$ gilt: $o<x-\frac{x^3}{6}<sin(x)<x$.\\*
+\begin{tikzpicture}[domain=-2:7,prefix=plots/, smooth]
+    \draw[very thin,color=gray] (-2,-1.2) grid (7,1.2);
+    \draw[->] (-2,0) -- (7,0) node[right] {$x$};
+    \draw[->] (0,-1.2) -- (0,1.2) node[above] {$i$};
+	\draw[color=red] plot[id=sin1] function{sin(x)} node[above, pos=0.5] {\footnotesize $f_1(x) = sin(x)$};
+	\draw[color=blue] plot[id=cos1] function{cos(x)} node[below, midway] {\footnotesize $f_2(x) = cos(x)$};
+\end{tikzpicture}
+
 \bew
 Schreibe $sin(x)=\sum(-1)^na_n$ mit $a_n\dfrac{x^{2n+1}}{(2n+1)!}>0$\\*[4pt]
 Für $n\geq 1$ gilt: $$\frac{a_{n+1}}{a_n}=\dfrac{x^{2(n+1)+1}}{(2(n+1)+1)!}·\dfrac{(2n+1)!}{x^{2n+1}}=\frac{x^2}{(2n+3)·(2n+2)}<1$$
