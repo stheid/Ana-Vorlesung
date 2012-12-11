@@ -13,7 +13,7 @@
 %
 %\setcounter{chapter}{4}
 \chapter{Abbildungen und Funktionen}
-\sS{Definition}
+\sS{Definition Abbildung}
 Seien $A, B$ Mengen. Eine Abbildung von $A$ nach $B$ ist eine Vorschrift, die jedem Element von $A$ ein Element von $B$ zuordnet.\\*
 \notat{$f: A \to B,\  a \mapsto f(a) \  a\in A$}
 %
@@ -26,7 +26,7 @@ $B$ heißt Wertebereich von $f$
 $P \mapsto$ Geburtsjahr von $P$}
 %
 \item{$f:\R → \R, \ f(x)=x^2$\\*
-$g:\R→\R_{\geq 0}=\{x\in\R|x\geq 0\}, \ g(x)=x^2$\\*
+$g:\R→\R_{\geq 0}=\{x\in\R\mid x\geq 0\}, \ g(x)=x^2$\\*
 $h: \R_{\geq 0} \to \R_{\geq 0} \ h(x) = x^2$}
 \bem 
 \item{
@@ -34,7 +34,7 @@ $f,g,h$ sind verschieden\\*
 Sei $M$ Menge. Die Identität von $M$ ist die Abbildung $id_{M}:M→M, \ id_M(x)=x$}
 \end{enumerate}
 
-\sS{Definition}
+\sS{Definition In-/Sur-/Bijektivität}
 Eine Abbildung $f: A \to B$ heißt:
 \begin{enumerate}
 \item{\ul{injektiv} wenn gilt: Für alle $a, a' \in A$ mit $f(a) = f(a')$ ist auch $a = a'$}
@@ -63,7 +63,7 @@ $f$ ist $\left\{
 $f,g,h$ wie oben
 \begin{description}
 \item[f]{
-\hspace{6mm}nicht surjektiv: es gibt kein $a\in\R$ mit $f(a)=-1$\\*
+\hspace{5.5mm}nicht surjektiv: es gibt kein $a\in\R$ mit $f(a)=-1$\\*
 nicht injektiv: $f(-2)=4=f(2), 2\neq -2.$}
 %
 \item[g]{
@@ -71,21 +71,19 @@ nicht injektiv: $f(-2)=4=f(2), 2\neq -2.$}
  ist nicht injektiv (wie $f$)}
 %
 \item[h]{
-\hspace{5mm}surjektiv wie g. $(\sqrt{b} \geq 0)$\\*
+\hspace{5mm}surjektiv wie g. $\left(\sqrt{b} \geq 0\right)$\\*
 injektiv, denn: Wenn $a, a' \geq 0$ und $a^2 = (a')^2$ dann $a = a'$ also $h$ bijektiv.}
 \end{description}
 
-\sS{Definition}
+\sS{Definition Komposition}
 Seien $f:A→B$, $g:B→C$ Abbildungen\\*
 Die Komposition von $f$ und $g$ ist die Abbildung\\*
 $g \circ  f: A→C$, $(g \circ f)(a):=g(f(a))$\\*
-Sprich $\circ$ "nach"
-%
+Sprich $\circ$: "nach", "verkettet"
 
 \sS{Satz} 
 Eine Abbildung $f: A \to B$ ist bijektiv \equ \ es gibt eine Abbildung $g: B \to A$ mit $f \circ g = id_B$\\*
-(d.h. f(g(b)) = b für alle $b \in B$\\*
-      g(f(a)) = a für alle $a \in A$)\\*
+(d.h. $f(g(b)) = b$ für alle $b \in B$ $g(f(a)) = a$ für alle $a \in A$)
 %
 \sss{Definition} %ohne nummer
 Wenn $f:A→B$ bijektiv ist, heißt die eindeutige Abbildung $g:B→A$ wie oben die Umkehrabbildung (inverse Abbildung) von $f$
@@ -117,7 +115,7 @@ Bewiesen 5.12
 \item{$f: \R_{\geq 0} \to \R_{\geq 0}, f(x) = x^k$ bijektiv ($k \geq 1$)\\*
 Die Umkehrabbildung $f^{-1}$ heißt k-te Wurzelabbildung $f^{-1}(x) = \sqrt[k]{x}$ }
 %
-\item{exp: $\R→\R_{>0}$ $exp(x) = \sum_{k=0}^{\infty}$ (Absolutkonvergente Reihe) ist bijektiv. Die Umkehrabbildung heißt Logarithmus. bew.
+\item{exp: $\R→\R_{>0}$ $exp(x) = \sum_{k=0}^{\infty}$ (absolut konvergente Reihe) ist bijektiv. Die Umkehrabbildung heißt Logarithmus. bew.
 $log = exp()^{-1} \R_{\geq } \to \R_a$ }
 \end{itemize}
 
@@ -138,17 +136,15 @@ $$f^{-1}(\{1,-2,4\})=\{1,-1,2,-2\}=f^{-1}(\{1,4\})$$
 $$f^{-1}(\{9\})=\{3,-3\}\qquad f^{-1}(\{-5\})=\emptyset$$
 
 \uS{Funktionen}
-\sS{Definition}
+\sS{Definition Funktion}
 Sei $D\subseteq\R$ Teilmenge. Eine reelle Funktion auf $D$ ist eine Abbildung $f:D→\R$\\*
 %
-Der \ul{Graph} von $f$ ist die Menge $\Gamma_f = \/(x, f(x) | x \in D \}$) \\*
+Der \ul{Graph} von $f$ ist die Menge $\Gamma_f = \{(x, f(x)\mid x \in D \}$\\*
 $ \Gamma_f \subseteq D \times \R$ 
 %
 \bem Oft ist $D$ ein Intervall
 %
 %\sS{Definition Intervalle}
-\begin{wrapfigure}{r}{0.2\textwidth}
-  \begin{center}
   \tikz[scale=0.5,domain=-3.5:3.5, samples=200,prefix=plots/,smooth]{
       \draw[very thin, color=gray!50] (-3.5,-3.5) grid (3.5,8.9);
       \draw[->] (-3.5,0) -- (3.5,0) node[right] {$x$};
@@ -159,8 +155,6 @@ $ \Gamma_f \subseteq D \times \R$
       \draw[color=cyan] plot[id=exp] function{exp(x)} node [below=13.5cm] {\footnotesize $f_2(x) = exp(x)$};
       \draw[color=green!60!black,const plot] plot[id=gaussklammer] function{floor(x)} node[below] {\footnotesize $f_5(x) = [x]$};
   }
-  \end{center}
-\end{wrapfigure}
 seien $a, b \in \R$ \\*
 $[a, b] = \{x \in \R| a \leq x \leq b\}$ (abgeschlossen)\\*
 $(a, b] = \{x \in \R| a < x \leq b\}$ (halboffen)\\*
@@ -195,27 +189,26 @@ $[-1,2] = -2$}
 \item{Sei $h:\R→\R$ definiert durch $h(x)=\begin{cases}0\ wenn\ x\in\Q\\* 1\ wenn\ x\notin\Q\end{cases}$\\*
 $h(\sqrt{2}) = 1, h (\frac{3}{7}) = 0$}
 \end{enumerate}
-%
+
 \sS{Definition (Rechnen mit Funktionen)}
 Sei $D \subseteq \R , \ f,g: D→\R$ Funktionen auf D.\\*
 Definiere
 \begin{itemize}
 \item{$f+g: D \to \R$ durch $(f + g)(x) := f(x) + g(x)$}
-\item{$(f \cdot  g) (x) = f(x) \cdot g(x)$}
+\item{$(f \cdot  g) (x) := f(x) \cdot g(x)$}
 \item{Für $a\in\R$ setze $a·f: D→\R, (a·f)(x):=a·f(x)$}
 \item{Angenommen, $f(x) \neq 0$ für alle $x \in D$ \\*
-$$\frac{1}{f}: D \to R, \frac{1}{f}(x) := \frac{1}{f(x)} = f(x)^{-1}$$
+$$\frac{1}{f}: D \to \R, \frac{1}{f}(x) := \frac{1}{f(x)} = f(x)^{-1}$$
 \ul{Vorsicht} nicht $\frac{1}{f}$ mit Umkehrbild oder Urbild verwechseln}
 \end{itemize}
-%
-\sS{Definition}
+
+\sS{Definition Polynomfunktion}
 \begin{itemize}
 \item{Eine \ul{Polinomfunktion} ist eine Funktion der Form\\*
 $f: \R → \R,\ f(x) = a_n x^n+a_{n-1}x^{n-1}+…+a_0=\ds\sum_{k=0}^n a_k x^k $\\*
-wobei $a_0,…,a_n \in \R$ fest}s
-%
-\item{Seien $f, g : \R \to \R $ Polymonfunktionen
-Sei $D = {x \in \R | g(x) \geq 0}\leadsto \dfrac{f}{g} : D \to , Rx \mapsto \frac{f(x)}{g(x)}$
+wobei $a_0,…,a_n \in \R$ fest}
+\item{Seien $f, g : \R \to \R $ Polynomfunktionen
+Sei $D = \{x \in \R \mid g(x) \geq 0\}\leadsto \dfrac{f}{g} : D \to , Rx \mapsto \frac{f(x)}{g(x)}$
 Solche Funktionen heißen rationale Funktionen.
 \bsp
 $f:\R\bs\{0,1\}→\R, \ f(x)=\dfrac{x^7+5x^2}{x(x-1)}$}

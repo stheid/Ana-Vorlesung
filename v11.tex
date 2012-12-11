@@ -23,7 +23,7 @@ Sei $D\subseteq\R$ Teilmenge. Eine Funktion auf $D$ ist eine Abbildung $f:D→\R
 \bem
 Eine Funktion $(a_n)_{n\geq 0}$ reeller Zahlen ist eine Abbildung $a:\N_0→\R$ d.h. eine Funktion auf $\N_0$
 
-\sS{Definition}
+\sS{Definition Monotonie}
 Sei $D\subseteq\R$. Eine Funktion  $f:D→\R$ heißt:
 \begin{enumerate}
 \item{\ul{monoton wachsend} wenn gilt:\\*
@@ -44,11 +44,11 @@ Wenn $f$ streng monoton fällt: es folgt $f(a)> f(b)$ oder $f(b)> f(a)$ also $f(
 
 \sS{Beispiel}
 \begin{enumerate}
-\item{$f:\R_{\geq 0}→\R,\ x\mapsto x^k =:f(x)$ mit $k\geq 1$\\*%umgekehrtes define
+\item{$f:\R_{\geq 0}→\R,\ x\mapsto x^k =:f(x)$ mit $k\geq 1$\\*
 $f$ ist streng monoton wachsend/steigend 
 %bild tafel 2.2
 \item{$h: \R \to \R, h(x) = [x]$}\\*
-% Stufenfunktion Diagramm
+% Gaußklammer Diagramm
 $h$ ist monoton wachsend, aber nicht streng monoton.\\*
 Monoton wachsend: $x < y \Rarr [x] < [y]$\\*
 $x < y \not\Rarr [x] < [y]$\\*
@@ -63,8 +63,7 @@ Ist streng monoton wachsend.\\*
 $exp(a) = 1 + \frac{a}{1!} + \frac{a}{2!} + ... > 1$}
 \item{Sei $a > 0 exp(-a) \cdot exp(a) = exp(-a + a) = exp(0) = 1$\\*
 $\Rarr exp(-a) = \frac{1}{exp(a)} \Rarr 0 < exp(a) < 1$\\*
-%das kann ich nicht lesen... (iPhone Bild)
-$exp(b) > 0$ für alle $b \in \R$}
+Insbesondere: $exp(b) > 0$ für alle $b \in \R$}
 \item{Sei $a > b$\\*
 $exp(a) = exp(a - b + b) = \overbrace{exp(a - b) \cdot exp(b)}^{>0}$
 > exp(b) $\Rarr$ exp streng monoton wachsend \qed }
