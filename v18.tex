@@ -1,0 +1,158 @@
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 17}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 06.12.2012}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 17}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 06.12.2012}
+% **************************************************
+\wdh
+\section*{Definition}
+$$cos(x) + i\cdot sin(x) = exp(i\cdot x) = e^{i\cdot x}$$
+$cos\ [0,2] \to \R$ :streng monoton fallend,\\*
+$cos(0) = 1$, $cos(1) > 0, cos(2) < 0$\\*
+% Nach links floaten
+\begin{tikzpicture}[domain=0.2:2.5,prefix=plots/, smooth]
+    \draw[very thin,color=gray] (-0.2,-1.2) grid (2.5,1.2);
+    \draw[->] (-0.2,0) -- (2.5,0) node[right] {$x$};
+    \draw[->] (0,-1.2) -- (0,1.2) node[above] {$i$};
+	\draw[color=blue] plot[id=18.1] function{cos(x)} node[below, midway] {\footnotesize $cos(x)$};
+\end{tikzpicture}
+\hfill\\
+\Rarr{} cos hat in [1,2] eine eindeutige Nullstelle.\\*
+\ul{Definiere:} $\pi \in \R$ sei die Zahl mit $1 \leq \frac{\pi}{2} \leq 2$, $cos(\frac{\pi}{2}) = 0$\\*
+
+\begin{tikzpicture}[domain=0.2:6.5,prefix=plots/, smooth]
+    \draw[very thin,color=gray] (-0.2,-1.2) grid (6.5,1.2);
+    \draw[->] (-0.2,0) -- (6.7,0) node[right] {$x$};
+    \draw[->] (0,-1.2) -- (0,1.2) node[above] {$i$};
+	\draw[color=blue] plot[id=18.2] function{cos(x)} node[below, midway] {\footnotesize $cos(x)$};
+\end{tikzpicture}
+\hfill\\*
+Verschiebungsregeln (folgt aus Additionstheorem)\\*
+$cos(2\pi + x) = cos(x)$\\*
+$cos(2\pi - x) = cos(x)$\\*
+$cos(\pi - x) = -cos(x)$\\*
+
+\begin{tabular}{l|c|c|c|c|c}
+$x$ & $0$ & $\frac{\pi}{2}$ & $\pi$ & $\frac{3\pi}{2}$ & $2\pi$\\\hline
+$cos(x)$ & 1 & 0 & -1 & 0 & 1
+\end{tabular}
+\sS{Satz}
+%WDH
+Die Funktion $cos:[0,\pi]?[0,1]$ ist stetig, streng monoton fallend, bijektiv
+\bew
+$cos:[0,2]?\R$ streng monoton fallend \Rarr\ $cos:[0,\frac{\pi}{2}]?\R$ streng monoton fallend\\*
+$cos(\pi-x)=-cos(x)$ \Rarr\ $cos:[\frac{\pi}{2},\pi]?\R$ streng monoton fallend SKIZZE\\*
+\Rarr\ $cos:[0,\pi]?\R$ streng monoton fallend\\*
+$cos(0)=1,\ cos[\pi]=-1$ \Rarr\ $cos:[0,\pi]?[-1,1]$ surjektiv, somit bijektiv\qed\\*
+\ssss{Folge} es gibt eine Umkehrfunktion:
+Arcuscosinus: $arccos=cos^{-1}:[-1,1]?[0,\pi]$SKIZZE ARCCOS\\*
+\alg{cos(0)&=1\quad arccos(1)=0\\*
+cos(\frac{\pi}{2})&=0\quad arccos(0)=\frac{\pi}{2}\\*
+cos(\pi)&=-1\quad arccos(1)=\pi}
+\bem
+Die Wahl des Intervalls $[0,\pi]$ ist willkührlich. Auch bijektiv:\\*
+$cos:[\pi,2\pi]?[-1,1],\ cos:[-\pi,0]?[-1,1]$
+\bem
+Sei $x\eR$. Es gilt $cos(x)=1\ \equ\ x=2\pi·n$ mit $n\eZ$\\*
+(Anschaulich: klar, Beweis: Übung)
+
+\uS{Polarzerlegung}
+\sS{Satz}
+Jede komplexe Zahl $z \in \C$ hat eine Darstellung $z = r \cdot e^{i\phi}$ mit $r \in \R,\ r \geq 0,\ \phi \in \R$. Es gilt $r= |z|$, Man kann $\phi$ so wählen, dass $\phi \in [0, 2\pi)$. Wenn $z \neq 0$, dann ist $\phi \in [0, 2\pi)$ eindeutig.\\*
+Bezeichnung: $z = r \cdot e^{i\phi}$\\*
+Polarzerlegung von $z$, $\phi \in [0, 2\pi)$ , Argument von $z$ (wenn $z \neq 0$)
+%Skizze
+\bew
+Wenn $z = 0$ \Rarr{} $|z| = |r| \cdot |e^{i\phi}| = r \cdot 1 = r$\\*
+Wenn $z = 0$: $z = 0 \cdot e^{i \phi}$ für alle $\phi$\\*
+Sei $z \neq 0$. $r := |z| > 0$\\*
+$w:= \frac{z}{r} \in \C$. $|w| = \frac{|z|}{r} = \frac{r}{r} = 1$\\*
+Suche $\phi$ mit $w = e^{i \phi}$. Sei $w = x + i \cdot y$, $x,y \in \R$\\*
+$cos(\phi) = x,\ sin(\phi) = y$\\*
+Setze $\til{\phi} := arcos(x)$ und $\til{y} = \sin(\til{phi})$\\*
+Dann $\til{y}^2 = sin(\til{\phi})^2 = 1 - cos(\til{\phi})^2$\\*
+$= 1 - x^2 =  y^2$, denn $x^2 + y^2 = |w|^2 = 1$\\*
+2 Fälle:\\*
+$\til{y} = y$ oder $\til{y} = -y$\\*
+Wenn $\til{y} = y$ dann $\phi = \til{\phi}$ Lösung: $e^{i\phi} = w$\\*
+Wenn $\til{y} = -y$ dann $\phi := 2\pi 2\pi - \til{\phi}$\\*
+$cos(\phi) = cos(\til{\phi}) = x$ \ok\\
+$sin(\phi) = sin(2\pi - \til{\phi}) = sin(\til{phi}) = -\til{y} = y$ \ok\\
+\Rarr{} $e^{i\phi} = w \Rarr z = r \cot w = r \cdot e^{i\phi}$
+Aber:
+$$|\phi-\phi'| < 2 \pi \Rarr\ \phi-\phi'<0$$
+Das zeigt \ul{Eindeutigkeit} der Polarzerlegung\qed
+
+\bem
+(Multiplikation komplexer Zahlen in Polarzerlegung)
+$$(r·e^{i\phi})·(r·e^{i\phi'})=(r·r')·e^{i\phi+i\phi'}=(r·r')·e^{i(\phi+\phi')}$$
+Multiplikation in $\C$ entspricht $\begin{cases}\text{Multiplikation der Beträge}\\ \text{Addition der Argumente}\end{cases}$ SKIZZE
+
+\sS{Satz}
+Es gilt $\lim_{z \to 0} \frac{exp(z) - 1}{z} = 1$\\*
+Das heißt: \\*
+Wenn $(z_n)$ Folge in $\C$ mit $z_n \neq 0$, $z_n \to 0$ dann gilt $\frac{exp(z) -1}{z} \to 1$
+\bew
+$$exp(z) = 1 + \frac{z}{1!} + \frac{z^2}{2!} + \frac{z^3}{3!} + \ldots$$
+$$\frac{exp(z) - 1}{z} =\frac{\frac{z}{1!} + \frac{z^2}{2!} + \frac{z^3}{3!} + \ldots}{z}$$
+$$= \frac{1}{1!} + \frac{z}{2!} + \frac{z^2}{3!} + \frac{z^3}{4!} + \ldots$$
+Also $|\frac{exp(z) - 1}{z} - 1| = |\frac{z}{2!} + \frac{z^2}{3!} + \ldots| \leq |\frac{z}{2!}| + |\frac{z^2}{3!}| + |\frac{z^3}{4!}| + \ldots$\\*
+$\leq \frac{|z|}{1!} + \frac{|z|^2}{2!} + \frac{|z|^3}{3!} + \ldots = exo(|z|) -1$\\*
+Wenn $z_n \to 0$ dann $|z_n| \to 0$\\*
+\Rarr{} $(exp(|z|)) \to 0$\\*
+\Rarr{} $\frac{exp(z_n) - 1}{z_n} \to 1$ \qed
+
+Aber:
+$$|\phi-\phi'| < 2 \pi \Rarr\ \phi-\phi'<0$$
+Das zeigt \ul{Eindeutigkeit} der Polarzerlegung\qed
+% ich glaube hier fehlt noch was, mal die Bilder abwarten...
+\sS{Satz (Einheitswurzel)}
+Sei \nN\\*
+Die Gleichung $z^n=1,\ z\eC$\\*
+Hat genau $n$ Lösungen, nämlich $z=e^{2\pi\frac{k}{n}}$ mit $k\eZ,\ 0\leq k<n$
+\bew
+Wenn $z^n=1$, dann $|z|^n=|1|=1\ \Rarr\ |z|=1$\\*
+Sei $z=e^{i\phi}$ mit $0\leq \phi <2 \pi\ z^n=1\ \equ\ (e^{i\phi})^n=1\ \equ\ e^{in\phi}=1$
+\alg{&\equ n·\phi= k·2\pi \text{ mit } k\eZ\\*
+&\equ \phi= 2\pi k/n \text{ mit } k\eZ\\*
+&\equ z= e^{2\pi i\frac{k}{n}} \text{ mit } k\eZ}
+\sss{Bedeutung:}
+$0\leq \phi<2\pi\ \equ\ 0\leq 2\pi k/n < 2\pi\ \equ\ 0\leq k<n\qed$\\*
+SKIZZE $\case{e^0=1\\
+e^{2\pi i/6}=e^{\pi i/3}=\frac{1}{2}+\frac{\sqrt{3}}{2}i\\
+e^{2\pi i 2/6}=e^{\pi i 2/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i\\
+e^{2\pi i 3/6}=e^{\pi i}=-1\\
+e^0=1\\
+e^0=1\\
+e^0=1\\}$
+\sss{Verhalten von $exp(z)$ nahe Null}
+Erinnerung: $exp:\C?\C$ stetig, dass heißt wenn $z?0$ dann $exp(z)?exp(0) =1$\\*
+Betrachte $\dfrac{exp (z)-1}{z}$ für $z\eC,\ z\neq 0$
+%chris
+\bem \begin{enumerate}
+\item{Beschränkung auf $z=x\eR\ \leadsto\ \lim_{x \to 0}\overset{x \to 0}{x\neq 0} \frac{e^x-1}{x}=1 (x\eR)$}
+\item{Beschränkung auf $$z=ix,\ x\eR\ \leadsto\ \lim_{x \to 0}\frac{e^ix-1}{ix}=1$$ $$\lim_{x?0}\frac{cos(x)+i·sin(x)-1}{ix}=1$$ $$\lim_{x?0}\left(\frac{sin(x)}{x}-i·\frac{cos(x)-1}{x}\right)=1+0i\ (*)$$
+$$(*) \underset{Realteil}{\Rarr} \lim_{x?0}\frac{sin(x)}{x}=1$$
+$$(*) \underset{Imaginärteil}{\Rarr} \lim_{x?0}\frac{cos(x)-1}{x}=0$$}
+\end{enumerate}
+\uS{Geometrische Bedeutung von $\pi$?}
+\sss{Frage} Was ist die Länge des Kreisbogens von $1$ bis $e^{ix}$? SKIZZE
+\begin{enumerate}
+\item{Wie ist diese Länge definiert?}
+\item{Berechnen}
+\end{enumerate}
+Zerteilung in kleine Strecken
+Wähle $n \in \N$ groß:
+$$l_n = |e^{ix/n} - 1| + |e^{2ix/n} - e^{ix/n}| + ... + |e^{ix} - e^{(n-1)ix/n}|$$
+$$= \sum_{k=0}^{n-1} \left| |e^{(k+1)ix/n} - e^{kix/n}| \right|$$
+\sS{Satz}
+Es gilt $\lim_\nif  l_n=|x|$ Interpretation der Länge des Bogens ist $|x|$\\*
+\bew
+$$|e^{(k+1)ix/n}-e^{kix/n}|=|e^{kix/n}|·|e^{ix/n}-1|=|e^{ix/n}-1|$$
+%letzter Tafelrest
