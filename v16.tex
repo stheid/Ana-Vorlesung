@@ -40,7 +40,7 @@ Seien $z,w\eC$
 \item{$exp(0)=1$ (klar)}
 \item{$exp(z+w)=exp(z)+exp(w)$}
 \item{$exp(z)≠0,\ exp(z)^{-1}=exp(-z)$}
-\item{$exp(\ol{z})=\ol{exp{z}}$ (Komplexe Konjugation)}
+\item{$exp(\ol{z})=\ol{exp(z)}$ (Komplexe Konjugation)}
 \item{Für $x\eR$ ist $|exp(ix)|=1$}
   \begin{tikzpicture}[domain=-1.6:1.6,samples=200,prefix=plots/,smooth]
     \draw[very thin,color=gray] (-1.49,-1.49) grid (1.49,1.49);
@@ -99,8 +99,7 @@ Für jede komplexe Zahl $z$ gilt $z = Re(z) + i \cdot Im(z)$\\*
 	\draw[color=red] plot[id=sin] function{sin(x)} node[right] {\footnotesize $f_1(x) =sin(x)$};
 \end{tikzpicture}
 }
-\item{\desc{Additionstheoreme:}{$sin(x+y)=sin(x)·cos(y)+cos(x)·sin(y)$
-eingerückt $cos(x+y)=cos(x)·cos(y)-sin(x)·sin(y)$}}
+\item{\desc{Additionstheoreme:}{$sin(x+y)=sin(x)·cos(y)+cos(x)·sin(y)$\\*$cos(x+y)=cos(x)·cos(y)-sin(x)·sin(y)$}}
 \end{enumerate}
 \bew
 \begin{enumerate}
@@ -113,20 +112,19 @@ $$\Rarr cos(x+y) + i \cdot sin(x+y) = (cos(x) + i \cdot sin(x))(cos(y) + i \cdot
 $$=cos(x) \cdot cos(y) - sin(x) \cdot sin(y) + i \cdot (sin(x) \cdot cos(y) + cos(x) \cdot sin(y))$$
 Vergleich der Realteile / Imaginärteile \Rarr{} Behauptung 4\qed}
 \end{enumerate}
-
 \bem
 	Die Gleichung $$cos(x)^2 + sin(x)^2 = 1$$
 	impliziert $0 \leq cos(x)^2 \leq 1$, $0 \leq sin(x)^2 \leq 1$ somit $-1 \leq cos(x) \leq 1$, $-1 \leq sin(x) \leq 1$.
 
 \sS{Definition}
 	\begin{enumerate}
-	\item{Eine Abbildung $f: \C \to \C$ heißt stetig in $z \in \C$ wenn gilt:\\*
+	\item{Eine Abbildung $f: \C→\C$ heißt stetig in $z \in \C$ wenn gilt:\\*
 	Für jedes $\e > 0$ gibt es ein $\delta > 0$ so dass für jedes $w \in \C$ mit $|z - w| < \delta$ ist $|f(z) - f(w)| < \e$}
 	\item{$f: \C \to \C$ heißt \ul{stetig}, wenn $f$ in jedem $z \in \C$ stetig ist.}
 	\end{enumerate}
 
 \sS{Satz}
-Eine Abbildung $f:\C→\C$ ist stetig in $z\eC$ \equ\ Für jede Folge komplexer Zahlen $(z_n)_{n\geq 0}$ mit $z_n→z$ für \nif\ gilt auch $f(z_1)→f(z)$ für \nif
+Eine Abbildung $f:\C→\C$ ist stetig in $z\eC$ \equ\ Für jede Folge komplexer Zahlen $(z_n)_{n\geq 0}$ mit $z_n→z$ für \nif\ gilt auch $f(z_n)→f(z)$ für \nif
 \bew
 Wörtlich wie bei reeller Funktion (Satz 6.4)\qed
 
