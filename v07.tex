@@ -31,7 +31,7 @@ Seien $\sum\limits_{k = 0}^{\infty} a_k = a$ und $\sum\limits_{k = 0}^{\infty} b
 folgt aus 3.9.
 \bem
 Produkte von Reihen sind komplizierter.\\*
-\ul{Korrektur:}
+\ul{Korrektur}
 Primzahlen-Vermutung: es gibt ∞ viele Primzahlen $p$ so dass $p + 2$ auch Prim ist.\\*
 Goldbach-Vermutung: Jede gerade natürliche Zahl ist die Summe von zwei Primzahlen.\\*
 \chapter{Konvergenzsätze}
@@ -77,7 +77,7 @@ Die Folge der Partialsummen ist monoton wachsend $\Leftrightarrow a_n \geq 0$ f�
 \sS{Satz}
 Eine Reihe $\ds\sum\limits_{k=0}^{\infty} a_k$ mit $a_k \geq 0$ für alle $k$ konvergiert, genau dann, wenn sie beschränkt ist (Das heißt die Folge der Partialsummen ist beschränkt)\qed
 
-\sS{Definition}
+\sS{Definition Majorante}
 Sei $\displaystyle\sum\limits_{k=0}^{\infty} a_k$ eine Reihe mit $a_n \geq 0$ für alle $k$\\*
 Eine Reihe $\ds\sum\limits_{k=0}^{\infty} b_k$ heißt \ul{Majorante} von $\ds\sum a_k$ wenn $a_k \leq b_k$ für alle $k$
 \sS{Satz Majorantenkriterium}
@@ -87,7 +87,7 @@ Sei $0 \leq a_k \leq b_k$ für alle $k \geq 0$\\*
 Es gilt $a_0 + ... + a_n \leq b_0 + ... + b_n$ \\*
 $\sum b$ konvergiert $\Rightarrow (b_0 + ... + b_n)_{n \geq 0}$  beschränkt\\*
 $\Rightarrow ((a_0 + ... + a_n)_{n \geq 0})$ beschränkt $\Rightarrow \ds\sum_{k= 0}^{\infty} a_k$ konvergiert.
-\Bsp{4.6:}
+\Bsp{4.6}
 $$\sum\limits_{k=1}^{\infty} \frac{1}{k^2} = \left( 1 + \frac{1}{4} + \frac{1}{9}+ \frac{1}{16} + … \right)$$
 $$\sum\limits_{k=1}^{\infty} \frac{1}{k^2} = 1 + \sum\limits_{k=1}^{\infty} \frac{1}{(k + 1)^2}$$
 $$\frac{1}{(k + 1)^2} \leq \frac{1}{k \cdot (k + 1)}$$
@@ -113,7 +113,7 @@ $$a_n+1 = \frac{x^{n + 1}}{(n + 1)!} = \frac{x}{n+1} \cdot \frac{x^n}{n!} = \fra
 Reihe $exp(x)$ konvergiert.\\*
 Bezeichnung: $$exp(x) = \sum_{k=0}^{\infty} \frac{x^k}{k!} \eR$$
 %
-\uS{Bezeichnung:}
+\uS{Bezeichnung}
 $$exp(1) = \sum\limits_{k=0}^{\infty} \frac{1}{k!} = e\text{ (Eulerische Zahl)}$$
 \sS{Leibnitz-Kriterium}
 Sei $(a_n)_{n \in \N{}_0}$ eine monoton fallende Nullfolge\footnote{$a_n → 0$ für $n→∞$} mit $a_n \geq 0$ für alle $n$\\*
@@ -125,7 +125,7 @@ $$a_k = \frac{1}{k + 1} \sum_{k=0}^{\infty} (-1)^k · a_k = 1 - \frac{1}{2} + \f
 Sei $s_n = a_0 + ... + a_n$
 \uS{Behauptung: }
 $S_{2n + 1} \leq S_{2n + 3} \leq S_{2n + 2} \leq S_{2n}$ für jedes $n \in \N{}$\\*[4pt]
-\ul{Rechne:}\\*
+\ul{Rechne}\\*
 $S_{2n + 2} - S_{2n} = - a_{2n + 1} + a_{2n + 2} \leq 0 \Rightarrow (3)$\\*
 $S_{2n + 3} - S_{2n + 1} = - a_{2n + 3} \leq 0 \Rightarrow (2)$\\*
 $S_{2n + 3} - S_{2n + 1} = - a_{2n + 2} - a_{2n + 3} \leq 0 \Rightarrow (1)$\\*[8pt]
@@ -136,7 +136,7 @@ $\Rightarrow b_n \text{ und } c_n$ konvergieren\\*[4pt]
 Sei $$b = \lim_{n \to \infty} b_n \qquad c = \lim_{n \to \infty} c_n$$
 $$c - b = \lim_{n \to \infty} (c_n - b_n) = \lim_{n \to \infty} (a_{2n + 1}) = 0$$
 weil $(a_n)$ Nullfolge
-\sS{Behauptung:} % uS stande dort ich vermute so
+\sS{Behauptung} % uS stande dort ich vermute so
 $S_n \to b$ für $n \to \infty$\\*[4pt]
 Gegeben sei $\e > 0$. Es gibt $N \in \N{}$ so dass für $n \leq N$:\\*
 $|b_n - b| < \e, |c_n - c| < \epsilon$\\*

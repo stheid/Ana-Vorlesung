@@ -26,7 +26,7 @@ $\underset{\text{\scriptsize{nach satz 6.5}}}{\Rarr}$ log ist stetig, streng mon
 \end{enumerate}
 \bew
 Folgt aus Eigenschaften von $exp$, Details: Übung
-\sss{Erinnerung:}
+\sss{Erinnerung}
 also $a>0,\ n\eZ,\ m\eN$ ist $a^{\frac{n}{m}}:=\sqrt[m]{a^n}$
 
 \sS{Lemma}
@@ -68,18 +68,18 @@ $f: D \to \R$ stetig an $x \in D$ wenn gilt:\\*
 Für jedes $\e > 0$ gilt $\delta > 0$ mit wenn $y \in D$ mit $|x - y| < \delta$ dann $|f(x) - f(y)| < \e$\\*
 Hier hängt $\delta$ im allgemeinen von $\e$ und $x$ ab!
 
-\sS{Definition gleichmäßige Stetigkeit:}
+\sS{Definition gleichmäßige Stetigkeit}
 Eine Funktion $f:D→\R$ heißt gleichmäßig stetig wenn gilt:\\*
 Für jedes $ε>0$ gibt es ein $δ>0$ so dass für alle $x,y\in D$ mit $|x-y|<δ$ gilt:
 $$|f(x)-f(y)|<ε$$
-\sss{Wesentlich:}
+\sss{Wesentlich}
 $δ$ hängt nur von $ε$, nicht von $x$ ab.
 \bsp
 $D=(0,1)\qquad f:D→\R,\ f(x)=\frac{1}{x}$\\*
 GRAPH $f$ stetig, aber nicht gleichmäßig stetig
 \bew
-Wähle $ε=1$. Angenommen es gibt $δ>0$ mit $|x-y|<δ\Rarr |f(x)-f(y)<1$
-Wähle: $x=\frac{1}{n},\ y\frac{1}{n+1}$ so dass $\frac{1}{n·(n+1)}<δ$
+Wähle $ε=1$. Angenommen es gibt $δ>0$ mit $|x-y|<δ\Rarr |f(x)-f(y)|<1$
+Wähle: $x=\frac{1}{n},\ y=\frac{1}{n+1}$ so dass $\frac{1}{n·(n+1)}<δ$
 $$|x-y|=\left|\frac{1}{n}-\frac{1}{n+1}\right|=\left|\frac{n+1-n}{n·(n+1)}\right|=\frac{1}{n·(n+1)}$$
 Dann $$|f(x)-f(y)|=|n-(n+1)|=1$$
 Das zeigt: $δ$ existiert nicht.
@@ -109,9 +109,9 @@ Addition gleich der Vektoraddition in $\R^2$ GRAPH
 \sS{Satz: \C\ ist Körper}
 \C{} ist ein Körper mit Null (0,0) und Eins (1,0)
 \bew
-Überprüfe Körperaxiome \ul{exemplarisch:}
+Überprüfe Körperaxiome \ul{exemplarisch}
 \begin{enumerate}
-\item{Assotiativgesetz der Multiplikation\\*
+\item{Assoziativgesetz der Multiplikation\\*
 Gegeben $(x,y),\ (x',y'),\ (x'',y'')\eC$
 \begin{align*}
 ((x,y)·(x',y'))·(x'',y'')&=(x·x'-y·y',x·y'-x·y'+y·x')(x'',y'')\\
@@ -150,7 +150,7 @@ Realteil: Re(z) := x \\*
 Imagnärteil: Im(z) := y\\*
 Komplex konjugierte Zahl $\ol{z} = x - iy$\\*
 Komplex konjugation = Spiegelung an der x-Achse.\\*
-\ul{Definition:} Der Betrag von $z = x + iy \in \C$ ist $|z| = \sqrt{x^2 + y^2}$ Abstand von $0 = (0, 0)$ zu $z$\\*
+\ul{Definition} Der Betrag von $z = x + iy \in \C$ ist $|z| = \sqrt{x^2 + y^2}$ Abstand von $0 = (0, 0)$ zu $z$\\*
 \bem
 \begin{enumerate}
 \item{$\ds z·\ol{z}=(x+i·y)(x-i·y)=x^2+y^2+i(-x·y+y·x)=x^2+y^2=|z|^2$}

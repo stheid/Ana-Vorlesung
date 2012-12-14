@@ -7,6 +7,9 @@
 
 Das Skriptum wird mit XeLaTeX compiliert und benötigt gnuplot
 
+Das Projekt ist immer in Arbeit, wenn das Skriptum also mal nur
+ein paar Zeilen lang ist, einfach in 'ner Stunde noch mal schaun.
+
 Das fertig übersetzte Skript gibt es hier:
 https://www.dropbox.com/s/ys5rjhzfephd4zt/AnaSkriptum.pdf
 

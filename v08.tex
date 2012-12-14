@@ -21,7 +21,7 @@
     $\sum_{k=0}^{n} \frac{1}{k} = 1 + \frac{1}{2} + \frac{1}{3} …$ ist unbeschränkt
 \bsp
     $\sum_{k=1}^{\infty} \frac{1}{k^2} = 1 + \frac{1}{4} + \frac{1}{9}+…$
-\sss{Leibnitz:} 
+\sss{Leibnitz} 
     Sei $(a_n)$ monoton fallende Nullfolge.\\
     Dann konvergiert $\sum_{k=0}^{∞} (-1)^k \cdot a_k$
 \bsp
@@ -31,7 +31,7 @@
 %\setcounter{section}{9}{Die Folge }
 % *************************
 
-\sS{Satz Verdichtungslemma von Candy}
+\sS{Satz Verdichtungslemma von Cauchy}
 Sei $(a_n)$ monoton fallende Nullfolge.\\*
 Die Reihe $\Sum_{k=0}^{\infty} a_k$ konvergiert genau dann, wenn die verdichtete Reihe $\Sum_{k=0}^{\infty} 2^k \cdot a_{2^k} = 1 · a_1 + 2 · a_2 + 4 \cdot a_4$ … konvergiert.
 %
@@ -39,7 +39,7 @@ Die Reihe $\Sum_{k=0}^{\infty} a_k$ konvergiert genau dann, wenn die verdichtete
     $a_k = \frac{1}{k}\qquad (k \geq 1)$\\*
     $2^k \cdot a_{2^k} = 2^k \cdot \frac{1}{2^k} = 1$
 
-\section*{Satz:} % Keine Nummerierung!
+\section*{Satz} % Keine Nummerierung!
 $\Sum_{k=0}^\infty \frac{1}{k}$ konvergent \equ\ $\Sum_{k=0}^{∞} 1$ konvergent (ist nicht der Fall.)
 \bew
 Sei $b_n = \ds\sum_{k=2^n}^{2^{n+1}-1} a_k$\\*
@@ -48,8 +48,8 @@ Wenn $\ds \sum_{k \geq 0} 2^k · a_2^k$ beschränkt \Rarr $\ds \sum_{k \geq 0} b
 Hier immer beschränkt \equ konvergent\\*
 Wenn $\ds \sum_{k \geq 0} 2^k · a_k$ beschränkt \Rarr $\ds \sum_{k \geq 0} b_k$ beschränkt \Rarr $\ds \sum_{k \geq 0} 2^{k} · a_2^{k+1}$ beschränkt \equ $\ds \sum_{k \geq 0} 2^{k+1} · a_2^{k+1}$ beschränkt \equ $\ds \sum_{k \geq 0} 2^{k} · a_2^{k}$ beschränkt\\*
 Das zeigt den Satz.\\*
-\sss{Anwendung:}
-\sss{Erinnerung:}
+\sss{Anwendung}
+\sss{Erinnerung}
     Für $ x\geq 0$ und $a \in \R$ wird später $x^a \in R$ definiert\\*
     Wenn $\ds a = \frac{n}{m}$ mit $m \geq 1$ d.h. $a \in \Q$ dann $\ds x^a = \sqrt[m]{x^n}$.\\*
     Wenn $x > 1$ dann gilt: \\*
@@ -131,7 +131,7 @@ Für $n, m \geq N$ gilt:\\*
 $|a_n - a_m| = |a_n - a + a - a_m| \leq |a_n - a| + |a - a_m| < \frac{\e}{2} + \frac{\e}{2} = \e$\\*
 $\Rarr (a_n)$ ist eine Cauchyfolge\\*}
 \item["\Larr"]{Sei $(a_n)$ eine Cauchyfolge
-\sss{Behauptung:} $(a_n)$ ist beschränkt
+\sss{Behauptung} $(a_n)$ ist beschränkt
 \bew
 Wähle $\e=1$ Es gibt $N\in\N$ mit $|a_n-a_m|<1$ für $m,n\geq N$\\*
 Sei $C=max\{|a_0|,|a_1|,|a_2| … |a_N|,|a_N|+1\}$\\*
@@ -154,7 +154,7 @@ $\ds |a_k-a|=|a_{n_k}+a_{n_k}-a| \leq |a_k-a_{n_k}|+|a_{n_k}-a|<\frac{\e}{2}+\fr
 Also $a_k→a$ für $n→∞$\qed}
 \end{description}
 
-\uS{Umformulierung für Reihen:}
+\uS{Umformulierung für Reihen}
 \sS{Satz (Cauchy-Kriterium für Reihen)}
 Eine reelle Reihe $\ds \sum_{k=0}^\infty a_k$ konvergiert genau dann, wenn gilt:\\*
 Für jedes $\e>0$ gibt es ein $N\in\N$ so dass für alle $\ds n,m\geq N,\ n\leq m$ $$\left|\sum_{k=n}^m\right|<\e$$

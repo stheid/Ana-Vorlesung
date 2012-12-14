@@ -72,7 +72,7 @@ $exp(a) = exp(a - b + b) = \overbrace{exp(a - b) \cdot exp(b)}^{>0}$
 \end{enumerate}
 
 \chapter{Stetigkeit}
-\ul{Idee:} Eine Funktion ohne Sprünge heißt \ul{stetig}
+\ul{Idee} Eine Funktion ohne Sprünge heißt \ul{stetig}
 
 \sS{Definition}
 Sei $D\subseteq \R,\ f:D→\R$ eine Funktion\\*
@@ -99,7 +99,7 @@ Also $f$ stetig in $x$}
 \item{$g:=\R \to \R,\ g(x):=\{x\}$\\*
 %graph
 g ist stetig an $x$ \equ $x\notin\Z$
-\Bew{$g$ nicht stetig an $x\in\Z$:}
+\Bew{$g$ nicht stetig an $x\in\Z$}
 Zeige: es gibt ein $\e>0$ so dass kein $\delta>0$ existiert mit: $|x-y|>\delta\Rarr|g(x)-g(y)|<\e$\\*
 z.B. $\e=1$ Sei $\delta>0.\ y=x-\dfrac{\delta}{2}\quad |x-y|=\dfrac{\delta}{2}<\delta$\\*
 aber $g(y)=\{x-\dfrac{\delta}{2}\}=x-1$ (weil $x\in\Z$)\\*
@@ -126,7 +126,7 @@ $exp(1) \geq 1 + n \e$\\*
 $n \leq \frac{exp(1) - 1}{\e}$\\*
 Das gilt nur für endliche viele $n \in \N$\\*
 $\Rarr$ Beh.\\*
-\ul{Zeige:} exp ist stetig an 0. Gegeben sei $\e > 0, OE ? \e < 1$\\*
+\ul{Zeige} exp ist stetig an 0. Gegeben sei $\e > 0, OE ? \e < 1$\\*
 Wähle $n \in \N$ mit $exp(\frac{1}{n}) < 1 + \e$\\*
 $$\Rarr exp(-\frac{1}{n}) = exp(\frac{1}{n})^{-1} < \frac{1}{1 + \e} = \frac{1 - \e}{(1+\e)(1-\e)} = \frac{1-\e}{1 - \e^2} > 1 - \e$$\\*
 Sei $\delta \frac{1}{n}$\\*
@@ -136,7 +136,7 @@ $-\frac{1}{n} < y < \frac{1}{n}$\\* \\*
 exp streng monoton wachsend.\\*
 $$\Rarr 1 - \e < exp(-\frac{1}{n}) < \exp(y) < exp(\frac{1}{n}) < 1 + \e$$\\*
 $\Rarr |exp(y) - exp(0)| < \e$ Also exp stetig in 0\\*
-\ul{Zeige:} exp ist eine stetig in $x \in \R$. Gegeben sei $\e > $\\*
+\ul{Zeige} exp ist eine stetig in $x \in \R$. Gegeben sei $\e > $\\*
 Sei $y = x + h$, $|h| < \delta$ ($\delta$ noch zu wählen)
 $$|exp(y) - exp(x)| = |exp(x + h) - exp(x)| = |exp(x) \cdot exp(h) - exp(x)| = exp(x) \cdot exp(h) -1$$\\*
 $|exp(y) -exp(x) | < \e$\\*
