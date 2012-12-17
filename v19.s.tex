@@ -1,0 +1,129 @@
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 19}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 17.12.2012}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 19}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 17.12.2012}
+% **************************************************
+%
+\chapter*{Differenzialrechnung}
+\sS{Definition Differenzialrechnung}
+Sei $I$ ein Intervall:\\*
+Eine Funkion $f:I→\R $ heißt \ul{$x_0\in I$ differenzierbar}, wenn die Grenzwert exstiert $$f'(x_0):=\lim_{x→x_0}\frac{f(x)-f(x_0)}{x-x_0}$$ und $f'(x_0)$ heißt \ul{Ableitung} von $f$ in $x_0$\\*
+$f$ heißt differnzierbar, wenn $f$ in jedem $x_0\in I$ differenzierbar ist.
+\sss{Andere Bezeichnung}
+$$f'(x_0)=\frac{df}{dx}(x_0)=Df(x_0).$$\\*
+\sss{Geometrische Interpretation}
+Der Differenzialquotient $$\frac{f(x)-f(x_0)}(x-x_0)$$ ist Steigung der Geraden durch die Punkte $(x,f(x)),\(x_0,f(x_0))$ (Sekante)\\
+GRAPH\\*
+$f'(x_0)$ (wenn existiert) ist die Steigung der \ul{Tangente} an $Γ_f$ im Punkt $(x_0,f(x_0))$
+\bem
+\desc{Schreibe}{$x=x_0+h$\\$h=x-x_0$}
+$$\leadsto\ f'(x_0):=\lim_{h→x_0}\frac{f(x_0+h)-f(x_0)}{h}$$
+\bsp
+\enum{\item{$f:\R→\R,\ f(x)=c$ konstante Funktion
+$$f'(x_0):=\lim_{x→x_0}\frac{c-c}{\underbrace{x-x_0}_0}=0$$}
+\item{$f:\R→\R,\ f(x)=a·x, a\eR$
+$$f'(x_0):=\lim_{x→x_0}\frac{a·x-a·x_0}{x-x_0}=\lim_{x→x_0}a=a\ \Rarr f\text{ differenzierbar}$$}
+\item{$f:\R→\R,\ f(x)=x^2$
+$$f'(x_0):=\lim_{h→0}\frac{(x_0+h)^2-x_0^2}{h}=\lim_{h→0}\frac{2x_0h+h^2}{h}=\lim_{h→0}\frac{2x_0+h}=2x_0\ \Rarr f\text{ differenzierbar}$$}
+\item{$f:\R\\\{0\}→\R,\ f(x)=\frac{1}{x}$ Sei $x_0≠0$
+$$f'(x_0):=\lim_{x→x_0}\frac{\frac{1}{x}+\frac{1}{x_0}}{x-x_0}=\lim_{x→x_0}\frac{\frac{x_0-x}{x·x_0}}{x-x_0}=\lim_{x→x_0}\frac{\cancel{x_0-x}}{\cancel{(x-x_0)}·x·x_0}=\lim_{x→x_0}\frac{-1}{x·x_0}=-\frac{1}{x_0^2}\ \Rarr f\text{ differenzierbar},\ \left(\frac{1}{x}\right)'=-\frac{1}{x^2}$$}
+\item{$f: \R\to\R,\ f(x) = |x|$\\*
+\begin{tikzpicture}[scale=2,domain=-2:2, samples=200,prefix=plots/,smooth]
+\draw[very thin, color=gray!50] (-2,0) grid (2,2.5);
+\draw[->] (-2.5,0) -- (2.5,0) node[right] {$x$};
+\draw[->] (0,-0.5) -- (0,2.5) node[above] {$y$};
+\draw[color=black] plot[id=19.2] function{abs(x)} node[right] (1,1) {\footnotesize $f_2(x) =|x|$};
+\end{tikzpicture}
+$x_0 = 0$\\*
+$$f'(x_0):=\lim_{h→0}\frac{|h| - |0|}{h} = \frac{|h|}{h} \text{ existiert nicht, denn \case{1 \ \ h>0 \\ -1 \ \ h < 0}}$$
+\Rarr{} $f$ ist nicht in $0$ differenzierbar.}
+\item{$exp: \R \to \R$ bekannt aus Satz 7.36\\*
+Sei $x_0 \in \R$.\\*
+$exp(x_0) = \lim_{h \to 0} \frac{exp(x_0 +h) - exp(x_0)}{h}$\\*
+$\lim_{x \to 0} \frac{exp{x} - 1}{x} = 1 = frac{exp(x) -exp(0)}{x-0}$
+Das heißt: $exp'(0) = 1$. Insbesondere ist $exp$ differenzierbar in $0$}
+\item{$sin:\R\bs\{0\}→\R$ Sei $x_0\eR$
+$$\lim_{h→0}\frac{sin(x_0+h)-sin(x_0)}{h}=\frac{1}{h}(sin(x_0)·cos(h)+cos(x_0)·sin(h)-sin(x_0))=\frac{1}{h}·sin(x_0)·(cos(h)-1)+cos(x_0)·\frac{sin(h)}{h}=sin(x_0)·\underbrace{\frac{(cos(h)-1)}{h}}_{→0\ für\ h→0}+cos(x_0)·\underbrace{\frac{sin(h)}{h}}_{→1\ für\ h→0} \text{ (Korollar zu Satz 7.36)}$$
+Somit $sin'(x_0) = \lim_{h \to 0} \frac{sin(x_0 + h) - sin(x_0)}{h} = cos(x_0)$
+\Rarr{} $sin$ ist differenzierbar, $sin' = cos$.}
+\item{$cos: \R \to \R$ analog... $cos' = -sin$\\
+\begin{tikzpicture}[domain=-2:7,prefix=plots/, smooth]
+\draw[very thin,color=gray] (-2,-1.2) grid (7,1.2);
+\draw[->] (-2,0) -- (7,0) node[right] {$x$};
+\draw[->] (0,-1.2) -- (0,1.2) node[above] {$i$};
+\draw[color=red] plot[id=sin1] function{sin(x)} node[above, pos=0.5] {\footnotesize $f_1(x) = sin(x)$};
+\draw[color=blue] plot[id=cos1] function{cos(x)} node[below, midway] {\footnotesize $f_2(x) = cos(x)$};
+\end{tikzpicture}\\*
+$sin' = cos$\\*
+$cos' = -sin$}
+}
+
+\sS{Lemma}
+Eine Funktion $f:I→\R$ ist genau dann in $x_0$ differenzierbar, wenn eine ander Funktion $\phi:I→\R$ existiert, sodass
+\enum{
+\item{
+$f(x)-f(x_0)=\phi(x)·(x-x_0)$ für alle $x\in I$
+}
+\item{
+$\phi$ ist stetig in $x_0$
+}
+}
+Dann gilt $\phi(x_0) =f'(x_0)$
+\bew
+Definiere notwendig\\*
+$$\phi_0:I\bs\{x_0\}→\R,\ \phi(x)=\frac{f(x)-f(x_0)}{x-x_0}$$
+Folgenstetigkeit: $ \phi_0$ hat eine Fortsetzung $\phi:I→\R$, die in $x_0$ stetig ist\ \equ\ $\ds\lim_{x→x_0}\phi_0(x)$ existiert, dann ist 
+$$\phi(x_0)=\lim_{x→x_0}\phi_0(x)\ \equ\ \lim_{x→x_0}\frac{f(x)-f(x_0)}{x-x_0}$$
+existiert, dann ist $\phi(x_0)=f'(x_0)\qed$
+\sS{Satz}
+Sei $f I \to \R eine Funktion$\\*
+\begin{enumerate}
+\item{$f$ in $x_0$ differenzierbar \Rarr{} $f$ in $x_0$ stetig.}
+\item{$f$ differenzierbar \Rarr{} $f$ stetig.}
+\end{enumerate}
+\bew
+\begin{enumerate}
+\item{Sei \phi wie im Lemma \Rarr{} $f(x) = f(x_0) + \phi(x)(x-x_0)$\\*
+$\phi$ stetig in $x_0$ \Rarr{} $f$ stetig in $x_0$ \qed}
+\item{folg aus 1.)}
+\end{enumerate}
+
+\uS{Berechnung der Ableitung}
+\sS{Satz}
+Seien $f,\ g: I \to \R$ differenzierbar in $x_0 \in I$, dann sind auch $f + g$, $a \cdot f$, $f \cdot g: I \to \R$ in $x_0$ differenzierbar. ($a \in R$) und:
+\begin{enumerate}
+\item{$(f + g)'(x_0) = f'(x_0) + g'(x_0)$}
+\item{$a \cot f)'(x_0) = a \cdot f'(x_0)$}
+\item{$(f \cdot g)'(x_0) = f'(x_0) \cdot g(x_0) + f(x_0) \cdot g'(x_0)$}
+\end{enumerate}
+\bew
+Zeige 3), 1) und 2) analog.\\
+$$\lim_{x \to \x_0} \frac{f(x) \cdot g(x) - f(x_0) \cdot g(x_0)}{x - x_0}$$
+$$= \lim_{x \to \x_0} \frac{f(x) \cdot g(x) - f(x_0) \cdot g(x_0)}{x - x_0} + \frac{f(x) \cdot g(x_0) - f(x_0) \cdot g(x_0)}{x - x_0}$$
+$$= \lim_{x \to \x_0} \left( \frac{f(x) \cdot g(x) - f(x_0) \cdot g(x_0)}{x - x_0} \right) + \lim_{x \to \x_0}\left( \frac{f(x) \cdot g(x_0) - f(x_0) \cdot g(x_0)}{x - x_0} \right)$$
+$$=f(x_0)g'(x_0) + f'(x_0)g(x_0)$$
+Weil $f$ stetig in $x_0$ und nach Definition der Ableitung. \qed{}\\*
+\ul{Folge:} Für $n \geq 1$ $(x^n)' = n \cdot x^{n-1}$
+\bew
+mit vollständiger Induktion:
+$(x^1) = 1 =1 \cdot x^0$ \ok\\*
+$n \to n + 1$\\*
+$(x^n+1) = n\cdot x^{n-1}$
+$$(x^{n+1})' = x' \cdot x^n + x \cdot (x^n)' = 1 + x^n + x \cdot n \cdot x^{n-1} = (n+1) x^n$$ \qed
+
+\sS{Satz Kettenregel}
+Sei $I,J$ Intervalle, $f:I→\R,\ g:J→\R$ Funktionen\\*
+mit $f(I)\subseteq J \leadsto g\circ f:I→\R$ ist definiert\\*
+$I\stackrel{f}{\longrightarrow}J\stackrel{g}{\longrightarrow}\R$\\*
+$x_0\longmapsto f(x_0)$\\
+\desc{Wenn}{$f$ in $x_0$ differenzierbar und\\$g$ in $f(x_0)$ differenzierbar,}
+dann ist $g\circ f$ in $x_0$ differenzierbar,
+und $(g\circ f)'(x_0)=g'(f(x_0))·f'(x_0)$
+\ul{Beweisidee} $\frac{g(f(x)) - g(f(x_0))}{x-x_0} = \frac{g(f(x)) - g(f(x_0))}{f(x)-f(x_0)} \cdot \frac{f(x) - f(x_0)}{x-x_0}$
