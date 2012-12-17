@@ -11,7 +11,7 @@
 \fancyhead[R]{\calligra\Large 17.12.2012}
 % **************************************************
 %
-\chapter*{Differenzialrechnung}
+\chapter{Differenzialrechnung}
 \sS{Definition Differenzialrechnung}
 Sei $I$ ein Intervall:\\*
 Eine Funkion $f:I→\R $ heißt \ul{$x_0\in I$ differenzierbar}, wenn die Grenzwert exstiert $$f'(x_0):=\lim_{x→x_0}\frac{f(x)-f(x_0)}{x-x_0}$$ und $f'(x_0)$ heißt \ul{Ableitung} von $f$ in $x_0$\\*
@@ -20,7 +20,15 @@ $f$ heißt differnzierbar, wenn $f$ in jedem $x_0\in I$ differenzierbar ist.
 $$f'(x_0)=\frac{df}{dx}(x_0)=Df(x_0).$$\\*
 \sss{Geometrische Interpretation}
 Der Differenzialquotient $$ \frac{f(x)-f(x_0)}{(x-x_0)} $$ ist Steigung der Geraden durch die Punkte $ (x,f(x)),\ (x_0,f(x_0)) $ (Sekante)\\
-GRAPH\\*
+\begin{tikzpicture}[scale=2,domain=-0.5:2, samples=200,prefix=plots/,smooth]
+\draw[very thin, color=gray!50] (0,0) grid (2,4.49);
+\draw[->] (-0.5,0) -- (2.5,0) node[right] {$x$};
+\draw[->] (0,-0.5) -- (0,4.5) node[above] {$y$};
+\draw[color=black] plot[id=19.1] function{x*x} node[right] {$f_1(x) =x^2$};
+\draw[color=blue] (0,0) -- (1.5, 0) node[midway,below] {$x-x_0$};
+\draw[color=red] (1.5,0) -- (1.5, 2.25) node[midway,right] {$f(x)-f(x_0)$};
+\draw[color=black] (0,0) -- (1.5, 2.25);
+\end{tikzpicture}\\*
 $f'(x_0)$ (wenn existiert) ist die Steigung der \ul{Tangente} an $Γ_f$ im Punkt $(x_0,f(x_0))$
 \bem
 \desc{Schreibe}{$x=x_0+h$\\$h=x-x_0$}
@@ -43,7 +51,7 @@ $$f'(x_0):=\lim_{x→x_0}\frac{\frac{1}{x}+\frac{1}{x_0}}{x-x_0}=\lim_{x→x_0}\
 \draw[color=black] plot[id=19.2] function{abs(x)} node[right] (1,1) {\footnotesize $f_2(x) =|x|$};
 \end{tikzpicture}
 $x_0 = 0$\\*
-$$f'(x_0):=\lim_{h→0}\frac{|h| - |0|}{h} = \frac{|h|}{h} \text{ existiert nicht, denn \case{1 \ \ h>0 \\ -1 \ \ h < 0}}$$
+$$f'(x_0):=\lim_{h→0}\frac{|h| - |0|}{h} = \frac{|h|}{h} \text{ existiert nicht, denn }\case{1 \ \ h>0 \\ -1 \ \ h < 0}$$
 \Rarr{} $f$ ist nicht in $0$ differenzierbar.}
 \item{$exp: \R \to \R$ bekannt aus Satz 7.36\\*
 Sei $x_0 \in \R$.\\*
@@ -57,7 +65,7 @@ Somit $sin'(x_0) = \lim_{h \to 0} \frac{sin(x_0 + h) - sin(x_0)}{h} = cos(x_0)$
 \Rarr{} $sin$ ist differenzierbar, $sin' = cos$.}
 \item{$cos: \R \to \R $ analog... cos' = -sin \\
 \begin{tikzpicture}[domain=-2:7,prefix=plots/, smooth]
-\draw[very thin,color=gray] (-2,-1.2) grid (7,1.2);
+\draw[very thin,color=gray!50] (-2,-1.2) grid (7,1.2);
 \draw[->] (-2,0) -- (7,0) node[right] {$x$};
 \draw[->] (0,-1.2) -- (0,1.2) node[above] {$i$};
 \draw[color=red] plot[id=sin1] function{sin(x)} node[above, pos=0.5] {\footnotesize $f_1(x) = sin(x)$};
@@ -127,5 +135,5 @@ $I\stackrel{f}{\longrightarrow}J\stackrel{g}{\longrightarrow}\R$\\*
 $x_0\longmapsto f(x_0)$\\
 \desc{Wenn}{$f$ in $x_0$ differenzierbar und\\$g$ in $f(x_0)$ differenzierbar,}
 dann ist $g\circ f$ in $x_0$ differenzierbar,
-und $(g\circ f)'(x_0)=g'(f(x_0))·f'(x_0)$
+und $(g\circ f)'(x_0)=g'(f(x_0))·f'(x_0)$\\
 \ul{Beweisidee} $\frac{g(f(x)) - g(f(x_0))}{x-x_0} = \frac{g(f(x)) - g(f(x_0))}{f(x)-f(x_0)} \cdot \frac{f(x) - f(x_0)}{x-x_0}$
