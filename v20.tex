@@ -1,0 +1,74 @@
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 20}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 20.12.2012}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 20}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 20.12.2012}
+% **************************************************
+%
+\wdh
+$I$ Intervall\\*
+$f:I→\R$ ist in $x_0\in I$ differenzierbar wenn $$f'(x_0)=\lim_{x→x_0}\frac{f(x)-f(x_0)}{x-x_0}$$
+$f'(x_0)$ Ableitung von $f$ an $x_0$
+\bsp
+$n\geq 0:$ $$(x^n)'=n·x^{n-1}$$
+$$(\frac{1}{x})'=-\frac{1}{x^2},\ exp'=exp,\text{ d.h. }(e^x)'=e^x,\ cos'=-sin,\ sin'=cos$$
+\sss{Produktregel}
+$$(f·g)'=f'·g+f·g'$$
+\sss{Kettenregel}
+$$(g\circ f)'(x)=g'(f(x))·f'(x)$$
+\bsp
+$$(e^{x^2})'=(exp(x^2))'=exp'(x^2)·(x^2)'=2x·e^(x^2)$$
+%christopher
+\bsp
+Sei $n<0$, $f:\R\bs\{0\}→\R,\ f(x)=x^n$\\*
+Sei $m=-n>0$ $f(x)=\frac{1}{x^m}$\\*[4pt]
+$$f'(x)=-\frac{(x^m)'}{(x^n)'}=-m\frac{x^{m-1}}{x^{2m}}=-mx^{-m-1}=nx^{n-1}$$
+$$-m-1=n-1$$ $$-m=n$$
+\sss{Folge}
+$(x^n)'=nx^{n-1}$ gilt für alle $n\eZ$!\\*
+$$(x^{-3})'=-3x^{-4}$$
+\sS{Satz (Ableidung der Umkehrfunktion)}
+Sei $f:I→\R$ stetig, streng monoton\\*
+Sei $J=f(I),\ g=f^{-1}:J→I$ die Umkehrfunkion von $f$\\*
+Angenommen, $f$ ist $x_0\in I$ differenzierbar und $f'(x_0)≠0$\\*
+Dann ist $g$ in $y_0:=f(x_0)$ differenzierbar und $g'(y_0)≠\frac{1}{f'(x_0)}$\\*
+SKIZZE
+\bew
+Sei $(y_n)_{n\geq 1}$ Folge in $J$ ist mit $y_n→y_0$
+$$g'(y_0)=\lim_{\nif}\frac{g(y_n)-g(y_0)}{y_n-y_0}$$
+\hfill(soll unabhängig von (y_n) sein)
+$y_n→y_0\ (\nif)$ Sei $x_n=g(y_n)\ →\ x_n→x_0\ (\nif)$ da $g$ stetig.\\*
+$x_n=g(y_n)\ \equ\ f(x_n)=y_n$\\
+$$\lim_{\nif}\frac{g(y_n)-g(y_0)}{y_n-y_0}=\lim_{\nif}\frac{x_n-x_0}{f(x_n)-f(x_0)}=\left(\lim_{\nif}\frac{f(x_n)-f(x_0)}{x_n-x_0}\right)^{-1}=f'(x_0)^{-1}
+Rechnung ok weil $f'(x_0)≠0$ \qed
+% christopher
+$log'(x)=\frac{1}{x}$
+\sss{Anwendung}
+$x=1\ log(1)=0$\\*
+$log'(1)=\frac{1}{1}=1$
+$$\lim_{\nif}\frac{log\left(1+\frac{1}{n}\right)-log(1)}{\frac{1}{n}}=log'(1)=1\ \Rarr\ 1=\lim_{\nif}\left(n·log\left(1+\frac{1}{n}\right)\right))$$
+$exp$ anwenden $\underset{exp stetig}{\Rarr}$\ exp(1)=\lim_{\nif}exp\left(n·log\left(1+\frac{1}{n}\right)\right))$$
+$$e=exp(1)\underset{Def}{=}\lim_{\nif}\left(1+\frac{1}{n}\right)^n$$
+%Höhere Ableitung
+
+\sS{Formale Definition der höheren Ableitung}
+Rekursive Definition:\\*
+Sei $n\geq 1$\\*
+Eine Funktion $f:I→\R$ ist $n+1$ mal differenzierbar in $x_0\in I$ wenn ein $ε>0$ existiert, so dass $f$ auf $(x_0-ε,x_0+ε)$ $n$-mal differenzierbar und $f(n):(x_0-ε,x_0+ε)\R$ in $x_0$ differenzierbar sein, dann setzte $f^{(n+1)}(x_0):=(f^{(n)})'(x_0)$
+
+%lokale extrema ...
+\sS{Satz}
+Sei $I=(a,b),\ f:I→\R$ Funktion\\*
+Wenn $f$ in $x_0\in(a,b)$ ein lokales Extremum hat, und wenn $f$ in $x_0$ differenzierbar ist, dann ist $f'(x_0)=0$ (Extremum = Maxium oder Minimum)
+\bew
+$$f'(x_0)=\lim_{x\searrow x_0}\underbrace{\frac{f(x)-f(x_0)}{x-x_0}}_{\geq 0}=\lim_{x\nearrow x_0}\underbrace{\frac{f(x)-f(x_0)}{x-x_0}}_{\leq 0}$$
+Angenommen $f$ hat in $x_0$ lokales Minimum \Rarr\ $f(x)-f(x_0)\geq 0$ wenn $|x-x_0|<ε,\ ε$ wie oben\\*
+Somit $f'(x_0)\leq 0,\ f'(x_0)\geq 0\ \Rarr\ f'(x_0)= 0\qed$
+
+%Satz (Rolle)
