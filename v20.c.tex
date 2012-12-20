@@ -1,0 +1,80 @@
+$((cos (x))^2)' = f(cos (x))' = f'(cos (x)) \cdot cos'(x) = 2 \cdot cos(x) \cdot sin(x)$
+\sS{Satz Quotientenregel}
+Seien $f, g: I \to \R$ in $x_0$ differenzierbar, $g(x) \neq 0$ für alle $x \in I$.\\*
+Dann ist $\frac{f}{g}: I \to \R$, $\frac{f}{g}(x) := \frac{f(x)}{g(x)}$ differenzierbar in $x_0$\\*
+$$(\frac{f}{g})'(x) = \frac{f'(x_0)\cdot g(x_0) - f(x_0) \cdot g'(x_0)}{g(x_0^2)}$$
+\bew
+Fall $f = 1$:\\*
+Kettenregel:
+$\frac{1}{g} = \frac{1}{x} \cdot g$\\*
+Sei $h(x) = \frac{1}{x}\ \ \frac{1}{g}(x) = h(g(x))$ \\*
+$(\frac{1}{g})'(x) = h'(g(x)) \cdot g'(x) = - \frac{1}{g(x^2)} \cdot g'(x) \approx Beh.$\\*
+Insbesondere: $(\frac{1}{g})' = -\frac{1}{g^2} \cdot g' = -\frac{g'}{g^2}$
+Allgemeiner Fall:
+$\frac{f}{g} = f \cdot \frac{1}{g}$\\*
+Produktregel \Rarr{} $(\frac{f}{g})' = (f \cdot \frac{1}{g})' = f'\frac{1}{g} + f \cdot (\frac{1}{g})'$\\*
+$= \frac{f' \cdot g}{g^2} - f\cdot \frac{g'}{g^2} = \frac{f'\cdot g - f \cdot g'}{g^2} \qed$\\*
+
+% Stefan 	BSP
+%			Satz 8.7 Ableitung der Umkehrfunktion
+
+% Graph für Stefan (8.7)
+\begin{tikzpicture}[domain=-1:4,prefix=plots/, smooth]
+\draw[very thin,color=gray] (-0.99,-0.49) grid (3.99,2.99);
+\draw[->] (-1,0) -- (4,0) node[right] {$x$};
+\draw[->] (0,-1) -- (0,3) node[above] {$y$};
+% Some fancy function
+% Tangente zu dem Fancy Graphen bei x_0
+% \draw[color=blue] plot[id=cos1] function{cos(x)} node[below, midway] {\footnotesize $f_2(x) = cos(x)$};
+\end{tikzpicture}\\*
+
+\ul{Folge} $log: \R_{>0}\to \R$ ist differenzierbar, $log'(x) = \frac{1}{x}$\\*
+\bew
+$log(x) = exp(x)^{-1}$ Umkehrfunktion $exp'(x) = exp(x) \neq 0$ für alle $x$\\*
+\Rarr{} 8.7 anwendbar. Sei $y = exp(x)$, $x = log(y)$.
+$log'(y) = \frac{1}{exp'(x)} = \frac{1}{exp(x)} = \frac{1}{y}\qed$
+
+%Stefan 	Anwendung
+
+\uS{Höhere Ableitungen}
+Idee: Wenn $f: I \to \R$ differenzierbar\\*
+\approx $f':I \to \R$ Fkt\\*
+Wenn $f'$ diffbar $ \approx (f')' = f'' = \frac{d^2f}{dx^2}$\\*
+2. Ableitung weiter:
+$f'' = f^{(2)}$\\*
+$f^{(n+1)} = (f^{n})'$ wenn differenzierbar\\*
+$f^{(n)}$: n-te Ableitung von $f$.
+\bsp
+$$(x^5)^{(2)} = ((x^5)')' = (5x^4)' = 20x^3$$
+$$cos'' = -sin' = -cos$$
+$$sin'' = -cos' = -sin$$
+
+% Stefan 	8.9
+
+\uS{Lokale Extrema und Mittelwertsatz}
+\sS{Definition Lokales Maximum}
+Sei $f: I \to \R$ Fkt.\\*
+f hat ein \ul{lokales Maximum} in $x_0 \in I$ wenn gilt:\\*
+$\case{
+\text{es gibt ein $\e > 0$ s.d.}\\
+\text{Für alle $x \in I$ mit $|x-x_0| < \e$}\\
+\text{gilt $f(x) \leq f(x_0)$}
+}$
+Analog: Lokales Minimum.
+\bem
+Lokale Minima von $f$ = lokale Maxima von $-f$
+
+% Stefan 	Satz 8.11
+
+\sS{Satz Rolle}
+Sei $a < b$, $f:[a, b] \to \R$ stetig auf $(a, b)$ differenzierbar.\\*
+Sei $f(a) = f(b)$.\\*
+Dann gibt es ein $x_0 \in (a, b)$ mit $f'(x_0) = 0$\\*
+% Graph
+\bew
+Wenn $f$ konstant, d.h. $f(x) = f(a)$ für alle $x \in (a, b),$ dann $f'(x) = 0 $ für alle $x$ \Rarr{} Satz stimmt.\\*
+Sei $f$ nicht konstant, gibt es $x_1 \in (a, b)$ mit $f(x_1) \neq f(a)$\\*
+Angenommen $f(x_1) > f(a)$  (sonst Betrag $-f$)\\*
+sei $x_0 \in I$ mit $f(x_0) \geq f(x)$ für alle $x \in I$\\*
+$f(x_0) \geq f(x_1) > f(a) = f(b) \Rarr x_0 \neq a,\ x_0 \neq b$\\*
+$f$ hat in $x_0$ ein \ul{lokales} Maximum \overset{8.19}{\Rarr{}} $f'(x_0) = 0$
