@@ -44,20 +44,20 @@ $cos(x)$ & 1 & 0 & -1 & 0 & 1
 \end{tabular}
 \sS{Satz}
 %WDH
-Die Funktion $cos:[0,\pi]?[0,1]$ ist stetig, streng monoton fallend, bijektiv
+Die Funktion $cos:[0,\pi]→[0,1]$ ist stetig, streng monoton fallend, bijektiv
 \bew
-$cos:[0,2]?\R$ streng monoton fallend \Rarr\ $cos:[0,\frac{\pi}{2}]?\R$ streng monoton fallend\\*
-$cos(\pi-x)=-cos(x)$ \Rarr\ $cos:[\frac{\pi}{2},\pi]?\R$ streng monoton fallend SKIZZE\\*
-\Rarr\ $cos:[0,\pi]?\R$ streng monoton fallend\\*
-$cos(0)=1,\ cos[\pi]=-1$ \Rarr\ $cos:[0,\pi]?[-1,1]$ surjektiv, somit bijektiv\qed\\*
+$cos:[0,2]→\R$ streng monoton fallend \Rarr\ $cos:[0,\frac{\pi}{2}]→\R$ streng monoton fallend\\*
+$cos(\pi-x)=-cos(x)$ \Rarr\ $cos:[\frac{\pi}{2},\pi]→\R$ streng monoton fallend SKIZZE\\*
+\Rarr\ $cos:[0,\pi]→\R$ streng monoton fallend\\*
+$cos(0)=1,\ cos[\pi]=-1$ \Rarr\ $cos:[0,\pi]→[-1,1]$ surjektiv, somit bijektiv\qed\\*
 \ssss{Folge} es gibt eine Umkehrfunktion:
-Arcuscosinus: $arccos=cos^{-1}:[-1,1]?[0,\pi]$SKIZZE ARCCOS\\*
+Arcuscosinus: $arccos=cos^{-1}:[-1,1]→[0,\pi]$SKIZZE ARCCOS\\*
 \alg{cos(0)&=1\quad arccos(1)=0\\*
 cos(\frac{\pi}{2})&=0\quad arccos(0)=\frac{\pi}{2}\\*
 cos(\pi)&=-1\quad arccos(1)=\pi}
 \bem
 Die Wahl des Intervalls $[0,\pi]$ ist willkührlich. Auch bijektiv:\\*
-$cos:[\pi,2\pi]?[-1,1],\ cos:[-\pi,0]?[-1,1]$
+$cos:[\pi,2\pi]→[-1,1],\ cos:[-\pi,0]→[-1,1]$
 \bem
 Sei $x\eR$. Es gilt $cos(x)=1\ \equ\ x=2\pi·n$ mit $n\eZ$\\*
 (Anschaulich: klar, Beweis: Übung)
@@ -84,7 +84,7 @@ Wenn $\til{y} = y$ dann $\phi = \til{\phi}$ Lösung: $e^{i\phi} = w$\\*
 Wenn $\til{y} = -y$ dann $\phi := 2\pi 2\pi - \til{\phi}$\\*
 $cos(\phi) = cos(\til{\phi}) = x$ \ok\\
 $sin(\phi) = sin(2\pi - \til{\phi}) = sin(\til{phi}) = -\til{y} = y$ \ok\\
-\Rarr{} $e^{i\phi} = w \Rarr z = r \cot w = r \cdot e^{i\phi}$\\
+\Rarr{} $e^{i\phi} = w \Rarr z = r \cdot w = r \cdot e^{i\phi}$\\
 Aber:
 $$|\phi-\phi'| < 2 \pi \Rarr\ \phi-\phi'<0$$
 Das zeigt \ul{Eindeutigkeit} der Polarzerlegung\qed
@@ -133,8 +133,8 @@ Wenn $z_n \to 0$ dann $|z_n| \to 0$\\*
 \bem \begin{enumerate}
 \item{Beschränkung auf $z=x\eR\ \leadsto\ \lim_{x \to 0}\ \overset{x \to 0}{x\neq 0}\quad \frac{e^x-1}{x}=1\quad x\eR$}
 \item{Beschränkung auf $$z=ix,\ x\eR\ \leadsto\ \lim_{x \to 0}\frac{e^ix-1}{ix}=1$$ $$\lim_{x→0}\frac{cos(x)+i·sin(x)-1}{ix}=1$$ $$\lim_{x→0}\left(\frac{sin(x)}{x}-i·\frac{cos(x)-1}{x}\right)=1+0i\ (*)$$
-$$(*) \underset{Realteil}{\Rarr} \lim_{x?0}\frac{sin(x)}{x}=1$$
-$$(*) \underset{Imaginärteil}{\Rarr} \lim_{x?0}\frac{cos(x)-1}{x}=0$$}
+$$(*) \underset{Realteil}{\Rarr} \lim_{x→0}\frac{sin(x)}{x}=1$$
+$$(*) \underset{Imaginärteil}{\Rarr} \lim_{x→0}\frac{cos(x)-1}{x}=0$$}
 \end{enumerate}
 
 \uS{Geometrische Bedeutung von $\pi$?}
