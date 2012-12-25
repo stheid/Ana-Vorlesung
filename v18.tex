@@ -1,14 +1,14 @@
 % Kopfzeile beim Kapitelanfang:
 \fancypagestyle{plain}{
 %Kopfzeile links bzw. innen
-\fancyhead[L]{\calligra\Large Vorlesung Nr. 17}
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 18}
 %Kopfzeile rechts bzw. außen
-\fancyhead[R]{\calligra\Large 06.12.2012}
+\fancyhead[R]{\calligra\Large 10.12.2012}
 }
 %Kopfzeile links bzw. innen
-\fancyhead[L]{\calligra\Large Vorlesung Nr. 17}
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 18}
 %Kopfzeile rechts bzw. außen
-\fancyhead[R]{\calligra\Large 06.12.2012}
+\fancyhead[R]{\calligra\Large 10.12.2012}
 % **************************************************
 \wdh
 \section*{Definition}
@@ -64,10 +64,10 @@ Sei $x\eR$. Es gilt $cos(x)=1\ \equ\ x=2\pi·n$ mit $n\eZ$\\*
 
 \uS{Polarzerlegung}
 \sS{Satz}
-Jede komplexe Zahl $z \in \C$ hat eine Darstellung $z = r \cdot e^{i\phi}$ mit $r \in \R,\ r \geq 0,\ \phi \in \R$. Es gilt $r= |z|$, Man kann $\phi$ so wählen, dass $\phi \in [0, 2\pi)$. Wenn $z \neq 0$, dann ist $\phi \in [0, 2\pi)$ eindeutig.\\*
+Jede komplexe Zahl $z \in \C$ hat eine Darstellung \fbox{$z = r \cdot e^{i\phi}$} mit $r \in \R,\ r \geq 0,\ \phi \in \R$. Es gilt $r= |z|$, Man kann $\phi$ so wählen, dass $\phi \in [0, 2\pi)$. Wenn $z \neq 0$, dann ist $\phi \in [0, 2\pi)$ eindeutig.\\*
 Bezeichnung: $z = r \cdot e^{i\phi}$\\*
 Polarzerlegung von $z$, $\phi \in [0, 2\pi)$ , Argument von $z$ (wenn $z \neq 0$)
-%Skizze
+SKIZZE
 \bew
 Wenn $z = 0$ \Rarr{} $|z| = |r| \cdot |e^{i\phi}| = r \cdot 1 = r$\\*
 Wenn $z = 0$: $z = 0 \cdot e^{i \phi}$ für alle $\phi$\\*
@@ -84,34 +84,15 @@ Wenn $\til{y} = y$ dann $\phi = \til{\phi}$ Lösung: $e^{i\phi} = w$\\*
 Wenn $\til{y} = -y$ dann $\phi := 2\pi 2\pi - \til{\phi}$\\*
 $cos(\phi) = cos(\til{\phi}) = x$ \ok\\
 $sin(\phi) = sin(2\pi - \til{\phi}) = sin(\til{phi}) = -\til{y} = y$ \ok\\
-\Rarr{} $e^{i\phi} = w \Rarr z = r \cot w = r \cdot e^{i\phi}$
+\Rarr{} $e^{i\phi} = w \Rarr z = r \cot w = r \cdot e^{i\phi}$\\
 Aber:
 $$|\phi-\phi'| < 2 \pi \Rarr\ \phi-\phi'<0$$
 Das zeigt \ul{Eindeutigkeit} der Polarzerlegung\qed
-
 \bem
 (Multiplikation komplexer Zahlen in Polarzerlegung)
 $$(r·e^{i\phi})·(r·e^{i\phi'})=(r·r')·e^{i\phi+i\phi'}=(r·r')·e^{i(\phi+\phi')}$$
-Multiplikation in $\C$ entspricht $\begin{cases}\text{Multiplikation der Beträge}\\ \text{Addition der Argumente}\end{cases}$ SKIZZE
+Multiplikation in $\C$ entspricht $\case{\text{Multiplikation der Beträge}\\ \text{Addition der Argumente}}$ SKIZZE
 
-\sS{Satz}
-Es gilt $\lim_{z \to 0} \frac{exp(z) - 1}{z} = 1$\\*
-Das heißt: \\*
-Wenn $(z_n)$ Folge in $\C$ mit $z_n \neq 0$, $z_n \to 0$ dann gilt $\frac{exp(z) -1}{z} \to 1$
-\bew
-$$exp(z) = 1 + \frac{z}{1!} + \frac{z^2}{2!} + \frac{z^3}{3!} + \ldots$$
-$$\frac{exp(z) - 1}{z} =\frac{\frac{z}{1!} + \frac{z^2}{2!} + \frac{z^3}{3!} + \ldots}{z}$$
-$$= \frac{1}{1!} + \frac{z}{2!} + \frac{z^2}{3!} + \frac{z^3}{4!} + \ldots$$
-Also $|\frac{exp(z) - 1}{z} - 1| = |\frac{z}{2!} + \frac{z^2}{3!} + \ldots| \leq |\frac{z}{2!}| + |\frac{z^2}{3!}| + |\frac{z^3}{4!}| + \ldots$\\*
-$\leq \frac{|z|}{1!} + \frac{|z|^2}{2!} + \frac{|z|^3}{3!} + \ldots = exo(|z|) -1$\\*
-Wenn $z_n \to 0$ dann $|z_n| \to 0$\\*
-\Rarr{} $(exp(|z|)) \to 0$\\*
-\Rarr{} $\frac{exp(z_n) - 1}{z_n} \to 1$ \qed
-
-Aber:
-$$|\phi-\phi'| < 2 \pi \Rarr\ \phi-\phi'<0$$
-Das zeigt \ul{Eindeutigkeit} der Polarzerlegung\qed
-% ich glaube hier fehlt noch was, mal die Bilder abwarten...
 \sS{Satz (Einheitswurzel)}
 Sei \nN\\*
 Die Gleichung $z^n=1,\ z\eC$\\*
@@ -132,15 +113,30 @@ e^0=1\\
 e^0=1\\
 e^0=1\\}$
 \sss{Verhalten von $exp(z)$ nahe Null}
-Erinnerung: $exp:\C?\C$ stetig, dass heißt wenn $z?0$ dann $exp(z)?exp(0) =1$\\*
+Erinnerung: $exp:\C→\C$ stetig, dass heißt wenn $z→0$ dann $exp(z)→exp(0) =1$\\*
 Betrachte $\dfrac{exp (z)-1}{z}$ für $z\eC,\ z\neq 0$
-%chris
+
+\sS{Satz}
+Es gilt $\lim_{z \to 0} \frac{exp(z) - 1}{z} = 1$\\*
+Das heißt: \\*
+Wenn $(z_n)$ Folge in $\C$ mit $z_n \neq 0$, $z_n \to 0$ dann gilt $\frac{exp(z) -1}{z} \to 1$
+\bew
+$$exp(z) = 1 + \frac{z}{1!} + \frac{z^2}{2!} + \frac{z^3}{3!} + \ldots$$
+$$\frac{exp(z) - 1}{z} =\frac{\frac{z}{1!} + \frac{z^2}{2!} + \frac{z^3}{3!} + \ldots}{z}$$
+$$= \frac{1}{1!} + \frac{z}{2!} + \frac{z^2}{3!} + \frac{z^3}{4!} + \ldots$$
+Also $|\frac{exp(z) - 1}{z} - 1| = |\frac{z}{2!} + \frac{z^2}{3!} + \ldots| \leq |\frac{z}{2!}| + |\frac{z^2}{3!}| + |\frac{z^3}{4!}| + \ldots$\\*
+$\leq \frac{|z|}{1!} + \frac{|z|^2}{2!} + \frac{|z|^3}{3!} + \ldots = exo(|z|) -1$\\*
+Wenn $z_n \to 0$ dann $|z_n| \to 0$\\*
+\Rarr{} $(exp(|z|)) \to 0$\\*
+\Rarr{} $\frac{exp(z_n) - 1}{z_n} \to 1$ \qed
+
 \bem \begin{enumerate}
-\item{Beschränkung auf $z=x\eR\ \leadsto\ \lim_{x \to 0}\overset{x \to 0}{x\neq 0} \frac{e^x-1}{x}=1 (x\eR)$}
-\item{Beschränkung auf $$z=ix,\ x\eR\ \leadsto\ \lim_{x \to 0}\frac{e^ix-1}{ix}=1$$ $$\lim_{x?0}\frac{cos(x)+i·sin(x)-1}{ix}=1$$ $$\lim_{x?0}\left(\frac{sin(x)}{x}-i·\frac{cos(x)-1}{x}\right)=1+0i\ (*)$$
+\item{Beschränkung auf $z=x\eR\ \leadsto\ \lim_{x \to 0}\ \overset{x \to 0}{x\neq 0}\quad \frac{e^x-1}{x}=1\quad x\eR$}
+\item{Beschränkung auf $$z=ix,\ x\eR\ \leadsto\ \lim_{x \to 0}\frac{e^ix-1}{ix}=1$$ $$\lim_{x→0}\frac{cos(x)+i·sin(x)-1}{ix}=1$$ $$\lim_{x→0}\left(\frac{sin(x)}{x}-i·\frac{cos(x)-1}{x}\right)=1+0i\ (*)$$
 $$(*) \underset{Realteil}{\Rarr} \lim_{x?0}\frac{sin(x)}{x}=1$$
 $$(*) \underset{Imaginärteil}{\Rarr} \lim_{x?0}\frac{cos(x)-1}{x}=0$$}
 \end{enumerate}
+
 \uS{Geometrische Bedeutung von $\pi$?}
 \sss{Frage} Was ist die Länge des Kreisbogens von $1$ bis $e^{ix}$? SKIZZE
 \begin{enumerate}
@@ -151,10 +147,11 @@ Zerteilung in kleine Strecken
 Wähle $n \in \N$ groß:
 $$l_n = |e^{ix/n} - 1| + |e^{2ix/n} - e^{ix/n}| + ... + |e^{ix} - e^{(n-1)ix/n}|$$
 $$= \sum_{k=0}^{n-1} \left| |e^{(k+1)ix/n} - e^{kix/n}| \right|$$
+
 \sS{Satz}
 Es gilt $\lim_\nif  l_n=|x|$ Interpretation der Länge des Bogens ist $|x|$\\*
-SKIZZE bogenlänge\\*
+SKIZZE bogenlänge
 \bew
 $$|e^{(k+1)ix/n}-e^{kix/n}|=|e^{kix/n}|·|e^{ix/n}-1|=|e^{ix/n}-1|$$
 $$(**)\ \text{Satz 7.36: } \lim_{\nif}\left|\frac{e^{ix/n}-1}{ix/n}\right|=1$$
-$$\lim_{n→∞}l_n=\lim_{\nif}n·\left|e^{ix/n}-1\right|=\frac{\left|e^{ix/n}-1\right|}{\frac{1}{n}}\underset{(**)}{=}|x|\qed$$
+$$\lim_{n→∞}l_n=\lim_{\nif}n·\left|e^{ix/n}-1\right|=\frac{\left|e^{ix/n}-1\right|}{\frac{1}{n}}\underset{(**)}{=}|x|$$\qed
