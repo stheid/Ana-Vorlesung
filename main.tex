@@ -14,13 +14,14 @@
 \usepackage{tikz} 		% Für Graphenzeichnerei
 \usepackage{wrapfig}
 \usepackage{pgf}
+\usepackage[hyperindex,backref,hidelinks]{hyperref}
 
 % Language
 \setdefaultlanguage{german}
 
 % Definitionen fürs floaten
-\fboxsep0pt
-\fboxrule0pt
+\fboxsep 1pt
+\fboxrule 1pt
 
 % set underline
 \setul{.3mm}{.8pt}
@@ -70,7 +71,7 @@
 \mcmd{\Z}{\mathbb{Z}}
 \mcmd{\Q}{\mathbb{Q}}
 \mcmd{\R}{\mathbb{R}}
-\mcmd{\C}{\mathbb{C}}
+\renewcommand{\C}{\text{$\mathbb{C}$}}
 
 \mcmd{\nN}{n\in\N}
 \mcmd{\eN}{\in\N}
