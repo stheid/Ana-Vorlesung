@@ -11,7 +11,7 @@ Das Projekt ist immer in Arbeit, wenn das Skriptum also mal nur
 ein paar Zeilen lang ist, einfach in 'ner Stunde noch mal schaun.
 
 Das fertig übersetzte Skript gibt es hier:
-https://www.dropbox.com/s/ys5rjhzfephd4zt/AnaSkriptum.pdf
+https://www.dropbox.com/s/d6b8on7f8gh91aw/Ana%20Skriptum.pdf
 
 
  Bugs bitte mit folgendem Muster an bugfixes@ccjordan.de
