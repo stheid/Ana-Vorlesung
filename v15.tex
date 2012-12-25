@@ -62,7 +62,6 @@ Erinnerung:\\*
 $$|z| \leq |x|,\ |z| \leq |y| \text{ (aus der NR)}$$
 
 \uS{Folgen und Reihen komplexer Zahlen}
-
 \sS{Definition (Grenzwert)}
 Sei $(c_n)_{n\geq 0}$ eine Folge komplexer Zahlen, $c \in \C$\\*
 Die Folge $c_n$ konvergiert gegen $c$ wenn gilt:\\[4pt]
@@ -90,10 +89,10 @@ Sei $z,w\eC$
 \bew
 \begin{enumerate}
 \setcounter{enumi}{1}
-\item{$\ds |z·w|=\sqrt{zw·\ol{zw}}\underset{7.3}{=}\sqrt{z·w·\ol{z}·\ol{w}}=\sqrt{z·\ol{z}·w·\ol{w}}=\sqrt{z·\ol{z}}\sqrt{w·\ol{w}}=|z|·|w|$beide reell $\geq 0$
-Nachtrag rechts unten 3. tafel}
+\item{$$|z·w|=\sqrt{zw·\ol{zw}}\underset{7.3}{=}\sqrt{z·w·\ol{z}·\ol{w}}=\sqrt{z·\ol{z}·w·\ol{w}}=\sqrt{z·\ol{z}}\sqrt{w·\ol{w}}=|z|·|w|$$
+beide reell $\geq 0$ NR:$|\ol{z}|=\sqrt{x^2+(-y)^2}=\sqrt{x^2+y^2}=|z|$}
 \item{\alg{|z+w|&=(z+w)·(\ol{z+w})\underset{7.3}{=}(z+w)·(\ol{z}+\ol{w})=z·\ol{z}+z·\ol{w}+w·\ol{z}+w·\ol{w}=\footnote{$\ol{z·\ol{w}}=\ol{z}·\ol{\ol{w}}=\ol{z}·w=w·\ol{z}$}z·\ol{z}+\underbrace{z·\ol{w}+\ol{z·\ol{w}}}_{2·Re(z·\ol{w})}+w·\ol{w}\\
-&=z·\ol{z}+2·Re(z·\ol{w})+w·\ol{w}\leq |z|^2+2·|z|·|w|+|w|^2=\footnote{Für jedes $u=c+d·i\eC$ gilt $|u|=\sqrt{c^2+d^2}\geq \sqrt{c^2}=|c|=|Re(u)|$}(|z|+|w|)^2
+&=z·\ol{z}+2·Re(z·\ol{w})+w·\ol{w}\leq |z|^2+2·|z|·|w|+|w|^2=\footnote{Für jedes $u=c+d·i\eC$ gilt $|u|=\sqrt{c^2+d^2}\geq \sqrt{c^2}=|c|=|Re(u)|$}(|z|+|w|)^2\\
 \sqrt{}\ &\Rarr\ |z+w|=|z|+|w|\qed}}
 \end{enumerate}
 \bem
@@ -103,7 +102,6 @@ Nachtrag rechts unten 3. tafel}
 \end{enumerate}
 \bew
 \begin{enumerate}
-%% Er war einsam, aber schneller.
 \item{$|\ol{c_n} - \ol{c}| = |\ol{c_n - c}| = |c_n - c|\ \Rarr$ Behauptung}
 \item{Übung}
 \end{enumerate}
@@ -137,7 +135,12 @@ Genau wie Beweis von 7.6 verwende:
 $$|a_n-a_m|\leq |c_n-c_m|$$
 $$|b_n-b_m|\leq |c_n-c_m|$$
 $$|c_n-c_m|\leq |a_n-a_m|+|b_n-b_m|$$\qed
-%Satz 7.9
+
+\sS{Satz konvergente Folge komplexer Zahlen ist Cauchy-Folge}
+Eine Folge komplexer Zahlen $(c_n)$ konvergiert \equ\ $(c_n)$ ist Cauchy-Folge
+\bew
+Sei $c_n=a_n+ib_n$\\*
+$(c_n)$ konvergiert $\underset{7.6}{\equ}$ $(a_n)$ und $(b_n)$ konvergiert \equ\ $(a_n)$ und $(b_n)$ sind Cauchy-Folgen $\underset{7.8}{\equ}$ $(c_n)$ ist Cauchy-Folge\qed
 
 \sS{Satz}
 Wenn $c_n→c, c_n→c'$ konvergente Folgen komplexer Zahlen sind, dann gilt:

@@ -30,16 +30,15 @@ Additionstheoreme: $cos(x+y)=Re(e^{i(x+y)})=Re(e^{i(x)}·e^{i(y)})=cos(x)·cos(y
 	\draw (0.4794, 0.43) node[right, red] {$sin(x)$};
 	\draw (0.24, 0.8775) node[above, blue] {$cos(x)$};
 \end{tikzpicture}
-\desc{Problem: zu zeigen}{$\~{sin}$ und $sin$ aus Vorlesung\\*
-$\~{cos}$ und $cos$ aus Vorlesung}
+\desc{Problem: zu zeigen}{$\til{sin}$ und $sin$ aus Vorlesung\\*
+$\til{cos}$ und $cos$ aus Vorlesung}
 \tikz[scale=2,domain=-0.49:2.5, samples=200,prefix=plots/,smooth]{
       \draw[very thin, color=gray!50] (-0.49,-0.25) grid (2.49,2.49);
       \draw[->] (-0.5,0) -- (2.5,0) node[right] {$x$};
       \draw[->] (0,-0.5) -- (0,2.5) node[above] {$y$};
-      \clip (-0.49,-0.5) rectangle (2.5,2.5);
-      \draw[color=red] plot[id=17.1] function{x} node[below]{\footnotesize $f_1(x) =x$};
-      \draw[color=blue] plot[id=17.2,sharp plot] function{sin(x)} node {\footnotesize $f_2(x) = sin(x)$};
-      \draw[color=cyan] plot[id=17.3] function{x - (x**3 / 6)} node [below] {\footnotesize $f_2(x) = x - \frac{x^3}{6}$};
+      \draw[color=red] plot[id=17.1] function{x} node[right]{\footnotesize $f_1(x) =x$};
+      \draw[color=blue] plot[id=17.2,sharp plot] function{sin(x)} node[right] {\footnotesize $f_2(x) = sin(x)$};
+      \draw[color=cyan] plot[id=17.3] function{x - (x**3 / 6)} node[right] {\footnotesize $f_2(x) = x - \frac{x^3}{6}$};
 }
 }
 \end{itemize}
@@ -47,17 +46,16 @@ Potenzreihen von $sin$ und $cos$:
 Für $x \in \R$ gilt:
 $$cos(x) + i \cdot sin(x) = exp(i \cdot x) = \frac{1}{0!}+\frac{i \cdot x}+{1!}+\frac{(i \cdot x)^2}{1!}+{2!}+\frac{(i \cdot x)^3}{3!}+…$$
 $$=(\frac{1}{0!} + \frac{(i \cdot x)^2}{2!} + \frac{(i \cdot x)^4}{4!}) + \frac{(i \cdot x)^6}{6!} + …) + i (\frac{(i \cdot x)}{1!} + \frac{(i \cdot x)^3}{3!}) + \frac{(i \cdot x)^5}{5!}) + …)$$
-\sS{Satz}
-Für $x \in R$ gilt:
-$$cos(x) = \ds\sum_{k \geq 0} \frac{(-1)^k}{(2k)!} \cdot x^{2k},\ sin(x) =\sum_{k \geq 0} \frac{(-1)^k}{(2k +1)!} \cdot x^{2k+1} $$
+
 \sS{Bemerkung}
 Siehe Übung\\*
 $$cos(x)-cos(y)=2sin \ldots$$
 
-% Satz 7.26
+\sS{Satz}
+Für $x \in R$ gilt:
+$$cos(x) = \ds\sum_{k \geq 0} \frac{(-1)^k}{(2k)!} \cdot x^{2k},\ sin(x) =\sum_{k \geq 0} \frac{(-1)^k}{(2k +1)!} \cdot x^{2k+1} $$
 
-
-\uS{Analytische Definition der Zahl \pi}
+\uS{Analytische Definition der Zahl $\pi$}
 \sS{Lemma}
 Für $0<x\leq 2$ gilt: $0<x-\frac{x^3}{6}<sin(x)<x$.\\*
 \begin{tikzpicture}[domain=-2:7,prefix=plots/, smooth]
@@ -77,7 +75,7 @@ $$sin(x)-(x-\frac{x^3}{6})=\underset{>0}{(a_2-a_3)}+\underset{>0}{(a_4-a_5)}…>
 Schließlich gilt für $0<x\leq 2$:
 $$0<x-\frac{x^3}{6}, \text{ denn } \frac{x^3}{6}=\frac{x·x^2}{6}\leq x·\frac{4}{6}<x$$ \qed
 
-\subsection*{Lemma} es gilt $cos(2) < 0$ und $cos(1) > 0$
+\sS{Lemma} es gilt $cos(2) < 0$ und $cos(1) > 0$
 \bew
 	Es gilt $cos(2) = \sum (-1)^n \cdot b_n$, $b_n = \frac{2^{2n}}{(2n)!}$. Für $n \geq 1$ gilt: 
 	$$\frac{b_{n+1}}{b_n} = \frac{2^2}{(2n+1)(2n+2)} < 1$$
@@ -138,7 +136,7 @@ Für $x\eR$ gilt:\\*
 \begin{enumerate}
 \item{$\ds cos(2\pi+x)=cos(x),\ sin(2\pi+x)=sin(x)$}
 \item{$\ds cos(\pi+x)=-cos(x),\ sin(\pi+x)=-sin(x)$}
-\item{$\ds cos(\pi-x)=cos(-x)=-cos(x),\ sin(\pi-x)=sin(x)$}
+\item{$\ds cos(\pi-x)=-cos(x),\ sin(\pi-x)=sin(x)$}
 \item{$\ds cos(\frac{\pi}{2}-x)=sin(x)$}
 \end{enumerate}
 \Bew{Additionstheoreme anwenden}
