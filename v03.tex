@@ -109,18 +109,14 @@ $a^{n \cdot m} = (a^{n})^m$
 	Sei $K$ ein angeordneter Körper $a, b \in K, a > -1$ und $n \in \N \{0, 1, 2, 3, 4, …\}$.\\*
 	Dann gilt:
 	$$(1 + a)^n \geq 1 + n \cdot a$$
-	Beweis durch vollständige Induktion:\\*
-	\ind{
-		$$n = 0\\*
-		(1 + a)^0 = 1 = 1 + 0 \cdot a$$
-	}{
-		Annahme:\\*
-		$$(1 + a)^{n + 1} = (1 + a)(1 + a)^n \geq (1 + a)(1 + n \cdot a)$$\\*
-		weil $1 + a > 0$\\*
-		$= 1 + a + n \cdot a + n \cdot a^2$\\*
-		$= 1 + (n + 1) \cdot a + n \cdot a^2$\\*
-		weil $a^2 \geq 0\ \Rarr\ n \cdot a^2 \geq 0$
-	}
+	Beweis durch vollständige Induktion:
+	\ind{$$n = 0\qquad(1 + a)^0 = 1 = 1 + 0 \cdot a$$}
+	{Annahme:
+	$$(1 + a)^{n + 1} = (1 + a)(1 + a)^n \geq (1 + a)(1 + n \cdot a)$$
+	weil $1 + a > 0$\\*
+	$= 1 + a + n \cdot a + n \cdot a^2$\\*
+	$= 1 + (n + 1) \cdot a + n \cdot a^2$\\*
+	weil $a^2 \geq 0\ \Rarr\ n \cdot a^2 \geq 0$}
 
 \sS{Definition Beschränktheit}
 	Sei $K$ ein angeordneter Körper, $M \subseteq K$ eine Teilmenge, $a \in K$.

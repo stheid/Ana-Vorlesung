@@ -92,7 +92,7 @@
 % Symbole
 \cmd{\qed}{\hfill\text{$\blacksquare$}}
 \mcmd{\bs}{\backslash}
-\mcmd{\ba}{\backslash}
+\mcmd{\ba}{\bs}
 
 % häufige mathemathische Ausdrücke
 \mcmd{\nif}{n→∞}
@@ -118,11 +118,10 @@
 \cmd{\bew}{\sss{Beweis:}}
 \cmd{\Bew}[1]{\subsection*{\ul{Beweis} #1:}}
 \cmd{\anm}{\sss{Anmerkung:}}
-\cmd{\ssss}[1]{{\bf\ul{#1}}\\}
+\cmd{\ssss}[1]{{\bf\ul{#1}}}
 
 % Textkürzel
 \cmd{\ok}{\hfill{\checkmark}}
-\tcmd{\oE}{ohne Einschränkungen}
 
 % Environments
 \cmd{\ds}{\displaystyle}
@@ -133,8 +132,8 @@
 \cmd{\einruck}[2]{#1\vspace{-3.65ex}\begin{addmargin}{.05\textwidth}#2\end{addmargin}}
 
 \cmd{\desc}[2]{\begin{description}\item[\textrm{#1}]{\hfill\\*#2}\end{description}}
-\cmd{\ind}[2]{\einruck{IA:}{#1\ok}\einruck{IS: }{$n\to n+1$#2\qed}}
-\cmd{\indIV}[3]{\einruck{IA:}{#1\ok}\einruck{IV:}{#2}\\\einruck{IS: }{$n\to n+1$#3\qed}}
+\cmd{\ind}[2]{\desc{IA:}{#1\ok}\desc{IS:}{$n\to n+1$#2\qed}}
+\cmd{\indIV}[3]{\desc{IA:}{#1\ok}\desc{IV:}{#2}\desc{IS:}{$n\to n+1$#3\qed}}
 \cmd{\notat}[1]{\begin{description}\item[\textsf{\em Notation:}]{\hfill\\*\textsf{\em #1}}\end{description}}
 \cmd{\ol}[1]{\text{$\overline{#1}$}}
 \cmd{\alg}[1]{\begin{align*}#1\end{align*}}
