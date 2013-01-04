@@ -47,7 +47,7 @@ Für $\ds 2^n \leq k \leq 2^{n+1} - 1$ ist $\ds a_{2^n} \geq a_{k} \geq a_{2^{n+
 Wenn $\ds \sum_{k \geq 0} 2^k · a_2^k$ beschränkt \Rarr $\ds \sum_{k \geq 0} b_k$ beschränkt \Rarr $\ds \sum_{k \geq 0} a_k$ beschränkt\\*
 Hier immer beschränkt \equ konvergent\\*
 Wenn $\ds \sum_{k \geq 0} 2^k · a_k$ beschränkt \Rarr $\ds \sum_{k \geq 0} b_k$ beschränkt \Rarr $\ds \sum_{k \geq 0} 2^{k} · a_2^{k+1}$ beschränkt \equ $\ds \sum_{k \geq 0} 2^{k+1} · a_2^{k+1}$ beschränkt \equ $\ds \sum_{k \geq 0} 2^{k} · a_2^{k}$ beschränkt\\*
-Das zeigt den Satz.\\*
+Das zeigt den Satz.
 \sss{Anwendung}
 \sss{Erinnerung}
     Für $ x\geq 0$ und $a \in \R$ wird später $x^a \in R$ definiert\\*
@@ -79,21 +79,20 @@ Frage: Für welche z ist $\zeta(z)=0$?
 \uS{Teilfolgen}
 \sS{Definition Teilfolge}
 Sei $(a_n)$ eine Folge reeller Zahlen.\\*
-Eine Teilfolge von $(a_n)$ ist eine Folge der Form $(a_{n_k})_{k \geq 0}$ wobei $n_0, n_1, n_2,…$ streng monoton wachsende Folge in $\N_0$ ist.\\*
+Eine Teilfolge von $(a_n)$ ist eine Folge der Form $(a_{n_k})_{k \geq 0}$ wobei $n_0, n_1, n_2,…$ streng monoton wachsende Folge in $\N_0$ ist.
 \bsp
 $(a_n) = (1, x, x^2, x^3 , x^4 …)$\\*
-$(n_k) = (1, 4, 9, 16) \leadsto $ Teilfolge $(x, x^4, x^9, x^{16} ,…)$\\*
+$(n_k) = (1, 4, 9, 16) \leadsto $ Teilfolge $(x, x^4, x^9, x^{16} ,…)$
 
 \sS{Bemerkung}
 Wenn $a_n \to a$ für alle $n \to \infty$ dann konvergiert jede Teilfolge von $(a_n)$ gegen $a$ (Präsenzübung Nr. 9)
 
 \uS{Schlüsselsatz}
 \sS{Lemma}
-Jede Folge reeller Zahlen $(a_n)_{n\geq 0}$ hat eine monotone Teilfolge.\\*
-%
+Jede Folge reeller Zahlen $(a_n)_{n\geq 0}$ hat eine monotone Teilfolge.
 \bew
-Wir nennen $n\in \N_0$ \underline{extrem} wenn $a_n \geq a_m$ für alle $m \geq n$\\*
-Unterscheide zwei Fälle:\\*
+Wir nennen $n\in \N_0$ \ul{extrem} wenn $a_n \geq a_m$ für alle $m \geq n$\\*
+Unterscheide zwei Fälle:
 \begin{itemize}
     \item{Es gibt unendlich viele extreme $n \in \N$\\*
 Dies seien $n_0, < n_1, n_2…$\\*
@@ -129,7 +128,7 @@ Eine Folge reeller Zahlen $(a_n)$ konvergiert genau dann, wenn sie eine Cauchyfo
 Gegeben sei $\e > 0$. Es gilt $N \in \N$ so dass $|a_n - a| < \frac{\e}{2}$ für $n \geq N$\\*
 Für $n, m \geq N$ gilt:\\*
 $|a_n - a_m| = |a_n - a + a - a_m| \leq |a_n - a| + |a - a_m| < \frac{\e}{2} + \frac{\e}{2} = \e$\\*
-$\Rarr (a_n)$ ist eine Cauchyfolge\\*}
+$\Rarr (a_n)$ ist eine Cauchyfolge}
 \item["\Larr"]{Sei $(a_n)$ eine Cauchyfolge
 \sss{Behauptung} $(a_n)$ ist beschränkt
 \bew

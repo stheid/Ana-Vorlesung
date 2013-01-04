@@ -13,7 +13,7 @@
 \wdh
 Eine Folge $(a_n)_{n\eN_0}$ reeller Zahlen konvergiert gegen $a\eR$ wenn gilt:\\*
 Für jedes $\e>0$ gibt es ein $N\eN$ so dass $|a_1·a|<\e$ für alle $n\geq\N$.\\*
-\ul{Bezeichnung} $a_n→a$ für $n→∞$ oder $\ds\lim_{n→∞}(a_n)=a$\\*
+\ul{Bezeichnung} $a_n→a$ für $n→∞$ oder $\ds\lim_{n→∞}(a_n)=a$
 \bsp
 $\frac{1}{n}→0$ für $n→∞\qquad(-1)^n$ divergiert\\*
 $(a_n)$ ist divergent, wenn sie gegen kein $a\eR$ konvergiert
@@ -92,7 +92,7 @@ $\underset{\text{2)}}{\Rarr}$ es gibt $N\eN$ mit $\frac{1}{|x|^n}>C$ für $n\geq
 \end{enumerate}
 
 \sS{Satz (Rechenregeln)}
-Seien $(a_n)_{\nN_0},\ (b_n)_{\nN_0}$ zwei konvergente Folgen reeller Zahlen\\*
+Seien $(a_n)_{\nN_0},\ (b_n)_{\nN_0}$ zwei konvergente Folgen reeller Zahlen
 \desc{Sei}{$a_n→a$ für \nif\\*
 $b_n→b$ für \nif}
 Dann gilt:
@@ -111,8 +111,8 @@ Dann ist $b_n\neq 0$ für fast alle \nN{} und $\frac{1}{b_n}→\frac{1}{b}$ für
 \item{Gegeben sei $\e>0$\\*
 Es gibt $N_1\eN$ mit $|a_n-a|<\frac{\e}{2}$ für $n\geq N_1$\\*
 Es gibt $N_2\eN$ mit $|b_n-b|<\frac{\e}{2}$ für $n\geq N_2$\\*
-Sei $N=max(N_1,N_2)$ für $n\geq N$ gilt:\\*
-$$|a_n+b_n-(a+b)|=|(a_n-a)+(b_n-b)|\leq |a_n-a|+|b_n-b|<\frac{\e}{2}+\frac{\e}{2}=\e \Rarr \text{1)}$$}
+Sei $N=max(N_1,N_2)$ für $n\geq N$ gilt:
+$$|a_n+b_n-(a+b)|=|(a_n-a)+(b_n-b)|\leq |a_n-a|+|b_n-b|<\frac{\e}{2}+\frac{\e}{2}=\e\ \Rarr \text{ 1)}$$}
 \item{$(a_n)$ konvergiert \Rarr{} ist beschränkt.\\*
 Es gibt $C\eR$ mit $|a_n|<C$ für alle $\nN_0$\\*
 ohne Einschränkungen sei $C>|b|$\\*
@@ -120,7 +120,7 @@ Rechne:
 $$|a_n·b_n-a·b|=|a_n·b_n-a_n·b+a_n·b-a·b|=|a_n(b_n-b)+b(a_n-a)|\geq |a_n|·|b_n-b|+|b|·|a_n-a|$$
 Es gibt $N\eN$ mit $\left.\begin{array}{l}|a_n-a|<\frac{1}{2C}·\e\\*|b_n-b|<\frac{1}{2C}·\e\end{array} \right\}$ für $n\geq N$\\*
 Für $n\geq N$ gilt:
-$$|a_n·b_n-a·b|<|a_n|\frac{1}{2C}\e+|b|\frac{1}{2C}\e\leq C·\frac{1}{2C}\e+C·\frac{1}{2C}\e=\e \Rarr \text{ 2) gilt}$$}
+$$|a_n·b_n-a·b|<|a_n|\frac{1}{2c}\e+|b|\frac{1}{2c}\e\leq c·\frac{1}{2c}\e+c·\frac{1}{2c}\e=\e\ \Rarr \text{ 2) gilt}$$}
 \item{Sei $b\neq 0$\\*
 Wähle $\e=\frac{1}{2}|b|>0$ SKIZZE\\*
 Es gibt $N\eN$ mit $|b_n-b|<\frac{1}{2}|b|$ für $n\geq N$\\*
@@ -128,10 +128,10 @@ Dann gilt für $n\geq N$:
 $$|b_n|=|b_n-b+b|=|b-b+b_n|=|b-(b-b_n)|\geq |b|-|b-b_n|>|b|-\frac{1}{2}|b|=\frac{1}{2}|b|$$
 Insbesondere $|b_n|\neq 0$ für $n\geq N$\\*
 Rechne:
-$$\left|\frac{1}{b}-\frac{1}{b_n}\right|=\left|\frac{b_n-b}{b·b_n}\right|=\frac{1}{|b|·|b_n|}·|b_n-b|<\frac{2}{|b|^2}·|b_n-b| \text{ für $n\geq N$}$$\footnote{NR: $|b_n|>\frac{1}{2}|b| \Rarr \frac{1}{|b_n|}<\frac{2}{|b_n|}$}
+$$\left|\frac{1}{b}-\frac{1}{b_n}\right|=\left|\frac{b_n-b}{b·b_n}\right|=\frac{1}{|b|·|b_n|}·|b_n-b|<\frac{2}{|b|^2}·|b_n-b| \text{ für $n\geq N$}\footnote{NR: $|b_n|>\frac{1}{2}|b| \Rarr \frac{1}{|b_n|}<\frac{2}{|b_n|}$}$$
 Gegeben sei $\e>0$\\*
-Es gibt $N_1\eN$ mit $|b_n-b|<\frac{|b|^2}{2}\e$ für $n\geq N_1$\Rarr{} für $n\geq max(N_1,N_2)$ gilt:\\*
-$$|\frac{1}{b_n}-\frac{1}{b}<\frac{2}{|b|^2}·\frac{|b|^2}{2}\e=\e \Rarr \text{ 3) gilt}$$\qed}
+Es gibt $N_1\eN$ mit $|b_n-b|<\frac{|b|^2}{2}\e$ für $n\geq N_1$\Rarr{} für $n\geq max(N_1,N_2)$ gilt:
+$$|\frac{1}{b_n}-\frac{1}{b}<\frac{2}{|b|^2}·\frac{|b|^2}{2}\e=\e\ \Rarr \text{ 3) gilt}$$\qed}
 \end{enumerate}
 \ul{Zusatz} Wenn $a\_n→a$ und $b\_n→b$ für $\nif{}$ dann gilt:
 \begin{enumerate}

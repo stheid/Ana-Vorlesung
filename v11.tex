@@ -11,7 +11,7 @@
 \fancyhead[R]{\calligra\Large 15.11.2012}
 % **************************************************
 \wdh
-Eine Abbildung $f:x→y$\\*
+Eine Abbildung $f:x→y$
 \begin{itemize}
 \item{ist \ul{injektiv} wenn gilt:\\*
 für alle $a,b\in X$ mit $f(a)=f(b)$ ist $a=b$}
@@ -55,7 +55,7 @@ $x < y \not\Rarr [x] < [y]$\\*
 z. B.: $1,2 < 1,3 , [1,2] = 1 = [1,3] $}
 \item{Exponentialfunktion\\*
 $exp: \R \to \R,\ exp(x)= \ds\sum_{k=0}^{\infty} \frac{x^k}{k!}$\\*
-Ist streng monoton wachsend.\\*
+Ist streng monoton wachsend.
 \bew
 \begin{enumerate}
 \item{$exp(0) = 1 + \frac{0}{1!} + \frac{0}{2!} + ... = 1$}
@@ -75,7 +75,7 @@ $exp(a) = exp(a - b + b) = \overbrace{exp(a - b) \cdot exp(b)}^{>0}$
 \ul{Idee} Eine Funktion ohne Sprünge heißt \ul{stetig}
 
 \sS{Definition}
-Sei $D\subseteq \R,\ f:D→\R$ eine Funktion\\*
+Sei $D\subseteq \R,\ f:D→\R$ eine Funktion
 \begin{enumerate}
 \item{$f$ heißt stetig in $x\in D$ wenn gilt:\\*
 Für jedes $\e>0$ gibt es ein $\delta>0$ so dass für jedes $y\in D$ mit $|x-y|<\delta$ gilt $|f(x)-f(y)|<\e$ %graph 6.2
@@ -88,17 +88,18 @@ Für jedes $\e>0$ gibt es ein $\delta>0$ so dass für jedes $y\in D$ mit $|x-y|<
 \item{Die Funktion $id:\R→\R,\ x\mapsto x$ ist stetig}
 \item{Die Funktion $f:\R→\R,\ f(x)=x^2$ ist stetig. %graph klein
 \bew
-Sei $x,y\in\R\quad y=x+h$.\\*
-$$f(y)-f(x)=(x+h)^2-x^2=x^2+2xh+h^2-x^2=2xh+h^2$$\\*
-Wähle jedenfalls $\delta\leq 1$. Wenn $|h|=|x-y|<\delta$ dann $|h|<1$\\*
-$$|f(y)-f(x)|=|2xh+h^2|\leq|2x|·|h|+|h|^2<|2x|·|h|+|h|=(|2x|+1)·|h|$$\\*
+Sei $x,y\in\R\quad y=x+h$.
+$$f(y)-f(x)=(x+h)^2-x^2=x^2+2xh+h^2-x^2=2xh+h^2$$
+Wähle jedenfalls $\delta\leq 1$. Wenn $|h|=|x-y|<\delta$ dann $|h|<1$
+$$|f(y)-f(x)|=|2xh+h^2|\leq|2x|·|h|+|h|^2<|2x|·|h|+|h|=(|2x|+1)·|h|$$
 Gegeben sei $\e>0$\\*
 Wähle $\delta=min\left\{1,\dfrac{\e}{|2x|+1}\right\}$\\*
-Wenn $|x-y|<\delta$ dann $$|f(x)-f(y)|<(2|x|+1)·|h|<(2|x|+1)·\dfrac{\e}{2|x|+1}=\e$$\\*
+Wenn $|x-y|<\delta$ dann
+$$|f(x)-f(y)|<(2|x|+1)·|h|<(2|x|+1)·\dfrac{\e}{2|x|+1}=\e$$
 Also $f$ stetig in $x$}
 \item{$g:=\R \to \R,\ g(x):=\{x\}$\\*
 %graph
-g ist stetig an $x$ \equ $x\notin\Z$
+$g$ ist stetig an $x$ \equ $x\notin\Z$
 \Bew{$g$ nicht stetig an $x\in\Z$}
 Zeige: es gibt ein $\e>0$ so dass kein $\delta>0$ existiert mit: $|x-y|>\delta\Rarr|g(x)-g(y)|<\e$\\*
 z.B. $\e=1$ Sei $\delta>0.\ y=x-\dfrac{\delta}{2}\quad |x-y|=\dfrac{\delta}{2}<\delta$\\*
@@ -107,7 +108,7 @@ $|g(x)-g(y)|=|x-(x-1)|=1 \not<\e\qed$}
 \end{enumerate}
 
 \sS{Satz}
-Die Exponentialfunktion $exp: \R \to \R$ ist stetig.\\*
+Die Exponentialfunktion $exp: \R \to \R$ ist stetig.
 \bew
 Verwende nur:
 \begin{itemize}
@@ -118,7 +119,7 @@ Verwende nur:
 \sss{Behauptung}
 Für jedes $\e > 0$ gibt es ein $n \in \N$ mit $exp(\frac{1}{n}) < 1 + \e$\\*
 %Graf
-Angenommen, $exp(\frac{1}{n}) \geq 1 + \e$\\*
+Angenommen, $exp(\frac{1}{n}) \geq 1 + \e$
 \desc{Dann $exp(1)$}{$= \underbrace{\frac{1}{n} + ... \frac{1}{n}}_n$\\*
 $= exp(\frac{1}{n}) + ... + exp(\frac{1}{n}) = exp(\frac{1}{n})^n$ \\*
 $\geq (1 + \e)^n \underset{\overset{\uparrow}{Bernulli}}{\geq} 1 + n \e$}
@@ -127,45 +128,45 @@ $n \leq \frac{exp(1) - 1}{\e}$\\*
 Das gilt nur für endliche viele $n \in \N$\\*
 $\Rarr$ Beh.\\*
 \ul{Zeige} exp ist stetig an 0. Gegeben sei $\e > 0, OE ? \e < 1$\\*
-Wähle $n \in \N$ mit $exp(\frac{1}{n}) < 1 + \e$\\*
-$$\Rarr exp(-\frac{1}{n}) = exp(\frac{1}{n})^{-1} < \frac{1}{1 + \e} = \frac{1 - \e}{(1+\e)(1-\e)} = \frac{1-\e}{1 - \e^2} > 1 - \e$$\\*
+Wähle $n \in \N$ mit $exp(\frac{1}{n}) < 1 + \e$
+$$\Rarr exp(-\frac{1}{n}) = exp(\frac{1}{n})^{-1} < \frac{1}{1 + \e} = \frac{1 - \e}{(1+\e)(1-\e)} = \frac{1-\e}{1 - \e^2} > 1 - \e$$
 Sei $\delta \frac{1}{n}$\\*
 Sei $y \in \R, |0 - y| < \delta = \frac{1}{n}$\\*
 $|y| < \frac{1}{n}$ d.h.\\*
-$-\frac{1}{n} < y < \frac{1}{n}$\\* \\*
-exp streng monoton wachsend.\\*
-$$\Rarr 1 - \e < exp(-\frac{1}{n}) < \exp(y) < exp(\frac{1}{n}) < 1 + \e$$\\*
+$-\frac{1}{n} < y < \frac{1}{n}$\\*[8pt]
+$exp$ streng monoton wachsend.
+$$\Rarr 1 - \e < exp(-\frac{1}{n}) < \exp(y) < exp(\frac{1}{n}) < 1 + \e$$
 $\Rarr |exp(y) - exp(0)| < \e$ Also exp stetig in 0\\*
 \ul{Zeige} exp ist eine stetig in $x \in \R$. Gegeben sei $\e > $\\*
 Sei $y = x + h$, $|h| < \delta$ ($\delta$ noch zu wählen)
-$$|exp(y) - exp(x)| = |exp(x + h) - exp(x)| = |exp(x) \cdot exp(h) - exp(x)| = exp(x) \cdot exp(h) -1$$\\*
-$|exp(y) -exp(x) | < \e$\\*
-$$\Leftrightarrow exp(x) \cdot |exp(h) - 1| < \e \Leftrightarrow exp(h) - 1 < \frac{\e}{exp(x)} = \e '$$\\**
+$$|exp(y) - exp(x)| = |exp(x + h) - exp(x)| = |exp(x) \cdot exp(h) - exp(x)| = exp(x) \cdot exp(h) -1$$
+$|exp(y) -exp(x) | < \e$
+$$\Leftrightarrow exp(x) \cdot |exp(h) - 1| < \e \Leftrightarrow exp(h) - 1 < \frac{\e}{exp(x)} = \e '$$
 Weil exp stetig in 0 ist gibt es ein $\delta > 0$ mit $|h| < \delta \Rarr |exp(h) -1| < \frac{\e}{exp(x)}$\\*
-$\Rarr$ exp ist stetig in x \qed\\*
+$\Rarr\ exp$ ist stetig in $x$ \qed
 
 \sS{Satz (Folgenstetigkeit)}
-Sei $D\subseteq\R,\ x\in D,\ f:D→\R$ Funktion $f$ ist genau dann stetig in $x$ wenn gilt:\\*
+Sei $D\subseteq\R,\ x\in D,\ f:D→\R$ Funktion $f$ ist genau dann stetig in $x$ wenn gilt:
 \begin{itemize}
 \item{Für jede Folge $(x_n)_{n\geq 0}$ mit $x_n\in D,\ x_n→x$ für $n→∞$ gilt auch $f(x_n)→f(x)$ für $n→∞$}
 \end{itemize}
 
 \sS{Satz}
 Sei $D\subseteq\R,\ f,g:D→\R$ in $x\in D$\\*
-Dann gilt:\\*
+Dann gilt:
 \begin{itemize}
 \item{$f+g:D→\R$ stetig in $x$}
 \item{$f·g:D→\R$ stetig in $x$}
 \item{Wenn $g(x)\neq 0$ für alle $x'\in D$}
 \end{itemize}
-Dann ist $\dfrac{1}{g}:D→\R$ stetig in x.
+Dann ist $\dfrac{1}{g}:D→\R$ stetig in $x$.
 \Bew{mit Folgenstetigkeit}
 Sei $x_n \to x$ für $n \to \infty$\\*
-mit $x_n \in D$\\*
+mit $x_n \in D$
 \desc{$f, g$ stetig $\Rarr$}{$f(x_n) \to f(x)$ \\*
 $g(x_n) \to g(x)$}
 \desc{\Rarr}{$f(x_n) + g(x_n) \to f(x) + g(x)$\\*
 $f(x_n) \cdot g(x_n) \to f(x) \cdot g(x)$}
 Wenn also $f(x) \neq 0$\\*
 $f(x_n)^{-1} \to f(x)^{-1}$\\*
-$\Rarr f + g, f) \cdot g, \frac{1}{f}$ stetig in x \qed
+$\Rarr f + g, f) \cdot g, \frac{1}{f}$ stetig in $x$ \qed

@@ -27,7 +27,7 @@ $$(e^{x^2})'=(exp(x^2))'=exp'(x^2)·(x^2)'=2x·e^(x^2)$$
 $((cos (x))^2)' = f(cos (x))' = f'(cos (x)) \cdot cos'(x) = 2 \cdot cos(x) \cdot sin(x)$
 \sS{Satz Quotientenregel}
 Seien $f, g: I \to \R$ in $x_0$ differenzierbar, $g(x) \neq 0$ für alle $x \in I$.\\*
-Dann ist $\frac{f}{g}: I \to \R$, $\frac{f}{g}(x) := \frac{f(x)}{g(x)}$ differenzierbar in $x_0$\\*
+Dann ist $\frac{f}{g}: I \to \R$, $\frac{f}{g}(x) := \frac{f(x)}{g(x)}$ differenzierbar in $x_0$
 $$(\frac{f}{g})'(x) = \frac{f'(x_0)\cdot g(x_0) - f(x_0) \cdot g'(x_0)}{g(x_0^2)}$$
 \bew
 Fall $f = 1$:\\*
@@ -42,12 +42,13 @@ Produktregel \Rarr{} $(\frac{f}{g})' = (f \cdot \frac{1}{g})' = f'\frac{1}{g} + 
 $= \frac{f' \cdot g}{g^2} - f\cdot \frac{g'}{g^2} = \frac{f'\cdot g - f \cdot g'}{g^2} \qed$
 \bsp
 Sei $n<0$, $f:\R\bs\{0\}→\R,\ f(x)=x^n$\\*
-Sei $m=-n>0$ $f(x)=\frac{1}{x^m}$\\*[4pt]
+Sei $m=-n>0$ $f(x)=\frac{1}{x^m}$
 $$f'(x)=-\frac{(x^m)'}{(x^n)'}=-m\frac{x^{m-1}}{x^{2m}}=-mx^{-m-1}=nx^{n-1}$$
 $$-m-1=n-1$$ $$-m=n$$
 \sss{Folge}
-$(x^n)'=nx^{n-1}$ gilt für alle $n\eZ$!\\*
+$(x^n)'=nx^{n-1}$ gilt für alle $n\eZ$!
 $$(x^{-3})'=-3x^{-4}$$
+
 \sS{Satz (Ableitung der Umkehrfunktion)}
 Sei $f:I→\R$ stetig, streng monoton\\*
 Sei $J=f(I),\ g=f^{-1}:J→I$ die Umkehrfunkion von $f$\\*
@@ -66,10 +67,10 @@ Sei $(y_n)_{n\geq 1}$ Folge in $J$ ist mit $y_n→y_0$
 $$g'(y_0)=\lim_{\nif}\frac{g(y_n)-g(y_0)}{y_n-y_0}$$
 \hfill(soll unabhängig von (y_n) sein)
 $y_n→y_0\ (\nif)$ Sei $x_n=g(y_n)\ →\ x_n→x_0\ (\nif)$ da $g$ stetig.\\*
-$x_n=g(y_n)\ \equ\ f(x_n)=y_n$\\
+$x_n=g(y_n)\ \equ\ f(x_n)=y_n$
 $$\lim_{\nif}\frac{g(y_n)-g(y_0)}{y_n-y_0}=\lim_{\nif}\frac{x_n-x_0}{f(x_n)-f(x_0)}=\left(\lim_{\nif}\frac{f(x_n)-f(x_0)}{x_n-x_0}\right)^{-1}=f'(x_0)^{-1}$$
 Rechnung ok weil $f'(x_0)≠0$ \qed\\*
-\ul{Folge} $log: \R_{>0}\to \R$ ist differenzierbar, $log'(x) = \frac{1}{x}$\\*
+\ul{Folge} $log: \R_{>0}\to \R$ ist differenzierbar, $log'(x) = \frac{1}{x}$
 \bew
 $log(x) = exp(x)^{-1}$ Umkehrfunktion $exp'(x) = exp(x) \neq 0$ für alle $x$\\*
 \Rarr{} 8.7 anwendbar. Sei $y = exp(x)$, $x = log(y)$.
@@ -79,7 +80,7 @@ $log'(x)=\frac{1}{x}$
 $x=1\ log(1)=0$\\*
 $log'(1)=\frac{1}{1}=1$
 $$\lim_{\nif}\frac{log\left(1+\frac{1}{n}\right)-log(1)}{\frac{1}{n}}=log'(1)=1\ \Rarr\ 1=\lim_{\nif}\left(n·log\left(1+\frac{1}{n}\right)\right))$$
-$exp$ anwenden $\underset{exp stetig}{\Rarr}$\\
+$exp$ anwenden $\underset{exp stetig}{\Rarr}$
 $$exp(1)=\lim_{\nif}exp\left(n·log\left(1+\frac{1}{n}\right)\right))$$
 $$e=exp(1)\underset{Def}{=}\lim_{\nif}\left(1+\frac{1}{n}\right)^n$$
 
@@ -126,7 +127,7 @@ Somit $f'(x_0)\leq 0,\ f'(x_0)\geq 0\ \Rarr\ f'(x_0)= 0\qed$
 Sei $a < b$, $f:[a, b] \to \R$ stetig auf $(a, b)$ differenzierbar.\\*
 Sei $f(a) = f(b)$.\\*
 Dann gibt es ein $x_0 \in (a, b)$ mit $f'(x_0) = 0$\\*
-% Graph
+GRAPH
 \bew
 Wenn $f$ konstant, d.h. $f(x) = f(a)$ für alle $x \in (a, b),$ dann $f'(x) = 0 $ für alle $x$ \Rarr{} Satz stimmt.\\*
 Sei $f$ nicht konstant, gibt es $x_1 \in (a, b)$ mit $f(x_1) \neq f(a)$\\*

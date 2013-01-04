@@ -15,7 +15,7 @@
 Ein Körper $K$ ist eine Menge mit $+$ und $·$, sodass gewisse Eigenschaften erfüllt sind:
 \bsp
 $\ds\Q = \left\{\frac{a}{b} \mid a \in \Z, b \neq 0\right\}$\\*
-$F_1 = \{0, 1\} \qquad 1 + 1 = 0$\\*
+$F_1 = \{0, 1\} \qquad 1 + 1 = 0$
 \notat{Setze $a^n = \underbrace{ a · a · a · a· … · a}_{n-Faktoren}$\\*
 $\left.\begin{array}{lcc}
 a^0 &=& 1\\*
@@ -24,19 +24,19 @@ a^{-n} &=& (a^{-1})^n
 Daraus folgt $a^n$ ist definiert, wenn $a \neq 0$ und $n \in \Z$\\*
 Regeln der Potenzgleichung:\\*
 $a^{n+m} = a^n \cdot a^m$\\*
-$a^{n \cdot m} = (a^{n})^m$\\*
+$a^{n \cdot m} = (a^{n})^m$
 \bew
 Übung
 
 \sS{Definition angeordneter Körper}
-    Ein angeordneter Körper ist ein Körper $K$ für dessen Elemente eine "Kleiner als Beziehung" $<$ definiert ist, so dass folgende Eigenschaften erfüllt sind:\\*
-    \begin{enumerate}
-    \item{Für alle $a, b \in K$ gilt genau eine von drei Notationen:\\*
-    $a < b$ oder $a = b$ oder $a > b$}
-    \item{Für alle $a, b, c \in K$ gilt wenn $a < b$ und $b < c$ dann $a < c$\\* (Transitivität)}
-    \item{Für alle $a, b, c \in K$ gilt wenn $a < b$ dann $a + c < b + c$}
-    \item{für $a, b, c \in K$ gilt, wenn $a < b$ und $c \neq 0$ dann $a \cdot c < b \cdot c$}
-    \end{enumerate}
+    Ein angeordneter Körper ist ein Körper $K$ für dessen Elemente eine "Kleiner als Beziehung" $<$ definiert ist, so dass folgende Eigenschaften erfüllt sind:
+    \enum{
+    	\item{Für alle $a, b \in K$ gilt genau eine von drei Notationen:\\*
+    	$a < b$ oder $a = b$ oder $a > b$}
+    	\item{Für alle $a, b, c \in K$ gilt wenn $a < b$ und $b < c$ dann $a < c$\\* (Transitivität)}
+    	\item{Für alle $a, b, c \in K$ gilt wenn $a < b$ dann $a + c < b + c$}
+    	\item{für $a, b, c \in K$ gilt, wenn $a < b$ und $c \neq 0$ dann $a \cdot c < b \cdot c$}
+    }
 	Weitere Beziehungen:\\*
 	$a > b$ heißt $b < a$
 	\begin{enumerate}
@@ -64,7 +64,7 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	Dann $0 < 1 < 2 < 3 … $ in $K$\\*[4pt]
 	\ul{Folge} Verschiedene natürliche Zahlen bleiben in $K$ verschieden.\\*
 	%Falscher Pfeil, verbesserung kommt noch
-	Fasse $\N$ als Teilmenge von $K$ auf.\\*
+	Fasse $\N$ als Teilmenge von $K$ auf.
 	\desc{Dann}{$\ds \Z = \left\{ a - b \mid a, b \eN \right\} \subseteq K$\\*[4pt]
 	$\ds \Q = \left\{ \frac{a}{b} \mid a, b \eN\right\} \subseteq K$}
 	Insbesondere ist $K$ unendlich.\\*[8pt]
@@ -123,7 +123,7 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	}
 
 \sS{Definition Beschränktheit}
-	Sei $K$ ein angeordneter Körper, $M \subseteq K$ eine Teilmenge, $a \in K$.\\*
+	Sei $K$ ein angeordneter Körper, $M \subseteq K$ eine Teilmenge, $a \in K$.
 	\begin{enumerate}
 	\item{$M \leq a$ bedeutet: $x \leq a$ für jedes $x \in M$}
 	\item{$a$ heißt ",obere Schranke"' von $M$, wenn $M \leq a$.\\*
@@ -141,7 +141,7 @@ $a^{n \cdot m} = (a^{n})^m$\\*
 	$K = \Q$
 	\begin{enumerate}
 	\item{$M = \N$\\*
-	Sei $a \in \Q$\\*
+	Sei $a \in \Q$
 	\desc{$a \leq N$}{$\equ a \leq n$ für alle $n \in N$\\*
 	$\equ a \leq 1$}
 	Wenn $N$ nach unten beschränkt $1 = min(N)$}

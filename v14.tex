@@ -12,7 +12,7 @@
 % **************************************************
 \wdh{Logarithmus und allgemeine Potenzen}
 Die Funktion $exp: \R \to \R_{\geq 0}$ ist stetig, streng monoton wachsend, bijektiv.\\*
-Die Umkehrfunktion heißt \ul{Logarithmus},\\*
+Die Umkehrfunktion heißt \ul{Logarithmus},
 $$log = exp^{-1}: \R_{\geq 0} \to \R$$
 explizit definiert durch $log(x) = y\ \equ\ x = exp(y)$\\*
 $\underset{\text{\scriptsize{nach satz 6.5}}}{\Rarr}$ log ist stetig, streng monoton wachsend, bijektiv.
@@ -30,19 +30,19 @@ Folgt aus Eigenschaften von $exp$, Details: Übung
 also $a>0,\ n\eZ,\ m\eN$ ist $a^{\frac{n}{m}}:=\sqrt[m]{a^n}$
 
 \sS{Lemma}
-Es gibt $a^{\frac{n}{m}} =  exp(\frac{n}{m} \cdot log(a))$\\*
+Es gibt $a^{\frac{n}{m}} =  exp(\frac{n}{m} \cdot log(a))$
 \bew
 	\begin{enumerate}
-	\item{Sei $n \geq 0$:\\*
+	\item{Sei $n \geq 0$:
 	$$exp(n \cdot log(a)) = exp(\overbrace{log(a) + log(a) + …+ log(a)}^{n}) = exp(log(a)) \cdot … \cdot exp(log(a))$$}
-	\item{Sei $n < 0$\\*
+	\item{Sei $n < 0$
 	 $$exp(n \cdot log(a)) = exp(\underbrace{-n}_{-n > 0} \cdot log (a)) = (a^{-1})^{-1} = a^n$$}
 	 \item{Rechne: $$exp(\frac{n}{m} log(a))^m = exp(m \cdot \frac{n}{m} \cdot log(a)) = exp(n \log(a)) = a^n$$}
 	\end{enumerate}	 
 	$\sqrt[m]{\ } \Rarr exp(\frac{n}{m} log(a)) = \sqrt[m]{a^n} = a^{\frac{n}{m}}$
 
 \sS{Definition}
-Sei $a>0,\ x\eR$ setze $a^x:=exp(x·log(a))$\\*
+Sei $a>0,\ x\eR$ setze $a^x:=exp(x·log(a))$
 
 \sS{Bemerkung}
 Die Regeln der Potenzrechnung gelten:
@@ -86,7 +86,7 @@ Das zeigt: $δ$ existiert nicht.
 
 \sS{Satz}
 Seien $a \leq b$ reelle Zahlen\\*
-Jede stetige Funktion $f: [a, b] \to \R$ ist gleichmäßig stetig.\\*
+Jede stetige Funktion $f: [a, b] \to \R$ ist gleichmäßig stetig.
 \bew
 	Angenommen, $f$ ist nicht gleichmäßig stetig:
 	Es gibt ein $\e > 0$ sodass für jedes $\delta > 0$ zwei Zahlen $x, y \in D$ existieren, mit $|x - y| < \delta$ und $|f(x) - f(y)| \geq \e$\\*[4pt]
@@ -100,7 +100,8 @@ Widerspruch zu (*) Also ist $f$ gleichmäßig stetig. \qed
 
 \chapter{Komplexe Zahlen und Trigonometrie}
 Der Körper \C{} der komplexen Zahlen\\*
-Mangel von \R{}: Die Gleichung $x^2=-1$ hat keine Lösung\\*
+Mangel von \R{}: Die Gleichung $x^2=-1$ hat keine Lösung
+
 \sS{Definition Komplexe Zahlen}
 Es sei $\C=\R^2=\{(x,y)|x,y\eR\}$ mit folgender Addition und Multiplikation:
 $$(x,y)+(x',y'):=(x+x',y+y')$$
@@ -143,7 +144,7 @@ Für $(x,y)\eC$ gilt $(x,y)=(x,0)+(0,y)=(x,0)+(0,1)·(y,0)=x+i·y$
 Jede komplexe Zahl $z$ hat eine eindeutige Darstellung $z=x+i·y$ mit $x,y\eR$.
 \sss{Idee}
 \C{} entsteht aus \R{} durch Hinzunahme einer Zahl $i$ mit $i^2=-1$\\
-Interpretation der Multiplikation in \C:\\*
+Interpretation der Multiplikation in \C:
 $$(x+i·y)(x'+i·y')=(x·x'+x·i·y'+i·y·x'+i·y·i·y')=(x·x'-y·y')+i(x·y'+y·x')$$
 \sss{Definition}
 Sei $z = x + iy \in \C$\\*
@@ -151,7 +152,7 @@ Realteil: Re(z) := x \\*
 Imagnärteil: Im(z) := y\\*
 Komplex konjugierte Zahl $\ol{z} = x - iy$\\*
 Komplex konjugation = Spiegelung an der x-Achse.\\*
-\ul{Definition} Der Betrag von $z = x + iy \in \C$ ist $|z| = \sqrt{x^2 + y^2}$ Abstand von $0 = (0, 0)$ zu $z$\\*
+\ul{Definition} Der Betrag von $z = x + iy \in \C$ ist $|z| = \sqrt{x^2 + y^2}$ Abstand von $0 = (0, 0)$ zu $z$
 \bem
 \begin{enumerate}
 \item{$\ds z·\ol{z}=(x+i·y)(x-i·y)=x^2+y^2+i(-x·y+y·x)=x^2+y^2=|z|^2$}

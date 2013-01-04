@@ -17,10 +17,11 @@ wenn $y \in D$ mit $|x - y| < \delta$ dann $|f(x) - f(y)| < ε$
 \bsp
 $exp:\R→\R$ ist stetig (d.h. stetig an jedem $x\eR$)\\*
 $[·]:\R→\R$ ist stetig an $x \equ x\not\in\Z$\\*
-%Diagramm, Gausklammern
+SKIZZE %Diagramm, Gausklammern
+%
 \sss{Satz 6.4: Folgenstetigkeit}
 Eine Funktion $f: D \to \R$ ist stetig in $x \in D$ $\equ$ Für jede Folge $(x_n)$ mit $x_n \in D$ für alle $n$ und $x_n \to x$ gilt auch $f(x_n) \to f(x)$.\\*
-(d.h. $f$ erhält Konvergenz)\\*
+(d.h. $f$ erhält Konvergenz)
 \bew
 \begin{description}
 \item["\Rarr"]{\hfill\\Angenommen $f$ ist stetig in $x$, $x_n→x$ mit $x_n\in D$. Zeige $f(x_n)→f(x)$\\*
@@ -52,8 +53,8 @@ Polynomfunktionen und rationale Funktionen sind stetig.
 
 \sS{Satz Stetigkeit der Komposition}
 Sei $f: C \to \R$, $g: D \to \R$ Funktionen mit $f(C) \subseteq D$. Wenn $f$ stetig in $x \in D$ und $g$ stetig in $f(x)$ dann ist:\\*
-$g \circ f: C \to \R$ stetig in $x$.\\*
-\bew mit Folgenstetigkeit:
+$g \circ f: C \to \R$ stetig in $x$.
+\Bew{mit Folgenstetigkeit}
 Sei $x_n \to x$ mit $x_n \in C$\\*
 $f$ stetig in $x \Rarr \ f(x_n) \to f(x)$\\*
 $g$ stetig in $f(x) \Rarr g(f(x_n)) \to g(f(x))$\\*
@@ -61,7 +62,7 @@ d.h. $(g \circ f)(x_n) \to (g \circ f)(x)$\\*
 also ist $g \circ f: C \to \R$ stetig in $x$ \qed
 
 \sS{Definition (Konvergenz bei Funktionen)}
-Sei $D\subseteq\R$ und $f:D→\R$ Funktion\\*
+Sei $D\subseteq\R$ und $f:D→\R$ Funktion
 \begin{enumerate}
 \item{Ein $a\eR\cup\{-∞,∞\}$ heißt Berührpunkt von $D$ wenn es eine Folge $(x_n)$ mit $x_n\in D$ und $x_n→a$ gibt
 \bem
@@ -91,10 +92,10 @@ Eine Funktion $f: D \to \R$ ist stetig in $a \in D\ \equ\ \ds\lim_{x \to a} f(x)
 \sS{Definition Beschränktheit}
 Eine Funktion $f:D→\R$ heißt nach oben \ul{beschränkt} wenn die Menge $f(D)$ nach oben beschränkt ist, d.h. es gibt $C\eR$ mit $f(x)\leq C$ für alle $x\in D$\\*
 $f$ heißt nach unten beschränkt, wenn $f(D)$ nach unten beschränkt\\*
-$f$ heißt \ul{beschränkt}, wenn $f)$ nach oben und nach unten beschränkt\\*
+$f$ heißt \ul{beschränkt}, wenn $f)$ nach oben und nach unten beschränkt
 
 \sS{Definition uneigentliches Supremum}
-Sei $M \in \R$ eine nicht-leere Teilmenge. Wenn $M$ nach oben unbeschränkt, schreibe $sup(M) = \infty$ (Sprich: uneigentliches Supremum)\\*
+Sei $M \in \R$ eine nicht-leere Teilmenge. Wenn $M$ nach oben unbeschränkt, schreibe $sup(M) = \infty$ (Sprich: uneigentliches Supremum)
 
 \sS{Satz}
 Sei $a,b\eR$ mit $a\leq b$ und $f:[a,b]→\R$ eine \ul{stetige} Funktion, dann ist $f$ beschränkt und nimmt ihr Maximum und Minimum an, d.h. es gibt $x_{min},x_{max}\in[a,b]$ mit: $f(x_{min})\leq f(x) \leq f(x_{max})$ für jedes $x\eR$
@@ -106,13 +107,13 @@ Somit $f$ nicht nach oben beschränkt}
 \item{$g(0,1) \to \R, \ g(x) = x$\\*
 $g$ beschränkt. $g((0,1)) = (0,1)$\\*
 $sup \{g(x) | x \in (0, 1) \} = 1$\\*
-Aber $g(x) < 1$ für alle $x \in (0, 1)$, also nimmt g nicht ihr Maximum an.}
+Aber $g(x) < 1$ für alle $x \in (0, 1)$, also nimmt $g$ nicht ihr Maximum an.}
 \end{enumerate}
 \sss{Beweis von 6.11}
 Sei $y := sup\{ f(x)| x \in D\} \eR \cup \{ ∞ \}$\\*
 Wähle eine Folge $(x_n)$ mit $x_n\in D$ und $f(x_n)→y$ für $n→∞$\\*
 Bolzano-Weierstraß \Rarr{} Es gibt eine konvergente Teilfolge $(x_{n_k})_{k\geq 0}$ von $(x_{n})_{k\geq 0}$ \footnote{Die Folge $(x_n)$ ist beschränkt $D=[a,b]$}\\*
-Sei $x_{n_k}→x$ für $k→∞$ $a\leq x_n\leq b$ für alle $n$ \Rarr $a\leq x\leq b,\ x\in D=[a,b]$\\*
+Sei $x_{n_k}→x$ für $k→∞$ $a\leq x_n\leq b$ für alle $n$ \Rarr $a\leq x\leq b,\ x\in D=[a,b]$
 \desc{Und dann gilt}{$f({x_n}_k) \to y$ für $k \to \infty$ (Teilfolge einer Konvergenten Folge)\\*
 $f({x_n}_k)) \to y$ für $k \to \infty$ weil $f$ stetig}
 Also $y = f(x)$\\*

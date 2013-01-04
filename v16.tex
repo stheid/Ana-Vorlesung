@@ -18,12 +18,12 @@
 	Nach 7.15:\\
 	Seien $\ds\sum_{n\geq0} c_n = c$ und $\ds\sum_{n\geq0} c'_n = c'$ konvergente komplexe Reihen, mindestens eine absolut konvergent. Dann konvergiert hier Cauchy-Produkt $\ds\sum_{n\geq0} d_n$ mit dem Grenzwert $c \cdot c'$\\
 	\ul{Erinnerung}\\
-	$d_n = \ds\sum_{n\geq0} c_k \cdot c_{n - k}$\\
+	$d_n = \ds\sum_{n\geq0} c_k \cdot c_{n - k}$
 \bew
 	Wörtlich wie bei reellen Reihen. \qed
 
 \uS{Die komplexe Exponentialfunktion}
-\sS{Satz}
+\sS{Satz Komplexe Exponentialreihe konvergiert absolut}
 Für $z\eC$ konvergiert die "Exponentialreihe"
 $$\sum_{n=0}^{∞}\frac{z^n}{n!}=1+\frac{z}{1}+\frac{z^2}{2}+\frac{z^3}{6}+…$$absolut (Somit konvergiert sie)
 \bew
@@ -60,7 +60,8 @@ Die Reihe $exp(z+w)$ ist das Cauchy-Produkt der Reihen $exp(z)$ und $exp(w)$, da
 Sei $\ds s_n'=\sum_{k=0}^{n}\frac{\ol{z}^k}{k!}$ somit $exp(\ol{z})=\lim\limits_{n→∞}s_n'$\\*[4pt]
 Es gilt $$s_n'=\ol{\sum_{k=0}^{n}\frac{z^k}{k!}}=\sum_{k=0}^{n}\ol{(\frac{z^k}{k!})}=\sum_{k=0}^{n}(\frac{\ol{z}^k}{k!})=s_n'$$
 Somit $\ol{exp(z)}=\lim\limits_{\nif}(\ol{s_n})=\lim\limits_{\nif}s_n'=exp(\ol{z})$}
-\item{$$|exp(ix)|^2=exp(ix)·\ol{exp(ix)}\underset{4)}{=}exp(ix)·exp(\ol{ix})=exp(ix)·exp(-ix)\underset{2)}{=}exp(ix-ix)=exp(0)\underset{1)}{=}1\ \overset{\sqrt{}}{\Rarr}\ |exp(ix)|=1$$}
+\item{\alg{|exp(ix)|^2=exp(ix)·\ol{exp(ix)}\underset{4)}{=}exp(ix)·exp(\ol{ix})=exp(ix)·exp(-ix)&\underset{2)}{=}exp(ix-ix)=exp(0)\underset{1)}{=}1\\
+&\overset{\sqrt{}}{\Rarr}\ |exp(ix)|=1}}
 \end{enumerate}
 
 \uS{Trigonometrische Funktionen}
@@ -144,7 +145,7 @@ $\Rarr|exp(z_n) - 1| \to 0$\\
 Somit $exp$ stetig in $z = 0$ }
 \item{Sei $z\eC$ beliebig, $z_n→z$
 $$exp(z_n)-exp(z)=exp(z_n-z+z)-exp(z)=exp(z_n-z)-exp(z)-1·exp(z)=(exp(z_n-z)-1)·exp(z)$$
-Es gilt: $z_n→z\ \equ\ z_n-z→0$\\*
+Es gilt: $z_n→z\ \equ\ z_n-z→0$
 \alg{&\underset{1)}{\Rarr}\ exp(z_n-z)→1\\
 &\equ\ exp(z_n-z)-1→0\\
 &\Rarr\ (exp(z_n-z)-1)·exp(z)→0·exp(z)=0
@@ -153,7 +154,7 @@ d.h. $exp(z_n)→exp(z)$\qed}
 \end{enumerate}
 
 \sS{Satz}
-	Die Funktionen $sin: \R \to \R$ und $cos: \R \to \R$ sind stetig.\\
+	Die Funktionen $sin: \R \to \R$ und $cos: \R \to \R$ sind stetig.
 \bew
 Mittels Folgenstetigkeit.\\
 Sei $x_n \to x$ mit $x_n \in \R,\ x \in \R$\\*

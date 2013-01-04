@@ -20,7 +20,8 @@ Schreibe: $\ds\sum_{k = 0}^{\infty} a_k = a$
 \Bsp{Geometrische Reihe}
 $\ds|x| = 1 \Rarr \sum\limits_{k = 0}^{\infty} x^k = \frac{1}{1-x}$ für $x = 0$ setzte $0^0 = 1$\\*[4pt]
 Harmonische Reihe\\*
-$\displaystyle\sum\limits_{k = 1}^{\infty} \frac{1}{k}$ Konvergiert nicht.\\*
+$\Sum\limits_{k = 1}^{\infty} \frac{1}{k}$ Konvergiert nicht.
+
 \sS{Satz Rechenregeln für Reihen}
 Seien $\sum\limits_{k = 0}^{\infty} a_k = a$ und $\sum\limits_{k = 0}^{\infty} b_k = b$ zwei konvergente Reihen. Dann:
 \begin{enumerate}
@@ -33,7 +34,8 @@ folgt aus 3.9.
 Produkte von Reihen sind komplizierter.\\*
 \ul{Korrektur}
 Primzahlen-Vermutung: es gibt ∞ viele Primzahlen $p$ so dass $p + 2$ auch Prim ist.\\*
-Goldbach-Vermutung: Jede gerade natürliche Zahl ist die Summe von zwei Primzahlen.\\*
+Goldbach-Vermutung: Jede gerade natürliche Zahl ist die Summe von zwei Primzahlen.
+
 \chapter{Konvergenzsätze}
 Erinnerung: \R{} ist Dedekind-vollständig. Das heißt, jede nicht-leere nach oben beschränkte Teilmenge $M \subset R$ hat eine kleinste obere Schranke $sup(M)$\ \Rarr{} Existenz von Grenzwerten
 
@@ -44,15 +46,15 @@ streng monoton wachsend, wenn $a_{n + 1} > a_n$ für alle $n \in \N{}_0$\\*
 streng monoton fallend, wenn $a_{n + 1} < a_n$ für alle $n \in \N_0$}
 \bsp
 $a_n = n$ ist streng monoton wachsend\\*
-$a_n = \frac{1}{n}$ ist streng monoton fallend\\*
+$a_n = \frac{1}{n}$ ist streng monoton fallend
 
 \sS{Satz}
 \begin{enumerate}
 \item{Jede nach oben beschränkte monoton wachsende Folge $(a_n)_{\nN}$ ist konvergent\\*
-% Bild?
+BILD
 }
 \item{Jede nach unten beschränkte monoton fallende Folge $(a_n)_\nN$ ist konvergent\\*
-% Bild?
+BILD
 }
 \end{enumerate}
 \bew
@@ -107,28 +109,30 @@ etc. $\Rightarrow a_n \leq C^n \cdot a_0$\\*
 Somit ist $\displaystyle\sum\limits_{k=0}^{\infty} C^k \cdot a_0$ konvergente Majorante von $\ds\sum_{k=0}^{\infty} a_k$ (Geometrische Reihe)
 \sS{Beispiel Die Exponentialreihe}
 $$exp(x) := \sum\limits_{k=0}^{\infty} \frac{x^k}{k!} \text{ für } x \in \R{}, x \geq 0$$
-Setze $a_k = \frac{x^k}{k!}$\\*
+Setze $a_k = \frac{x^k}{k!}$
 $$a_n+1 = \frac{x^{n + 1}}{(n + 1)!} = \frac{x}{n+1} \cdot \frac{x^n}{n!} = \frac{x}{n+1} \cdot a_n \leq \frac{1}{2} a_n$$
 \Rarr{} Quotientenregel ist erfüllt.\\*
 Reihe $exp(x)$ konvergiert.\\*
 Bezeichnung: $$exp(x) = \sum_{k=0}^{\infty} \frac{x^k}{k!} \eR$$
-%
+
 \uS{Bezeichnung}
 $$exp(1) = \sum\limits_{k=0}^{\infty} \frac{1}{k!} = e\text{ (Eulerische Zahl)}$$
+
 \sS{Leibnitz-Kriterium}
 Sei $(a_n)_{n \in \N{}_0}$ eine monoton fallende Nullfolge\footnote{$a_n → 0$ für $n→∞$} mit $a_n \geq 0$ für alle $n$\\*
-Dann konvergiert die alternierende Reihe\\*
+Dann konvergiert die alternierende Reihe
 $$\sum_{k=0}^{\infty} (-1)^k · a_k$$
 \bsp
 $$a_k = \frac{1}{k + 1} \sum_{k=0}^{\infty} (-1)^k · a_k = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5}= log(2)$$
 \bew
 Sei $s_n = a_0 + ... + a_n$
+
 \uS{Behauptung: }
 $S_{2n + 1} \leq S_{2n + 3} \leq S_{2n + 2} \leq S_{2n}$ für jedes $n \in \N{}$\\*[4pt]
 \ul{Rechne}\\*
 $S_{2n + 2} - S_{2n} = - a_{2n + 1} + a_{2n + 2} \leq 0 \Rightarrow (3)$\\*
 $S_{2n + 3} - S_{2n + 1} = - a_{2n + 3} \leq 0 \Rightarrow (2)$\\*
-$S_{2n + 3} - S_{2n + 1} = - a_{2n + 2} - a_{2n + 3} \leq 0 \Rightarrow (1)$\\*[8pt]
+$S_{2n + 3} - S_{2n + 1} = - a_{2n + 2} - a_{2n + 3} \leq 0 \Rightarrow (1)$
 \desc{Die Folge }{$b_n = S_{2n}$\\*
 $c_n = S_{2n + 1}$}
 sind beschränkt und monoton (fallend bzw. steigend)\\*

@@ -14,9 +14,8 @@
 %\setcounter{chapter}{4}
 \chapter{Abbildungen und Funktionen}
 \sS{Definition Abbildung}
-Seien $A, B$ Mengen. Eine Abbildung von $A$ nach $B$ ist eine Vorschrift, die jedem Element von $A$ ein Element von $B$ zuordnet.\\*
+Seien $A, B$ Mengen. Eine Abbildung von $A$ nach $B$ ist eine Vorschrift, die jedem Element von $A$ ein Element von $B$ zuordnet.
 \notat{$f: A \to B,\  a \mapsto f(a) \  a\in A$}
-%
 $A$ heißt Definitionsbereich von $f$\\*
 $B$ heißt Wertebereich von $f$
 %
@@ -85,9 +84,9 @@ Sprich $\circ$: "nach", "verkettet"
 Eine Abbildung $f: A \to B$ ist bijektiv \equ \ es gibt eine Abbildung $g: B \to A$ mit $f \circ g = id_B$\\*
 (d.h. $f(g(b)) = b$ für alle $b \in B$ $g(f(a)) = a$ für alle $a \in A$)
 %
-\sss{Definition} %ohne nummer
+\sss{Definition} % ohne Nummerierung!
 Wenn $f:A→B$ bijektiv ist, heißt die eindeutige Abbildung $g:B→A$ wie oben die Umkehrabbildung (inverse Abbildung) von $f$
-Bezeichnung: $g=f^{-1}$.\\*
+Bezeichnung: $g=f^{-1}$.
 %
 \bew
 Angenommen, $g: B \to A$ gegeben mit $f \circ g = id_B, g \circ f = id_A$ \footnote{Dies gilt, weil $g$ als Umkehrfunktion von $f$ definiert ist.}\\*
@@ -121,14 +120,14 @@ $log = exp()^{-1} \R_{\geq } \to \R_a$ }
 
 \uS{Bild und Urbild}
 \sS{Definition}
-Sei $f:A→B$ Abbildung\\*
+Sei $f:A→B$ Abbildung
 \begin{enumerate}
 \item{Für eine Teilmenge $X \subset A$ ist \\*
 $f(x) := \{f(x) | x \in X\} \subseteq B$ \\*
 das Bild von $X$ unter $f$}
 \item{Für eine Teilmenge $Y \subseteq B$ ist $f^{-1}:=\{a\in A|f(a)\in Y\}\subseteq A$ das Urbild von $Y$ unter $f$}
 \end{enumerate}
-\ul{Vorsicht} nicht Urbild und Umkehrabbildung verwechseln.\\*
+\ul{Vorsicht} nicht Urbild und Umkehrabbildung verwechseln.
 \bsp
 $$f:\R→\R,\ f(x)=x^2$$
 $$f(\{1, 2, -2\}) = \{1, 4\}$$
@@ -197,7 +196,7 @@ Definiere
 \item{$f+g: D \to \R$ durch $(f + g)(x) := f(x) + g(x)$}
 \item{$(f \cdot  g) (x) := f(x) \cdot g(x)$}
 \item{Für $a\in\R$ setze $a·f: D→\R, (a·f)(x):=a·f(x)$}
-\item{Angenommen, $f(x) \neq 0$ für alle $x \in D$ \\*
+\item{Angenommen, $f(x) \neq 0$ für alle $x \in D$
 $$\frac{1}{f}: D \to \R, \frac{1}{f}(x) := \frac{1}{f(x)} = f(x)^{-1}$$
 \ul{Vorsicht} nicht $\frac{1}{f}$ mit Umkehrbild oder Urbild verwechseln}
 \end{itemize}

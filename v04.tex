@@ -38,17 +38,17 @@ $b=\frac{m}{n} \leq \frac{-1}{n} \leq \frac{-1}{n+1}\in M$\\*[1ex]
 \sS{Definition Vollständigkeit}
 Ein angeordneter Körper $K$ heißt Dedekind-vollständig, wenn jede nach oben beschränkte Teilmenge von $K$ eine kleinste obere Schranke hat (die Element $K$ ist).
 
-\sS{Satz}
+\sS{Satz (\R\ einziger vollständiger Körper)}
 Es gibt genau einen Dedekind-vollständigen, angeordneten Körper $K$\\*
 Dieser heißt Körper der reellen Zahlen\\*
 \ul{Bezeichnung} \R\\*
 (Beweis ausgelassen)
 
-\sS{Satz}
+\sS{Satz (Unbeschränktheit von \N)}
 Die Teilmenge \N{} von \R{} ist unbeschränkt
 \bew
 (verwende nur die Axiome)\\*
-Indirekter Beweis: Angenommen, \N{} ist beschränkt\\*
+Indirekter Beweis: Angenommen, \N{} ist beschränkt
 \desc{Vollständigkeit}{\N{} hat eine kleinste obere Schranke $a\in\R$\\*
 Es gilt $a-1<a \Rarr{} a-1$ ist kleinste obere Schranke von $\N\ n\leq a\qquad ∀ n\in\N\\*
 \Rarr{} n+1\leq a\qquad ∀ n\in\N\\*
@@ -92,11 +92,11 @@ $y-\frac{m}{n} =y-x+x-\frac{m}{n}>\frac{1}{n}+x-\frac{m}{n}=x-\frac{m-1}{n}\geq0
 $y>\frac{m}{n}$\qed
 
 \uS{Wurzeln}
-\sS{Satz}
-Es gibt kein $a\eQ$ mit $a^2=2$\\*
+\sS{Satz (Wurzel 2 nicht real)}
+Es gibt kein $a\eQ$ mit $a^2=2$
 \bew
 Angenommen $a\frac{m}{n}\eQ,\ a^2=2,\ m,\nN$\\*
-Kürze den Bruch $\Rarr \frac{m}{n}$ teilerfremd\\*
+Kürze den Bruch $\Rarr \frac{m}{n}$ teilerfremd
 $$a^2=2\ \Rarr\ \frac{m^2}{n^2}=2 \ \Rarr\ m^2=2n^2 \ \Rarr\ m^2 \text{ gerade } \ \Rarr\ m \text{ gerade } \ \Rarr\ m=2q,\ q\eN$$
 $$(2q)^2=2n^2 \ \Rarr\ 4q^2=2n^2 \ \Rarr\ 2q^2=n^2 \ \Rarr\  n^2 \text{ gerade } \Rarr n \text{ gerade }$$
 Widerspruch zur Annahme $m,n$ teilerfremd\qed\\*
@@ -127,7 +127,7 @@ Wenn \nN{} immer größer wird, geht $\frac{1}{n}$ immer näher an Null.\\*
 Sei $\N_0=\{0,1,2,3,4…\}$
 
 \sS{Definition Folge}
-Eine Folge reeller Zahlen ist eine Abbildung $\N_0→\R$ d.h. jeder natürliche Zahl $n\geq 0$ wird eine reelle Zahl $a_n$ zugeordnet.\\*
+Eine Folge reeller Zahlen ist eine Abbildung $\N_0→\R$ d.h. jeder natürliche Zahl $n\geq 0$ wird eine reelle Zahl $a_n$ zugeordnet.
 \notat{$(a_n)_{\nN_0}$ oder $(a_n)_{\N\geq 0}$ oder $(a_0,a_1,a_2,a_3,…)$}
 \sss{Variante}
 Folgen, die bei $k\in\Z$ anfangen: $(a_n)_{\N\geq 0}=(a_k,a_{k+1},a_{k+2},…)$
@@ -145,9 +145,9 @@ $(1,-1,1,-1,1,-1,1,-1,1,-1,…$}
 Sei $(a_n)_{n\geq 0}$ eine Folge reeller Zahlen
 \begin{enumerate}
 \item{Eine Folge $(a_n)$ konvergiert gegen $a\eR$ wenn gilt: Für jedes $\e>0$ gibt es ein $N\eN$, so dass $|a_n-a|<\e$ für jedes \nN{} mit $n\geq N$\\*
-Dann heißt $a$ Grenzwert der Folge $(a_n)$\\*
+Dann heißt $a$ Grenzwert der Folge $(a_n)$
 \notat{$\ds\lim_{n→∞}a_n=a$ oder $a_n→a$ für $n→∞$}}
-\item{Die Folge $(a_n)$ heißt \ul{Nullfolge}, wenn $a_n→a$ für $n→∞$}
+\item{Die Folge $(a_n)$ heißt \ul{Nullfolge}, wenn $a_n→0$ für $n→∞$}
 \item{Die Folge $(a_n)$ ist divergent, wenn sie keinen Grenzwert hat.}
 \end{enumerate}
 %
