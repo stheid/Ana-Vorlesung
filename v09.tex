@@ -110,7 +110,7 @@ Für jedes $x\in\R$ ist die Exponentialreihe $\ds exp(x)=\sum_{k=0}^{∞} \frac{
 Es gilt \fbox{$exp(x)·exp(y)=exp(x+y)$} Funktionalgleichung der Exponentialfunktion.
 %
 \bew
-Betrag von $\ds \sum_{k=0}^{∞} |\frac{x^k}{k!}|=\sum_{k=0}^{∞} \frac{|x|^k}{k!}=exp(|x|)$ konvergiert (bekannt, Quotientenkriterium)\\*
+Betrag von $\ds \sum_{k=0}^{∞} \left|\frac{x^k}{k!}\right|=\sum_{k=0}^{∞} \frac{|x|^k}{k!}=exp(|x|)$ konvergiert (bekannt, Quotientenkriterium)\\*
 Berechne Cauchy-Produkt $\ds exp(x)·exp(y)=\sum_{k=0}^{∞} c_k$
 $$c_k = \frac{x^0}{0!}·\frac{x^n}{n!}+\frac{x^1}{1!}·\frac{y^{n-1}}{(n-1)!}+…+\frac{x^n}{n!}·\frac{y^0}{0!}=\dfrac{1}{n!}·\left(\dfrac{n!}{0!·n!}·x^0y^n+\dfrac{n!}{1!·(n-1)!}·x^1y^{n-1}+…+\dfrac{n!}{n!·0!}·x^ny^0+\right)$$
 $$=\dfrac{1}{n!}\sum_{k=0}^{n}\dfrac{n!}{k!·(n-k)!}x^ky^{n-k}=\dfrac{1}{n!}\sum_{k=0}^{n}\binom{n}{k}x^ky^{n-k}\underset{\overset{ }{binomische Formel}}{=}\dfrac{1}{n!}(x+y)^n\Rarr\sum_{k=0}^{∞}c_k=exp(x+y)$$\qed
