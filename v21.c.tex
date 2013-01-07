@@ -14,7 +14,7 @@
 \wdh
 Eine Funktion $f: I \to \R$ heißt differenzierbar in $x_0 \in I$ wenn der Limes
 $$f(x) = \lim_{x\to x_0} \frac{f(x) - f(x0)}{x-x_0}$$ existiert.\\*
-Ableitungsregeln: Produkt, Kettenregel, Umkehrfunktion $\approx$ Kann "alle" Ableitungen ausrechnen
+Ableitungsregeln: Produkt, Kettenregel, Umkehrfunktion $\leadsto$ Kann "alle" Ableitungen ausrechnen
 8.11 $f: I = (a,b) \to \R}$ diffbar,\\*
 $f$ hat ein lokales extremum in $x_0 \in (a, b)$ \Larr{} $f'(x) = 0$\\*
 \begin{tikzpicture}[domain=-0.3:2,prefix=plots/, smooth]
@@ -57,7 +57,7 @@ Angenommen $f$ monoton wachsend\\*
 Sei $x_0 \in (a, b)$\\*
 Zeige: $f'(x) \geq 0$\\*
 % TOFIX Richtigen Arrow suchen
-$f'(x_0) = \lim_{x \nearrow x_0}\frac{f(x) - f(x_0)}{x - x_0}$\\*
+$f'(x_0) = \lim_{x \searrow x_0}\frac{f(x) - f(x_0)}{x - x_0}$\\*
 $x > x_0 \Rarr x - x_0 > 0,\ f(x) - f(x_0) \geq 0$
 
 % Stefan BSP1 
@@ -95,3 +95,36 @@ d.h.
 \end{itemize}
 8.15 \Rarr{} $f$ streng monoton fallend auf $[x_0, x_0 + \e]$ wegen a)
 			$f$ streng monoton steigend auf $[x_0 - \e, x_0]$ wegen b)
+\bsp $f(x) x^3 - 3x$ $f: \R \to \R$\\*
+$f'(x) = 3x^2 - 3$\\*
+$f''(x) = 6x$\\*
+Nullstelle (NST) von $f'$: $f'(x) = 0 \equ 3x^2 - 3 = 0 \equ x^2 = 1 \equ x \in \{1, -1\}$\\*
+Anwendung von $f''$ an NST von $f'$: $f(1) = 6$
+
+%Stefan
+
+Analog für $x \to b$ (ohne Beweis)
+\bsp
+\begin{enumerate}
+\item{$\lim_{x\to 0} \frac{sin(x)}{x} = ?$ \\*
+$\lim_{x\to 0} x = 0$, $\lim_{x\to 0} \frac{sin(x)} = 0$\\*
+$x' = 1, sin' = cos$\\*
+$\leadsto$ Berechne\\*
+$\lim_{x\to0} \frac{cos(x)}{1} = cos(0) = 1$ existiert.\\*
+l'Hospital \Rarr{} $lim_{x \to 0} \frac{sin(x)}{x} = 1$}
+\item{$\lim_{x \to \infty} \frac{log(x)}{x}$\\*
+$\lim_{x \to \infty} x = \infty$\\*
+$log(x)' = \frac{1}{x}$, $x' = 1$\\*
+$\leadsto$ Berechne $$\lim_{x \to \infty} \frac{\frac{1}{x}}{1} = \lim_{x \to \infty} \frac{1}{x} = 0$
+8.17 \Rarr $\lim_{x \to \infty} \frac{log(x)}{x} = 0$}
+\item{Rationale Funktion\\*
+$\lim_{x \to \infty} \frac{x^3 + x}{2x^2 + 5}$\\*
+$f(x) = x^3 + x$, $g(x) = 2x^2 + 5$\\*
+$\lim_{x \to \infty} g(x) = \infty$\\*
+$\leadsto \ f'(x) = 2x + 1$, $g(x) = 4x$\\*
+$\leadsto$ Rechne\\*
+$\lim_{x \to \infty} \frac{2x + 1}{4x}$\\*
+$= \lim_{x \to \infty} (\frac{1}{2} + \frac{1}{4x}) = \frac{1}{2}$
+$\Rarr \lim_{x \to \infty} \frac{x^2 + x}{2x^2 + 5} = \frac{1}{2}$
+}
+\end{enumerate}
