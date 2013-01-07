@@ -63,7 +63,18 @@ $$f''(x_0)=\lim_{x→∞}\frac{f'(x)-f'(x_0)}{x-x_0}$$
 \Rarr Es gibt ein $ε>0$, so dass 
 $$|x-x_0|<ε\ \Rarr\ \frac{f'(x)-f'(x_0)}{x-x_0}<0$$
 % rest bis pause
-% bsp
+d.h.
+\begin{itemize}
+\item[a]{$x_0 < x < x_0 + \e$ \Rarr{} $f'(x) - f'(x_0) < 0$ \Rarr $f'(x) < 0$}
+\item[b]{$x_0 - \e < x < x_0$ \Rarr{} $f'(x) - f'(x_0) > 0$ \Rarr $f'(x) > 0$}
+\end{itemize}
+8.15 \Rarr{} $f$ streng monoton fallend auf $[x_0, x_0 + \e]$ wegen a)
+			$f$ streng monoton steigend auf $[x_0 - \e, x_0]$ wegen b)
+\bsp $f(x) x^3 - 3x$ $f: \R \to \R$\\*
+$f'(x) = 3x^2 - 3$\\*
+$f''(x) = 6x$\\*
+Nullstelle (NST) von $f'$: $f'(x) = 0 \equ 3x^2 - 3 = 0 \equ x^2 = 1 \equ x \in \{1, -1\}$\\*
+Anwendung von $f''$ an NST von $f'$: $f(1) = 6$
 
 \uS{Regeln von de l' Hospital}
 Ziel: Berechnung eines Limes $\lim_{x→a}\frac{f(x)}{g(x)}$ wenn $\lim_{x→a} f(x)=0=\lim_{x→a} g(x)$ oder $\lim_{x→a}g(x)=\pm ∞$
@@ -81,6 +92,30 @@ $$\lim_{x→a}\frac{f'(x)}{g'(x)}=c\eR\text{ existiert}$$
 %Analog
 %bsp
 
+Analog für $x \to b$ (ohne Beweis)
+\bsp
+\begin{enumerate}
+\item{$\lim_{x\to 0} \frac{sin(x)}{x} = ?$ \\*
+$\lim_{x\to 0} x = 0$, $\lim_{x\to 0} \frac{sin(x)} = 0$\\*
+$x' = 1, sin' = cos$\\*
+$\leadsto$ Berechne\\*
+$\lim_{x\to0} \frac{cos(x)}{1} = cos(0) = 1$ existiert.\\*
+l'Hospital \Rarr{} $lim_{x \to 0} \frac{sin(x)}{x} = 1$}
+\item{$\lim_{x \to \infty} \frac{log(x)}{x}$\\*
+$\lim_{x \to \infty} x = \infty$\\*
+$log(x)' = \frac{1}{x}$, $x' = 1$\\*
+$\leadsto$ Berechne $$\lim_{x \to \infty} \frac{\frac{1}{x}}{1} = \lim_{x \to \infty} \frac{1}{x} = 0$
+8.17 \Rarr $\lim_{x \to \infty} \frac{log(x)}{x} = 0$}
+\item{Rationale Funktion\\*
+$\lim_{x \to \infty} \frac{x^3 + x}{2x^2 + 5}$\\*
+$f(x) = x^3 + x$, $g(x) = 2x^2 + 5$\\*
+$\lim_{x \to \infty} g(x) = \infty$\\*
+$\leadsto \ f'(x) = 2x + 1$, $g(x) = 4x$\\*
+$\leadsto$ Rechne\\*
+$\lim_{x \to \infty} \frac{2x + 1}{4x}$\\*
+$= \lim_{x \to \infty} (\frac{1}{2} + \frac{1}{4x}) = \frac{1}{2}$
+$\Rarr \lim_{x \to \infty} \frac{x^2 + x}{2x^2 + 5} = \frac{1}{2}$
+}
 \item{$$\lim_{x→0}\left(\frac{1}{sin(x)}-\frac{1}{x}\right)$$
 $$\frac{1}{sin(x)}-\frac{1}{x}=\frac{x-sin(x)}{x·sin(x)}=\frac{f(x)}{g(x)}$$
 $$f(x)=x-sin(x),\ g(x)=x·sin(x)$$
@@ -93,5 +128,5 @@ $$f''(x)=sin(x),\ g''(x)=cos(x)+cos(x)-x.sin(x)$$
 $$lim_{x→0}\frac{f''(x)}{g''(x)}=lim_{x→0}\frac{sin(x)}{2cos(x)-x·sin(x)}=\footnote{$lim_{x→0}2cos(x)-x·sin(x)=2$\\*
 $lim_{x→0}sin(x)=0$}\frac{0}{2}=0$$
 $$\underset{8.17}{\Rarr} lim_{x→0}\frac{f'(x)}{g'(x)=0}\underset{8.17}{\Rarr} lim_{x→0}\frac{f(x)}{g(x)=0}$$
-
 }
+\end{enumerate}
