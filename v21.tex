@@ -1,0 +1,97 @@
+%Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 20}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 20.12.2012}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 20}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 20.12.2012}
+% **************************************************
+% Christopher
+\sS{Satz (Mittelwertsatz der Differenzialrechnung)}
+Sei $f:[a,b]→\R$ stetig, auf (a,b) differenzierbar, dann gibt es ein $x_0\in (a,b)$ mit.
+$$f'(x_0)=\frac{f(b)-f(a)}{b-a}=\lambda$$
+GRAPH
+\bew
+Sei $g:(a,b)→\R,\ g(x)=f(x)-\lambda·x$\\*
+$$\text{Rechne }g(a)-g(b)=f(a)-\lambda·a-f(b)+\lambda·b = f(a)-f(b)-\lambda(a-b)=f(a)-f(b)-\frac{f(b)-f(a)}{b-a}(a-b)=0$$
+Satz von Rolle auf $g$ anwendbar \Rarr\ es gibt $x_0\in (a,b),\ g'(x_0)=0$
+$$f(x)=g(x)+\lambda x\ \Rarr\ f'(x_0)=g'(x_0)+\lambda=\lambda$$ \qed
+
+%satz 8.14 Folge
+
+\sS{Satz (Monotonie)}
+Sei $f:[a,b]→\R$ stetig, diff'bar auf $(a,b)$\\*
+$f'(x)\geq 0$ für alle $x\in (a,b)$ \equ\ $f$ monoton wachsend
+$f'(x)\leq 0$ für alle $x\in (a,b)$ \equ\ $f$ monoton fallend
+$f'(x)> 0$ für alle $x\in (a,b)$ \Rarr\ $f$ streng monoton wachsend
+$f'(x)< 0$ für alle $x\in (a,b)$ \Rarr\ $f$ streng monoton fallend
+\bew
+Angenommen $f'(x)\geq 0$ für alle $x$\\*
+Gegeben sei $a<x_1<x_2<b$
+\sss{Zeige}
+$f(x_1)\leq f(x_2)$\\*
+Mittelwertsatz: es gibt $x_0$ mit $x_1<x_0<x_2$ und $f(x_2)-f(x_1)=\underbrace{f'(x_0)}_{\geq 0}\underbrace{x_2-x_1}_{>0}$ \Rarr\ $f(x_2)\geq f(x_1)$, also monoton wachsend.\\*
+Analog folgen alle "\Rarr" des Satzes.\\*
+%angenommen 
+Analog: für monoton fallend \Rarr\ $f'(x)\leq 0$ für alle $x$\qed
+\bsp
+\enum{
+	\item{$cos:[0,\pi]→\R$ streng monoton fallend\\*
+	Graphen an der seite\\*
+	$cos'=-sin,\ -sin(x)<0$ für alle $x\in (0,\pi)$.
+	}
+	\item{$f:\R→\R,\ f(x)=x^3$
+	Graphen
+	$f'(x)\geq 0$ für alle $x$ $f'(0)=0$ trotzdem $f$ streng monoton wachsend
+	}
+}
+
+\sS{Satz}
+Sei $f:(a,b)→\Re$ in $x_0$ zweimal differenzierbar mit $f'(x_0)=0$, dann gilt:
+\enum{
+	\item{Wenn $f''(x_0)<0$ dann hat $f$ in $x_0$ ein lokales Maximum}
+	\item{Wenn $f''(x_0)>0$ dann hat $f$ in $x_0$ ein lokales Minimum}
+}
+(Wenn $f''(x_0=0)$, dann keine Aussage)
+\bew
+Sei $f''(x_0)<0)$.
+$$f''(x_0)=\lim_{x→∞}\frac{f'(x)-f'(x_0)}{x-x_0}$$
+\Rarr Es gibt ein $ε>0$, so dass 
+$$|x-x_0|<ε\ \Rarr\ \frac{f'(x)-f'(x_0)}{x-x_0}<0$$
+% rest bis pause
+% bsp
+
+\uS{Regeln von de l' Hospital}
+Ziel: Berechnung eines Limes $\lim_{x→a}\frac{f(x)}{g(x)}$ wenn $\lim_{x→a} f(x)=0=\lim_{x→a} g(x)$ oder $\lim_{x→a}g(x)=\pm ∞$
+
+\sS{Satz}
+Sei $I=(a,b)$ mit $-∞\leq a<b\leq ∞$\\*
+Seien $f,g:I→\R$ differenzierbare Funktionen
+\sss{Annahme}
+Der Limes
+$$\lim_{x→a}\frac{f'(x)}{g'(x)}=c\eR\text{ existiert}$$
+\enum{
+	\item{Wenn $\lim_{x→a}f(x)=\lim_{x→a}g(x)=0$, dann gilt $\lim_{x→a}\frac{f(x)}{g(x)}=c$}
+	\item{Wenn $\lim_{x→a}g(x)=∞$ oder $-∞$, dann $\lim_{x→a}\frac{f(x)}{g(x)}=c$}
+}
+%Analog
+%bsp
+
+\item{$$\lim_{x→0}\left(\frac{1}{sin(x)}-\frac{1}{x}\right)$$
+$$\frac{1}{sin(x)}-\frac{1}{x}=\frac{x-sin(x)}{x·sin(x)}=\frac{f(x)}{g(x)}$$
+$$f(x)=x-sin(x),\ g(x)=x·sin(x)$$
+$$\lim_{x→0}\left(x-sin(x)\right)=0=\lim_{x→0}\left(x·sin(x)\right)$$
+$$f'(x)=1-cos(x),\ g'(x)=sin(x)+x·cos(x)$$
+$$\lim_{x→0}\frac{1-cos(x)}{sin(x)+x·cos(x)}=?$$
+$$\lim_{x→0}(1-cos(x))=0=\lim_{x→0}sin(x)+x·cos(x)$$
+Wende 8.17 nochmal an
+$$f''(x)=sin(x),\ g''(x)=cos(x)+cos(x)-x.sin(x)$$
+$$lim_{x→0}\frac{f''(x)}{g''(x)}=lim_{x→0}\frac{sin(x)}{2cos(x)-x·sin(x)}=\footnote{$lim_{x→0}2cos(x)-x·sin(x)=2$\\*
+$lim_{x→0}sin(x)=0$}\frac{0}{2}=0$$
+$$\underset{8.17}{\Rarr} lim_{x→0}\frac{f'(x)}{g'(x)=0}\underset{8.17}{\Rarr} lim_{x→0}\frac{f(x)}{g(x)=0}$$
+
+}
