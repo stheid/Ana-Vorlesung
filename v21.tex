@@ -13,19 +13,18 @@
 %
 \wdh
 Eine Funktion $f: I \to \R$ heißt differenzierbar in $x_0 \in I$ wenn der Limes
-$$f(x) = \lim_{x\to x_0} \frac{f(x) - f(x0)}{x-x_0}$$ existiert.\\*
+$$f(x) = \lim_{x\to x_0} \frac{f(x) - f(x0)}{x-x_0}\text{ existiert}$$
 Ableitungsregeln: Produkt, Kettenregel, Umkehrfunktion $\leadsto$ Kann "alle" Ableitungen ausrechnen
-8.11 $f: I = (a,b) \to \R}$ diffbar,\\*
-$f$ hat ein lokales extremum in $x_0 \in (a, b)$ \Larr{} $f'(x) = 0$\\*
+8.11 $f: I = (a,b) \to \R$ differenzierbar, $f$ hat ein lokales extremum in $x_0 \in (a, b)$ \Larr{} $f'(x) = 0$\\*
 \begin{tikzpicture}[domain=-0.3:2,prefix=plots/, smooth]
 \draw[very thin,color=gray] (-0.3,-0.25) grid (1.99,1.99);
 \draw[->] (0.3,0) -- (2.5,0) node[right] {$x$};
 \draw[->] (0,0.3) -- (0,2) node[above] {$y$};
 % Graphen beschriftung
 \draw[color=blue] plot[id=21.1_cosp1] function{cos(x) + 1} node[below, midway] {};
-\end{tikzpicture}
+\end{tikzpicture}\\*
 8.12 (Satz von Rolle)\\*
-Sei $f: [a, b] \to \R$  diffbar\\*
+Sei $f: [a, b] \to \R$  diff'bar\\*
 \begin{tikzpicture}[domain=-0.3:2,prefix=plots/, smooth]
 \draw[very thin,color=gray] (-0.3,-0.25) grid (1.99,1.99);
 \draw[->] (0.3,0) -- (2.5,0) node[right] {$x$};
@@ -48,7 +47,7 @@ Sei $f:[a,b]→\R$ stetig, auf (a,b) differenzierbar, dann gibt es ein $x_0\in (
 $$f'(x_0)=\frac{f(b)-f(a)}{b-a}=\lambda$$
 GRAPH
 \bew
-Sei $g:(a,b)→\R,\ g(x)=f(x)-\lambda·x$\\*
+Sei $g:(a,b)→\R,\ g(x)=f(x)-\lambda·x$
 $$\text{Rechne }g(a)-g(b)=f(a)-\lambda·a-f(b)+\lambda·b = f(a)-f(b)-\lambda(a-b)=f(a)-f(b)-\frac{f(b)-f(a)}{b-a}(a-b)=0$$
 Satz von Rolle auf $g$ anwendbar \Rarr\ es gibt $x_0\in (a,b),\ g'(x_0)=0$
 $$f(x)=g(x)+\lambda x\ \Rarr\ f'(x_0)=g'(x_0)+\lambda=\lambda$$ \qed
@@ -79,8 +78,7 @@ Sei $x_0 \in (a, b)$\\*
 Zeige: $f'(x) \geq 0$\\*
 % TOFIX Richtigen Arrow suchen
 $f'(x_0) = \lim_{x \searrow x_0}\frac{f(x) - f(x_0)}{x - x_0}$\\*
-$x > x_0 \Rarr x - x_0 > 0,\ f(x) - f(x_0) \geq 0$
-
+$x > x_0 \Rarr x - x_0 > 0,\ f(x) - f(x_0) \geq 0$\\*
 Analog: für monoton fallend \Rarr\ $f'(x)\leq 0$ für alle $x$\qed
 \bsp
 \enum{
@@ -109,8 +107,7 @@ Analog: für monoton fallend \Rarr\ $f'(x)\leq 0$ für alle $x$\qed
 \draw[->] (0,-3) -- (0,3) node[above] {$y$};
 \draw[color=blue] plot[id=21.4_x3] function{pow(x, 3)} node[below, midway] {$f(x) = x^3$};
 \draw[color=red] plot[id=21.4_x3] function{pow(3x, 2)} node[below, midway] {$f'(x) = 3x^2$};
-\end{tikzpicture}
-
+\end{tikzpicture}\\*
 	$f'(x)\geq 0$ für alle $x$ $f'(0)=0$ trotzdem $f$ streng monoton wachsend
 	}
 }
@@ -154,9 +151,6 @@ $$\lim_{x→a}\frac{f'(x)}{g'(x)}=c\eR\text{ existiert}$$
 	\item{Wenn $\lim_{x→a}f(x)=\lim_{x→a}g(x)=0$, dann gilt $\lim_{x→a}\frac{f(x)}{g(x)}=c$}
 	\item{Wenn $\lim_{x→a}g(x)=∞$ oder $-∞$, dann $\lim_{x→a}\frac{f(x)}{g(x)}=c$}
 }
-%Analog
-%bsp
-
 Analog für $x \to b$ (ohne Beweis)
 \bsp
 \begin{enumerate}
@@ -169,7 +163,7 @@ l'Hospital \Rarr{} $lim_{x \to 0} \frac{sin(x)}{x} = 1$}
 \item{$\lim_{x \to \infty} \frac{log(x)}{x}$\\*
 $\lim_{x \to \infty} x = \infty$\\*
 $log(x)' = \frac{1}{x}$, $x' = 1$\\*
-$\leadsto$ Berechne $$\lim_{x \to \infty} \frac{\frac{1}{x}}{1} = \lim_{x \to \infty} \frac{1}{x} = 0$
+$\leadsto$ Berechne $$\lim_{x \to \infty} \frac{\frac{1}{x}}{1} = \lim_{x \to \infty} \frac{1}{x} = 0$$
 8.17 \Rarr $\lim_{x \to \infty} \frac{log(x)}{x} = 0$}
 \item{Rationale Funktion\\*
 $\lim_{x \to \infty} \frac{x^3 + x}{2x^2 + 5}$\\*
