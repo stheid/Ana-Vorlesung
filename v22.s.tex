@@ -1,0 +1,64 @@
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 21}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 07.01.2013}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 21}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 07.01.2013}
+% **************************************************
+%
+\chapter{Integration}
+\sss{Idee} Sei $f:[a,b]→\R_{\geq 0}$\\*
+GRAPH\\*
+$\int_a^b f(x)dx=Fläche$ zwischen Graphen von $f$ und $x$-Achse\\*
+Wenn allgemeiner $f:[a,b]→\R$\\*
+GRAPH\\*
+dann zählen Flächen unterhalb der $x$-Achse negativ
+$$\int_a^b f(x)dx =F_1-F_2+F_3$$
+\sss{Fragen}
+Formale Definition des Intervalls? Welche Funktionen sind interpretierbar? Eigenschaften, Berechnung des Integrals.
+
+\uS{Treppenfunktion}
+\sS{Definition der Treppenfunktion}
+Sei $a,b \eR$, $a<b$
+\enum{
+\item Eine Funktion $f:[a,b]→\R$ heißt Treppenfunktion, wenn es eine Unterteilung $a=x_0<x_1<x_2<x_3<…<x_n=b$ gibt, so dass $f$ auf $(x_{i-1},x_{i})$ konstant ist, dass heißt $f(x)=c_i$ für alle $x$ mit $ x_{i-1}<x<x_{i} $\\*
+Graph
+\item In diesem Fall definiere
+$$\int_a^b f(x)dx=\sum_{i=1}^n c_i(x_{i}-x_{i-1})$$
+"Summe der Rechtecke"
+\bem
+Die Definition eines Integrals für die Treppenfuntkion ist Unabhängig vin der Unterteilung
+\bsp
+GRAPH (ohne formalen Beweis)
+}
+
+\sS{Lemma}
+Seien $f,g:[a,b]→\R$ Treppenfuntionen\\*
+Dann gilt:
+\enum{
+\item $\ds\int_a^b (f+g)(x)dx=\int_a^b f(x)dx+\int_a^b g(x)dx$
+\item $\ds c\eR \int_a^b c·f(x)dx=c·\int_a^b f(x)dx$
+\item Wenn $f\leq g$, dass heißt $f(x)\leq g(x)\ ∀x$, dann $\ds \int_a^b f(x)dx\leq \int_a^b g(x)dx$\\*
+GRAPH (ohne formalen Beweiß)
+}
+
+%christopher riemansches Integral
+\sS{Definition des Riemannschen Integral}
+Sei $f:[a,b]→\R$ beschränkte Funktion\\*
+Unterintegral:
+$$sup \left\{\int_a^b g(x)dx\mid g:[a,b]\text{ Treppenfunktion mit }g\leq f\right\}=:\int_a^b{}_* f(x)dx$$
+Oberintegral:
+$$inf \left\{\int_a^b h(x)dx\mid h:[a,b]\text{ Treppenfunktion mit }f\leq h\right\}=:\int_a^b{}^* f(x)dx$$
+(\ul{Idee} Wenn $\int_a^b f(x)$ definiert, sollte $ \int_a^b{}_* f(x)dx\leq \int_a^b f(x)dx \leq \int_a^b{}^* f(x)dx $)
+\sss{Definition}
+$f$ heißt integrierbar, wenn $\int_a^b{}_* f(x)dx=\int_a^b{}^* f(x)dx$\\*
+Dann setzte $\int_a^b f(x)dx:=\int_a^b{}_* f(x)dx$
+
+%cchristopher bemerkung
+%Eigenschaften des Integrals
+
