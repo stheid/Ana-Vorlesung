@@ -62,3 +62,37 @@ Dann setzte $\int_a^b f(x)dx:=\int_a^b{}_* f(x)dx$
 %cchristopher bemerkung
 %Eigenschaften des Integrals
 
+\sS{Satz}
+Sei $f:[a,b]→\R$ stetig, dann:
+\enum{
+\item Für jedes $ε>0$ gibt es eine Treppenfuntion. $g:[a,b]→\R$ mit $|f(x)-g(x)|<ε$ für alle $x\in[a,b]$\\*
+GRAPH
+\item $f$ ist integrierbar
+}
+\bew
+Zeige 2) unter Annahme von 1).\\*
+Gegeben $ε>0$. Setze $ε'=\frac{1}{2(b-a)}ε$\\*
+Wegen 1) gibt es eine Treppenfunktion $g:[a,b]→\R$ mit $|f(x)-g(x)|<ε'$.
+$$g_1(x)=g(x)-ε',\ g_2(x)=g(x)+ε'\ \Rarr\ g_1\leq f \leq g_2$$
+$$\int_a^b g_2(x)dx-\int_a^b g_1(x)dx=\int_a^b (g_2-g_1)(x)dx=\int_a^b \underset{\overset{\up}{konstante\ Funktion}}{2ε'}(x)dx={2ε'}(b-a)=\frac{1}{(b-a)}·ε·2(b-a)=ε\ \underset{9.4}{\Rarr} f\text{integrierbar}$$
+
+%zeige
+
+\sS{Satz (Mittelwertsatz der Integralrechnung)}
+Sei $f:[a,b]→\R$ stetig (somit integrierbar)\\*
+Dann gibt es ein $x_0\in [a,b]$ mit $\ds\int_a^b f(x)dx=f(x_0)(b-a)$\\*
+GRAPH
+\bew
+\desc{Sei}{$m=inf{f(x)\mid x\in [a,b]}$\\$M=sup{f(x)\mid X\in [a,b]}$}
+6.11 \Rarr\ \ul{Bekannt} es gibt $x_1,x_2\in [a,b]$ mit $f(x_1)=m,f(x_2)=M$\\*
+$f(x_1)\leqf(x_2)$ für alle $f(x)\leq f(x_2)$
+
+% hässliche formeln
+
+(nachtrag)
+\sS Definition Mittelwertsatz}
+Sei $f:[a,b]→\R$ integrierbar, $a<b$
+$$\int_b^a f(x)dx=-\int_a^b f(x)dx$$
+\sss{Konsequenz}
+Sei $f:I→\R$ stetig $a,b,c\in I$, dann $$\int_a^b f(x)dx+\int_b^c f(x)dx=\int_a^c f(x)dx$$ egal wie $a,b,c$ liegen!\\*
+WEITERE Graphen
