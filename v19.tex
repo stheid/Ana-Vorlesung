@@ -32,7 +32,7 @@ Der Differenzialquotient $$ \frac{f(x)-f(x_0)}{(x-x_0)} $$ ist Steigung der Gera
 $f'(x_0)$ (wenn existiert) ist die Steigung der \ul{Tangente} an $Γ_f$ im Punkt $(x_0,f(x_0))$
 \bem
 \desc{Schreibe}{$x=x_0+h$\\$h=x-x_0$}
-$$\leadsto\ f'(x_0):=\lim_{h→x_0}\frac{f(x_0+h)-f(x_0)}{h}$$
+$$\leadsto\ f'(x_0):=\lim_{h→0}\frac{f(x_0+h)-f(x_0)}{h}$$
 \bsp
 \enum{
 \item{$f:\R→\R,\ f(x)=c$ konstante Funktion
@@ -40,8 +40,8 @@ $$f'(x_0):=\lim_{x→x_0}\frac{c-c}{\underbrace{x-x_0}_0}=0$$}
 \item{$f:\R→\R,\ f(x)=a·x, a\eR$
 $$f'(x_0):=\lim_{x→x_0}\frac{a·x-a·x_0}{x-x_0}=\lim_{x→x_0}a=a\ \Rarr f\text{ differenzierbar}$$}
 \item{$f:\R→\R,\ f(x)=x^2$
-$$f'(x_0):=\lim_{h→0}\frac{(x_0+h)^2-x_0^2}{h}=\lim_{h→0}\frac{2x_0h+h^2}{h}=\lim_{h→0}\frac{2x_0+h}=2x_0\ \Rarr f\text{ differenzierbar}$$}
-\item{$f:\R\\\{0\}→\R,\ f(x)=\frac{1}{x}$ Sei $x_0≠0$
+$$f'(x_0):=\lim_{h→0}\frac{(x_0+h)^2-x_0^2}{h}=\lim_{h→0}\frac{2x_0h+h^2}{h}=\lim_{h→0}\frac{2x_0+h}{h}=2x_0\ \Rarr f\text{ differenzierbar}$$}
+\item{$f:\R \bs\{0\}→\R,\ f(x)=\frac{1}{x}$ Sei $x_0≠0$
 	\alg{f'(x_0):=\lim_{x→x_0}\frac{\frac{1}{x}+\frac{1}{x_0}}{x-x_0}=\lim_{x→x_0}\frac{\frac{x_0-x}{x·x_0}}{x-x_0}=\lim_{x→x_0}\frac{\cancel{x_0-x}}{\cancel{(x-x_0)}·x·x_0}&=\lim_{x→x_0}\frac{-1}{x·x_0}=-\frac{1}{x_0^2}\ \Rarr f\text{ differenzierbar},\\*
 	&\left(\frac{1}{x}\right)'=-\frac{1}{x^2}}
 }
@@ -82,7 +82,7 @@ $ cos' = -sin $}
 }
 
 \sS{Lemma}
-Eine Funktion $f:I→\R$ ist genau dann in $x_0$ differenzierbar, wenn eine ander Funktion $\phi:I→\R$ existiert, sodass
+Eine Funktion $f:I→\R$ ist genau dann in $x_0$ differenzierbar, wenn eine andere Funktion $\phi:I→\R$ existiert, sodass
 \enum{
 	\item{$f(x)-f(x_0)=\phi(x)·(x-x_0)$ für alle $x\in I$}
 	\item{$\phi$ ist stetig in $x_0$}
@@ -109,11 +109,11 @@ $\phi$ stetig in $x_0$ \Rarr{} $f$ stetig in $x_0$ \qed}
 \end{enumerate}
 
 \uS{Berechnung der Ableitung}
-\sS{Satz}
+\sS{Satz (Zusammengesetzte Ableitungen)}
 Seien $f,\ g: I \to \R$ differenzierbar in $x_0 \in I$, dann sind auch $f + g$, $a \cdot f$, $f \cdot g: I \to \R$ in $x_0$ differenzierbar. ($a \in R$) und:
 \begin{enumerate}
 \item{$(f + g)'(x_0) = f'(x_0) + g'(x_0)$}
-\item{$a \cdot f)'(x_0) = a \cdot f'(x_0)$}
+\item{$(a \cdot f)'(x_0) = a \cdot f'(x_0)$}
 \item{$(f \cdot g)'(x_0) = f'(x_0) \cdot g(x_0) + f(x_0) \cdot g'(x_0)$}
 \end{enumerate}
 \bew
@@ -125,10 +125,9 @@ Weil $f$ stetig in $x_0$ und nach Definition der Ableitung. \qed{}\\*
 \ul{Folge:} Für $n \geq 1$ $(x^n)' = n \cdot x^{n-1}$
 \bew
 mit vollständiger Induktion:
-$(x^1) = 1 =1 \cdot x^0$ \ok\\*
-$n \to n + 1$\\*
-$(x^n+1) = n\cdot x^{n-1}$
-$$(x^{n+1})' = x' \cdot x^n + x \cdot (x^n)' = 1 + x^n + x \cdot n \cdot x^{n-1} = (n+1) x^n$$\qed
+\ind{$(x^1) = 1 =1 \cdot x^0$}
+{$(x^n+1) = n\cdot x^{n-1}$
+$$(x^{n+1})' = x' \cdot x^n + x \cdot (x^n)' = 1 + x^n + x \cdot n \cdot x^{n-1} = (n+1) x^n$$}
 
 \sS{Satz Kettenregel}
 Sei $I,J$ Intervalle, $f:I→\R,\ g:J→\R$ Funktionen\\*
@@ -138,4 +137,5 @@ $x_0\longmapsto f(x_0)$
 \desc{Wenn}{$f$ in $x_0$ differenzierbar und\\$g$ in $f(x_0)$ differenzierbar,}
 dann ist $g\circ f$ in $x_0$ differenzierbar,
 und $(g\circ f)'(x_0)=g'(f(x_0))·f'(x_0)$\\
-\ul{Beweisidee} $\frac{g(f(x)) - g(f(x_0))}{x-x_0} = \frac{g(f(x)) - g(f(x_0))}{f(x)-f(x_0)} \cdot \frac{f(x) - f(x_0)}{x-x_0}$
+\ul{Beweisidee}
+$$\frac{g(f(x)) - g(f(x_0))}{x-x_0} = \frac{g(f(x)) - g(f(x_0))}{f(x)-f(x_0)} \cdot \frac{f(x) - f(x_0)}{x-x_0}$$

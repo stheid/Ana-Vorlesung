@@ -24,11 +24,12 @@ $$(f·g)'=f'·g+f·g'$$
 $$(g\circ f)'(x)=g'(f(x))·f'(x)$$
 \bsp
 $$(e^{x^2})'=(exp(x^2))'=exp'(x^2)·(x^2)'=2x·e^(x^2)$$
-$((cos (x))^2)' = f(cos (x))' = f'(cos (x)) \cdot cos'(x) = 2 \cdot cos(x) \cdot sin(x)$
+$$((cos (x))^2)' = f(cos (x))' = f'(cos (x)) \cdot cos'(x) = 2 \cdot cos(x) \cdot sin(x)$$
+
 \sS{Satz Quotientenregel}
 Seien $f, g: I \to \R$ in $x_0$ differenzierbar, $g(x) \neq 0$ für alle $x \in I$.\\*
 Dann ist $\frac{f}{g}: I \to \R$, $\frac{f}{g}(x) := \frac{f(x)}{g(x)}$ differenzierbar in $x_0$
-$$(\frac{f}{g})'(x) = \frac{f'(x_0)\cdot g(x_0) - f(x_0) \cdot g'(x_0)}{g(x_0^2)}$$
+$$\left(\frac{f}{g}\right)'(x) = \frac{f'(x_0)\cdot g(x_0) - f(x_0) \cdot g'(x_0)}{g(x_0)^2}$$
 \bew
 Fall $f = 1$:\\*
 Kettenregel:
@@ -53,7 +54,7 @@ $$(x^{-3})'=-3x^{-4}$$
 Sei $f:I→\R$ stetig, streng monoton\\*
 Sei $J=f(I),\ g=f^{-1}:J→I$ die Umkehrfunkion von $f$\\*
 Angenommen, $f$ ist $x_0\in I$ differenzierbar und $f'(x_0)≠0$\\*
-Dann ist $g$ in $y_0:=f(x_0)$ differenzierbar und $g'(y_0)≠\frac{1}{f'(x_0)}$\\*
+Dann ist $g$ in $y_0:=f(x_0)$ differenzierbar und $g'(y_0)=\frac{1}{f'(x_0)}$\\*
 \begin{tikzpicture}[domain=-1:4,prefix=plots/, smooth]
 \draw[very thin,color=gray] (-0.99,-0.49) grid (3.99,2.99);
 \draw[->] (-1,0) -- (4,0) node[right] {$x$};
@@ -80,17 +81,16 @@ $log'(x)=\frac{1}{x}$
 $x=1\ log(1)=0$\\*
 $log'(1)=\frac{1}{1}=1$
 $$\lim_{\nif}\frac{log\left(1+\frac{1}{n}\right)-log(1)}{\frac{1}{n}}=log'(1)=1\ \Rarr\ 1=\lim_{\nif}\left(n·log\left(1+\frac{1}{n}\right)\right))$$
-$exp$ anwenden $\underset{exp stetig}{\Rarr}$
+$exp$ anwenden $\underset{exp\ stetig}{\Rarr}$
 $$exp(1)=\lim_{\nif}exp\left(n·log\left(1+\frac{1}{n}\right)\right))$$
 $$e=exp(1)\underset{Def}{=}\lim_{\nif}\left(1+\frac{1}{n}\right)^n$$
 
-\uS{Höhere Ableitungen}
-Idee: Wenn $f: I \to \R$ differenzierbar\\*
-\approx $f':I \to \R$ Fkt\\*
-Wenn $f'$ diffbar $ \approx (f')' = f'' = \frac{d^2f}{dx^2}$\\*
-2. Ableitung weiter:
+\sS{Höhere Ableitungen}
+Idee: Wenn $f: I \to \R$ differenzierbar $ \leadsto\ f':I \to \R$ Funktion\\*
+Wenn $f'$ differenzierbar $ \leadsto\ (f')' = f'' = \frac{d^2f}{dx^2}$\\*
+2. Ableitung weiter:\\*
 $f'' = f^{(2)}$\\*
-$f^{(n+1)} = (f^{n})'$ wenn differenzierbar\\*
+$f^{(n+1)} = (f^{(n)})'$ wenn differenzierbar\\*
 $f^{(n)}$: n-te Ableitung von $f$.
 \bsp
 $$(x^5)^{(2)} = ((x^5)')' = (5x^4)' = 20x^3$$
@@ -100,22 +100,21 @@ $$sin'' = -cos' = -sin$$
 \sS{Formale Definition der höheren Ableitung}
 Rekursive Definition:\\*
 Sei $n\geq 1$\\*
-Eine Funktion $f:I→\R$ ist $n+1$ mal differenzierbar in $x_0\in I$ wenn ein $ε>0$ existiert, so dass $f$ auf $(x_0-ε,x_0+ε)$ $n$-mal differenzierbar und $f(n):(x_0-ε,x_0+ε)\R$ in $x_0$ differenzierbar sein, dann setzte $f^{(n+1)}(x_0):=(f^{(n)})'(x_0)$
+Eine Funktion $f:I→\R$ ist $n+1$ mal differenzierbar in $x_0\in I$, wenn ein $ε>0$ existiert, so dass $f$ auf $(x_0-ε,x_0+ε)$ $n$-mal differenzierbar und $f^{(n)}:(x_0-ε,x_0+ε)→\R$ in $x_0$ differenzierbar ist, dann setzte $f^{(n+1)}(x_0):=(f^{(n)})'(x_0)$
 
 \uS{Lokale Extrema und Mittelwertsatz}
-\sS{Definition Lokales Maximum}
-Sei $f: I \to \R$ Fkt.\\*
-f hat ein \ul{lokales Maximum} in $x_0 \in I$ wenn gilt:\\*
-$\case{
+\sS{Definition Lokale Extrema}
+Sei $f: I \to \R$ Funktion\\*
+$f$ hat ein \ul{lokales Maximum} in $x_0 \in I$ wenn gilt: $\case{
 \text{es gibt ein $\e > 0$ s.d.}\\
 \text{Für alle $x \in I$ mit $|x-x_0| < \e$}\\
 \text{gilt $f(x) \leq f(x_0)$}
-}$
+}$\\*
 Analog: Lokales Minimum.
 \bem
 Lokale Minima von $f$ = lokale Maxima von $-f$
 
-\sS{Satz}
+\sS{Satz (Mittelwertsatz)}
 Sei $I=(a,b),\ f:I→\R$ Funktion\\*
 Wenn $f$ in $x_0\in(a,b)$ ein lokales Extremum hat, und wenn $f$ in $x_0$ differenzierbar ist, dann ist $f'(x_0)=0$ (Extremum = Maxium oder Minimum)
 \bew
