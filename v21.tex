@@ -18,8 +18,8 @@ Ableitungsregeln: Produkt, Kettenregel, Umkehrfunktion $\leadsto$ Kann "alle" Ab
 8.11 $f: I = (a,b) \to \R$ differenzierbar, $f$ hat ein lokales extremum in $x_0 \in (a, b)$ \Larr{} $f'(x) = 0$\\*
 \begin{tikzpicture}[domain=-0.3:2,prefix=plots/, smooth]
 \draw[very thin,color=gray] (-0.3,-0.25) grid (1.99,1.99);
-\draw[->] (0.3,0) -- (2.5,0) node[right] {$x$};
-\draw[->] (0,0.3) -- (0,2) node[above] {$y$};
+\draw[->] (-0.3,0) -- (2.5,0) node[right] {$x$};
+\draw[->] (0,-0.3) -- (0,2) node[above] {$y$};
 % Graphen beschriftung
 \draw[color=blue] plot[id=21.1_cosp1] function{cos(x) + 1} node[below, midway] {};
 \end{tikzpicture}\\*
@@ -27,16 +27,16 @@ Ableitungsregeln: Produkt, Kettenregel, Umkehrfunktion $\leadsto$ Kann "alle" Ab
 Sei $f: [a, b] \to \R$  diff'bar\\*
 \begin{tikzpicture}[domain=-0.3:2,prefix=plots/, smooth]
 \draw[very thin,color=gray] (-0.3,-0.25) grid (1.99,1.99);
-\draw[->] (0.3,0) -- (2.5,0) node[right] {$x$};
-\draw[->] (0,0.3) -- (0,2) node[above] {$y$};
+\draw[->] (-0.3,0) -- (2.5,0) node[right] {$x$};
+\draw[->] (0,-0.3) -- (0,2) node[above] {$y$};
 % Graphen beschriftung
 \draw[color=blue] plot[id=21.2_cos_tiefer] function{cos(x) * 1.5 + 1};
 \end{tikzpicture}
 \\*
 \begin{tikzpicture}[domain=-0.3:2,prefix=plots/, smooth]
 \draw[very thin,color=gray] (-0.3,-0.25) grid (1.99,1.99);
-\draw[->] (0.3,0) -- (2.5,0) node[right] {$x$};
-\draw[->] (0,0.3) -- (0,2) node[above] {$y$};
+\draw[->] (-0.3,0) -- (2.5,0) node[right] {$x$};
+\draw[->] (0,-0.3) -- (0,2) node[above] {$y$};
 % Graphen beschriftung
 % Graph ausdenken, oder als Linie zeichnen.
 \end{tikzpicture}
@@ -85,28 +85,30 @@ Analog: für monoton fallend \Rarr\ $f'(x)\leq 0$ für alle $x$\qed
 	\item{$cos:[0,\pi]→\R$ streng monoton fallend\\*
 \begin{tikzpicture}[domain=-0.3:3.5,prefix=plots/, smooth]
 \draw[very thin,color=gray] (-0.3,-1.25) grid (3.49,1.25);
-\draw[->] (0.3,0) -- (3.5,0) node[right] {$x$};
-\draw[->] (0,-1.5) -- (0,1.5) node[above] {$y$};
+\draw[->] (-0.3,0) -- (3.5,0) node[right] {$x$};
+\draw[->] (0,-1.25) -- (0,1.5) node[above] {$y$};
 % Graphenbeschriftung bei PI
+\draw (3.14,0) node[anchor=north] {$\pi$};
 \draw[color=blue] plot[id=21.4_cos] function{cos(x)};
 \end{tikzpicture}
-\\*
 \begin{tikzpicture}[domain=-0.3:3.5,prefix=plots/, smooth]
-\draw[very thin,color=gray] (-0.3,-1.25) grid (3.49,0.25);
-\draw[->] (0.3,0) -- (3.5,0) node[right] {$x$};
-\draw[->] (0,-1.5) -- (0,5) node[above] {$y$};
+\draw[very thin,color=gray] (-0.3,-1.25) grid (3.49,1.25);
+\draw[->] (-0.3,0) -- (3.5,0) node[right] {$x$};
+\draw[->] (0,-1.25) -- (0,1.25) node[above] {$y$};
 % Graphenbeschriftung bei PI
+\draw (3.14,0) node[anchor=north] {$\pi$};
 \draw[color=blue] plot[id=21.5_sin] function{sin(x)};
-\end{tikzpicture}
+\end{tikzpicture}\\*
 	$cos'=-sin,\ -sin(x)<0$ für alle $x\in (0,\pi)$.
 	}
-	\item{$f:\R→\R,\ f(x)=x^3$
+	\item{$f:\R→\R,\ f(x)=x^3$\\*
 \begin{tikzpicture}[domain=-1.5:1.5,prefix=plots/, smooth]
-\draw[very thin,color=gray] (-1.49,-3.99) grid (1.49,1.24);
+\clip (-1.5,-4) rectangle (1.5,3.5);
+\draw[very thin,color=gray] (-1.49,-3.99) grid (1.49,3.24);
 \draw[->] (-1.6,0) -- (1.6,0) node[right] {$x$};
 \draw[->] (0,-3) -- (0,3) node[above] {$y$};
-\draw[color=blue] plot[id=21.4_x3] function{pow(x, 3)} node[below, midway] {$f(x) = x^3$};
-\draw[color=red] plot[id=21.4_x3] function{pow(3x, 2)} node[below, midway] {$f'(x) = 3x^2$};
+\draw[color=blue] plot[id=21.4_x3] function{x**3} (0.5, -2.25) node {$f(x) = x^3$};
+\draw[color=red] plot[id=21.5_3x2] function{3*(x**2)} (0, 2.25)node {$f'(x) = 3x^2$};
 \end{tikzpicture}\\*
 	$f'(x)\geq 0$ für alle $x$ $f'(0)=0$ trotzdem $f$ streng monoton wachsend
 	}
