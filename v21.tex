@@ -24,7 +24,7 @@ Ableitungsregeln: Produkt, Kettenregel, Umkehrfunktion $\leadsto$ Kann "alle" Ab
 \draw[color=blue] plot[id=21.1_cosp1] function{cos(x) + 1} node[below, midway] {};
 \end{tikzpicture}\\*
 8.12 (Satz von Rolle)\\*
-Sei $f: [a, b] \to \R$  diff'bar\\*
+Sei $f: [a, b] \to \R$  differenzierbar\\*
 \begin{tikzpicture}[domain=-0.3:2,prefix=plots/, smooth]
 \draw[very thin,color=gray] (-0.3,-0.25) grid (1.99,1.99);
 \draw[->] (-0.3,0) -- (2.5,0) node[right] {$x$};
@@ -43,7 +43,7 @@ Sei $f: [a, b] \to \R$  diff'bar\\*
 $f(a) = f(b)$ dann existiert $x_0 \in (a, b)$ mit $f'(x) = 0$
 
 \sS{Satz (Mittelwertsatz der Differenzialrechnung)}
-Sei $f:[a,b]→\R$ stetig, auf (a,b) differenzierbar, dann gibt es ein $x_0\in (a,b)$ mit.
+Sei $f:[a,b]→\R$ stetig, auf (a,b) differenzierbar, dann gibt es ein $x_0\in (a,b)$ mit:
 $$f'(x_0)=\frac{f(b)-f(a)}{b-a}=\lambda$$
 GRAPH
 \bew
@@ -62,9 +62,9 @@ Mittelwertsatz \qed
 
 \sS{Satz (Monotonie)}
 Sei $f:[a,b]→\R$ stetig, diff'bar auf $(a,b)$\\*
-$f'(x)\geq 0$ für alle $x\in (a,b)$ \equ\ $f$ monoton wachsend
-$f'(x)\leq 0$ für alle $x\in (a,b)$ \equ\ $f$ monoton fallend
-$f'(x)> 0$ für alle $x\in (a,b)$ \Rarr\ $f$ streng monoton wachsend
+$f'(x)\geq 0$ für alle $x\in (a,b)$ \equ\ $f$ monoton wachsend\\*
+$f'(x)\leq 0$ für alle $x\in (a,b)$ \equ\ $f$ monoton fallend\\*
+$f'(x)> 0$ für alle $x\in (a,b)$ \Rarr\ $f$ streng monoton wachsend\\*
 $f'(x)< 0$ für alle $x\in (a,b)$ \Rarr\ $f$ streng monoton fallend
 \bew
 Angenommen $f'(x)\geq 0$ für alle $x$\\*
@@ -115,7 +115,7 @@ Analog: für monoton fallend \Rarr\ $f'(x)\leq 0$ für alle $x$\qed
 }
 
 \sS{Satz}
-Sei $f:(a,b)→\Re$ in $x_0$ zweimal differenzierbar mit $f'(x_0)=0$, dann gilt:
+Sei $f:(a,b)→\R$ in $x_0$ zweimal differenzierbar mit $f'(x_0)=0$, dann gilt:
 \enum{
 	\item{Wenn $f''(x_0)<0$ dann hat $f$ in $x_0$ ein lokales Maximum}
 	\item{Wenn $f''(x_0)>0$ dann hat $f$ in $x_0$ ein lokales Minimum}

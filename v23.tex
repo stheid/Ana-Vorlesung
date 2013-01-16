@@ -74,7 +74,7 @@ Dann ist $F:I→\R$ \ul{differenzierbar} und $F'(x)=f(x)$.
 \bew
 Sei $h≠0$ $$\frac{F(x+h)-F(x)}{h}=\frac{1}{h}\left(\int_a^{x+h}f(t)dt-\int_a^xf(t)dt\right)=\frac{1}{h}\int_a^{x+h}f(t)dt$$GRAPH\\*
 Mittelwertsatz \Rarr\ es gibt $x_h\in[x,x+h]$ (wenn $h>0$) bzw. $x_h\in[x+h,x]$ (wenn $h<0$), so dass
-$$\int_a^{x+h}f(t)dt=f(x_n)·h\ \Rarr\ (*) = \frac{f(x_n)·h}{h}=f(x_n)\ \Rarr\ F'(x)=\lim_{h→0}\frac{F(x+h)-F(x)}{h}=\lim_{h→0}f(x_n)\underset{\footnote{\text{Für $h→0$ ist $x_n→x$, denn $|x-x_n|\leq h$, $f$ \ul{stetig}}{=}f(x)\ \Rarr \text{Behauptung}$$\qed
+$$\int_a^{x+h}f(t)dt=f(x_n)·h\ \Rarr\ (*) = \frac{f(x_n)·h}{h}=f(x_n)\ \Rarr\ F'(x)=\lim_{h→0}\frac{F(x+h)-F(x)}{h}=\lim_{h→0}f(x_n)\underset{\footnote{\text{Für $h→0$ ist $x_n→x$, denn $|x-x_n|\leq h$, $f$ \ul{stetig}}}}{=}f(x)\ \Rarr \text{Behauptung}$$\qed
 
 \sS{Definition Stammfunktion}
 Sei $f:I→\R$ Funktion. Eine Funktion $F:I→\R$ heißt Stammfunktion von $f$ wenn $F$ Differenzierbar und $F'=f$\\*
@@ -88,10 +88,10 @@ Eine Funktion $G:I→\R$ ist Stammfunktion von $f$ \equ\ $F-G$ konstant, dass he
 $G$ differenzierbar mit $G'=f$ \equ\ $G-F$ differenzierbar mit $(G-F)'=f-f=0$ \equ\ $G-F$ konstant (bekannt)\qed
 
 \sS{Satz (Hauptsatz der Differenzial und Integralrechnung)}
-Sei $f:[a,b]→\R$ stetig, $F:[a,b]→\R$ Stammfunktion von $f$, dann $$\int_a^{b}f(x)dx=F(b)-F(a)=:F(x)\left|\ary{b\\a}\right.$$
+Sei $f:[a,b]→\R$ stetig, $F:[a,b]→\R$ Stammfunktion von $f$, dann $$\int_a^{b}f(x)dx=F(b)-F(a)=:F(x)\left|\alg{b\\a}\right.$$
 \bew
 Sei $G(x):=\int_a^xf(t)dt$, $G:[a,b]→\R$.\\*
-9.9 \Rarr\ $G'=f$ \underset{9.11}{\Rarr} $G-F=c$ konstant, $c\eR$. $G=F+c$
+9.9 \Rarr\ $G'=f\ \underset{9.11}{\Rarr}\ G-F=c$ konstant, $c\eR$. $G=F+c$
 $$\int_a^bf(x)dx=G(b)=G(b)-\underbrace{G(a)}_{=0}=F(b)+c-(F(a)+c)=F(b)-F(a)$$\qed\\*
 \sss{Folge} Berechnung von Integralen \equ\ Finden von Stammfunktionen = Umkehung des Ableitens
 \notat{"$\int f(x)dx=F(x)$"(*)}
@@ -118,10 +118,10 @@ Für uns nur die Reste.
 \item $\int e^xdx=e^x$, denn $(e^x)'=e^x$
 \item $\int sin(x)dx=-cos(x) denn (-cos(x))'=sin(x)$\\*
 $\int cos(x)dx=sin(x) denn (sin(x))'=cos(x)$
-(Unbestimmte Integrale) \underset{z.B.}{\Rarr} $\Int_a^b e^xdx=e^x\left|\ary{b\\a}\right.=e^b-e^a$ etc.
+(Unbestimmte Integrale) \underset{z.B.}{\Rarr} $\Int_a^b e^xdx=e^x\left|\alg{b\\a}\right.=e^b-e^a$ etc.
 $$\int e^{cx}dx=\frac{1}{c}e^{cx}\qquad\frac{1}{c}(e^{cx})'=\frac{1}{c}·c·e^{cx}=e^{cx}$$
-$$\int x^sdx, s≠1 …\text{ bekannt aus 1)}
-\item[4] $$\int_a^b x^{-1} dx = \int_a^b \frac{1}{x} dx$$
+$$\int x^sdx, s≠1 …\text{ bekannt aus 1)}$$
+\item $$\int_a^b x^{-1} dx = \int_a^b \frac{1}{x} dx$$
 % Graph f(x) = 1/x
 Erlaubte Grenzen: $x \neq 0$\\*
 d.h. $a, b > 0$ oder $a, b < 0$
@@ -155,11 +155,11 @@ Jede Ableitungsregel gibt eine Integrationsregel:
 Sei $f:I→\R$ stetig, $\phi:[a,b]→I$ differenzierbar, dann $$\int_a^b f(\phi(t))·\phi'(t)dt=\int_{\phi(x)}^{\phi(b)}f(x)dx$$
 \bew
 Sei $F:I→\R$ Stammfunktion von $f$, dass heißt $F'=f$
-$$(F·\phi)'(x)=F'(\phi(x))·\phi'(x)=f(\phi(x))·\phi'(x)\ \Rarr \int_{\phi(x)}^{\phi(b)}f(x)dx=F(x)\left|\ary{\phi(b)\\\phi(a)}\right.=F(\phi(b)-F(\phi'(a))
+$$(F·\phi)'(x)=F'(\phi(x))·\phi'(x)=f(\phi(x))·\phi'(x)\ \Rarr \int_{\phi(x)}^{\phi(b)}f(x)dx=F(x)\left|\alg{\phi(b)\\\phi(a)}\right.=F(\phi(b)-F(\phi'(a))
 %christopher
-\item $$\Int_a^b t:f(t^2)dt=\footnote{\phi(t)=t^2\quad\phi'(t)=2t}\frac{1}{2}\Int_a^b\underbrace{\phi'(t)}_{2t}·f(\phi(t))=\frac{1}{2}\Int_{a^2}^{b^2}f(x)dx$$
+\item $$\Int_a^b t:f(t^2)dt=\footnote{$\phi(t)=t^2\quad\phi'(t)=2t$}\frac{1}{2}\Int_a^b\underbrace{\phi'(t)}_{2t}·f(\phi(t))=\frac{1}{2}\Int_{a^2}^{b^2}f(x)dx$$
 z.B. $\Int_0^1xe^{x^2}dx=\frac{1}{2}\int_{0^2}^{1^2}e^xdx$\\*
-$f(x)=e^x=\frac{1}{2}e^2\left|\ary{1\\0}\right.=\frac{e-1}{2}$
+$f(x)=e^x=\frac{1}{2}e^2\left|\alg{1\\0}\right.=\frac{e-1}{2}$
 $F(\phi(X)) \mid_a^b = \int_a^b (F(\phi \circ F)'(x)) dx = \int_a^b f(\phi (x)) \cdot \phi'(x)dx$
 \bsp
 \enum{

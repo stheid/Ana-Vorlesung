@@ -21,7 +21,7 @@
 \draw (2,0) node[anchor=north] {$b$};
 \draw[color=blue] plot[id=22.1_int1] function{sin(x)} node[below, midway] {};
 \end{tikzpicture}\\*
-$\int_a^b f(x)dx=Fläche$ zwischen Graphen von $f$ und $x$-Achse\\*
+$\int_a^b f(x)dx=$ Fläche zwischen Graphen von $f$ und $x$-Achse\\*
 Wenn allgemeiner $f:[a,b]→\R$,\\*
 \begin{tikzpicture}[domain=0.5:2,prefix=plots/, smooth]
 \draw[very thin,color=gray] (-0.3,0.0) grid (2.5,2.0);
@@ -111,7 +111,7 @@ $f$ heißt integrierbar, wenn $\int_a^b{}_* f(x)dx=\int_a^b{}^* f(x)dx$\\*
 Dann setzte $\int_a^b f(x)dx:=\int_a^b{}_* f(x)dx$
 
 \sS{Bemerkung}
-$f:[a,b] \to \R$ ist integrierbar \equ{} es gilt: Für jedes \e > 0 gibt es eine Treppenfunktion $g,\ h$ mit $g \leq f \leq h$ mit $\int_a^b h(x)dx - \int_a^b g(x)dx < \e$. Damit ist $\int_a^b f(x)$ bist auf $\e$ festgelegt.
+$f:[a,b] \to \R$ ist integrierbar \equ{} es gilt: Für jedes \e > 0 gibt es eine Treppenfunktion $g,\ h$ mit $g \leq f \leq h$ mit $\int_a^b h(x)dx - \int_a^b g(x)dx < \e$. Damit ist $\int_a^b f(x)$ auf $\e$ festgelegt.
 
 \sS{Satz Eigenschaften des Integrals}
 Seien $f, g: [a, b] \to \R$ integrierbar, dann sind auch $f + g$ und $c \cdot f$ integrierbar und
@@ -137,7 +137,7 @@ Rest des Satzes analog. \qed{}
 \sS{Satz}
 Sei $f:[a,b]→\R$ stetig, dann:
 \enum{
-\item Für jedes $ε>0$ gibt es eine Treppenfuntion. $g:[a,b]→\R$ mit $|f(x)-g(x)|<ε$ für alle $x\in[a,b]$\\*
+\item Für jedes $ε>0$ gibt es eine Treppenfuntion $g:[a,b]→\R$ mit $|f(x)-g(x)|<ε$ für alle $x\in[a,b]$\\*
 \begin{tikzpicture}[domain=0.5:2,prefix=plots/, smooth]
 \draw[very thin,color=gray] (-0.3,0.0) grid (2.5,2.0);
 \draw[->] (-0.3,0) -- (2.5,0) node[right] {$x$};
