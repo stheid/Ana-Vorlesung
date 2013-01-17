@@ -4,9 +4,6 @@
 *.aux
 *.toc
 *.pdf
-*.out
-*.blg
-*.bbl
 
 # gnuplot
 plots/*
@@ -14,6 +11,3 @@ plots/*
 # VIM
 *~
 *.swp
-
-# testfiles
-test.tex
