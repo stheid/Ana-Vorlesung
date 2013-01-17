@@ -1,0 +1,119 @@
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 24}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 17.01.2013}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 24}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 17.01.2013}
+% **************************************************
+%
+\wdh
+\ul{Hauptsatz}
+Wenn $F: [a, b] \to \R$ eine Stammfunktion der stetigen Funktion $f: [a, b] \to \R$ ist, (d.h. $F' = f$) dann $\int_a^b f(x) dx = f(x) |_a^b$\\*
+\ul{Substitutionsregel}
+$$F' = f \Rarr (F \circ \phi)' = (F' \circ \phi) \cdot \phi' = (f \circ) \cdot \phi$$
+$$\int_a^b f(\phi(x)) \cdot \phi(x) dx = F(\phi(b)) - F(\phi(a)) = \int_{\phi(a)}^{\phi(b)} f(x) dx$$
+\bsp
+\enum{
+\setcounter{enumi}{3}
+\item Sei $\varphi : [a, b] \to \R$ differenzierbar, $\phi(x) \neq 0$ für alle x.
+$$\int_a^b \frac{phi'(x)}{\phi(x)} = \int_a^b f(\phi(x)) \cdot \phi(x) = \int_{\phi(a)}^{\phi(b)} \frac{1}{x} dx = log(|x|)|^b_a$$
+$$= log(|\phi(b)|) - log(|\phi(a)|)$$
+\item Fläche unterm Halbkreis\\*
+GRAPH Halbkreis
+$$(*) = \int_a^b \sqrt{1-x^2}dx$$
+$x^2 + y^2 = 1$ (Pythagoras)
+$y = \sqrt{1-x^2}$
+Substituiere $x = sin(t)$
+$\sqrt{1 - sin(t)^2} = \sqrt{cos(t)} = cos(t)$\\*
+(Wenn $cos(t) \geq 0$, d.h. z.B.$-\frac{\pi}{2} \leq t \leq \frac{\pi}{2}$)
+GRAPH cos(x) Intervall -pi/2 -> pi/2\\*
+$\phi(t) = sin(t)$\\*
+$\phi'(t) = cos(t)$\\*
+$a = sin(u) \qquad b = sin(v)$\\*
+$u:= arcsin(a) \qquad v:= arcsin(b)$\\*
+$(*) = \int_{sin(u)}^{sin(v)} \sqrt1-x^2 dx$\\*
+$=\int_u^v \sqrt{1-sin(t)^2} \cdot cos(t)dt$\\*
+$=\int cos(t)^2 dt$\\*
+$\leadsto$ Siehe Übung
+}
+
+\uS{Partielle Induktion}
+\sss{Produktregel} $(f·g)'=f'g+fg'$
+\sS{Satz}
+Seien $f,g:[a,b]→\R$ stetig, differenzierbar, dass heißt $f',g'$ stetig\\*
+Dann gilt $\Int_a^b f(x)g'(x)dx=f(x)g(x)\vert\ary{b\\a}-\int_a^b f'(x)·g(x)dx$
+\bew
+$$\int_a^b f'(x)·g(x)+\int_a^b f(x)·g'(x)\underset{Produktregel}{=}\int_a^b (f·g)'(x)\underset{Hauptsatz}{=}f(x)·g(x)\vert\ary{b\\a}\ \Rarr\ \text{Behauptung}$$\qed
+\bsp
+\enum{
+\item $\Int_a^b log(x)dx = (*)$\\*
+Sei $g(x)=x, g'(x)=1, f(x)=log(x)$
+\alg{(*)&=\Int_a^b log(x)g'(x)dx = log(x)\vert\ary{b\\a}-\underbrace{\int_a^b log(x)·x\ dx}_{\int_a^b \frac{x}{x} dx= b-a=x\vert\ary{b\\a}}\\*
+&=(log(x)-x)\vert\ary{b\\a}=x(log(x)-1)\vert\ary{b\\a}
+}
+\sss{Probe}
+x(log(x)-1)'=…=log(x)
+\item \alg{\int_a^b cos^2(x)dx&=\int_a^b cos(x)·sin'(x)dx=cos(x)·sin(x)\vert\ary{b\\a}\int_a^b cos'(x)·sin(x)dx\\
+&=cos(x)·sin(x)\vert\ary{b\\a}+\int_a^b \underbrace{sin(x)·sin(x)}_{sin^2(x)=1-cos^2(x)}dx\\
+&=cos(x)·sin(x)\vert\ary{b\\a}+x\vert\ary{b\\a}-\int_a^b cos^2(x)dx\\
+&\Rarr\ 2\int_a^b cos^2(x)dx=(cos(x)sin(x)+x)\vert\ary{b\\a}\ \Rarr\ 2\int_a^b cos^2(x)dx=\frac{1}{2}(…)}
+\item $\int_a^b e^x cos(x) dx = \int_a^b e^x sin'(x) dx $\\*
+$= e^x sin(x) \vert_a^b - \int_a^b e^x sin(x) dx$\\*
+$= e^x sin(x) \vert_a^b + \int_a^b e^x cos'(x) dx$\\*
+$= e^x sin(x) \vert_a^b + e^x cos(x) \vert_a^b - \int_a^b e^x cos(x) dx$\\*
+$\Rarr \int_a^b e^x cos'(x) dx = \frac{1}{2}\left(e^x (sin(x) + cos(x))\right) \vert_a^b$
+}
+
+\uS{Uneigentliche Intregrale}
+\sS{Definition Uneigentliche Integrale}
+Sei $f:[a,∞)→\R$ Funktion, die auf jedem Intervall $[a,R]$ mit $a\leq R<∞$ integrierbar ist. Setzte $$\int_a^{∞}f(x)dx:=\lim_{R→∞}\int_a^{R}f(x)dx$$
+(Wenn der Limes existiert), dann nennt man $\Int_a^{∞}f(x)dx$ \ul{konvergent}\\*
+Analog für $f:(-∞,b]→\R$
+\bsp
+\enum{
+\item $$f(x)=\frac{1}{x^2}\qquad \int_1^{∞}\frac{1}{x^2}dx=?$$
+Graph
+$$\int_1^{R}\frac{1}{x^2}dx=-\frac{1}{x}\vert\ary{R\\1}=\frac{1}{1}-\frac{1}{R}=1-\frac{1}{R}$$
+$$\int_1^{∞}\frac{1}{x^2}dx=\lim_{R→∞}(1-\frac{1}{R})=1$$
+\item $$f(x)=\frac{1}{x}m\qquad \int_1^\infty \frac{1}{x} dx$$
+$$\int_1^{R}\frac{1}{x}dx=-log(x)\vert\ary{R\\1}=log(R)-\underbrace{log(1)}_{=0}=1$$
+$$\int_1^{∞}\frac{1}{x^2}dx=\lim_{R→∞}log(R) \text{ existiert nicht}$$
+(bzw. lim()=∞)
+}
+
+\sS{Definition}
+Sei $f: [a, b) \to \R$ eine Funktion, die auf einem Intervall $[a, R]$ mit $a \leq R \leq b$ integrierbar ist.\\*
+Setze $\Int_a^b f(x)dx = \lim_{R \to b} \int_a^b f(x)dx $ (wenn der Grenzwert existiert.)
+Dann heißt $\int_a^b f(x)dx$ konvergent.\\*
+Analog für $f: (a, b] \to \R$\\*
+\bsp
+\enum{
+\item $\int_0^1 \frac{1}{x}dx = ?$\\*
+GRAPH des Integrals\\*
+$f(x)= \frac{1}{x}$,  $f:(0, 1] \to \R$\\*
+$\int_0^1 \frac{1}{x}dx = \lim_{R \to 0} \int_a^b \frac{1}{x}dx = \lim_{R \to 0} \left(\underbrace{log(1)}_{= 0} - log(R)\right)$
+\bem
+für $\R \to 0$ ist $log(R) \to -\infty$\\*
+GRAPH log(x)
+\Rarr{} $\int_a^b \frac{1}{x}dx$ divergiert.
+\item $\int_0^1 \frac{1}{sqrt{x}}dx = \lim_{R\to 0} \int_R^1 x^{-\frac{1}{2}} dx$\\*
+$= \lim_{R\to 0} \left( 2x^{\frac{1}{2}} \vert^b_R \right) = \lim_{R\to 0} \left(2\sqrt{1} - 2\sqrt{R} \right) = 2$\\*
+GRAPHEN
+$= F_1 + F_2 = F_3 + 1 = 2$
+}
+
+\sS{Definition}
+Sei $-∞\leq a\leq b \leq ∞$, $f:(a,b)→\R$ eine Funktion, die auf jedem Interavall $[R,S]$ mit $a<R\leq S<b$ integrierbar ist.\\*
+Wähle $c\in(a,b)$. Setzte $\Int_a^bf(x)dx=\Int_a^cf(x)dx+\Int_c^bf(x)dx$\\*
+Wenn beinde Integrale konvergieren (Nach Definition 9.16, 9.15)
+\bem
+Unabhängig von $c$
+GRAPH
+\bsp
+$\Int_{-∞}^{∞}e^{-x^2} dx =\sqrt{\pi}$
+%gaussche normalverteilung Graph
