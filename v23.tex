@@ -79,7 +79,7 @@ Eine Funktion $G:I→\R$ ist Stammfunktion von $f$ \equ\ $F-G$ konstant, dass he
 $G$ differenzierbar mit $G'=f$ \equ\ $G-F$ differenzierbar mit $(G-F)'=f-f=0$ \equ\ $G-F$ konstant (bekannt)\qed
 
 \sS{Satz (Hauptsatz der Differenzial und Integralrechnung)}
-Sei $f:[a,b]→\R$ stetig, $F:[a,b]→\R$ Stammfunktion von $f$, dann $$\int_a^{b} f(x)dx=F(b)-F(a)=:F(x) \vert\alg{b\\a}$$
+%Sei $f:[a,b]→\R$ stetig, $F:[a,b]→\R$ Stammfunktion von $f$, dann $$\int_a^{b} f(x)dx=F(b)-F(a)=:F(x) \vert\alg{b\\a}$$
 \bew
 Sei $G(x):=\int_a^xf(t)dt$, $G:[a,b]→\R$.\\*
 9.9 \Rarr\ $G'=f\ \underset{9.11}{\Rarr}\ G-F=c$ konstant, $c\eR$. $G=F+c$
@@ -160,7 +160,7 @@ Jede Ableitungsregel gibt eine Integrationsregel:
 Sei $f:I→\R$ stetig, $\phi:[a,b]→I$ differenzierbar, dann $$\int_a^b f(\phi(t))·\phi'(t)dt=\int_{\phi(x)}^{\phi(b)}f(x)dx$$
 \bew
 Sei $F:I→\R$ Stammfunktion von $f$, dass heißt $F'=f$
-$$(F·\phi)'(x)=F'(\phi(x))·\phi'(x)=f(\phi(x))·\phi'(x)\ \Rarr \int_{\phi(x)}^{\phi(b)}f(x)dx=F(x)\left|\alg{\phi(b)\\\phi(a)}\right.=F(\phi(b)-F(\phi'(a))$$
+%$$(F·\phi)'(x)=F'(\phi(x))·\phi'(x)=f(\phi(x))·\phi'(x)\ \Rarr \int_{\phi(x)}^{\phi(b)}f(x)dx=F(x)\left|\alg{\phi(b)\\\phi(a)}\right.=F(\phi(b)-F(\phi'(a))$$
 $F(\phi(X)) \mid_a^b = \int_a^b (F(\phi \circ F)'(x)) dx = \int_a^b f(\phi (x)) \cdot \phi'(x)dx$
 \bsp
 \enum{
@@ -170,7 +170,7 @@ $\phi'(t) = 1$
 \item $\int_a^b f(c \cdot x) = \int_a^b f(\phi(t)) \cdot \frac{\phi'(t)}{c}dt = \frac{1}{c} \cdot \int_a^b f(x) dx$
 \item $$\Int_a^b t:f(t^2)dt=\footnote{$\phi(t)=t^2\quad\phi'(t)=2t$}\frac{1}{2}\Int_a^b\underbrace{\phi'(t)}_{2t}·f(\phi(t))=\frac{1}{2}\Int_{a^2}^{b^2}f(x)dx$$
 z.B. $\Int_0^1xe^{x^2}dx=\frac{1}{2}\int_{0^2}^{1^2}e^xdx$ \\*
-$f(x)=e^x=\frac{1}{2}e^2\left|\alg{1\\0}\right.=\frac{e-1}{2}$
+%$f(x)=e^x=\frac{1}{2}e^2\left|\alg{1\\0}\right.=\frac{e-1}{2}$
 $F(\phi(X)) \mid_a^b = \int_a^b (F(\phi \circ F)'(x)) dx = \int_a^b f(\phi (x)) \cdot \phi'(x)dx$
 }
 \bsp
@@ -180,4 +180,4 @@ $\phi(t) = t + c$
 $\phi'(t) = 1$
 \item $\int_a^b f(c \cdot x) = \int_a^b f(\phi(t)) \cdot \frac{\phi'(t)}{c}dt = \frac{1}{c} \cdot \int_a^b f(x) dx$
 }
-$f(x)=e^x=\frac{1}{2}e^2\vert\alg{1\\0}=\frac{e-1}{2}$
+%$f(x)=e^x=\frac{1}{2}e^2\vert\alg{1\\0}=\frac{e-1}{2}$
