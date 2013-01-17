@@ -1,0 +1,67 @@
+% Kopfzeile beim Kapitelanfang:
+\fancypagestyle{plain}{
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 24}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 17.01.2013}
+}
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\calligra\Large Vorlesung Nr. 24}
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\calligra\Large 17.01.2013}
+% **************************************************
+%
+\wdh
+\ul{Hauptsatz}
+Wenn $F: [a, b] \to \R$ eine Stammfunktion der stetigen Funktion $f: [a, b] \to \R$ ist, (d.h. $F' = f$) dann $\int_a^b f(x) dx = f(x) |_a^b$\\*
+\ul{Substitutionsregel}
+$$F' = f \Rarr (F \circ \phi)' = (F' \circ \phi) \cdot \phi' = (f \circ) \cdot \phi$$
+$$\int_a^b f(\phi(x)) \cdot \phi(x) dx = F(\phi(b)) - F(\phi(a)) = \int_{\phi(a)}^{\phi(b)} f(x) dx$$
+\bsp
+\enum{
+\setcounter{enumi}{3}
+\item Sei $\vphi : [a, b] \to \R$ differenzierbar, $\phi(x) \neq 0$ für alle x.\\*
+$$\int_a^b \frac{phi'(x)}{\phi(x)} = \int_a^b f(\phi(x)) \cdot \phi(x) = \int_{\phi(a)}^{\phi(b)} \frac{1}{x} dx = log(|x|)|^b_a$$
+$$= log(|\phi(b)|) - log(|\phi(a)|)$$
+\item Fläche unterm Halbkreis\\*
+GRAPH Halbkreis
+$$(*) = \int_a^b \sqrt{1-x^2}dx$$
+$x^2 + y^2 = 1$ (Pythagoras)
+$y = \sqrt{1-x^2}$
+Substituiere $x = sin(t)$
+$\sqrt{1 - sin(t)^2} = \sqrt{cos(t)} = cos(t)$\\*
+(Wenn $cos(t) \geq 0$, d.h. z.B.$-\frac{\pi}{2} \leq t \leq \frac{\pi}{2}$)
+GRAPH cos(x) Intervall -pi/2 -> pi/2\\*
+$\phi(t) = sin(t)$\\*
+$\phi'(t) = cos(t)$\\*
+$a = sin(u) \qquad b = sin(v)$\\*
+$u:= arcsin(a) \qquad v:= arcsin(b)$\\*
+$(*) = \int_{sin(u)}^{sin(v)} \sqrt1-x^2 dx$\\*
+$=\int_u^v \sqrt{1-sin(t)^2} \cdot cos(t)dt$\\*
+$=\int cos(t)^2 dt$\\*
+$\leadsto$ Siehe Übung
+}
+% Stefan
+% Partielle Integration
+
+% Stefan
+% Uneigentliche Integrale
+
+\sS{Definition}
+Sei $f: [a, b) \to \R$ eine Funktion, die auf einem Intervall $[a, R]$ mit $a \leq R \leq b$ integrierbar ist. Setze $\int_a^b f(x)dx = \lim_{R \to b} \int_a^b f(x)dx $ (wenn der Grenzwert existiert.)
+Dann heißt $\int_a^b f(x)dx$ konvergent.\\*
+Analog für $f: (a, b] \to \R$\\*
+\bsp
+\enum{
+\item $\int_0^1 \frac{1}{x}dx = ?$\\*
+GRAPH des Integrals\\*
+$f(x)= \frac{1}{x}$,  $f:(0, 1] \to \R$\\*
+$\int_0^1 \frac{1}{x}dx = \lim_{R \to 0} \int_a^b \frac{1}{x}dx = \lim_{R \to 0} \left(\underbrace{log(1)}_{= 0} - log(R)\right)$\\*
+\bem für $\R \to 0$ ist $log(R) \to -\infty$\\*
+GRAPH log(x)
+\Rarr{} $\int_a^b \frac{1}{x}dx$ divergiert.
+\item $\int_0^1 \frac{1}{sqrt{x}}dx = \lim_{R\to 0} \int_R^1 x^{-\frac{1}{2}} dx$\\*
+$= \lim_{R\to 0} \left( 2x^{\frac{1}{2}} \vert^b_R \right) = \lim_{R\to 0} \left(2\sqrt{1} - 2\sqrt{R} \right) = 2$\\*
+GRAPHEN
+$= F_1 + F_2 = F_3 + 1 = 2$
+}
