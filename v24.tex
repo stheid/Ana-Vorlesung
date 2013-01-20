@@ -46,27 +46,27 @@ $\leadsto$ Siehe Übung
 \sss{Produktregel} $(f·g)'=f'g+fg'$
 \sS{Satz}
 Seien $f,g:[a,b]→\R$ stetig, differenzierbar, dass heißt $f',g'$ stetig\\*
-Dann gilt $\Int_a^b f(x)g'(x)dx=f(x)g(x)\vert\ary{b\\a}-\int_a^b f'(x)·g(x)dx$
+Dann gilt $\Int_a^b f(x)g'(x)dx=f(x)g(x)\left|\ary{b\\a}\right.-\int_a^b f'(x)·g(x)dx$
 \bew
-$$\int_a^b f'(x)·g(x)+\int_a^b f(x)·g'(x)\underset{Produktregel}{=}\int_a^b (f·g)'(x)\underset{Hauptsatz}{=}f(x)·g(x)\vert\ary{b\\a}\ \Rarr\ \text{Behauptung}$$\qed
+$$\int_a^b f'(x)·g(x)+\int_a^b f(x)·g'(x)\underset{Produktregel}{=}\int_a^b (f·g)'(x)\underset{Hauptsatz}{=}f(x)·g(x)\left|\ary{b\\a}\right.\ \Rarr\ \text{Behauptung}$$\qed
 \bsp
 \enum{
 \item $\Int_a^b log(x)dx = (*)$\\*
 Sei $g(x)=x, g'(x)=1, f(x)=log(x)$
-\alg{(*)&=\Int_a^b log(x)g'(x)dx = log(x)\vert\ary{b\\a}-\underbrace{\int_a^b log(x)·x\ dx}_{\int_a^b \frac{x}{x} dx= b-a=x\vert\ary{b\\a}}\\*
-&=(log(x)-x)\vert\ary{b\\a}=x(log(x)-1)\vert\ary{b\\a}
+\alg{(*)&=\Int_a^b log(x)g'(x)dx = log(x)\left|\ary{b\\a}\right.-\underbrace{\int_a^b log(x)·x\ dx}_{\int_a^b \frac{x}{x} dx= b-a=x \left|\ary{b\\a}\right.}\\*
+&=(log(x)-x)\left|\ary{b\\a}\right.=x(log(x)-1)\left|\ary{b\\a}\right.
 }
 \sss{Probe}
 x(log(x)-1)'=…=log(x)
-\item \alg{\int_a^b cos^2(x)dx&=\int_a^b cos(x)·sin'(x)dx=cos(x)·sin(x)\vert\ary{b\\a}\int_a^b cos'(x)·sin(x)dx\\
-&=cos(x)·sin(x)\vert\ary{b\\a}+\int_a^b \underbrace{sin(x)·sin(x)}_{sin^2(x)=1-cos^2(x)}dx\\
-&=cos(x)·sin(x)\vert\ary{b\\a}+x\vert\ary{b\\a}-\int_a^b cos^2(x)dx\\
-&\Rarr\ 2\int_a^b cos^2(x)dx=(cos(x)sin(x)+x)\vert\ary{b\\a}\ \Rarr\ 2\int_a^b cos^2(x)dx=\frac{1}{2}(…)}
+\item \alg{\int_a^b cos^2(x)dx&=\int_a^b cos(x)·sin'(x)dx=cos(x)·sin(x)\left|\ary{b\\a}\right.\int_a^b cos'(x)·sin(x)dx\\
+&=cos(x)·sin(x)\left|\ary{b\\a}\right.+\int_a^b \underbrace{sin(x)·sin(x)}_{sin^2(x)=1-cos^2(x)}dx\\
+&=cos(x)·sin(x)\left|\ary{b\\a}\right.+x\left|\ary{b\\a}\right.-\int_a^b cos^2(x)dx\\
+&\Rarr\ 2\int_a^b cos^2(x)dx=(cos(x)sin(x)+x)\left|\ary{b\\a}\right.\ \Rarr\ 2\int_a^b cos^2(x)dx=\frac{1}{2}(…)}
 \item $\int_a^b e^x cos(x) dx = \int_a^b e^x sin'(x) dx $\\*
-$= e^x sin(x) \vert_a^b - \int_a^b e^x sin(x) dx$\\*
-$= e^x sin(x) \vert_a^b + \int_a^b e^x cos'(x) dx$\\*
-$= e^x sin(x) \vert_a^b + e^x cos(x) \vert_a^b - \int_a^b e^x cos(x) dx$\\*
-$\Rarr \int_a^b e^x cos'(x) dx = \frac{1}{2}\left(e^x (sin(x) + cos(x))\right) \vert_a^b$
+$= e^x sin(x) \left|\ary{b\\a}\right. - \int_a^b e^x sin(x) dx$\\*
+$= e^x sin(x) \left|\ary{b\\a}\right. + \int_a^b e^x cos'(x) dx$\\*
+$= e^x sin(x) \left|\ary{b\\a}\right. + e^x cos(x) \left|\ary{b\\a}\right. - \int_a^b e^x cos(x) dx$\\*
+$\Rarr \int_a^b e^x cos'(x) dx = \frac{1}{2}\left(e^x (sin(x) + cos(x))\right) \left|\ary{b\\a}\right.$
 }
 
 \uS{Uneigentliche Intregrale}
@@ -78,10 +78,10 @@ Analog für $f:(-∞,b]→\R$
 \enum{
 \item $$f(x)=\frac{1}{x^2}\qquad \int_1^{∞}\frac{1}{x^2}dx=?$$
 Graph
-$$\int_1^{R}\frac{1}{x^2}dx=-\frac{1}{x}\vert\ary{R\\1}=\frac{1}{1}-\frac{1}{R}=1-\frac{1}{R}$$
+$$\int_1^{R}\frac{1}{x^2}dx=-\frac{1}{x}\left|\ary{R\\1}\right.=\frac{1}{1}-\frac{1}{R}=1-\frac{1}{R}$$
 $$\int_1^{∞}\frac{1}{x^2}dx=\lim_{R→∞}(1-\frac{1}{R})=1$$
 \item $$f(x)=\frac{1}{x}m\qquad \int_1^\infty \frac{1}{x} dx$$
-$$\int_1^{R}\frac{1}{x}dx=-log(x)\vert\ary{R\\1}=log(R)-\underbrace{log(1)}_{=0}=1$$
+$$\int_1^{R}\frac{1}{x}dx=-log(x)\left|\ary{R\\1}\right.=log(R)-\underbrace{log(1)}_{=0}=1$$
 $$\int_1^{∞}\frac{1}{x^2}dx=\lim_{R→∞}log(R) \text{ existiert nicht}$$
 (bzw. lim()=∞)
 }
@@ -90,7 +90,7 @@ $$\int_1^{∞}\frac{1}{x^2}dx=\lim_{R→∞}log(R) \text{ existiert nicht}$$
 Sei $f: [a, b) \to \R$ eine Funktion, die auf einem Intervall $[a, R]$ mit $a \leq R \leq b$ integrierbar ist.\\*
 Setze $\Int_a^b f(x)dx = \lim_{R \to b} \int_a^b f(x)dx $ (wenn der Grenzwert existiert.)
 Dann heißt $\int_a^b f(x)dx$ konvergent.\\*
-Analog für $f: (a, b] \to \R$\\*
+Analog für $f: (a, b] \to \R$
 \bsp
 \enum{
 \item $\int_0^1 \frac{1}{x}dx = ?$\\*
@@ -102,7 +102,7 @@ für $\R \to 0$ ist $log(R) \to -\infty$\\*
 GRAPH log(x)
 \Rarr{} $\int_a^b \frac{1}{x}dx$ divergiert.
 \item $\int_0^1 \frac{1}{sqrt{x}}dx = \lim_{R\to 0} \int_R^1 x^{-\frac{1}{2}} dx$\\*
-$= \lim_{R\to 0} \left( 2x^{\frac{1}{2}} \vert^b_R \right) = \lim_{R\to 0} \left(2\sqrt{1} - 2\sqrt{R} \right) = 2$\\*
+$= \lim_{R\to 0} \left( 2x^{\frac{1}{2}} \left|\ary{b\\R}\right. \right) = \lim_{R\to 0} \left(2\sqrt{1} - 2\sqrt{R} \right) = 2$\\*
 GRAPHEN
 $= F_1 + F_2 = F_3 + 1 = 2$
 }
