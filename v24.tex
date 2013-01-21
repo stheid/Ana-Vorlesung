@@ -16,12 +16,12 @@
 Wenn $F: [a, b] \to \R$ eine Stammfunktion der stetigen Funktion $f: [a, b] \to \R$ ist, (d.h. $F' = f$) dann $\int_a^b f(x) dx = f(x) |_a^b$\\*
 \ul{Substitutionsregel}
 $$F' = f \Rarr (F \circ \phi)' = (F' \circ \phi) \cdot \phi' = (f \circ) \cdot \phi$$
-$$\int_a^b f(\phi(x)) \cdot \phi(x) dx = F(\phi(b)) - F(\phi(a)) = \int_{\phi(a)}^{\phi(b)} f(x) dx$$
+$$\int_a^b f(\phi(x)) \cdot \phi'(x) dx = F(\phi(b)) - F(\phi(a)) = \int_{\phi(a)}^{\phi(b)} f(x) dx$$
 \bsp
 \enum{
 \setcounter{enumi}{3}
-\item Sei $\varphi : [a, b] \to \R$ differenzierbar, $\phi(x) \neq 0$ für alle x.
-$$\int_a^b \frac{phi'(x)}{\phi(x)} = \int_a^b f(\phi(x)) \cdot \phi(x) = \int_{\phi(a)}^{\phi(b)} \frac{1}{x} dx = log(|x|)|^b_a$$
+\item Sei $f: [a, b] \to \R$ differenzierbar, $\phi(x) \neq 0$ für alle x.
+$$\int_a^b \frac{\phi'(x)}{\phi(x)} = \int_a^b f(\phi(x)) \cdot \phi'(x) = \int_{\phi(a)}^{\phi(b)} \frac{1}{x} dx = log(|x|)|^b_a$$
 $$= log(|\phi(b)|) - log(|\phi(a)|)$$
 \item Fläche unterm Halbkreis\\*
 GRAPH Halbkreis
@@ -88,7 +88,7 @@ $$\int_1^{∞}\frac{1}{x^2}dx=\lim_{R→∞}log(R) \text{ existiert nicht}$$
 
 \sS{Definition}
 Sei $f: [a, b) \to \R$ eine Funktion, die auf einem Intervall $[a, R]$ mit $a \leq R \leq b$ integrierbar ist.\\*
-Setze $\Int_a^b f(x)dx = \lim_{R \to b} \int_a^b f(x)dx $ (wenn der Grenzwert existiert.)
+Setze $\Int_a^b f(x)dx = \lim_{R \to b} \int_a^R f(x)dx $ (wenn der Grenzwert existiert.)
 Dann heißt $\int_a^b f(x)dx$ konvergent.\\*
 Analog für $f: (a, b] \to \R$
 \bsp
@@ -108,9 +108,9 @@ $= F_1 + F_2 = F_3 + 1 = 2$
 }
 
 \sS{Definition}
-Sei $-∞\leq a\leq b \leq ∞$, $f:(a,b)→\R$ eine Funktion, die auf jedem Interavall $[R,S]$ mit $a<R\leq S<b$ integrierbar ist.\\*
+Sei $-∞\leq a\leq b \leq ∞$, $f:(a,b)→\R$ eine Funktion, die auf jedem Intervall $[R,S]$ mit $a<R\leq S<b$ integrierbar ist.\\*
 Wähle $c\in(a,b)$. Setzte $\Int_a^bf(x)dx=\Int_a^cf(x)dx+\Int_c^bf(x)dx$\\*
-Wenn beinde Integrale konvergieren (Nach Definition 9.16, 9.15)
+Wenn beide Integrale konvergieren (Nach Definition 9.16, 9.15)
 \bem
 Unabhängig von $c$
 GRAPH

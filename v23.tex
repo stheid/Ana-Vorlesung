@@ -65,7 +65,8 @@ Sei $h≠0$ $$\frac{F(x+h)-F(x)}{h}=\frac{1}{h}\left(\int_a^{x+h}f(t)dt-\int_a^x
 \end{tikzpicture}\\*
 Mittelwertsatz \Rarr\ es gibt $x_h\in[x,x+h]$ (wenn $h>0$) bzw. $x_h\in[x+h,x]$ (wenn $h<0$), so dass
 \alg{&\int_a^{x+h}f(t)dt=f(x_n)·h\ \Rarr\ (*) = \frac{f(x_n)·h}{h}=f(x_n)\\
-&\Rarr\ F'(x)=\lim_{h→0}\frac{F(x+h)-F(x)}{h}=\lim_{h→0}f(x_n)\underset{\footnote{\text{Für $h→0$ ist $x_n→x$, denn $|x-x_n|\leq h$, $f$ \ul{stetig}}}}{=}f(x)\ \Rarr \text{Behauptung}\qed}
+&\Rarr\ F'(x)=\lim_{h→0}\frac{F(x+h)-F(x)}{h}=\lim_{h→0}f(x_n)\underset{\footnote{\text{Für $h→0$ ist $x_n→x$, denn $|x-x_n|\leq h$, $f$ \ul{stetig}}}}{=}f(x)}
+\Rarr\ Behauptung\qed
 
 \sS{Definition Stammfunktion}
 Sei $f:I→\R$ Funktion. Eine Funktion $F:I→\R$ heißt Stammfunktion von $f$ wenn $F$ differenzierbar und $F'=f$
@@ -114,14 +115,30 @@ $\Rarr\ \int_a^b x^sdx=\frac{1}{s+1}x^s\left|\ary{b\\a}\right.$
 \bsp
 \enum{
 \setcounter{enumi}{1}
-\item{$\int e^x dx = e^x$, denn $(e^x)'=e^x$}
+\item $\int e^x dx = e^x$, denn $(e^x)'=e^x$
 \item $\int sin(x)dx=-cos(x) denn (-cos(x))'=sin(x)$\\*
 $\int cos(x)dx=sin(x) denn (sin(x))'=cos(x)$
 (Unbestimmte Integrale) $\underset{z.B.}{\Rarr}\ \Int_a^b e^xdx=e^x \left|\ary{b\\a}\right.=e^b-e^a$ etc.
 $$\int e^{cx}dx=\frac{1}{c}e^{cx}\qquad\frac{1}{c}(e^{cx})'=\frac{1}{c}·c·e^{cx}=e^{cx}$$
 $$\int x^sdx, s≠1 …\text{ bekannt aus 1)}$$
-\item $$\int_a^b x^{-1} dx = \int_a^b \frac{1}{x} dx$$
- Graph f(x) = 1/x
+\item $\Int_a^b x^{-1} dx = \int_a^b \frac{1}{x} dx$\\*
+%\begin{tikzpicture}
+%		[smooth]
+%		\pgfmathsetmacro\minx{-4}
+%		\pgfmathsetmacro\maxx{4}
+%		\pgfmathsetmacro\miny{-2}
+%		\pgfmathsetmacro\maxy{2}
+%		\draw[very thin,color=gray!40] (\minx,\miny) grid (\maxx,\maxy);
+%		\draw[->] (\minx-0.3,0) -- (\maxx+0.3,0) node[right] {$x$};
+%		\foreach \x in {\minx,...,-1}{\draw (\x cm,2pt) -- (\x cm,-2pt) node[below] {\tiny $\x$};}
+%		\foreach \x in {1,...,\maxx}{\draw (\x cm,2pt) -- (\x cm,-2pt) node[below] {\tiny $\x$};}
+%		\draw[->] (0,\miny-0.3) -- (0,\maxy+0.3) node[above] {$y$};
+%		\foreach \y in {\miny,...,-1}{\draw (2pt,\y cm) -- (-2pt,\y cm) node[left] {\tiny $\y$};}
+%		\foreach \y in {1,...,\maxy}{\draw (2pt,\y cm) -- (-2pt,\y cm) node[left] {\tiny $\y$};}
+%		\clip (\minx,\miny) rectangle (\maxx,\maxy);
+%		\draw[domain=\minx:-0.01,color=black] plot function{1/x};
+%		\draw[domain=0.01:\miny,color=black] plot function{1/x} node[right] {$\frac{1}{x}$};
+%\end{tikzpicture}\\*
 Erlaubte Grenzen: $x \neq 0$\\*
 d.h. $a, b > 0$ oder $a, b < 0$
 \itm{
@@ -134,11 +151,40 @@ $\int_a^b \frac{1}{x} = log(-x) \mid_a^b = log(|x|) \mid_a^b$
 In beiden Fällen:
 $\int \frac{1}{x}dx = log(|x|)$ wenn $x \neq 0$
 \item $\int\frac{1}{1+x^2}dx=arctan(x)$\\*
-GRAPH fehlt noch
+%\begin{tikzpicture}
+%		[smooth]
+%		\pgfmathsetmacro\minx{-4}
+%		\pgfmathsetmacro\maxx{4}
+%		\pgfmathsetmacro\miny{-2}
+%		\pgfmathsetmacro\maxy{2}
+%		\draw[very thin,color=gray!40] (\minx,\miny) grid (\maxx,\maxy);
+%		\draw[->] (\minx-0.3,0) -- (\maxx+0.3,0) node[right] {$x$};
+%		\foreach \x in {\minx,...,-1}{\draw (\x cm,2pt) -- (\x cm,-2pt) node[below] {\tiny $\x$};}
+%		\foreach \x in {1,...,\maxx}{\draw (\x cm,2pt) -- (\x cm,-2pt) node[below] {\tiny $\x$};}
+%		\draw[->] (0,\miny-0.3) -- (0,\maxy+0.3) node[above] {$y$};
+%		\foreach \y in {\miny,...,-1}{\draw (2pt,\y cm) -- (-2pt,\y cm) node[left] {\tiny $\y$};}
+%		\foreach \y in {1,...,\maxy}{\draw (2pt,\y cm) -- (-2pt,\y cm) node[left] {\tiny $\y$};}
+%		\clip (\minx,\miny) rectangle (\maxx,\maxy);
+%		\draw[domain=\minx:\miny,color=black] plot function{1/(1+x^2)} node[right] {$\frac{1}{1+x^2}$};
+%\end{tikzpicture}
 \bew
 $tan=\frac{sin}{cos}:[-\frac{\pi}{2},\frac{\pi}{2}]→\R$\\*
 $(tan(x))'=\frac{1}{cos(x)^2}$\\*
-% GRAPH
+%\begin{tikzpicture} [smooth]
+%		\pgfmathsetmacro\minx{-1.5}
+%		\pgfmathsetmacro\maxx{1.5}
+%		\pgfmathsetmacro\miny{-2}
+%		\pgfmathsetmacro\maxy{2}
+%		\draw[very thin,color=gray!40] (\minx,\miny) grid (\maxx,\maxy);
+%		\draw[->] (\minx-0.3,0) -- (\maxx+0.3,0) node[right] {$x$};
+%		\foreach \x in {\minx,...,-1}{\draw (\x cm,2pt) -- (\x cm,-2pt) node[below] {\tiny $\x$};}
+%		\foreach \x in {1,...,\maxx}{\draw (\x cm,2pt) -- (\x cm,-2pt) node[below] {\tiny $\x$};}
+%		\draw[->] (0,\miny-0.3) -- (0,\maxy+0.3) node[above] {$y$};
+%		\foreach \y in {\miny,...,-1}{\draw (2pt,\y cm) -- (-2pt,\y cm) node[left] {\tiny $\y$};}
+%		\foreach \y in {1,...,\maxy}{\draw (2pt,\y cm) -- (-2pt,\y cm) node[left] {\tiny $\y$};}
+%		\clip (\minx,\miny) rectangle (\maxx,\maxy);
+%		\draw[domain=\minx:\miny,color=black] plot function{tan(x)} node[right] {$tan(x)$};
+%\end{tikzpicture}
 Wenn $y=tan(x)\qquad arctan'(y) = \frac{1}{tan'(x)}=cos(x)^2 \overset{!}{=} \frac{1}{1+y^2}$
 $$cos(x)^2 \overset{!}{=} \frac{1}{1+\frac{sin(x)^2}{cos(x)^2}}=\frac{cos(x)^2}{cos(x)^2+sin(x)^2}=cos(x)^2$$\ok
 }
