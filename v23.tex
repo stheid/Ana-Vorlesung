@@ -105,13 +105,11 @@ Sei $s\in\R\setminus\{-1\}$ $\ds\int_a^b x^s dx$ Erlaubter Integrationsbereich:\
 \item $s \eN$: $a,b$ beliebig
 \item $s \eZ$: $s\leq -2:\ x=0$ ausschließen $x^s = \frac{1}{x^{-s}}$ entweder $a,b < 0$ oder $a,b > 0$
 \item $s \in \R \setminus \Z$\\*
-$x^3 := e^{3 \cdot log (x)}$ nur definiert für $x > 0$
-$a, b > 0$
+$x^s := e^{s \cdot log (x)}$ nur definiert für $x > 0$\quad$a, b > 0$\\
 Suche $F$ mit $F' = x^s$\\*
 $F=\frac{1}{s+1} x^{s+1}$ $F' = (s+1) \frac{1}{s + 1} x^2 = s^2$\\*
 $s \neq -1 \Rarr s+1 = 0$\\*
-$\int_a^b $ % NOOB
-Für uns nur die Reste.
+$\Rarr\ \int_a^b x^sdx=\frac{1}{s+1}x^s\left|\ary{b\\a}\right.$
 }
 \bsp
 \enum{
@@ -152,29 +150,31 @@ Jede Ableitungsregel gibt eine Integrationsregel:
 }
 
 \uS{Substitutionsregeln}
-\sS{Satz}
-Sei $f:I→\R$ stetig, $\phi:[a,b]→I$ differenzierbar, dann $$\int_a^b f(\phi(t))·\phi'(t)dt=\int_{\phi(x)}^{\phi(b)}f(x)dx$$
+\sS{Satz (Substitionsregel)}
+Sei $f:I→\R$ stetig, $\phi:[a,b]→I$ differenzierbar, dann $$\int_a^b f(\phi(t))·\phi'(t)dt=\int_{\phi(a)}^{\phi(b)}f(x)dx$$
 \bew
 Sei $F:I→\R$ Stammfunktion von $f$, dass heißt $F'=f$
-$$(F·\phi)'(x)=F'(\phi(x))·\phi'(x)=f(\phi(x))·\phi'(x)\ \Rarr \int_{\phi(x)}^{\phi(b)}f(x)dx=F(x)\left|\ary{\phi(b)\\\phi(a)}\right.
+$$(F·\phi)'(x)=F'(\phi(x))·\phi'(x)=f(\phi(x))·\phi'(x)\ \Rarr \int_{\phi(a)}^{\phi(b)}f(x)dx=F(x)\left|\ary{\phi(b)\\\phi(a)}\right.
 =F(\phi(b)-F(\phi'(a))$$
 $F(\phi(X)) \mid_a^b = \int_a^b (F(\phi \circ F)'(x)) dx = \int_a^b f(\phi (x)) \cdot \phi'(x)dx$
 \bsp
 \enum{
-\item $\int_a^b f(x + c)dx = \int_a^b \underbrace{f(\phi(t))}_f(t+c) \cdot \underbrace{\phi'(t)}_{=1} dt) = \int_{a + c}^{b + c} f(x) dx$\\*
-$\phi(t) = t + c$
-$\phi'(t) = 1$
-\item $\int_a^b f(c \cdot x) = \int_a^b f(\phi(t)) \cdot \frac{\phi'(t)}{c}dt = \frac{1}{c} \cdot \int_a^b f(x) dx$
-\item $$\Int_a^b t:f(t^2)dt=\footnote{$\phi(t)=t^2\quad\phi'(t)=2t$}\frac{1}{2}\Int_a^b\underbrace{\phi'(t)}_{2t}·f(\phi(t))=\frac{1}{2}\Int_{a^2}^{b^2}f(x)dx$$
+\item $\Int_a^b f(x + c)dx = \int_a^b \underbrace{f(\phi(t))}_f(t+c) \cdot \underbrace{\phi'(t)}_{=1} dt) = \int_{a + c}^{b + c} f(x) dx$\\*
+$\phi(t) = t + c\qquad\phi'(t) = 1$
+\item $\Int_a^b f(c \cdot x) = \int_a^b f(\phi(t)) \cdot \frac{\phi'(t)}{c}dt = \frac{1}{c} \cdot \int_a^b f(x) dx$
+\item $\Int_a^b t:f(t^2)dt=\footnote{$\phi(t)=t^2\quad\phi'(t)=2t$}\frac{1}{2}\Int_a^b\underbrace{\phi'(t)}_{2t}·f(\phi(t))=\frac{1}{2}\Int_{a^2}^{b^2}f(x)dx$
 z.B. $\Int_0^1xe^{x^2}dx=\frac{1}{2}\int_{0^2}^{1^2}e^xdx$ \\*
 $f(x)=e^x=\frac{1}{2}e^2\left|\ary{1\\0}\right.=\frac{e-1}{2}$
 $F(\phi(X)) \mid_a^b = \int_a^b (F(\phi \circ F)'(x)) dx = \int_a^b f(\phi (x)) \cdot \phi'(x)dx$
 }
 \bsp
 \enum{
-\item $\int_a^b f(x + c)dx = \int_a^b \underbrace{f(\phi(t))}_f(t+c) \cdot \underbrace{\phi'(t)}_{=1} dt) = \int_{a + c}^{b + c} f(x) dx$\\*
-$\phi(t) = t + c$
-$\phi'(t) = 1$
-\item $\int_a^b f(c \cdot x) = \int_a^b f(\phi(t)) \cdot \frac{\phi'(t)}{c}dt = \frac{1}{c} \cdot \int_a^b f(x) dx$
+\item $\Int_a^b f(x + c)dx = \int_a^b \underbrace{f(\phi(t))}_f(t+c) \cdot \underbrace{\phi'(t)}_{=1} dt) = \int_{a + c}^{b + c} f(x) dx$\\*
+$\phi(t) = t + c\qquad\phi'(t) = 1$
+\item $\Int_a^b f(c \cdot x) dx= \int_a^b f(\phi(t)) \cdot \frac{\phi'(t)}{c}dt = \frac{1}{c} \cdot \int_{ca}^{cb} f(x) dx$\\*
+$c\eR,\ c≠0\qquad\phi(t) = ct\qquad\phi'(t) = c$
+\item $\Int_a^b tf(t^2)dx = \int_a^b \underbrace{\phi'(t)}_{2t} f(\phi(t)) dt = \frac{1}{2}\int_{a^2}^{b^2} f(x) dx$\\*
+$\phi(t) = t^2\qquad\phi'(t) = 2t$
 }
+\sss{zum Beispiel:}
 $f(x)=e^x=\frac{1}{2}e^2\left|\ary{1\\0}\right.=\frac{e-1}{2}$
