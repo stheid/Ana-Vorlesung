@@ -1,0 +1,58 @@
+\begin{tikzpicture}[domain=0:5,prefix=plots/, samples=5, const plot]
+\draw[very thin,color=gray] (-0.3,0.0) grid (5,2.0);
+\draw[->] (-0.3,0) -- (5.2,0) node[right] {$x$};
+\draw[->] (0,-0.3) -- (0,2) node[above] {$y$};
+\draw[color=black] plot[id=23.2_int] function{sin(x)} node[below, midway] {$f(x)$};
+\end{tikzpicture}\\*
+
+\item aug. $\int_0^{\infty} f(x) dx$ konvergent.\\*
+$\sum_{k=1}^\infty f(k)= \lim_{n \to \infty} \sum_{k=1}^n f(k)$\\*
+$=\lim_{n \to \infty} \left( \underbrace{f(x) - \int_1^{n+1} f(x)dx}_{\gamma} \right) + \underbrace{\int_1{n + 1} f(x)dx}_{\text{konvergiert}}$
+
+% BSP2
+$\left( \int_1^{infty} \frac{1}{x} dx = \lim_{b \to \infty} log(b) = \infty \right)$
+
+\ul{Bsp} sei $s > 1$ $$\sum_{k=1}^{\infty} \frac{1}{k^s} \text{konvergiert} \equ \int_1^{\infty} \frac{1}{x^s} \text{konvergiert}$$
+\sS{Beispiel}
+Berechnung der Reihe $1 - \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} ... = \sum_{k=1}^{\infty} (-1)^{k+1}\frac{1}{k}$\\*
+(konvergiert nach Leibniz)
+$\sum_{k=1}^{infty} (-1)^{k+1} \frac{1}{k} = \lim_{n \to \infty} (-1)^{k+1} \frac{1}{k}$\\*
+$=\lim_{n \to \infty} (1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + ... + \frac{1}{2n}) - 2(\frac{1}{2} + \frac{1}{4} + \frac{1}{6} + ... + \frac{1}{2n}$\\*
+Sei $cn = \sum_{k=1}^n \frac{1}{k} =\footnote{NR $2(\frac{1}{2} + \frac{1}{4} + \frac{1}{6} + ... \frac{1}{2n}  )$} \lim{n \to \infty} (c_{zn} - c_n)$
+$(n = 2\\
+1- \frac{1}{2} + \frac{1}{3} + \frac{1}{4}\\
+1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} - 2 \cdot \frac{1}{2} - 2 \cdot \frac{1}{4})$
+Sei $a_n:=\sum_{k=1}^n \frac{1}{k} -\int_1^{n+1} \frac{1}{x}dx = c_n - \int_1^{n+1} \frac{1}{x}dx$\\*
+$\lim_{n\to\infty} (a_n) = \gamma$ existiert!\\*
+$b_n := \int_1^{n+1} \frac{1}{x}dx\\*
+a_n = c_n - b_n | c_n = a_n + b_n$\\*
+$\lim_{n\to\infty}(c_{2n} - c_n) = \lim_{n\to\infty} (a_{2n} - a_n + b_{2n} - b_n)$\\*
+$underbrace{\lim_{n\to\infty} a_{2n}}_{\gamma} - \underbrace{\lim_{n\to\infty} a_n}_{\gamma} + \lim_{n\to\infty} (b_{2n} - b_n)$\\*
+$\lim_{n\to\infty} (b_{2n} - b_n)$
+
+% Stefan
+
+% 10. Potenzreihen
+
+\bem 10.2 \Rarr \ary{$|z| < R \Rarr P(z)$ konvergiert absolut \\
+					 $|z| > R \Rarr P(z)$ divergiert \\
+					 $|z| = R \Rarr ?$}
+					% GRAPH Konvergenzradius
+\bsp
+\enum{
+\item $exp(z)$ konvergiert absolut für jedes $z \in \C$\\*
+$R = \infty$
+\item $\sum_{n=0}^2\infty 2^w\ z^w = 1 + 2z + 4z^2 +... = \sum_{n=0}^{\infty} (2z)^n$ geometrische Reihe.\\
+$|z| \geq \frac{1}{2} \equ |2z| \geq 1$: divergiert\\*
+$|z| < \frac{1}{2} \equ |2z| < 1$:konvergiert
+}
+
+% Stefan 
+
+\sS{Definition}
+Sei $(a_n)_{n\geq0}$ reelle Folge.\\*
+Bilde $b_m = sup(a_n)_{n \geq m} = sup \{a_m, a_{m+1},...\} \in \R \cup \{\infty\}$\\*
+Dann: $b_0 \geq b_1 \geq b_2 \geq ...$ $(b_n)$ monoton fallend \Rarr $\lim_{n\to\infty} (b_n) =: \lim_{n\to\infty}sup(a_n) \in \R \cup \{\pminus \infty\}$ existiert
+
+ist R = (\lim sup (\sqrt[m]{|a_n|}^{-1} \in \R_{\geq 0} \cup \{\infty\})
+Setze hier 0^{-1} = \infty \infty^{-}1 =0
