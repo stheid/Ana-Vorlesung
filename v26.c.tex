@@ -1,0 +1,49 @@
+% Stefan
+
+$\to$ Konvergenzradius | Lemma: $P(z_0)$ konvergiert \Rarr{} $P(z)$ absolut konvergent für alle $z \in \C$ mit $|z| < z_0$\\*
+Berechnung des Konvergenzradius: \\
+$Konvergenzraradius:= \limsup (\sqrt[n]{|a_n|} )^{-1}$\\*
+$a_n\in\R \quad b:= sup(a_k| k \geq n) \\R \cup \{\infty\}$\\*
+$\limsup\ a_n := \lim_{n\to \infty} b_n$
+
+% Stefan
+
+\sS{Definition}
+Eine Potenzreihe um $c\in \C$ ist um eine Reihe der Form $$P(z) = \sum_{n \geq 0} a_n (z-c)^n$$
+
+\chapter{Taylorreihen & Taylorpolynome}
+Gegeben: $f: I \to \R$ beliebig oft differenzierbar, $a \in I$\\*
+% Graph
+Ziel ist die Approximation von $f$ durch Polynomen in der nähe von $a$\\*
+\enum{
+\item Lineare Approximation: Tangente an $f$ an der Stelle $a$
+$$T(x) = f(a) + f'(a)(x-a)$$
+\bem Das $T_1(a) = f(a), $
+}
+
+\sS{Definition n-te Taylorpolynom}
+Das n_te Taylorpolynom von $f$ an der Stelle $a$ ist: 
+$$T_n(x) := \sum_{k=0}^{n} \frac{f^k(a)}{k!} (x-a)^k$$
+$$=f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2 + \frac{f'''(a)}{6} (x-a)^3 + ... + \frac{f^{(n)}(a)}{n!} (x-a)^n$$
+Berechne: $$T_n^{(k)}(a) = f^{(k)} (a)$$
+\bsp
+$f(x) = cos(x)\qquad a=0$\\*
+allgemein: $f^{(k)}=\case{k=4m\quad cosx\\k=4m+1\quad -sinx\\k=4m+2\quad -cosx\\k=4m+3\quad sinx}$
+$T_0(x) = cos (0) = 1$\\*
+$T_1(x) = 1 + \frac{-sin(0)}{-1!} x = 1$\\*
+$T_2(x) = T_1(x) + \frac{cos(0)}{2!}(x)^2 = 1 - \frac{1}{2!}x^2$\\*
+$T_3(x) = T_2(x) + \frac{sin(0)}{2!}(x)^2 = 1 - \frac{1}{2!}x^2$\\*
+
+\ul{Frage:} Wie gut wird $f$ durch $T_n$ approximiert?\\*
+\sS{Definition Restglied}
+Restglied $R_{n+1}(x) = f(x) - T_n(x)$
+\setcounter{section}{4}
+\sS{Lagrangeform von R_{n+1}}
+Sei $f$ wie oben und $x \in I$. Es gibt ein $x_0$ zwischen $a$ und $x$, sodass $$R_{n+1} = \frac{f^{(n+1)}(x)}{(n+1)!}(x-a)^{n+1}$$
+
+% Stefan
+$T_0(x) = f(1) = 1$\\*
+$T_1(x) = 1 + \frac{f'(1)}{1!} (x-1) = 1 + \frac{1}{2}(x-1)$\\*
+$T_2(x) = T_1 + \frac{f(1)}{2!} (x-1)^2 = 1+\frac{1}{2}(x-1) + \frac{1}{8}(x-1)^2$\\*
+$f()$
+$T_{sqrt{}}(x) = \sum (-1)^{n-1} \frac{1 \cdot 3 \cdot 5 \cdot ... \cdot 2n -3}{2 \cdot 4 \cdot 6 \cdot ... \cdot 2n} (x-1)^n \qquad (\approx 1)$
