@@ -1,0 +1,55 @@
+Konvergenzradius von Potenzreihen $P(z)=\Sum_{n\geq 0}a_nz^n$
+\beh
+$R=\limsup_{\nif}\left(\sqrt[n]{|a_n|}\right)^-1$
+Definition des Konvergenzradius
+$$R=sup\{r\geq \R_{\geq 0}\mid \sum_{n\geq 0}a_nr^n\text{ konvergiert}\}$$
+\sss{Begründung}
+\enum{
+\item Angenommen $0<r<R$, dass heißt $\suma_nr^n$ konvergiert \Rarr\ $a_nr^n$ → 0 ($\nif$)\\*
+\Rarr\ für alle $\nN$ ist $|a_nr^n|<1$ \Rarr\ $|a_n|<\frac{1}{r^n}$ \Rarr\ $\sqrt[n]{|a_n|}<\frac{1}{r}$ \Rarr\ $\limsup\left(\sqrt[n]{|a_n|}\right)<\frac{1}{r}$ \Rarr\ $r<\limsup_{\nif}\left(\sqrt[n]{|a_n|}\right)^-1$
+christopher
+
+}
+
+\sS{Satz (Integraldarstellung von $R_{n+1}$)}
+$$R_{n+1}(x)=\frac{1}{n!}\int_a^x(x-t)^nf^{(n+1)}(t)dt$$
+\bew
+Induktion nach $n$
+$n=0$
+$$R_1(x)=f(x)-T_0(x)=f(x)-f(a)$$
+Rechte Seite:$$\int_a^xf'(x)dt=f(x)-f(a)$$\ok
+$n-1→n$
+Angenommen
+\alg{R_n(x)&=\frac{1}{(n-1)!}\int_a^x(x-t)^{n-1}f^{(n)}(t)dt=-\frac{1}{n!}\int_a^x((x-t)^{n})'f^{(n)}(t)dt\\
+&\underset{(Partielle\ Induktion)}{=}-\frac{1}{n!}(x-t)^nf^{(n)}(t)\left|\ary{t=x\\t=a}\right.+\frac{1}{n!}\int_a^x((x-t)^{n})'f^{(n+1)}(t)dt\\
+&=\frac{1}{n!}(x-a)^nf^{(n)}(a)+\frac{1}{n!}\int_a^x((x-t)^{n})'f^{(n+1)}(t)dt}
+
+Satz zweiter mittelwertsatz 
+
+\sss{Folge}
+Lagrange-Darstellung des Restglieds $R_{n+1}$
+$$\left(f^{(n+a)}\leadsto right) fuuu$$
+
+fehhlt
+
+christopher
+
+
+\chapter{Newton Verfahren}
+Gegeben $f:I→\R$, differnenzierbar\\*
+suche Nullstellen\\*
+Startwert $x_0$, Tangente an $x_0:\ T_1(x)=f(x_0)+(x-x_0)f'(x_0)$\\*
+$x_1:=$Nullstelle von $T_1(x)$
+\descr{Berechnung}{$T_1(x_1)=0$\\$f(x_0)+(x_1-x_0)f'(x_0)=0$
+$$x_1-x_0=-\frac{f(x_0)}{f'(x_0)}$$
+$$x_1:=x_0-\frac{f(x_0)}{f'(x_0)}$$
+(geht nur wenn $f'(x)≠0$)\\*
+Iterationen: $x_1:=x_n-\frac{f(x_0)}{f'(x_0)}$\\*
+\sss{Frage}Konvergiert das gegen eine Nullstelle von $f$, wenn ja: wie schnell\\*
+Annahme $f'(x)≠0\quad ∀x$
+\bem
+$f(x)=0\ \equ\ x=x-\frac{f(x_0)}{f'(x_0)}$, dass heißt (Nullstelle von $f$)=(Fixpunkte der Iteration $x\mapsto x-\frac{f(x_0)}{f'(x_0)}$)
+
+Christopher
+
+
