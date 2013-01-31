@@ -1,0 +1,36 @@
+%christopher
+\sss{Satz}
+In dieser Situation gilt:
+\enum{
+\item $x_0\geq x_1\geq x_2\geq …,x_n\geq \xi$ für alle $n$
+\item $x_n→\xi$ für alle \nif
+\item $|x_n-\xi|\leq \frac{M}{2m}(x_n-x_{n1})$ (quadratische Konvergenz)
+$$M=sup\{f''\mid x\in [a,b]\}$$
+$$m=inf\{f''\mid x\in [a,b]\}$$
+}
+\bew
+\enum{
+\item $f(x_0)\geq 0 \Rarr x_0\geq \xi$\\*
+Zu zeigen: Wenn $x_n\geq \xi$ dann $x_n\geq x_{n+1} \geq\xi$\\
+$$x_{n+1}=x_n-\frac{\overbrace{f(x_n)}^{\geq 0}{\underbrace{f'(x_n)}_{>0}}$$
+\Rarr $x_{n+1}\leq x_{n}$\ok
+Wenn $x_n=\xi$, dann $x_{n+1}=x_{n}$\ok
+Sei $x_n>\xi$
+$$\frac{f(x_n)-\cancel{f(\xi)}}{x_n-\xi}=f'(\overset{~}{x})$$ für ein $\overset{~}{x}\in[\xi,x_n]$ (Mittelwertsatz)
+\Rarr $x_n-\xi=\frac{f(x_n)}{f'(x_n)}$ (*)\\
+$x_n-x_{n+1}=\frac{f(x_n)}{f'(x_n)}$ (nach Definition)\\
+$f'$ monoton wachsend \Rarr\ $f'(\overset{~}{x})\leq f'(x_n)$\\
+$x_n-x_{n+1}=\frac{f(x_n)}{f'(x_n)}\leq \frac{f(x_n)}{f'(\overset{~}{x})}=x_n-\xi\ \Rarr\ x_{n+1}\geq\xi\ \Rarr$ 1) gilt
+\item $(x_n)$ monoton fallend, beschränkt (wg. 1))\\*
+\Rarr konvergent\\*
+Sei $y:= \lim_{n\to\infty}$\\*
+$$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \underset{lim}{\Rarr} y = y - \frac{f(y)}{f'(y)}$$
+\Rarr $\frac{f(y)}{f'(y)} = 0 \Rarr f(y) = 0 \Rarr y = \xi \Rarr$ 2) gilt
+\item Tailorreihe von $f$ an $x_{n-1}$, engesetzt in $x_n$
+(**)$$f(x_n)=\underbrace{f(x_{n-1})+f'(x_{n-1})·(x_n-x_{n-1})}_{0\text{ nach Definition von $x_n$}}+R_2(x_n)\underset{Lagrange}{=}\frac{1}{2} f''(\overset{~}{\overset{~}{x}})(x_n-x_{n-1})^2$$ für $\overset{~}{\overset{~}{x}})(x_n-x_{n-1}\in [x_n,x_{n-1}]$\\
+Zusammensetzen: $|x_n-\xi|\underset{(*)}{=}\frac{f(x_n)}{f'(\overset{~}{x})}\underset{(**)}{=}\frac{1}{2·f'(\overset{~}{x})}f''(\overset{~}{\overset{~}{x}})(x_n-x_{n-1})^2\leq \frac{1}{2m}M(x_n-x_{n-1})^2\qed$
+\bsp
+Berrechnung von $\sqrt{a}$ mit Newton\\*
+Nullstellen von $x^2-a=f(x)\quad f'(x)=2x\quad f''(x)=2$\\*
+$x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}=x_n-\frac{x_n^2-a}{2x_n}=\frac{x_n}{2}+\frac{a}{2x_n}$
+%christopher
