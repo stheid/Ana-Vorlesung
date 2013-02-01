@@ -1,0 +1,17 @@
+Newton-Verfahren\\*
+Sei $f:[a,b] \to \R$ zwei mal stetig differenzierbar\\*
+Annahmen:\\*
+$f'(x)>0$ für alle x \Rarr $f$ streng monoton wachsend\\*
+$f''(x) \geq 0$ für alle x \Rarr $f'$ monoton wachsend\\*
+$f(a) < 0,\ \ f'(b) > 0$ \Rarr es gibt ein eindeutiges $\xi \in [a,b]$ mit $f(\xi) = 0$\\*
+Wähle Startwert $x_0$ mit $f(x_0) \geq 0$\\*
+Newton-Iteration: 
+$$x_1 = x_0 + \frac{f(x_0)}{f'(x_0)}\qquad x_n = x_{n-1} - \frac{f(x_{n-1})}{f'(x_{n-1})}$$\\
+
+\bsp
+Gesucht ist $\sqrt{2} = 1\,41426...$\\*
+$a = 2 \qquad x_{n+1} = \frac{x_n}{2} + \frac{1}{x_n}$\\*
+$x_0 = 2 \qquad x_n^2 - 2 = 2 > 0$\ok\\*
+$x_1 = \frac{2}{2} + \frac{1}{2} = \frac{3}{2} = 1\,5$\\*
+$x_2 = \frac{3}{4} + \frac{2}{3} = \frac{17}{12} = 1\,416666...$\\*
+$x_3 = \frac{17}{24} + \frac{17}{12} = \frac{289 + 288}{24 * 17} = 1\,414256$
