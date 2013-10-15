@@ -39,3 +39,9 @@ https://www.dropbox.com/s/d6b8on7f8gh91aw/Ana%20Skriptum.pdf
 │ b+...b_n : b_0+...+b_n                                       │
 └──────────────────────────────────────────────────────────────┘
 
+
+um das Dokument zu bauen:
+
+ * man benötigt gnuplot
+
+ $ xelatex --shell-escape main.tex
