@@ -3,7 +3,6 @@
 *.synctex.gz
 *.aux
 *.toc
-*.pdf
 *.bbl
 *.out
 *.blg
@@ -14,6 +13,3 @@ plots/*
 # VIM
 *~
 *.swp
-
-# Test
-test.tex
