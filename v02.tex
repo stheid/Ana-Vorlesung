@@ -22,37 +22,37 @@ $$\bino{n}{k} \qquad\qquad\qquad \bino{n}{0}=\bino{n}{n}=1$$
 
 \sS{Lemma}
 Für $0<k< n$ gilt:
-$$\binom{n}{k} = \binom{n -1}{k-1} + \binom{n-1}{k}$$
+$$\\bino{n}{k} = \\bino{n -1}{k-1} + \\bino{n-1}{k}$$
 %
 \bew 
-$$\binom{n-1}{k-1}+ \binom{n-1}{k}=\frac{(n-1)!}{(k-1)!·(n-k)!} +\frac{(n-1)!}{(k-1)!·(n-1-k)!} = \frac{k(n-1)!+(n-k)\cdot(n-1)!}{k! (n-k)!}=\frac{n(n-1)!}{k!(n-k)!}$$
+$$\\bino{n-1}{k-1}+ \\bino{n-1}{k}=\frac{(n-1)!}{(k-1)!·(n-k)!} +\frac{(n-1)!}{(k-1)!·(n-1-k)!} = \frac{k(n-1)!+(n-k)\cdot(n-1)!}{k! (n-k)!}=\frac{n(n-1)!}{k!(n-k)!}$$
 
 \sS{Geometrische Anordnung (Pascalsches Dreieck)}
 \parbox{0.4\textwidth}{\centering
-$\binom{0}{0}$\\*
-$\binom{1}{0} \binom{1}{1}$\\*
-$\binom{2}{0} \binom{2}{1} \binom{2}{2}$\\*
-$\binom{3}{0} \binom{3}{1} \binom{3}{2} \binom{3}{3}$}\hfill
+$\\bino{0}{0}$\\*
+$\\bino{1}{0} \\bino{1}{1}$\\*
+$\\bino{2}{0} \\bino{2}{1} \\bino{2}{2}$\\*
+$\\bino{3}{0} \\bino{3}{1} \\bino{3}{2} \\bino{3}{3}$}\hfill
 \parbox{0.4\textwidth}{\centering
 1\\*
 1 1\\*
 1 2 1\\*
 1 3 3 1}\\*[5mm]
-Folge $\binom{n}{k}\in \N$ für alle $0\leq k\leq n$
+Folge $\\bino{n}{k}\in \N$ für alle $0\leq k\leq n$
 
 \sS{Satz: Anzahl von Teilmengen}
 Sei $A$ endliche Menge. $\#A=n$\\*[4pt]
 Sei $k\in\Z$ mit $0\leq k\leq n$\\*[4pt]
 $P_k(A):=\{U\subseteq A\mid \#U=k\}$ (Menge aller $k$-elementigen Teilmengen von $A$)\\*[4pt]
-Dann gilt $\#P_k(A)=\binom{n}{k}$
+Dann gilt $\#P_k(A)=\\bino{n}{k}$
 \bsp
 $A=\{1,2,3,4\}$ $n=4$ $k=2$\\*[4pt]
 2-elementige Teilmengen von $A$:
-$\{1,2\}, \{1,3\}, \{1,4\}, \{2,3\}, \{2,4\}, \{3,4\} \to 6\qquad \binom{4}{2}=6$ \ok
+$\{1,2\}, \{1,3\}, \{1,4\}, \{2,3\}, \{2,4\}, \{3,4\} \to 6\qquad \\bino{4}{2}=6$ \ok
 %
 \bew
 Vorüberlegung: Sei $k=0 \vee k=n$\\*
-$P_0(A)=1=\binom{n}{0}$ $\#P_n(A)=1=\binom{n}{n}$\ok\\*
+$P_0(A)=1=\\bino{n}{0}$ $\#P_n(A)=1=\\bino{n}{n}$\ok\\*
 Jetzt: Induktionsbeweis nach $n$
 \ind{$n=0$ Dann $k=0$}{Sei $\#A=n+1 \Rarr 0 \leq k \leq (n+1)$
 Falls $k = 0\vee k = n + 1$\\*
@@ -68,12 +68,12 @@ Man kann die Wahl einer $k$-elementigen Teilmenge von $A$ so strukturieren:
 \item{Wenn $a\in U$: Wähle $k-1$ Elemente aus $B$}
 \end{enumerate}}
 \end{enumerate}
-$$\Rarr\ \#P_k(A)=\#P_k(B)+\#P_{k-1} (B) \stackrel{IV}{=} \binom{n}{k} + \binom{e}{ -1} \stackrel{1.11}{=} \binom{n+1}{k}$$
+$$\Rarr\ \#P_k(A)=\#P_k(B)+\#P_{k-1} (B) \stackrel{IV}{=} \\bino{n}{k} + \\bino{e}{ -1} \stackrel{1.11}{=} \\bino{n+1}{k}$$
 }
 
 \sS{Satz (Binomische Formel)}
 Seien $a,b$ Zahlen, $n\in\N$\\*
-Dann $(a+b)^n=a^n+\binom{n}{1} a^{n-1} b+\binom{n}{2}a^{n-2}b^2+…+b^n$
+Dann $(a+b)^n=a^n+\\bino{n}{1} a^{n-1} b+\\bino{n}{2}a^{n-2}b^2+…+b^n$
 %
 \bsp
 $(a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4$\\*
@@ -85,11 +85,11 @@ Schreibe $(a+b)^n=\underbrace{(a+b)(a+b)(a+b)(a+b)…(a+b)}_{n-Faktoren}$
 \sss{Ausmultiplizieren}
 Halte Terme der Form $a^{n-k}b^k$ mit $0\leq k\leq n$\\*
 Häufigkeit von $a^{n-k}b^k$ = Anzahl der Möglichkeiten aus n-Faktoren $k$ mal $b$ zu wählen.\\*
-Das ist $\binom{n}{k}$ (Satz 1.13)
+Das ist $\\bino{n}{k}$ (Satz 1.13)
 %
 \sss{Folgerung}
 Setze $a=b=1\qquad a^{n-k}b^k=1$\\*
-$(a+b)^n=2^n=\binom{n}{0}+\binom{n}{1}+\binom{n}{2}+…+\binom{n}{n}$
+$(a+b)^n=2^n=\\bino{n}{0}+\\bino{n}{1}+\\bino{n}{2}+…+\\bino{n}{n}$
 %
 \bsp
 $1+4+6+4+1=16=2^4$
@@ -123,7 +123,7 @@ $\leadsto$ Teilmenge $U:=\{a_1,…,a_n\}$\\*
 Dann $U\subseteq A,\ \#U=k\qquad U\in P_k(A)$\\*
 Jedes $U\in P_k(A)$ entsteht so, aber mehrfach:
 $$\underset{\overset{\uparrow}{Anordnungen\ von\ U}}{k!}·\underset{\overset{\uparrow}{Anordnungen\ von\ A\backslash U}}{(n-k)!}-mal$$
-$\#$ Anordnungen von $A=n!=\#P_k(A)·k!(n-k)!\Rarr\#P_k(A)=\frac{n!}{k!·(n-k)!)}=\binom{n}{k}$
+$\#$ Anordnungen von $A=n!=\#P_k(A)·k!(n-k)!\Rarr\#P_k(A)=\frac{n!}{k!·(n-k)!)}=\\bino{n}{k}$
 
 \chapter{Die reellen Zahlen}
 Was sind die reellen Zahlen?\\*
